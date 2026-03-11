@@ -1,0 +1,326 @@
+name: Deploy ECS
+
+on:
+  # Run manually from the Actions tab
+  workflow_dispatch:
+
+  # Or automatically on push to main
+  push:
+    branches:
+      - main
+      - dev
+    paths:
+      - "src/**"
+      - "ecs/**"
+      - ".github/workflows/deploy-ecs.yml"
+
+# ── CRITICAL ──────────────────────────────────────────────────────────────────
+# These permissions allow GitHub to mint an OIDC token for this workflow.
+# Without id-token: write, the OIDC exchange with AWS will fail.
+# ──────────────────────────────────────────────────────────────────────────────
+permissions:
+  id-token: write   # Required: lets GitHub generate the OIDC JWT token
+  contents: read    # Required: lets the runner check out code
+
+env:
+  AWS_REGION: ${{ vars.AWS_REGION }}
+  CLUSTER_NAME: ${{ vars.ECS_CLUSTER_NAME }}
+  SERVICE_NAME: ${{ vars.ECS_SERVICE_NAME }}
+  TASK_DEF_NAME: ${{ vars.ECS_TASK_DEF_NAME }}
+  ECR_REPO: ${{ vars.ECR_REPO }}
+  SUBNET: ${{ vars.ECR_SUBNETS }}
+  SEC_GROUP: ${{ vars.ECR_SEC_GROUP }}
+  CLEAN_REPO: ${{ vars.REPO_CLEANUP }}
+  CONTAINER_NAME: ${{ vars.CONTAINER_NAME }}
+  REDIS_CONTAINER_NAME: ${{ vars.REDIS_CONTAINER_NAME }}
+  TASK_ROLE: ${{ vars.TASK_ROLE }}
+  EXEC_ROLE: ${{ vars.EXEC_ROLE }}
+  SECRET_ID: ${{ vars.SECRET_ID }}
+
+jobs:
+  set-env:
+    runs-on: ubuntu-latest
+    outputs:
+      environment: ${{ steps.set-env.outputs.environment }}
+    steps:
+      - id: set-env
+        run: |
+          if [ "${{ github.ref_name }}" == "main" ]; then
+            echo "environment=prod" >> $GITHUB_OUTPUT
+          else
+            echo "environment=dev" >> $GITHUB_OUTPUT
+          fi
+
+  deploy-ecs:
+    runs-on: ubuntu-latest
+    needs: set-env
+    environment: ${{ needs.set-env.outputs.environment }}
+
+    steps:
+      - name: Configure AWS Credentials (OIDC)
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+          # Optional: gives the session a readable name visible in CloudTrail
+          role-session-name: github-actions-deploy-ecs-${{ github.run_id }}
+      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2.0.1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        
+      - name: Set image tag
+        id: image
+        run: |
+          IMAGE_TAG=${{ needs.set-env.outputs.environment }}-${GITHUB_SHA::8}
+
+          AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+
+          REGISTRY="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
+          IMAGE_URI="$REGISTRY/$ECR_REPO:$IMAGE_TAG"
+
+          printf "image_tag=%s\n" "$IMAGE_TAG" >> "$GITHUB_OUTPUT"
+          printf "image_uri=%s\n" "$IMAGE_URI" >> "$GITHUB_OUTPUT"
+
+
+      - name: Build and push Docker image
+        working-directory: src
+        run: |
+          docker buildx build \
+          --platform linux/amd64 \
+          --build-arg env_name=${{ needs.set-env.outputs.environment }} \
+          -t ${{ steps.image.outputs.image_uri }} \
+          --push .
+
+      - name: Download current ECS task definition
+        id: download-task-def
+        run: |
+          set -e
+      
+          if aws ecs describe-task-definition \
+            --task-definition $TASK_DEF_NAME \
+            --region $AWS_REGION \
+            > task-def.json 2>/dev/null; then
+      
+            echo "Found existing ECS task definition"
+      
+            cat task-def.json \
+              | jq '.taskDefinition
+              | del(.taskDefinitionArn,.revision,.status,.requiresAttributes,.compatibilities,.registeredAt,.registeredBy)' \
+              > task-definition.json
+      
+          else
+            echo "No ECS task definition found. Using repository version."
+
+            AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+          
+            sed \
+              -e "s|{{ACCOUNT_ID}}|$AWS_ACCOUNT_ID|g" \
+              -e "s|{{TASK_ROLE}}|$TASK_ROLE|g" \
+              -e "s|{{EXEC_ROLE}}|$EXEC_ROLE|g" \
+              -e "s|{{CONTAINER_NAME}}|$CONTAINER_NAME|g" \
+              -e "s|{{REDIS_CONTAINER_NAME}}|$REDIS_CONTAINER_NAME|g" \
+              -e "s|{{REGION}}|$AWS_REGION|g" \
+              -e "s|{{ECR_REPO}}|$ECR_REPO|g" \
+              -e "s|{{SECRET_ID}}|$SECRET_ID|g" \
+              -e "s|{{TASK_DEF_NAME}}|$TASK_DEF_NAME|g" \
+              -e "s|{{IMAGE_TAG}}|placeholder|g" \
+              ecs/task-definition.json > task-definition.json
+          fi
+          
+      - name: Inject image URI into task definition
+        id: inject-image
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: task-definition.json
+          container-name: ${{ env.CONTAINER_NAME }}
+          image: ${{ steps.image.outputs.image_uri }}
+
+      - name: Check ECS service
+        id: check-service
+        run: |
+          STATUS=$(aws ecs describe-services \
+            --cluster $CLUSTER_NAME \
+            --services $SERVICE_NAME \
+            --query 'services[0].status' \
+            --output text 2>/dev/null || echo "MISSING")
+          echo "status=$STATUS"
+          echo "clean=$CLEAN_REPO"
+
+          echo "status=$STATUS" >> $GITHUB_OUTPUT
+          
+
+      - name: Create ECS service
+        if: steps.check-service.outputs.status != 'ACTIVE'
+        run: |
+          echo "Registering task definition..."
+          TASK_DEF_ARN=$(aws ecs register-task-definition \
+            --cli-input-json file://${{ steps.inject-image.outputs.task-definition }} \
+            --region $AWS_REGION \
+            --query 'taskDefinition.taskDefinitionArn' \
+            --output text)
+          echo "Registered task definition: $TASK_DEF_ARN"
+
+          echo "Creating network config..."
+
+          cat <<EOF > network.json
+          {
+            "awsvpcConfiguration": {
+              "subnets": $SUBNET,
+              "securityGroups": $SEC_GROUP,
+              "assignPublicIp": "ENABLED"
+            }
+          }
+          EOF
+
+          echo "Network config:"
+          cat network.json
+
+          echo "Creating ECS service..."
+          
+          aws ecs create-service \
+            --cluster $CLUSTER_NAME \
+            --service-name $SERVICE_NAME \
+            --task-definition $TASK_DEF_ARN \
+            --desired-count 1 \
+            --launch-type FARGATE \
+            --network-configuration file://network.json
+
+      - name: Cleanup old ECR images (keep last 5)
+        if: needs.set-env.outputs.environment == 'dev'
+        run: |
+          echo "Cleaning old images from ECR..."
+          KEEP=5
+      
+          # Step 1: Get all Image Index digests sorted oldest first
+          INDEX_IMAGES=$(aws ecr describe-images \
+            --repository-name $ECR_REPO \
+            --region $AWS_REGION \
+            --query "sort_by(imageDetails, &imagePushedAt)[?imageManifestMediaType=='application/vnd.oci.image.index.v1+json'].imageDigest" \
+            --output text)
+      
+          TOTAL_INDEXES=$(echo $INDEX_IMAGES | wc -w)
+          echo "Found $TOTAL_INDEXES image indexes."
+      
+          # Step 2: Delete old Image Indexes beyond KEEP
+          if [ "$TOTAL_INDEXES" -gt "$KEEP" ]; then
+            DELETE_COUNT=$((TOTAL_INDEXES - KEEP))
+            echo "Deleting $DELETE_COUNT old image indexes..."
+      
+            IMAGE_IDS=$(echo $INDEX_IMAGES | tr ' ' '\n' | head -n $DELETE_COUNT | \
+              jq -R '{imageDigest: .}' | jq -s '.')
+      
+            aws ecr batch-delete-image \
+              --repository-name $ECR_REPO \
+              --region $AWS_REGION \
+              --image-ids "$IMAGE_IDS"
+          else
+            echo "Only $TOTAL_INDEXES image indexes. Nothing to delete."
+          fi
+      
+          # Step 3: Get all digests referenced by KEPT Image Indexes
+          # so we don't delete their child images
+          KEPT_INDEXES=$(aws ecr describe-images \
+            --repository-name $ECR_REPO \
+            --region $AWS_REGION \
+            --query "sort_by(imageDetails, &imagePushedAt)[?imageManifestMediaType=='application/vnd.oci.image.index.v1+json'].imageDigest" \
+            --output text)
+      
+          # Step 4: Find all untagged/orphaned images not referenced by any Image Index
+          ALL_IMAGES=$(aws ecr describe-images \
+            --repository-name $ECR_REPO \
+            --region $AWS_REGION \
+            --query "imageDetails[?imageManifestMediaType!='application/vnd.oci.image.index.v1+json'].imageDigest" \
+            --output text)
+      
+          if [ -z "$ALL_IMAGES" ]; then
+            echo "No orphaned images to clean."
+            exit 0
+          fi
+      
+          # Step 5: Get child digests of kept indexes to exclude them
+          KEPT_CHILDREN=""
+          for INDEX_DIGEST in $KEPT_INDEXES; do
+            CHILDREN=$(aws ecr batch-get-image \
+              --repository-name $ECR_REPO \
+              --region $AWS_REGION \
+              --image-ids imageDigest=$INDEX_DIGEST \
+              --query 'images[0].imageManifest' \
+              --output text | jq -r '.manifests[].digest' 2>/dev/null || echo "")
+            KEPT_CHILDREN="$KEPT_CHILDREN $CHILDREN"
+          done
+      
+          # Step 6: Delete orphaned images not in kept children
+          ORPHAN_IDS=""
+          for DIGEST in $ALL_IMAGES; do
+            if ! echo "$KEPT_CHILDREN" | grep -q "$DIGEST"; then
+              ORPHAN_IDS="$ORPHAN_IDS $DIGEST"
+            fi
+          done
+      
+          if [ -z "$ORPHAN_IDS" ]; then
+            echo "No orphaned images to delete."
+            exit 0
+          fi
+      
+          echo "Deleting orphaned images..."
+          IMAGE_IDS=$(echo $ORPHAN_IDS | tr ' ' '\n' | grep -v '^$' | \
+            jq -R '{imageDigest: .}' | jq -s '.')
+      
+          aws ecr batch-delete-image \
+            --repository-name $ECR_REPO \
+            --region $AWS_REGION \
+            --image-ids "$IMAGE_IDS"
+      
+          echo "Cleanup complete."
+
+    
+      - name: Deploy ECS service update
+        if: steps.check-service.outputs.status == 'ACTIVE'
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        with:
+          task-definition: ${{ steps.inject-image.outputs.task-definition }}  # <-- changed
+          service: ${{ env.SERVICE_NAME }}
+          cluster: ${{ env.CLUSTER_NAME }}
+          wait-for-service-stability: true
+          force-new-deployment: true
+    
+      - name: Verify ECS deployment
+        if: steps.check-service.outputs.status == 'ACTIVE'
+        run: |
+          echo "Validating ECS task deployment..."
+          TASK_ARN=$(aws ecs list-tasks \
+          --cluster $CLUSTER_NAME \
+          --service-name $SERVICE_NAME \
+          --desired-status RUNNING \
+          --region $AWS_REGION \
+          --output text \
+          --query 'taskArns[0]')
+
+          if [ -z "$TASK_ARN" ]; then
+            echo "❌ No running ECS task found. Deployment likely failed."
+            exit 1
+          fi
+
+          IMAGE_USED=$(aws ecs describe-tasks \
+          --cluster $CLUSTER_NAME \
+          --tasks $TASK_ARN \
+          --region $AWS_REGION \
+          --query "tasks[0].containers[?name=='${{ vars.CONTAINER_NAME }}'].image | [0]" \
+          --output text)
+
+          echo "Expected image: ${{ steps.image.outputs.image_uri }}"
+          echo "Image running in ECS: $IMAGE_USED"
+
+          if [ "$IMAGE_USED" != "${{ steps.image.outputs.image_uri }}" ]; then
+            echo "ECS is not using the newly deployed image. Deployment failed."
+            exit 1
+          fi
+
+          echo "ECS is running the correct image."
