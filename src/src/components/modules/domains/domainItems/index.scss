@@ -1,0 +1,181 @@
+.domains__items {
+   .domain__main_item {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+   }
+   .domains__item {
+      border-top: 1px solid #f0f4f7;
+      padding: 24px 22px 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      &:last-child  {
+         border-bottom: 1px solid #f0f4f7;
+      }
+      .actions {
+         display: flex;
+         width: 105px;
+         div {
+            padding-left: 8px;
+            padding-right: 8px;
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+         }
+      }
+      .mob_actions {
+         display: none;
+      }
+      .subname {
+         padding-left: 24px;
+         min-width: 150px;
+         padding-right: 5px;
+      }
+      .cat {
+         width: 55px;
+         white-space: nowrap;
+      }
+      .name {
+         flex: 0.5;
+         padding-right: 15px;
+         min-width: 150px;
+         box-sizing: border-box;
+      }
+      .item__group {
+         display: flex;
+         justify-content: space-between;
+        flex: 1;
+      }
+      .item__group1 {
+         display: flex;
+         align-items: center;
+      }
+      .mob-login {
+         display: none;
+      }
+   }
+}
+
+@media screen and ( max-width: 1250px) {
+   .domains__items {
+      .domains__item {
+         .actions {
+            display: none;
+         }
+         .mob-24-width {
+            width:40px;
+         }
+         .mob_actions {
+            display: flex;
+            position: relative;
+            .action__container {
+               display: flex;
+               position: absolute;
+               top: -8px;
+               right: 34px;
+               box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+               z-index: 1;
+               padding: 7px 0px 7px 2px;
+               box-sizing: border-box;
+               background: white;
+               border-radius: 4px;
+            }
+            div {
+               padding-left: 8px;
+               padding-right: 8px;
+               align-items: center;
+               display: flex;
+               cursor: pointer;
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 1023px) {
+         .domains__items {
+            .domain__main_item {
+               flex-direction: column;
+               width: 90%;
+               >div {
+                  padding-top: 10px;
+               }
+               .mob-login {
+                  display: block;
+               }
+            }
+            .domains__item {
+               min-width: auto;
+                &:last-child  {
+                  border-bottom: none;
+               }
+               .actions {
+                  padding-left: 0%;
+                  padding-top: 10px;
+                  div {
+                     padding-left: 8px;
+                     padding-right: 8px;
+                  }
+               }
+               .subname {
+                  padding-left:0px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+               }
+               .item__group {
+                  flex-direction: column;
+                  width: 100%;
+               }
+               .name {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  width: 100%;
+               }
+               .item__group1 {
+                  flex-direction: column;
+                  align-items: flex-start;
+
+                 .subname {
+                     padding-top: 10px;
+                     width: 100%;
+                     white-space: nowrap;
+                     overflow: hidden;
+                     text-overflow: ellipsis;
+                     align-items: flex-start;
+                  }
+               }
+               .actions {
+                  display: none;
+               }
+               .mob_actions {
+                  display: flex;
+                  position: relative;
+                  .action__container {
+                     display: flex;
+                     position: absolute;
+                     top: 26px;
+                     right: 34px;
+                     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+                     z-index: 1;
+                     padding: 7px 0px 7px 2px;
+                     box-sizing: border-box;
+                     background: white;
+                     border-radius: 4px;
+                  }
+                  div {
+                     padding-left: 8px;
+                     padding-right: 8px;
+                     align-items: center;
+                     display: flex;
+                     cursor: pointer;
+                  }
+               }
+            }
+         }
+
+
+}

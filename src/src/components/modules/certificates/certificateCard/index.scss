@@ -1,0 +1,88 @@
+.certificate__card {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0px;
+   border: 1px solid #E7E9E9;
+   height: 100%;
+   border-radius: 12px;
+   gap: 16px;
+   max-width: 345px;
+   overflow: hidden;
+   &__view {
+      display: flex;
+      background-color: white;
+      max-width: 100%;
+      flex-direction: column;
+   }
+   &__top {
+      position: relative;
+      .checkBox {
+         position: absolute;
+         left: 16px;
+         top: 16px;
+      }
+      img{
+         cursor: pointer;
+      }
+      &__status{
+         position: absolute;
+         right: 16px;
+         top: 16px;
+      }
+      &__published {
+         background: #e8f2f1;
+         border-radius: 8px;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding: 5px 8px;
+         gap: 4px;
+      }
+      &__draft {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding: 5px 8px;
+         gap: 4px;
+         background: rgba(19, 31, 30, 0.1);
+         border-radius: 8px;
+      }
+   }
+   img {
+      width: 356px;
+      height: 262px;
+   }
+   &__bottom {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      max-width: 100%;
+      box-sizing: border-box;
+      border-top: 1px solid #e7e9e9;
+      padding: 19px 20px 21px;
+
+      &__name{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 100%;
+      }
+      &__class {
+         background: #faebf8;
+         border-radius: 8px;
+         padding: 5px 8px;
+      }
+   }
+   &__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &__flex {
+         display: flex;
+         gap: 8px;
+      }
+   }
+}

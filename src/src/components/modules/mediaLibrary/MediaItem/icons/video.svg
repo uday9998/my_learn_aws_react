@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="40" viewBox="0 0 33 40">
+    <g fill="none" fill-rule="evenodd">
+        <g stroke="#09F" stroke-width=".5">
+            <path fill="#FFF" d="M21.563.25l9.704 9.852v28.89c0 .21-.084.4-.22.537-.134.136-.32.221-.526.221h0H.995c-.205 0-.391-.084-.526-.22-.136-.138-.219-.328-.219-.539h0V1.01c0-.21.084-.4.22-.538C.603.335.79.25.994.25h20.568z" transform="translate(.99) translate(.33)"/>
+            <path fill="#09F" fill-opacity=".5" d="M22.5 9.917c-.205 0-.393-.084-.528-.22h0l4.419.22z" transform="translate(.99) translate(.33)"/>
+        </g>
+        <path fill="#09F" d="M10.89 14.444l1.32 2.667h1.98l-1.32-2.667h1.32l1.32 2.667h1.98l-1.32-2.667h1.32l1.32 2.667h1.98l-1.32-2.667h2.64v9.334c0 .733-.594 1.333-1.32 1.333H10.23c-.726 0-1.32-.6-1.32-1.333v-8c0-.734.594-1.334 1.32-1.334h.66zm3.3 4.667v4l3.111-2-3.111-2z" transform="translate(.99)"/>
+        <text fill="#09F" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="5.333" font-weight="bold" transform="translate(.99)">
+            <tspan x="8.25" y="31">VIDEO</tspan>
+        </text>
+    </g>
+</svg>

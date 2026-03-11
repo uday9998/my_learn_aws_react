@@ -1,0 +1,35 @@
+.quiz__header{
+   display: flex;
+   background: #FFFFFF;
+   align-items: center;
+   backdrop-filter: blur(9px);
+   justify-content: space-between;
+   padding: 18px 24px;
+   box-sizing: border-box;
+   border-bottom: 1px solid #E7E9E9;
+   backdrop-filter: blur(9px);
+   &__left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      div{
+         display: flex;
+         align-items: center;
+      }
+   }
+   &__right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      div{
+         display: flex;
+         align-items: center;
+      }
+      .arrowGrey {
+         background: #D9D9D9;
+         width: 1px;
+         height: 24px;
+      }
+   }
+}

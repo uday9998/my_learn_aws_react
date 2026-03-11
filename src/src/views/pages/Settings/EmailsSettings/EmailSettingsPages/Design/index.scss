@@ -1,0 +1,40 @@
+.email__design {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   margin-top: 24px;
+
+   &__brand__color {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      .colorInput {
+         margin-top: 12px;
+      }
+   }
+
+   .divider {
+      width: 100%;
+      background-color: #e7e9e9;
+      height: 1px;
+   }
+   &__upload {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+   &__address {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .text_area_new {
+         min-width: 100%;
+         max-height: 96px;
+      }
+   }
+   &__buttons {
+      margin-top: 8px;
+      display: flex;
+      gap: 12px;
+   }
+}

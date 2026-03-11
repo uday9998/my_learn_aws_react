@@ -1,0 +1,25 @@
+.footer__email {
+   width: 100%;
+   text-align: center;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   input {
+      font-family:Inter;
+      font-size:12px;
+      font-weight:400;
+      line-height:148%;
+      text-align:center;
+      color:rgba(114,121,120,1);
+      padding:4px 0;
+      border: none;
+      width: 100%;
+   }
+   &__unsubscribe {
+      font-family:Inter,sans-serif;
+      font-size:12px;
+      line-height:1;
+      text-align:center;
+      color:rgba(114,121,120,1);
+      padding:4px 0;
+   }
+}

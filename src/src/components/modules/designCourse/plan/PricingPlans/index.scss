@@ -1,0 +1,19 @@
+.pricingPlans {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 32px;
+   .add-plan{
+      position: relative;
+   }
+}
+// mob-hidden-button
+@media screen and (max-width: 1023px) {
+   .mob-hidden-button {
+      display: none;
+   }
+}
+@media screen and (min-width: 1024px) {
+   .mob-hidden-button {
+      display: flex;
+   }
+}

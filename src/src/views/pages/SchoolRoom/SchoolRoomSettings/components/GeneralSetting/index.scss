@@ -1,0 +1,91 @@
+.general__settings{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    &__upload{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .upload__media__image__view {
+            width: 100%;
+            max-width: 527px;
+            min-width: auto;
+            margin: 0 auto;
+
+            .upload__with__media {
+                width: 100%;
+                .upload__with__media__content {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__branding{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        &__top{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+    &__footer{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        &__example{
+            cursor: inherit;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #F8FAFA;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 32px;
+            gap: 24px;
+            &__left{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                &__link {
+                  max-width: 76px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+            }
+            &__right{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                &__link {
+                  max-width: 76px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+                &__links {
+                  display: flex;
+                  gap: 8px;
+                  margin-right: 13px;
+                }
+            }
+        }
+    }
+}

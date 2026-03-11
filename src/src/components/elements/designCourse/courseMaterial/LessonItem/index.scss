@@ -1,0 +1,194 @@
+.lessonItem {
+   width: 100%;
+   user-select: none;
+
+   .lessonItem__content {
+      display: flex;
+      align-items: center;
+      padding: 10px 32px 10px 0px;
+      width: 100%;
+      justify-content: space-between;
+      >div{
+         display: flex;
+         align-items: center;
+      }
+      .lessonItem__svg {
+         margin-right: 16px;
+         min-width: 24px;
+      }
+
+      .dragdrop {
+         display: none;
+      }
+
+
+      .close {
+         display: none;
+      }
+
+   }
+
+   .active {
+      background-color: rgba(124, 183, 64, 0.1);
+      padding-left: 32px;
+      margin: 0 -32px;
+
+      .lessonItem__icon {
+         fill: #7cb740;
+      }
+
+      .textBasic {
+         color: #7cb740 !important;
+      }
+      .drafticon {
+         .textBasic {
+            color: #fff !important;
+            padding: 0 3px;
+         }
+      }
+   }
+
+   .drafticon {
+        background-color: #c2cedb;
+         margin-left: 15px;
+         margin-right: 4px;
+         white-space: nowrap;
+         position: relative;
+         .textBasic {
+            color: #fff !important;
+            padding: 0 1px 0 3px;
+            position: relative;
+            left: -4px;
+            top: -0.5px;
+            font-size: 12px;
+
+         }
+         &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -10.2px;
+            border-width: 10.5px;
+            border-style: solid;
+            border-color: transparent #c2cedb transparent transparent;
+          }
+      }
+
+   .lessonItem__content:hover {
+
+      background-color: rgba(124, 183, 64, 0.1);
+      cursor: pointer;
+      padding-left: 32px;
+      margin: 0 -32px;
+      position: relative;
+
+      .dragdrop {
+         display: block;
+         position: absolute;
+         left: 8px;
+      }
+
+      .close {
+         display: block;
+         margin-left: auto;
+
+         path:nth-child(2) {
+            fill: #7cb740;
+         }
+      }
+
+      .dragDrop_path {
+         fill: #7cb740;
+      }
+
+      .lessonItem__icon {
+         fill: #7cb740;
+      }
+
+      .textBasic {
+         color: #7cb740 !important;
+      }
+
+      .drafticon {
+         .textBasic {
+            color: #fff !important;
+         }
+      }
+
+
+   }
+
+   .dragDrop_active {
+      background-color: rgba(124, 183, 64, 0.1);
+      border-radius: 8px;
+      padding-left: 32px;
+      margin: 0 -32px;
+      position: relative;
+      box-shadow: 0 0 0px 2px #7cb740;
+
+      .close {
+         display: none;
+      }
+
+      .dragdrop {
+         display: block;
+         position: absolute;
+         left: 8px;
+      }
+
+      .dragDrop_path {
+         fill: #7cb740;
+      }
+
+      .lessonItem__icon {
+         fill: #7cb740;
+      }
+
+      .textBasic {
+         color: #7cb740 !important;
+      }
+   }
+
+   .lessonItem__content_disabled {
+      display: flex;
+      align-items: center;
+      padding: 10px 32px 10px 0px;
+      width: calc(100% - 1px);
+      justify-content: space-between;
+      background-color: #f0f4f7;
+      // color: #f0f4f7;
+      cursor: default;
+      >div{
+         display: flex;
+         align-items: center;
+      }
+      .lessonItem__svg {
+         margin-right: 16px;
+         min-width: 24px;
+      }
+      .dragdrop {
+         display: none;
+      }
+      .close {
+         display: none;
+      }
+
+   }
+
+   .lessonItem__content_disabled:hover {
+      .dragdrop {
+         display: block;
+         position: absolute;
+         left: 8px;
+      }
+      .dragDrop_path {
+         fill: #7cb740;
+      }
+      .close {
+         display: block;
+         margin-left: auto;
+         cursor: pointer;
+      }
+   }
+}

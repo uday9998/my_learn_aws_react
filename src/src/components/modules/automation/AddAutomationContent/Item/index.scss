@@ -1,0 +1,56 @@
+.automation_item {
+   background: #FFFFFF;
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   padding: 12px;
+   height: 74px;
+   cursor: pointer;
+   box-sizing: border-box;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   .item__title {
+      display: flex;
+      align-items: center;
+      svg{
+         margin-bottom: -2px;
+      }
+      gap: 8px;
+
+   }
+   .item__content {
+      span {
+         overflow : hidden;
+         text-overflow: ellipsis;
+         display: -webkit-box;
+         -webkit-line-clamp: 1;
+         -webkit-box-orient: vertical;
+         font-size: 13px;
+         text-align: left;
+      }
+   }
+   &:hover {
+      border: solid 1px #24554E;
+      transition: all 200ms;
+      .item__title {
+         .waitIcon,
+         .emailIcon,
+         .addTagIcon,
+         .removeTagIcon,
+         .purchasedIcon,
+         .enrolledIcon,
+         .conditionalLogicIcon,
+         .conditionalSplitIcon,
+         .sendWebhookIcon {
+            fill: #24554E;
+            transition: all 200ms;
+         }
+      }
+      span {
+         color: #24554E !important;
+         transition: all 200ms;
+      }
+   }
+}
+

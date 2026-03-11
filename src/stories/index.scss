@@ -1,0 +1,142 @@
+.wrapperButtons {
+   height: 200px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-around;
+   flex-direction: column;
+   background: white;
+   margin: 24px;
+}
+
+.wrapperText {
+   display: flex;
+   flex-direction: column;
+   height: 400px;
+   justify-content: space-around;
+   background: white;
+
+   .textSizes {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+   }
+}
+
+.coursMaterial_wrapper {
+   width: 500px;
+}
+
+.lessons_wrapper {
+   width: 625px;
+}
+
+
+
+.card-container_storybook {
+   height: 288px;
+   padding: 0 24px;
+}
+
+.dashboard-welcome_storybook {
+   padding: 24px;
+}
+
+.sidebar-item_storybook {
+   width: 300px;
+}
+
+.container {
+   display: flex;
+
+   .design-course {
+      width: 100%;
+      background-color: #f0f4f7;
+      box-shadow: inset 5px 0 13px -11px #333;
+
+      .design-course__content {
+         display: flex;
+         width: 100%;
+         padding: 24px 32px 24px;
+         box-sizing: border-box;
+         height: calc(100% - 122px);
+
+         .design-course__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex: 1;
+            border-right: 2px solid #c2cedb;
+            max-width: 40%;
+
+            .design-course__left-container {
+               margin-right: 24px;
+            }
+         }
+
+         .design-course__right {
+            flex: 1;
+            border-left: 1px solid #c2cedb;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .design-course__right-container {
+               margin-left: 24px
+            }
+         }
+
+         .plans {
+            flex: 7;
+            margin-right: 24px;
+
+            .plans__leftContainer {}
+         }
+
+         .planType {
+            flex: 3;
+
+            .planType__rightContainer {}
+         }
+
+      }
+   }
+}
+
+/* Main Hub styles */
+
+.mainHub-card_storybook {
+   width: 360px;
+}
+
+.main-content_storybook {
+   padding: 0 156px;
+   margin-top: 28px;
+}
+
+/* -------------------- */
+
+.storybook-element__wrapper {
+   padding: 24px;
+   display: flex;
+}
+
+// Pgae layout style
+.mainContainer {
+   display: flex;
+
+   .rightSide {
+      box-shadow: inset 5px 0 13px -11px #333;
+      width: 100%;
+   }
+}
+
+// ---------------------------------------------------
+.popupCardWrapper {
+   display: flex;
+   align-items: center;
+   margin: 24px;
+}
+
+.popupCard__size-default {
+   width: 100%;
+   max-width: 552px;
+}

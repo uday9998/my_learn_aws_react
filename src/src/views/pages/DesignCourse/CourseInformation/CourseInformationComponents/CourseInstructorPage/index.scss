@@ -1,0 +1,71 @@
+.course__intstructor__page{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+    .cropArea{
+        min-width: min-content;
+    }
+    &__tabs{
+        .tabs__line{
+            width: 100%;
+            gap: 24px;
+            .tabs__line__tab {
+               @media screen and (max-width: 1023px) {
+                  padding: 0 16px 8px 0;
+                  max-width: 100%;
+                  width: 50%;
+                  display: flex;
+                  justify-content: center;
+              }
+            }
+        }
+    }
+    .upload__media__image__view__change{
+        img{
+            max-height: 406px;
+            object-fit: contain;
+        }
+    }
+    &__inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: space-between;
+        height: 100%;
+        @media screen and (max-width: 1023px) {
+         width: 100%;
+         padding: 0 16px;
+     }
+        .top{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        &__block{
+            display: flex;
+            justify-content: center;
+        }
+        &__top{
+            display: flex;
+            gap: 16px;
+            align-items: flex-end;
+            @media screen and (max-width: 1023px) {
+               flex-direction: column;
+               button {
+                  width: 100%;
+               }
+            }
+            .SelectItem{
+                width: 100%;
+                .SelectItem__button__large{
+                    padding: 9.5px 16px;
+                }
+            }
+        }
+    }
+    button {
+      width: 100%;
+    }
+
+}

@@ -1,0 +1,132 @@
+.automation__header{
+   border-radius: 0 0 8px 8px;
+   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+   background-color: #ffffff;
+   display:flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 24px 32px;
+   > *{
+     flex: 1;
+   }
+   .automation__title {
+      display: flex;
+   }
+   button {
+      border-radius: 4px;
+   }
+   .automation__search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .automation__search__input {
+         margin-right: 16px;
+         input {
+            font-size: 16px;
+            width: 380px;
+         }
+      }
+   }
+   .automation__create {
+      display: flex;
+      justify-content: flex-end;
+   }
+}
+
+
+@media screen and (max-width: 1380px) {
+   .automation__header{
+      .automation__search {
+         .automation__search__input {
+            input {
+               width: auto;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1125px) {
+   .automation__header{
+      > *{
+         flex: none;
+       }
+      .automation__search {
+         .automation__search__input {
+            input {
+               width: 150px;
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 1023px) {
+   .automation__header {
+      margin-top: 67px;
+      flex-direction: column-reverse;
+      .automation__title {
+         display: none;
+      }
+      button {
+         border-radius: 4px;
+      }
+      .automation__search {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         .automation__search__input {
+            width: 100%;
+            margin-right: 0;
+            .custom__search__input {
+               box-sizing: border-box;
+               input {
+                  font-size: 16px;
+                  width: 100%;
+               }
+            }     
+         }
+      }
+      .automation__create {
+         display: flex;
+         justify-content: flex-end;
+         width: 100%;
+         margin-bottom: 12px;
+         .mediaLibrary__search__btn {
+            width: 100%;
+            button {
+               width: 100%;
+            }
+         }
+      }
+   }
+   .AutomationTable {
+      padding: 24px 12px;
+      .automation_content {
+         overflow: auto;
+         .itemWrapper {
+            min-width: 520px;
+         }
+         .automation_table_header{
+            :nth-child(3) {
+               max-width: 90px;
+            }
+            :nth-child(2) {
+               max-width: 90px;
+            }
+         }
+      }
+   }
+   .automation__item {
+      .automation_table_content {
+         :nth-child(3) {
+            max-width: 90px;
+         }
+         :nth-child(2) {
+            max-width: 90px;
+         }
+      }
+   }
+}
+

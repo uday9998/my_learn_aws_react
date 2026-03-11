@@ -1,0 +1,35 @@
+.emailstatus-page {
+    width: 100%;
+    .line {
+        background-color: #f0f4f7;
+        border-bottom: 2px solid #f0f4f7;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .settingTransaction__transaction_empty {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+     }
+     .d-none {
+        display: none;
+     }
+}
+
+.email-newmessage {
+   display: none;
+}
+
+@media screen and (max-width: 1023px) {
+   .emailstatus-page {
+      width: initial;
+   }
+
+   .email-newmessage {
+      display: flex;
+      margin: 16px;
+   }
+
+}
+

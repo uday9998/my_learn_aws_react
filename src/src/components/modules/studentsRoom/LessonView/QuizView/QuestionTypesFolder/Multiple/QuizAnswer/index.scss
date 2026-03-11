@@ -1,0 +1,182 @@
+.multiple_answer {
+   background-color: #fff;
+   margin-top: 12px;
+   .quizItem_answers_actions {
+      display: flex;
+      gap: 13px;
+      position: absolute;
+      right: 44px;
+      top: 53%;
+      transform: translate(0%, -50%);
+   }
+   .custom__textArea {
+      align-items: center;
+   }
+   &:hover {
+      .quizItem_answers_actions {
+         background: #F8FAFA;
+      }
+   }
+   .quizItem__answer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8px;
+      padding: 14px 8px;
+      gap: 12px;
+      position: relative;
+      .quizItem_number {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 50%;
+         height: 32px;
+         min-width: 32px;
+         cursor: pointer;
+      }
+
+      .quizItem_form {
+         position: relative;
+         flex: 1;
+         margin: 0;
+
+         .quizItem_checkbox {
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            height: 100%;
+            width: 48px;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #cddaf1;
+
+            .icon_checkbox_selected {
+               path {
+                  fill: #7cb740;
+               }
+            }
+
+            .CheckBox {
+               width: 21px;
+               height: 21px;
+            }
+         }
+
+         .quizItem_input {
+            position: relative;
+            top: 5px;
+            flex: 1;
+            .quizItem_delete {
+               position: absolute;
+               right: 0px;
+               top: 0px;
+               cursor: pointer;
+            }
+         }
+      }
+      .answer_actions {
+         display: flex;
+         gap: 13px;
+         align-items: center;
+         opacity: 0;
+          background: #F8FAFA;
+         .grey_divider {
+          background: #D9D9D9;
+          height: 24px;
+          width: 1px;
+         }
+         >div{
+            cursor: pointer;
+         }
+       }
+
+      .quizItem_bar {
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+      }
+      &:hover {
+         background: #F8FAFA;
+         .answer_actions {
+            opacity: 1;
+         }
+      }
+      textarea {
+         background: inherit;
+      }
+
+   }
+
+   .quizItem__answer__inActive {
+      border: 1px solid #E7E9E9;
+      .quizItem_number_filled {
+         background-color: #E7E9E9;;
+         border: 1px solid #E7E9E9;
+      }
+      .mark_correct {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         border: 1px solid #E7E9E9;
+         border-radius: 12px;
+         background: #FFFFFF;
+         padding: 8px 12px;
+         width: max-content;
+         cursor: pointer;
+         opacity: 0;
+         height: min-content;
+      }
+      &:hover {
+         .mark_correct {
+            opacity: 1;
+         }
+      }
+   }
+   .quizItem__answer__active {
+      border: 1px solid #36796F;
+       position: relative;
+      .quizItem_number {
+         background-color: #36796F;
+         border: 1px solid #36796F;
+      }
+
+      .mark_correct {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         border: 1px solid #E7E9E9;
+         border-radius: 12px;
+         background: #36796F;
+         padding: 8px 12px;
+         width: max-content;
+         cursor: pointer;
+         height: min-content;
+         opacity: 0;
+         svg path {
+            fill: #fff;
+         }
+      }
+      .correct_answer {
+         position: absolute;
+         top: 0px;
+         right: 0px;
+         background: #E8F2F1;
+         border-radius: 0px 7px 0px 4px;
+         padding: 0px 4px;
+      }
+      &:hover {
+         .mark_correct {
+            opacity: 1;
+         }
+         .correct_answer {
+            opacity: 0;
+         }
+      }
+   }
+
+}
+
+
+.answers_dropable {
+      background-color: #FFF;
+}

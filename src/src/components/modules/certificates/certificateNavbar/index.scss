@@ -1,0 +1,36 @@
+.certificate__navbar{
+    background: #FFFFFF;
+    min-height: calc(100vh - 81px);
+    border-right: 1px solid #E7E9E9;
+    &__item{
+        padding: 20px 15px 20px 24px;
+        display: flex;
+        min-width: 180px;
+        align-items: center;
+        gap: 16px;
+        cursor: pointer;
+        border-bottom: 1px solid #E7E9E9;
+        svg{
+            path{
+                fill:#131F1E ;
+            }
+        }
+    }
+    &__item__active{
+        padding: 20px 15px 20px 24px;
+        display: flex;
+        min-width: 180px;
+        cursor: pointer;
+        align-items: center;
+        gap: 16px;
+        background: #24554E;
+        span{
+            color: white;
+        }
+        svg{
+            path{
+                fill: white;
+            }
+        }
+    }
+}

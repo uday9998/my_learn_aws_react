@@ -1,0 +1,166 @@
+.account__plan {
+   padding: 0 !important;
+   width: 1000px;
+   .account__plan__modal {
+      display: flex;
+      .account__plan__modal__content_img {
+         background-image: url('~assets/images/plan/plan_modal.png');
+         background-repeat: no-repeat;
+         padding: 30px 60px;
+         box-sizing: border-box;
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         background-size: cover;
+         align-items: center;
+         justify-content: space-around;
+         gap: 16px;
+         img {
+            max-width: 100%;
+         }
+      }
+      .account__plan__modal__content {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         gap: 24px;
+         padding: 48px;
+         .card__buttons {
+            display: flex;
+            gap: 10px;
+         }
+         &__subtitle {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+         }
+      }
+      .account__plan__modal__content_card {
+         padding: 32px 25px;
+         width: 324px;
+         height: 179px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         top: -50px;
+         position: relative;
+         gap: 17px;
+         &_title {
+            box-shadow: 0px 3.14859px 15.74297px 0px rgba(18, 84, 210, 0.22);
+            background: #fff;
+            border-radius: 6.297px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 6px solid rgba(19, 31, 30, 0.10);
+         }
+      }
+      .card_Essential {
+         background-image: url('~assets/images/plan/card1.png');
+         background-repeat: no-repeat;
+         .account__plan__modal__content_card_title {
+        span {
+         color: #2585EB;
+         text-align: center;
+        }
+         }
+      }
+      .card_Surge {
+         background-image: url('~assets/images/plan/card2.png');
+         background-repeat: no-repeat;
+         .account__plan__modal__content_card_title {
+            span {
+               color: #9747FF;
+               text-align: center;
+            }
+
+         }
+      }
+      .card_Infinite {
+         background-image: url('~assets/images/plan/card3.png');
+         background-repeat: no-repeat;
+         .account__plan__modal__content_card_title {
+            span {
+               color: #DA47FF;
+               text-align: center;
+            }
+
+         }
+      }
+
+      .plan__template__top__price_content {
+         display: flex;
+         gap: 10px;
+         align-items: center;
+         justify-content: center;
+         .plan__template__top__price {
+            span {
+               color: #fff;
+            }
+         }
+         .plan__template__top__price_yearly {
+            transform: rotate(1.112deg);
+            background-color: #D0D2D2;
+            border-radius: 6.297px;
+            outline: 5px solid #fff;
+            box-shadow: 0px 0px 2.42892px 0px rgba(19, 31, 30, 0.10);
+            padding: 6px;
+            display: flex;
+            gap: 2px;
+            align-items: center;
+            span {
+               color: rgba(19, 31, 30, 0.6);
+            }
+         }
+      }
+   }
+   .account__plan__modal_change {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      span {
+         color: #fff;
+      }
+   }
+   .account__plan__modal__monthly__yearly {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      border-radius: 8.451px;
+      border: 1px solid #203547;
+      padding: 20px 50px;
+      box-sizing: border-box;
+      &__switcher {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 16px;
+      }
+   }
+
+}
+
+@media screen and (max-width: 1023px) {
+   .account__plan__modal {
+      flex-direction: column;
+   }
+   .account__plan .account__plan__modal .account__plan__modal__content_img {
+      width: 100%;
+      gap: 16px;
+   }
+   .account__plan .account__plan__modal .account__plan__modal__content {
+      width: 100%;
+   }
+   .account__plan .account__plan__modal .account__plan__modal__content_card {
+      top: 0px;
+   }
+}
+
+@media all and (max-width: 1026px) {
+   .modal__new__content.update_plan_wrapper {
+      width: 90%;
+      max-width: 400px;
+   }  
+}

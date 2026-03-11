@@ -1,0 +1,69 @@
+
+.domain__wrapper{
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   .domainSettings {
+      background: #FFFFFF;
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      margin: 24px 0;
+      padding: 19px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .domainStatus {
+         display: flex;
+         align-items: center;
+         gap: 5px;
+         padding-top: 3px;
+      }
+      .settings__domain {
+         width: 100%;
+      }
+      .tabs {
+         max-width: 335px;
+      }
+      .settings__subdomain {
+         display: flex;
+         align-items: center;
+         gap: 16px;
+         width: 100%;
+         margin-top: 24px;
+         span {
+            margin-top: 30px;
+            white-space: nowrap;
+         }
+         svg {
+            margin-top: 30px;
+            cursor: pointer;
+         }
+      }
+      .domain__createBtn {
+         margin-top: 32px;
+         justify-content: flex-start;
+         width: 100%;
+      }
+   }
+   .settings__domain {
+      width: 100%;
+      .settings__domain__title {
+         margin-top: 24px;
+         display: flex;
+         gap: 12px;
+         align-items: center;
+         justify-content: flex-start;
+      }
+      &__flex{
+         margin-top: 12px;
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+         width: 100%;
+         margin-bottom: 24px;
+      }
+   }
+
+}

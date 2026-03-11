@@ -1,0 +1,53 @@
+.landingSeo__settings {
+   width: 100%;
+   padding: 24px 40px 40px 40px;
+   box-sizing: border-box;
+   .drag-and-drop-container {
+      padding: 8px 0 0 0;
+      .dragImage  {
+         width: 95px;
+      }
+      span {
+         color: #8a94a2 !important;
+      }
+      .drag-and-drop-container__bordered {
+         border: 2px dashed rgb(219, 229, 243);
+         padding: 50px 0;
+         border-radius: 8px;
+      }
+  }
+  .landingSeo__settings__save {
+     margin-top: 24px;
+     display: flex;
+     justify-content: flex-end;
+     button {
+        &:last-child {
+           margin-left: 16px;
+           width: 150px;
+        }
+
+     }
+  }
+}
+
+
+
+@media screen and (max-width: 720px) {
+   .landingSeo__settings {
+      padding: 24px;
+      .landingSeo__settings__save {
+         flex-direction: column;
+         button {
+            width: 100&;
+            margin: 8px 0;
+            &:last-child {
+               margin-left: 0;
+               width: 100%;
+            }
+         }
+      }
+   }
+}
+
+
+

@@ -1,0 +1,68 @@
+.signUpCard {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 40px 40px 40px;
+
+   .signUpCard__content {
+      padding: 16px 0 16px 0;
+      width: 100%;
+
+      span {
+         display: block;
+         letter-spacing: normal;
+      }
+      label {
+         span {
+            &:last-of-type {
+               padding-top: 8px;
+            }
+         }
+      }
+   }
+
+   .btnsBlock {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+         width: 168px;
+         box-sizing: border-box;
+
+         &:first-of-type {
+            margin-right: 16px;
+         }
+      }
+   }
+
+   .signUpCard__blueBtn_float-right {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+         width: 290px;
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .course-signUp {
+      .settings__right {
+          margin-left: 0px;
+         .signUpCard {
+            padding: 0px;
+            .btnsBlock {
+               flex-direction: column-reverse;
+               button {
+                  margin: 0 0 16px 0!important;
+                  width: 100%!important;
+                  &:first-of-type {
+                     margin: 0!important;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,26 @@
+.certificate__custom__view{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__divider{
+        height: 1px;
+        width: 100%;
+        background-color: #E7E9E9;
+    }
+    .upload__view{
+       max-height:200px !important;
+    }
+    .upload__modal__content{
+        .upload__view{
+            height: 224px;
+        }
+    }
+    &__picker{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input{
+            min-width: min-content !important;
+        }
+    }
+}

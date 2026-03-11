@@ -1,0 +1,73 @@
+.customEditor {
+   [title=Blocks] {
+      border-left: 1px solid #ccc !important;
+      border-right: 1px solid #ccc !important;
+      border-radius: 0 !important;
+   }
+   [title=Fonts] {
+      border-right: 1px solid #ccc !important;
+      border-radius: 0 !important;
+   }
+   [title~=Justify] {
+      border-right: 1px solid #ccc !important;
+      border-radius: 0 !important;
+   }
+
+
+}
+.loaderOverlay ~ .tox {
+   display: none;
+}
+
+@media screen and (max-width: 1549px) and (min-width: 1499px) {
+   .customEditor {
+   [title~=Justify] {
+      border-right: none !important;
+   }
+ }
+}
+
+.customCode .tox-tinymce {
+   border: none;
+   height: 60px !important;
+}
+
+
+.customCode [aria-label="Source code"]::before {
+   content: 'Custom code';
+   position: relative;
+   top: 0px;
+   left: 0px;
+   font-size: 16px;
+}
+
+.customCode [aria-label="Source code"]  {
+   cursor: pointer;
+}
+
+.customCode .tox .tox-tbtn {
+   width: 100%;
+}
+
+
+.customCode .tox-statusbar, .customCode .tox-sidebar-wrap, .customCode .tox-edit-area , .customCode .tox-sidebar-wrap {
+   opacity: 0;
+   height: 0 !important;
+   border: none;
+   display: none !important;
+}
+
+.customCode {
+   height: 40px;
+}
+
+
+
+@media screen and (max-width: 1395px) and (min-width: 1344px) {
+   .customEditor {
+      [title=Fonts] {
+         border-right: none !important;
+         border-radius: 0 !important;
+      }
+ }
+}

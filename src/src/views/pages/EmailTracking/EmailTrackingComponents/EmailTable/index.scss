@@ -1,0 +1,67 @@
+.email__tracking__table {
+   margin-top: 32px;
+   background: #ffffff;
+   border: 1px solid #e7e9e9;
+   border-radius: 12px;
+   overflow-x: auto;
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   scrollbar-width: thin;
+   box-sizing: border-box;
+   position: relative;
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+   .lds-ring{
+      margin-top: 20px;
+   }
+   &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+   table {
+      width: 100%;
+   }
+   .email__sent {
+        background: #e8f2f1;
+        max-width: max-content;
+        display: flex;
+        align-items: center;
+        span{
+            display: flex;
+            align-items: center;
+            margin-bottom: -1.8px;
+        }
+        padding: 5px 8px;
+        gap: 4px;
+        border-radius: 8px;
+    }
+   th,
+   td {
+      padding: 10px 20px;
+      text-align: start;
+      span {
+         white-space: nowrap;
+      }
+   }
+   td {
+      border-top: 1px solid #e7e9e9;
+      span {
+         white-space: nowrap;
+      }
+   }
+   .email-col-large {
+      max-width: 140px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+   }
+}

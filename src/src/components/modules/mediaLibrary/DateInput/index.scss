@@ -1,0 +1,68 @@
+.custom__search__input{
+  border: 1px solid #cddaf1;
+  background-color: #fbfdff;
+  display: flex;
+  padding: 8px 16px;
+  height: min-content;
+  box-sizing: border-box;
+  max-height: 40px;
+  border-radius: 4px;
+  >span {
+    padding-top: 3px;
+  }
+  .custom__search__input__input{
+    background: none;
+    border:none !important;
+    color: #8a94a2;
+    width: 100%;
+    font-size: 12px;
+    font-family: Avenir Next regular;
+  }
+  .custom__search__input__icon{
+    background: none;
+    border: none;
+    outline: none;
+  }
+  .custom__search__input__input:focus{
+    background: none !important;
+    border:none !important;
+    outline: none;
+  }
+}
+.react-datepicker-wrapper {
+  display: flex;
+
+  input {
+     border: 1px solid #cddaf1;
+     box-sizing: border-box;
+     border-radius: 4px;
+     font-family: 'Avenir Next regular';
+     width: 100%;
+     line-height: 1.5;
+     letter-spacing: 0.4px;
+     font-size: 16px;
+     padding: 7px 16px;
+     background: #fbfdff;
+     font-weight: bold;
+     color: #3f4f65;
+  }
+
+  input:focus {
+     box-shadow: 0 0 0px 2px #7cb740;
+     border: 1px solid #fbfdff;
+     outline: none;
+  }
+}
+
+.custom_date_input_wrapper{
+  color: #8a94a2;
+  position: relative;
+  .custom_date_input_wrapper__date {
+    position: absolute;
+    z-index: 1;
+  }
+  &:focus {
+    outline: none;
+    background: none;
+  }
+}

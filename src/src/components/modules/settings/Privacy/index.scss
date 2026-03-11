@@ -1,0 +1,46 @@
+.privacy {
+
+   .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+      border-color: #cddaf1;
+      background: #fbfdff;
+      border-radius: 0 0 4px 4px;
+      outline: none;
+
+  }
+  .ck.ck-editor__main>.ck-editor__editable.ck-focused {
+      box-shadow: 0 0 0px 1px #7cb740 inset;
+      outline: none;
+      background: #fbfdff;
+      border-radius: 0 0 4px 4px;
+      border-color: #7cb740;
+  }
+
+  .ck.ck-toolbar {
+      border: 1px solid  #cddaf1;
+      background: #f5faff;
+  }
+
+  .ck.ck-button .ck-tooltip, a.ck.ck-button .ck-tooltip {
+     display: none;
+  }
+  .ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar {
+   border-radius: 4px 4px 0px 0px;
+   height: 48px;
+  }
+  .ck.ck-sticky-panel .ck-sticky-panel__content_sticky {
+     position: relative;
+  }
+  .ck-file-dialog-button {
+   display: none;
+}
+}
+
+.privacy__btns {
+   display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    width: 100%;
+    >div:first-of-type {
+       margin-right: 16px;
+    }
+}

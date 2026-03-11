@@ -1,0 +1,37 @@
+.plans__view{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-bottom: 24px;
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        &__left{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            &__line{
+                background: rgba(19, 31, 30, 0.2);
+                transform: rotate(90deg);
+                height: 1px;
+                width: 20px;
+            }
+            &__flex{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                &__actions{
+                    display: flex;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+    &__next__page__loader {
+        width: 100%;
+        padding: 16px;
+        position: relative;
+    }
+}

@@ -1,0 +1,65 @@
+trix-toolbar{
+    display: none;
+}
+.trix-content{
+    border: none;
+}
+.trix-custom-editor{
+    .cropArea{
+        min-width: min-content;
+    }
+    &-file{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .upload__with__media__content{
+        width: 720px;
+    }
+    &-toolbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 12px;
+        gap: 10px;
+        &-emojis{
+            position: absolute;
+            bottom: 100%;
+            left: 10%;
+        }
+        &-item{
+           display: flex;
+            cursor: pointer;
+        }
+    }
+}
+.trix__add__link{
+    min-width: 514px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__button{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    @media all and (max-width: 1024px) {
+        min-width: auto;
+    }
+}
+.trix-custom-editor{
+}
+.custom-popover{
+    .MuiPopover-paper{
+        padding: 1px;
+    }   
+}
+.trix-content:empty::before {
+    content: attr(placeholder);
+    color: rgb(114, 121, 120);
+}

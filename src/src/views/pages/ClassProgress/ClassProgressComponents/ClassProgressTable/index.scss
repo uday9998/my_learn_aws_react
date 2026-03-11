@@ -1,0 +1,65 @@
+.class__progress__table__container {
+   max-height: 388px;
+   overflow: auto;
+   margin-top: 32px;
+   .class__progress__table{
+      border-radius: 12px;
+      overflow: auto;
+      width: 100%;
+      background-color: #fff;
+      max-height: 388px;
+      overflow: auto;
+      border-collapse: collapse;
+      thead,tbody{
+         width: 100%;
+      }
+      thead tr  {
+         border-bottom: 1px solid #E7E9E9;
+         border-collapse: collapse;
+      }
+      tbody tr {
+         border-bottom: 1px solid #E7E9E9;
+         border-collapse: collapse;
+         &:last-child {
+            border: none;
+         }
+       }
+      .t-right{
+         text-align: end;
+      }
+      th{
+         padding: 12px 20px;
+         text-align: start;
+         white-space: nowrap;
+      }
+      td{
+         padding: 12px 20px;
+         text-align: start;
+         white-space: nowrap;
+         width: calc(100%/5);
+      }
+      .table-col-2{
+         max-width: 94%;
+         width: 94%;
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         span{
+            word-break: keep-all;
+         }
+      }
+      .table-col-3{
+         max-width: 9.7%;
+         width: 9.7%;
+      }
+      .table-col-1{
+         max-width: 18.45%;
+         width: 18.45%;
+         span{
+            cursor: pointer;
+            text-decoration: underline;
+         }
+      }
+   }
+
+}

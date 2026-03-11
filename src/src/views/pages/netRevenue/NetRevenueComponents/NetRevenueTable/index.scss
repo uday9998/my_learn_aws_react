@@ -1,0 +1,28 @@
+.net-revenue-table{
+    background: #FFFFFF;
+    margin-top: 32px;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    overflow-y: auto;
+    &-header{
+        border-bottom: 1px solid #E7E9E9;
+        display: flex;
+    }
+    &-item{
+        width: 20%;
+        text-align: end;
+        padding: 12px 20px;
+        min-width: max-content;
+    }
+    &-line{
+        border-bottom: 1px solid #E7E9E9;
+        display: flex;
+    }
+    &-item-start{
+        text-align: start;
+    }
+
+    span {
+        white-space: nowrap;
+    }
+}

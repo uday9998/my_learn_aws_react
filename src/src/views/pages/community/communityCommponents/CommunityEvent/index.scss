@@ -1,0 +1,120 @@
+.community__event {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 0px;
+   gap: 16px;
+   max-width: 600px;
+   &__content__wrapper {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e7e9e9;
+    border-radius: 12px;
+    gap: 16px;
+    width: 100%;
+
+    &__actions {
+        display: flex;
+
+        .text-with-icon {
+            padding: 4px;
+            border-radius: 4px;
+            height: 20px;
+        }
+    }
+}
+
+   &__content {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    //   padding: 20px;
+      gap: 8px;
+      background: #ffffff;
+    //   border: 1px solid #e7e9e9;
+      width: 100%;
+    //   border-radius: 12px;
+      @media screen and (max-width: 1200px) {
+       gap: 16px;
+      }
+      &__image {
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+      }
+      img{
+        max-width: 600px;
+        width: auto;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        @media all and (max-width: 1024px) {
+            max-width: 100%;
+        }
+
+      }
+      span{
+         // white-space: nowrap;
+      }
+      &__texts{
+          display: flex;
+          gap: 8px;
+          flex-direction: column;
+          width: 100%;
+          &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            &__left {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+          }
+      }
+      .status__simple{
+          span{
+              &::first-letter{
+                  text-transform: uppercase;
+              }
+          }
+      }
+      &__type{
+          display: flex;
+          align-items: center;
+          gap: 12px;
+      }
+      &__bottom{
+          display: flex;
+          align-items: center;
+          margin-top: 4px;
+          gap: 12px;
+          flex-wrap: wrap;
+          @media screen and (max-width: 1200px) {
+            // flex-direction: column;
+            // align-items: flex-start;
+          }
+      }
+      &__edit{
+          display: flex;
+          gap: 16px;
+          margin-left: auto;
+          align-items: center;
+          span {
+            white-space: nowrap;
+          }
+      }
+   }
+
+   @media all and (max-width: 1024px) {
+        &__content {
+         padding: 12px;
+         gap: 12px;
+         flex-wrap: wrap;
+        }
+   }
+}

@@ -1,0 +1,39 @@
+.poll__drag__item{
+    z-index: 99999;
+    &__icon{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+    &__right{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    input{
+        border: none;
+        line-height: 168%;
+        font-size: 14px;
+        font-weight: 400;
+        outline: none;
+        border-radius: 8px;
+        padding: 4px 8px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+.trix-custom-editor{
+    .modal__new__background{
+        z-index: 999;
+    }   
+    .modal__new__content{
+        z-index: 1000;
+    }   
+}

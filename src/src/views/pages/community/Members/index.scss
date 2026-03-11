@@ -1,0 +1,113 @@
+.room__members__view{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__bottom{
+        display: flex;
+        gap: 24px;
+        &__content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 22px; 
+            &__left{
+                display: flex;
+                gap: 32px;
+                flex-direction: column;
+            }
+        }
+        &__filter{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @media all and (max-width: 1024px) {
+                padding: 0 20px;
+             }
+            .right{
+                gap: 15px;
+                display: flex;
+                align-content: center;
+                flex-wrap: wrap;
+                .drop__triggle__icon{
+                    padding: 7px;
+                }
+            }
+        }
+    }
+    .viewMode{
+        padding: 4px;
+        min-height: 36px;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        background: white;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        .viewModeBox{
+            padding: 6px 6px 4px 6px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s linear;
+            svg{
+                path{
+                    fill: #24554E;
+                }
+            }
+        }
+        .viewModeActive{
+            background-color: #24554E;
+            svg{
+                path{
+                    fill: white;
+                }
+            }
+        }
+    }
+    .verticalLine{
+        margin: 6px 0;
+        border-left: 1px solid #e7e9e9;
+    }
+    .room__members__view__top__flex{
+        flex-direction: row;
+        width: 100%;
+        @media all and (max-width: 700px) {
+            flex-wrap: wrap;
+            .inputSearch  {
+                max-width: 500px;
+            }
+         }
+        .community__white__background{
+            display: flex;
+        }
+    }
+
+    .community__top {
+        display: flex;
+        color: #36796f;
+        grid-gap: 20px;
+        grid-gap: 20px;
+        gap: 20px;
+        align-items: center;
+        padding: 12px;
+        background: white;
+        border-radius: 12px;
+        border: 1px solid #e7e9e9;
+    }
+    .community_message_with_icon {
+        cursor: pointer;
+        width: 80px;
+    }
+    .notification-popover .text-with-icon {
+        padding: 12px 16px;
+    }
+}
+
+
+

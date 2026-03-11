@@ -1,0 +1,50 @@
+.LinkView {
+   display: flex;
+   gap: 16px;
+   @media (max-width: 1023px) {
+      max-width: 100%;
+   }
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: center;
+      @media (max-width: 1023px) {
+         max-width: 100%;
+      }
+      &__text {
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         @media (max-width: 1023px) {
+            max-width: calc(100% - 80px);
+         }
+      }
+      &__actions {
+         display: flex;
+         div {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+         }
+      }
+   }
+   &__bottom {
+      width: 100%;
+   }
+}
+
+
+.LinkView_oneLine {
+   flex-direction: row;
+   @media only screen and (max-width: 1250px) {
+       flex-wrap: wrap;
+   }
+}
+
+.LinkView_twoLine {
+   flex-direction: column;
+}

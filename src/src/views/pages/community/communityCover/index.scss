@@ -1,0 +1,23 @@
+.community__right__info__header {
+    max-width: 360px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .status__simple {
+        padding: 4px 6px;
+        border-radius: 12px;
+    }
+   img {
+     width: 100%;
+     max-height: 250px;
+     min-height: 200px;
+     object-fit: cover;
+     border-radius: 12px;
+   }
+   &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+   }
+}

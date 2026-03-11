@@ -1,0 +1,76 @@
+.uploadImg__container {
+   flex: 1;
+   .video_thumbnail {
+      display: flex;
+      justify-content: space-between;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      padding: 17px 35px;
+      align-items: center;
+      .delete_btn {
+         margin-top: 5px;
+      }
+   }
+   .uploadImg {
+      margin-bottom: 16px;
+      width: 100%;
+      align-items: center;
+      display: flex;
+
+      img {
+         width: 100%;
+         max-width: 250px;
+         height: 100%;
+      }
+   }
+
+   .uploadcare_widget {
+      display: none;
+   }
+
+    .uploadProgress__content {
+      margin-bottom: 15px;
+    }
+
+   .uploadcare_widget {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+     .uploadcare--widget__button_type_open {
+        &:focus {
+           outline: none;
+        }
+        display: none;
+     }
+     .uploadcare--widget__button_type_cancel {
+
+      display: none;
+     }
+     #uploadcare--widget__text {
+        display: none;
+     }
+     .uploadcare--widget__progress {
+      //   position: absolute !important;
+      //    left: 50%;
+      //    top: 64%;
+      }
+      .uploadcare--progress_type_canvas {
+         color: #7cb740;
+         margin: 10px 0 20px 0;
+         display: none;
+      }
+  }
+}
+
+
+@media screen and (max-width: 1150px) and (min-width: 1024px) {
+   .uploadImg__container {
+   .video_thumbnail {
+      button {
+         font-size: 14px;
+         padding: 4px;
+      }
+   }
+}
+}

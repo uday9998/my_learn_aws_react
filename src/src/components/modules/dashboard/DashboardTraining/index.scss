@@ -1,0 +1,28 @@
+.welcomeDashboardTraining {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   img {
+      max-width: 100%;
+      cursor: pointer;
+   }
+   .training {
+      display: block;
+   }
+   .mobiletraining {
+      display: none;
+   }
+}
+
+
+@media screen and (max-width: 1023px) {
+   .welcomeDashboardTraining {
+      .training {
+          display: none;
+      }
+      .mobiletraining {
+         display: block;
+
+      }
+   }
+}

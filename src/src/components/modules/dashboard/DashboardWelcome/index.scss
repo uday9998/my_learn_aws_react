@@ -1,0 +1,19 @@
+.welcomeDashboard {
+   display: flex;
+   margin-bottom: 8px;
+   @media screen and (max-width: 1023px) {
+     justify-content: center;
+   }
+   .welcomeDashboard__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+         margin-right: 12px;
+      }
+
+      // .textBasic_type_mediumSmallInter {
+      //    font-weight: 800;
+      // }
+   }
+}

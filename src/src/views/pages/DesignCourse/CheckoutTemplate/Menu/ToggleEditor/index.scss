@@ -1,0 +1,26 @@
+.toggleEditorContainer {
+   position: fixed;
+   top: 15vh;
+   background-color: white;
+   z-index: 11000;
+   background: #FFFFFF;
+   border: 1px solid #E7E9E9;
+   border-radius: 0px 16px 16px 0px;
+   cursor: pointer;
+   width: 25px;
+   height: 36px;
+   display: flex;
+   align-items: center;
+   svg {
+      fill: rgba(0,0,0,.6);
+   }
+   &::after{
+      position: fixed;
+      content: '';
+      top: 15vh;
+      background-color: #fff;
+      width: 2px;
+      height: 36px;
+      margin-left: -1px;
+   }
+}

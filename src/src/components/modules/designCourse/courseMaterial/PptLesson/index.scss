@@ -1,0 +1,109 @@
+.pptLesson {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 40px;
+   .dynamicWrapper {
+      span {
+         font-family: 'Avenir Next';
+      }
+   }
+   .pptContent{
+      margin-top: 24px;
+      width: 100%;
+   }
+   .pdfLesson__show {
+      width: 100%;
+      height: 400px;
+      margin-top: 24px;
+
+      iframe {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .ppt-title{
+      margin-bottom: 20px;
+   }
+   .uploadcare_widget {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     .uploadcare--widget__button_type_open {
+        &:focus {
+           outline: none;
+        }
+        display: none;
+     }
+     .uploadcare--widget__button_type_cancel {
+
+      display: none;
+     }
+     #uploadcare--widget__text {
+        display: none;
+     }
+     .uploadcare--widget__progress {
+        position: absolute !important;
+         left: 50%;
+         top: 64%;
+      }
+      .uploadcare--progress_type_canvas {
+         color: #7cb740;
+         display: none;
+      }
+  }
+
+   .pptLesson__fields {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .pptLesson__buttons {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 24px;
+   }
+
+}
+.pdfLesson__loader{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+@media screen and (max-width: 1130px) and (min-width: 1024px) {
+   .pptLesson {
+      .pptLesson__buttons {
+         button {
+            min-width: 65px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .pptLesson {
+      padding: 0;
+      height: 100%;
+      justify-content: space-between;
+
+      .pptLesson__buttons {
+         display: flex;
+         flex-direction: column-reverse;
+         width: 100%;
+         margin-top: 16px;
+
+         div {
+           // width: 100%;
+            button {
+               width: 100%;
+            }
+         }
+         button {
+            width: 100%;
+            margin-bottom: 12px;
+         }
+      }
+   }
+}

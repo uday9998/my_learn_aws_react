@@ -1,0 +1,11 @@
+.addSection {
+   display: flex;
+   flex-direction: column;
+   padding: 16px 40px;
+}
+
+@media screen and (max-width:720px) {
+   .addSection {
+      padding: 16px 24px;
+   }
+}

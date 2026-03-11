@@ -1,0 +1,21 @@
+.seoCheckout {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 32px;
+
+   .seoBtn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+
+   .drag-and-drop-container {
+      margin-top: 8px;
+      padding: 0;
+      margin-bottom: 40px;
+      img {
+         margin: 0 auto;
+         display: block;
+      }
+   }
+}

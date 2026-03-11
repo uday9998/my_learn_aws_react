@@ -1,0 +1,197 @@
+.d-checkout  {
+   display: flex;
+   justify-content: space-between;
+   box-sizing: border-box;
+   overflow-y: auto;
+   max-height: 100vh;
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   scrollbar-width: thin;
+
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+
+   >div {
+      width: 100%;
+      height: 100%;
+   }
+   .left_container {
+      position: absolute;
+      max-height: 70vh;
+      overflow: auto;
+      width: 300px;
+      scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+      scrollbar-width: thin;
+
+      &::-webkit-scrollbar-track {
+         border-radius: 10px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar {
+         width: 5px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+         border-radius: 3px;
+         box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         background-color: rgb(226, 226, 226);
+      }
+      .editor__sections {
+         background-color: #7cb740;
+         border-radius: 4px;
+         padding: 12px 16px;
+         margin-bottom: 8px;
+      }
+   }
+   #right_container {
+      padding-left: 320px;
+      width: 100%;
+      box-sizing: border-box;
+   }
+
+   & .template4 {
+      padding-top: 32px;
+   }
+}
+
+
+@media  screen and  (max-width: 1330px) {
+   .checkoutPage {
+      .checkoutPage-content {
+         .checkoutPage-left {
+            margin-right: 30px;
+         }
+         .checkoutPage-right {
+           max-width: 500px;
+         }
+      }
+   }
+
+   .checkoutPageSecond {
+      .checkoutPageSecond-content {
+         .checkoutPageSecond-left {
+            max-width: 500px;
+         }
+      }
+   }
+
+   .checkoutPageThird {
+      .checkoutPageThird-content {
+         .checkoutPageThird-left {
+            max-width: 500px;
+         }
+      }
+   }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+   .checkoutPage {
+      padding: 0 40px;
+      .checkoutPage-content {
+         .checkoutPage-left {
+            max-width: 50%;
+         }
+         .checkoutPage-right {
+            max-width: 50%;
+         }
+      }
+   }
+
+   .checkoutPageSecond {
+      .checkoutPageSecond-content {
+         .checkoutPageSecond-left {
+            max-width: 50%;
+         }
+         .checkoutPageSecond-right {
+            max-width: 50%;
+         }
+      }
+   }
+
+   .checkoutPageThird {
+      .checkoutPageThird-content {
+         .checkoutPageThird-left {
+            max-width: 50%;
+         }
+         .checkoutPageThird-right {
+            max-width: 50%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .checkoutPage {
+      padding: 0 16px;
+      .checkoutPage-content {
+         flex-direction: column;
+         align-items: center;
+         .checkoutPage-left {
+            max-width: 500px;
+            margin-right: 0;
+         }
+         .checkoutPage-right {
+            max-width: 576px;
+         }
+         .checkoutPage-rightContent {
+            padding: 16px;
+         }
+      }
+   }
+
+   .checkoutPageThird {
+      .checkoutPageThird-content {
+         flex-direction: column-reverse;
+         align-items: center;
+         .checkoutPageThird-left {
+            max-width: 680px;
+            margin-right: 0;
+            width: 100%;
+         }
+         .checkoutPageThird-right {
+            max-width: 560px;
+            width: 100%;
+         }
+         .checkoutPageThird-leftContent {
+            padding: 12px;
+         }
+      }
+   }
+
+   .checkoutPageSecond {
+      .checkoutPageSecond-content {
+         flex-direction: column-reverse;
+         align-items: center;
+         .checkoutPageSecond-left {
+            max-width: 680px;
+            margin-right: 0;
+            width: 100%;
+         }
+         .checkoutPageSecond-right {
+            max-width: 560px;
+            width: 100%;
+         }
+         .checkoutPageSecond-leftContent {
+            padding: 12px;
+         }
+      }
+   }
+}

@@ -1,0 +1,80 @@
+.summaryText {
+   margin-bottom: 16px;
+
+   span {
+      letter-spacing: normal;
+   }
+}
+
+.summaryTotal {
+   display: flex;
+
+   justify-content: space-between;
+
+   span {
+      display: block;
+   }
+}
+
+.courseContent {
+   display: flex;
+   margin-bottom: 16px;
+
+   .imgBlock {
+      display: flex;
+      align-items: flex-start;
+
+      img {
+         object-fit: cover;
+         border-radius: 3px;
+         margin-right: 32px;
+         width: 164px;
+         height: 80px;
+      }
+   }
+
+   .couponsContainer {
+      flex: 1 1;
+
+      .couponField {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 8px;
+
+         .couponCode {
+            display: flex;
+            //align-items: center;
+         }
+      }
+
+      .couponBtn {
+         margin-left: 4px;
+         margin-top: -2px;
+
+         span {
+            text-decoration: underline;
+            cursor: pointer;
+         }
+      }
+
+      .applyCouponBtn {
+         span {
+            float: right;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .courseContent {
+      display: block;
+
+      .couponsContainer {
+         margin-top: 16px;
+      }
+
+      .couponBtn {
+         margin-bottom: 60px;
+      }
+   }
+}

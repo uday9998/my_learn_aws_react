@@ -1,0 +1,43 @@
+.nav {
+   flex: 1;
+   .nav__items {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+      padding: 0;
+   }
+   .page-builder {
+      display: block;
+   }
+}
+@media screen and (max-width: 1023px) {
+   .nav {
+      width: 100%;
+      .nav__items {
+         overflow-x: scroll;
+         .navItem {
+            .navItem__link {
+               width: max-content;
+            }
+         }
+      }
+      .page-builder {
+         display: none;
+      }
+   }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+   .nav {
+      .page-builder {
+         display: none;
+      }
+   }
+ }
+ @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+   .nav {
+      .page-builder {
+         display: block;
+      }
+   }
+ }

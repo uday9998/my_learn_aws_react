@@ -1,0 +1,324 @@
+// AssistantSelectionModal.scss
+
+// Variables
+$blue: #2563EB;
+$purple: #6A36DF;
+$light-gray: #f5f7fa;
+$medium-gray: #e5e7eb;
+$dark-gray: #64748b;
+$black: #111827;
+$white: #ffffff;
+$box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+$transition: all 0.2s ease;
+$border-radius: 8px;
+
+// Modal overlay (background)
+.assistant-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+// Modal container
+.assistant-modal {
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 32px;
+  animation: modal-appear 0.3s ease-out;
+}
+
+.assistant-modal-header {
+  text-align: center;
+  margin-bottom: 32px;
+
+  .ai-powered-label {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba($blue, 0.1);
+    color: $blue;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+
+    .sparkle-icon {
+      margin-right: 6px;
+    }
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: $black;
+    margin: 0 0 12px 0;
+  }
+
+  .subheading {
+    font-size: 16px;
+    color: $dark-gray;
+    margin: 0;
+  }
+}
+
+.assistant-options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.assistant-option {
+  background-color: $white;
+  border: 1px solid $medium-gray;
+  border-radius: $border-radius;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.assistant-icon {
+  margin-bottom: 16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.content-icon {
+    background-color: rgba($blue, 0.1);
+  }
+
+  &.community-icon {
+    background-color: rgba($purple, 0.1);
+  }
+}
+
+.assistant-details {
+  margin-bottom: 24px;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $black;
+    margin: 0 0 4px 0;
+  }
+
+  p {
+    font-size: 14px;
+    color: $dark-gray;
+    margin: 0;
+  }
+}
+
+.assistant-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.assistant-action-button {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid $medium-gray;
+  border-radius: $border-radius;
+  background-color: $white;
+  transition: $transition;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: left;
+  color: $black;
+
+  svg {
+    margin-right: 8px;
+    color: $dark-gray;
+  }
+
+  &:hover {
+    background-color: $light-gray;
+    border-color: darken($medium-gray, 5%);
+  }
+}
+
+.assistant-capabilities {
+  background-color: $light-gray;
+  border-radius: $border-radius;
+  padding: 16px;
+  margin-top: auto;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: $dark-gray;
+    margin: 0 0 12px 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: $black;
+
+      svg {
+        margin-right: 8px;
+        flex-shrink: 0;
+      }
+
+      &:first-child svg path {
+        fill: $blue;
+        stroke: $blue;
+      }
+
+      &:nth-child(2) svg path {
+        fill: $purple;
+        stroke: $purple;
+      }
+
+      &:nth-child(3) svg path {
+        fill: $blue;
+        stroke: $blue;
+      }
+
+      &:nth-child(4) svg path {
+        fill: $purple;
+        stroke: $purple;
+      }
+    }
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid $medium-gray;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: $dark-gray;
+  transition: $transition;
+
+  &:hover {
+    background-color: $light-gray;
+    color: $black;
+  }
+}
+
+// Animation
+@keyframes modal-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Responsiveness
+@media (max-width: 768px) {
+  .assistant-options-container {
+    grid-template-columns: 1fr;
+  }
+
+  .assistant-modal {
+    padding: 24px 16px;
+  }
+}
+
+/* Existing styles would be here */
+
+/* Get Started Button */
+.get-started-button {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 20px;
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+  text-align: center;
+}
+
+.get-started-button:hover {
+  background-color: #1D4ED8;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.3);
+}
+
+.get-started-button:active {
+  background-color: #1E40AF;
+  transform: translateY(1px);
+}
+
+/* Coming Soon Label */
+.assistant-option {
+  position: relative;
+}
+
+.coming-soon-label {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  background-color: #FF6B00;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* Optional: Add a subtle opacity to indicate the Community Assistant is disabled */
+.assistant-option:has(.coming-soon-label) {
+  opacity: 0.85;
+}
+
+.assistant-option:has(.coming-soon-label) .assistant-action-button {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Make the action buttons in the disabled assistant more subtle */
+.assistant-option:has(.coming-soon-label) .assistant-actions {
+  pointer-events: none;
+}

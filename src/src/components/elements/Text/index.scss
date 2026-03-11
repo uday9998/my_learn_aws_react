@@ -1,0 +1,346 @@
+// // @font-face {
+// //    font-family: 'Lato';
+// //    src: url('~assets/fonts/Lato/Lato-ExtraBold.ttf');
+// //    src: local('Lato-ExtraBold'), local('Lato-ExtraBold'),
+// //        url('~assets/fonts/Lato/Lato-ExtraBold.ttf?#iefix') format('embedded-opentype'),
+// //        url('~assets/fonts/Lato/Lato-ExtraBold.ttf') format('woff2'),
+// //        url('~assets/fonts/Lato/Lato-ExtraBold.ttf') format('woff'),
+// //        url('~assets/fonts/Lato/Lato-ExtraBold.ttf') format('truetype');
+// //    font-weight: 800;
+// //    font-style: normal;
+// // }
+
+// @font-face {
+//    font-family: 'Lato';
+//    src: url('~assets/fonts/Lato/Lato-Heavy.eot');
+//    src: local('Lato Heavy'), local('Lato-Heavy'),
+//        url('~assets/fonts/Lato/Lato-Heavy.eot?#iefix') format('embedded-opentype'),
+//        url('~assets/fonts/Lato/Lato-Heavy.woff2') format('woff2'),
+//        url('~assets/fonts/Lato/Lato-Heavy.woff') format('woff'),
+//        url('~assets/fonts/Lato/Lato-Heavy.ttf') format('truetype');
+//    font-weight: 800;
+//    font-style: normal;
+// }
+
+// @font-face {
+//    font-family: 'Lato';
+//    src: url('~assets/fonts/Lato/Lato-Semibold.eot');
+//    src: local('Lato Semibold'), local('Lato-Semibold'),
+//        url('~assets/fonts/Lato/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+//        url('~assets/fonts/Lato/Lato-Semibold.woff2') format('woff2'),
+//        url('~assets/fonts/Lato/Lato-Semibold.woff') format('woff'),
+//        url('~assets/fonts/Lato/Lato-Semibold.ttf') format('truetype');
+//    font-weight: 600;
+//    font-style: normal;
+// }
+
+
+// @font-face {
+//    font-family: 'Lato';
+//    src: url('~assets/fonts/Lato/Lato-Bold.eot');
+//    src: local('Lato Bold'), local('Lato-Bold'),
+//        url('~assets/fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+//        url('~assets/fonts/Lato/Lato-Bold.woff2') format('woff2'),
+//        url('~assets/fonts/Lato/Lato-Bold.woff') format('woff'),
+//        url('~assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+// }
+
+// @font-face {
+//    font-family: 'Lato';
+//    src: url('~assets/fonts/Lato/Lato-Regular.eot');
+//    src: local('Lato Regular'), local('Lato-Regular'),
+//        url('~assets/fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+//        url('~assets/fonts/Lato/Lato-Regular.woff2') format('woff2'),
+//        url('~assets/fonts/Lato/Lato-Regular.woff') format('woff'),
+//        url('~assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+//    font-weight: normal;
+//    font-style: normal;
+// }
+
+// @font-face {
+//    font-family: 'Lato';
+//    src: url('~assets/fonts/Lato/Lato-Medium.eot');
+//    src: local('Lato Medium'), local('Lato-Medium'),
+//        url('~assets/fonts/Lato/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+//        url('~assets/fonts/Lato/Lato-Medium.woff2') format('woff2'),
+//        url('~assets/fonts/Lato/Lato-Medium.woff') format('woff'),
+//        url('~assets/fonts/Lato/Lato-Medium.ttf') format('truetype');
+//    font-weight: 500;
+//    font-style: normal;
+// }
+
+
+// @font-face {
+//    font-family: 'Avenir Next';
+//    src: url('~assets/fonts/AvenirNextLTPro-Demi.otf');
+//    /* IE9 Compat Modes */
+//    src: url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('embedded-opentype'),
+//       /* IE6-IE8 */
+//       url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('woff2'),
+//       /* Super Modern Browsers */
+//       url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('woff'),
+//       /* Pretty Modern Browsers */
+//       url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('truetype'),
+//       /* Safari, Android, iOS */
+//       url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('svg');
+//    /* Legacy iOS */
+// }
+
+// @font-face {
+//    font-family: 'Avenir Next Bold';
+//    src: url('~assets/fonts/AvenirNextLTPro-Bold.otf');
+// }
+
+// @font-face {
+//    font-family: 'Avenir Next Heavy';
+//    src: url('~assets/fonts/AvenirNextCyr-Heavy.ttf');
+// }
+
+
+// @font-face {
+//    font-family: 'Avenir Next regular';
+//    src: url('~assets/fonts/AvenirNextLTPro-Regular.otf');
+// }
+
+// @font-face {
+//    font-family: 'Avenir Next DemiBold';
+//    src: url('~assets/fonts/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+//        url('~assets/fonts/AvenirNextCyr-Demi.woff2') format('woff2'),
+//        url('~assets/fonts/AvenirNextCyr-Demi.woff') format('woff'),
+//        url('~assets/fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+//    font-weight: bold;
+//    font-style: normal;
+// }
+
+// // @font-face {
+// // 	font-family: 'Avenir Next Demi Bold';
+// // 	src: url('~assets/fonts/AvenirNextCyr-Demi.eot');
+// // 	src: url('~assets/fonts/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+// // 	url('~assets/fonts/AvenirNextCyr-Demi.woff') format('woff'),
+// // 	url('~assets/fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+// // 	font-weight: normal;
+// // 	font-style: normal;
+// // }
+
+// @font-face {
+//    font-family: 'Avenir Black';
+//    src: url('~assets/fonts/Avenir-Black.otf');
+// }
+
+// @font-face {
+//    font-family: 'Avenir Next Medium';
+//    src: url('~assets/fonts/AvenirNextCyr-Medium.ttf');
+// }
+
+// .textBasic {
+//    font-style: normal;
+//    font-stretch: normal;
+//    letter-spacing: normal;
+//    -webkit-touch-callout: none;
+//    -webkit-user-select: none;
+//     -khtml-user-select: none;
+//       -moz-user-select: none;
+//        -ms-user-select: none;
+//            user-select: none;
+
+// }
+
+// .textBasic_type_normal {
+//    font-weight: 400;
+//    font-size: 14px;
+//    line-height: 168%;
+//    font-feature-settings: "tnum" on, "lnum" on;
+//    color: #131f1e;
+//    text-align: start;
+//    font-family: 'Inter';
+// }
+
+// .textBasic_type_medium {
+//    font-family: 'Avenir Next Medium';
+//    font-weight: 500;
+// }
+
+// .textBasic_type_bold {
+//    font-family: 'Avenir Next bold';
+//    font-weight: 900;
+// }
+
+// .textBasic_type_regular {
+//    font-family: 'Avenir Next regular';
+//    font-weight: 500;
+// }
+
+// .textBasic_type_heavy {
+//    font-family: 'Avenir Next heavy';
+// }
+
+// .textBasic_type_demiBold {
+//    font-family: 'Avenir Next DemiBold';
+// }
+
+// .textBasic_type_black {
+//    font-family: 'Avenir Black';
+// }
+
+// .textBasic_type_robot_normal {
+//    font-family: 'Inter';
+//    font-weight: 200;
+// }
+
+// .textBasic_type_robot_bold {
+//    font-family: 'Inter';
+//    font-weight: 300;
+// }
+
+// .textBasic_type_robot_regular {
+//    font-family: 'Inter';
+//    font-weight: 400;
+// }
+
+// .textBasic_type_robot_heavy {
+//    font-family: 'Inter';
+//    font-weight: 600;
+// }
+
+// .textBasic_type_robot_demiBold {
+//    font-family: 'Inter';
+//    font-weight: 700;
+// }
+// .textBasic_type_robot_black {
+//    font-family: 'Inter';
+//    font-weight: 900;
+// }
+
+// .textBasic_type_black {
+//    font-family: 'Inter';
+//    font-weight: 800;
+
+// }
+
+// .textBasic_type_OpenSansMedium {
+//    font-family: 'Open Sans', sans-serif;
+//    font-weight: 600;
+// }
+
+// .textBasic_type_OpenSans {
+//    font-family: 'Open Sans', sans-serif;
+//    font-weight: 400;
+// }
+
+
+// .textBasic_type_SourceSansProMedium {
+//    font-family: 'Source Sans Pro', sans-serif;
+//    font-weight: 600;
+// }
+
+
+// .textBasic_size_megaSmall {
+//    font-size: 12px;
+// }
+// .textBasic_type_lato_semiBold {
+//    font-family: 'Lato';
+//    font-weight: 600;
+//    font-style: normal;
+// }
+
+// .textBasic_type_lato_bold {
+//    font-family: 'Lato';
+//    font-weight: bold;
+//    font-style: normal;
+// }
+
+// .textBasic_type_lato_regular {
+//    font-family: 'Lato';
+//    font-weight: normal;
+//    font-style: normal;
+// }
+
+// .textBasic_type_lato_heavy {
+//    font-family: 'Lato';
+//    font-weight: 800;
+//    font-style: normal;
+// }
+
+// .textBasic_type_lato_medium {
+//    font-family: 'Lato';
+//    font-weight: 500;
+//    font-style: normal;
+// }
+
+
+// .textBasic_size_extraSmall {
+//    font-size: 14px;
+//    line-height: 1.43;
+// }
+
+// .textBasic_size_small {
+//    font-size: 16px;
+//    line-height: 1.5;
+// }
+
+// .textBasic_size_medium {
+//    font-size: 18px;
+//    line-height: 1.33;
+// }
+
+// .textBasic_size_base {
+//    font-size: 20px;
+// }
+
+// .textBasic_size_base21 {
+//    font-size: 21px;
+// }
+
+// .textBasic_size_large {
+//    font-size: 24px;
+// }
+
+// .textBasic_size_extraLarge {
+//    font-size: 32px;
+// }
+
+// .textBasic_size_extraLarge40 {
+//    font-size: 36px;
+// }
+
+// .textBasic_size_extraLarge48 {
+//    font-size: 48px;
+// }
+
+// .textBasic_size_extraLarge56 {
+//    font-size: 56px;
+// }
+
+// .textBasic_size_robot_medium {
+//    font-size: 14px;
+// }
+
+// .textBasic_size_robot_base {
+//    font-size: 16px;
+// }
+
+// .textBasic_size_robot_large {
+//    font-size: 18px;
+// }
+
+// .textBasic_size_robot_extraLarge {
+//    font-size: 24px;
+// }
+
+// .text-center {
+//    text-align: center;
+// }
+
+// .text-bold {
+//    font-weight: bold;
+// }
+
+// .line-24 {
+//    line-height: 24px;
+// }
+
+// .line-21 {
+//    line-height: 21px;
+// }

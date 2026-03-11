@@ -1,0 +1,27 @@
+.trial {
+   background: linear-gradient(90deg, #479366 0%, #7CAE7B 100%);
+   display: flex;
+   justify-content: center;
+   height: 40px;
+   gap: 4px;
+   align-items: center;
+   flex-wrap: wrap;
+   button {
+      margin-left: 8px;
+      width: 90px;
+      height: 32px;
+   }
+   @media screen and (max-width: 1023px) {
+       position: relative;
+       top: 60px;
+   }
+   @media screen and (max-width: 400px) {
+      gap: 2px;
+     span {
+      font-size: 11px;
+     }
+     button {
+      margin-left: 0;
+     }
+  }
+}

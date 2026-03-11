@@ -1,0 +1,15 @@
+.video {
+   display: flex;
+   position: relative;
+
+   .video_play_block {
+      position: absolute;
+      inset: 0;
+      
+   }
+
+   iframe {
+      max-width: 100%;
+      box-sizing: border-box;
+   }
+}

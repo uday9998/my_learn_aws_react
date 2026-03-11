@@ -1,0 +1,21 @@
+.mediaLibrary__footer{
+  margin-bottom: 32px;
+  margin-top: 24px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  &.hidden{
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mediaLibrary__footer {
+    position: fixed;
+    margin: 0;
+    bottom: 0px;
+    background-color: #fff;
+    padding-bottom: 32px;
+    padding-top: 24px;
+  }
+}

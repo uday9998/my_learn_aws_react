@@ -1,0 +1,19 @@
+.createDomain {
+    position: relative;
+    .createDomain__close {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        cursor: pointer;
+        svg {
+            width: 24px;
+            height: 24px;
+         }
+    }
+    .createDomain__body {
+        padding: 40px 40px 30px;
+        .createDomain__header {
+            padding-bottom: 24px;
+        }
+    }
+}

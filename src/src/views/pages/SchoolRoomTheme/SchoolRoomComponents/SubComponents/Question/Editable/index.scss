@@ -1,0 +1,17 @@
+.textEditable {
+   .testimonialEditable {
+      img {
+         width: 43px;
+         height: 43px;
+         object-fit: cover;
+         margin: 0 auto;
+         display: flex;
+      }
+   }
+   .colorInput  {
+      .colorInput__input {
+         margin-top: 0;
+         min-width: min-content;
+      }
+   }
+}

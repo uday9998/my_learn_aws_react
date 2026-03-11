@@ -1,0 +1,26 @@
+.schoolroomheader_empty {
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:has(> .drop_element_here) {
+        height: 60px;
+    }
+
+    > .drop_element_here {
+        position: absolute;
+        width: 100%;
+        margin: auto 0;
+        line-height: 1.3;
+        font-size: 20px;
+        font-family: 'Avenir Next';
+        background: #f1f1f1;
+        color: #c3c3c3;
+        border: 1px dotted #7cb740;
+        border-radius: 4px;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}

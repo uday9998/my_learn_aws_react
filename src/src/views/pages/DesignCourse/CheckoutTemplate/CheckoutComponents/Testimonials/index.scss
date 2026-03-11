@@ -1,0 +1,78 @@
+.testimonials-content-template1 {
+   max-width:456px;
+   margin-top: 16px;
+   background-color: #404040;
+   margin-bottom: 30px;
+   .testimonial-img{
+      padding-top: 16px;
+      padding-left: 16px;
+      align-items: center;
+   }
+   .testimonial-texts {
+      display: flex;
+      flex-direction: column;
+      width: 370px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-right: 16px;
+   }
+}
+
+
+.testimonials-content-template2 {
+   background-color:#ffffff;
+   margin-bottom: 80px;
+   border-radius: 4px;
+   box-shadow: 4px 4px 40px 0 rgba(158, 164, 220, 0.27);
+   margin-top: 16px;
+   .testimonial-img {
+      padding-top: 1px;
+      padding-top: 24px;
+      padding-left: 24px;
+   }
+   .testimonial-texts {
+      display: flex;
+      flex-direction: column;
+      width: 370px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-right: 16px;
+      border-radius: 4px;
+   }
+}
+
+.testimonials-content-template3 {
+   background-color: #ffffff;
+   margin-bottom: 80px;
+   border-radius: 4px;
+   margin-top: 16px;
+   .testimonial-img {
+      padding-top: 1px;
+      padding-top: 24px;
+      padding-left: 24px;
+   }
+   .testimonial-texts {
+      display: flex;
+      flex-direction: column;
+      width: 370px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-right: 16px;
+      border-radius: 4px;
+   }
+}
+
+.testimonials-header {
+   font-family: 'Avenir Next';
+}
+
+
+@media screen and (max-width: 1200px) {
+   .testimonials {
+       margin: 0 30px;
+   }
+   .testimonials-content-template1 {
+       max-width: 100%;
+       box-sizing: border-box;
+   }
+}

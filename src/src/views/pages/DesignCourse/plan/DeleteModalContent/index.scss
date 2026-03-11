@@ -1,0 +1,71 @@
+.delete_plan_modal {
+    width: 500px;
+    height: 200px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 16px;
+    .delete_plan_modal_title {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #3f4f65;
+    }
+    .field__2 {
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #3f4f65;
+    }
+    .delete_plan_closeModal {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top:5px;
+        right: 10px;
+        .closeIcon {
+           cursor: pointer;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .deleteModal__btns {
+       display: flex;
+       justify-content: flex-end;
+       width: 100%;
+       margin-bottom: 16px;
+       button {
+        width: 100%;
+        margin: 0 4px;
+       }
+    }
+
+ }
+
+ @media screen and (max-width: 1023px) {
+    .delete_plan_modal {
+        height: 100vh;
+        width: 100vw;
+        .deleteModal__btns {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 100%;
+            button {
+             width: 100%;
+             margin: 4px 0;
+            }
+         }
+    }
+ }

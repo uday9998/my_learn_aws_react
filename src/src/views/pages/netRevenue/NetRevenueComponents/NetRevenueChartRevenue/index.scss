@@ -1,0 +1,25 @@
+.net-revenue-status-green{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    &-0{
+      background: #36796F;
+  }
+    &-1{
+        background: #54938B;
+    }
+    &-2{
+        background: #7BAEA9;
+    }
+    &-3{
+        background: #A6C9C5;
+    }
+    &-4{
+        background: #D0D2D2;
+    }
+
+}
+.net-revenue-chart-loader{
+    position: relative;
+    min-height: 100px;
+}

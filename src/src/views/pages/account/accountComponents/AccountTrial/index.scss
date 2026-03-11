@@ -1,0 +1,26 @@
+.account__trial {
+   background: #ffffff;
+   gap: 16px;
+   border: 1px solid #e7e9e9;
+   padding: 24px;
+   border-radius: 12px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   margin-bottom: 21px;
+   &__left {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+      &__title {
+         display: flex;
+         gap: 4px;
+         align-items: center;
+      }
+   }
+   &__right {
+      padding: 5px 8px;
+      background: #f4f7f7;
+      border-radius: 8px;
+   }
+}

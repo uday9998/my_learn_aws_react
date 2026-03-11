@@ -1,0 +1,16 @@
+.member__more__note {
+   display: flex;
+   gap: 24px;
+   flex-direction: column;
+   .inputNew {
+      padding: 8px 16px;
+   }
+   .text_area_new {
+      height: 158px;
+      resize: vertical;
+      font-family: 'Inter';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 168%;
+   }
+}

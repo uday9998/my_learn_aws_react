@@ -1,0 +1,53 @@
+.dripModal{
+   position: relative;
+   width: 100%;
+   max-width: 552px;
+   padding-top: 40px;
+   padding-bottom: 32px;
+   padding-left: 32px;
+   padding-right: 32px;
+   box-sizing: border-box;
+   .congratulationsRectangle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 32px;
+   }
+   .congratulationsCloseIcon {
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      cursor: pointer;
+   }
+
+   .titleRectangle {
+      padding-bottom: 24px;
+      text-align: center;
+   }
+
+   .congratulationsTitle {
+      font-size: 22px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: center;
+   }
+   .textAndLogoRectangle {
+      display: flex;
+      margin-top: 24px;
+   }
+   .teachOnline {
+      margin-right: 8px;
+      opacity: 0.6;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #3f4f65;
+   }
+}

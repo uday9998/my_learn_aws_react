@@ -1,0 +1,18 @@
+.my__account{
+    min-height: 100vh;
+    padding-bottom: 24px;
+    .adminContent{
+        background-color: #fff !important;
+        padding-top: 0px !important;
+    }
+    .breadcrumb{
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+    &__content__bottom{
+        margin-top: 24px;
+    }
+    &__wrapper{
+        min-height: 100%;
+    }
+}

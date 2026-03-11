@@ -1,0 +1,48 @@
+ .customLink {
+      display: flex;
+      justify-content: space-between;
+      z-index: 99999999999;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      flex-direction: column;
+      .customLink__title_content {
+         display: flex;
+         align-items: center;
+         width: 100%;
+         svg {
+            cursor: pointer;
+            padding-right: 5px;
+         }
+      }
+      .customLink__title {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .customLink__actions {
+         display: flex;
+         gap: 6px;
+
+         .customLink__edit {
+            cursor: pointer;
+         }
+
+         .customLink__divider {
+            background-color: #E7E9E9;
+            width: 1px;
+            height: 24px;
+            cursor: pointer;
+         }
+
+         .customLink__delete {
+            cursor: pointer
+         }
+      }
+   }
+
+   .customLinks__create {
+      margin-top: 24px;
+      margin-bottom: 24px;
+   }
+

@@ -1,0 +1,106 @@
+.coupon__create{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__view{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 48px;
+        background: #FFFFFF;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        &__left{
+            width: 50%;
+            padding-right: 48px;
+            margin-right: 48px;
+            border-right: 1px solid #E7E9E9;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            &__code {
+               display: flex;
+               gap: 16px;
+               align-items: flex-end;
+            }
+            &__top{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+            &__switch{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            &__duration{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+            &__buttons{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 8px;
+            }
+        }
+        &__right{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            &__preview{
+                background: #F0F2F2;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                border: 1px solid #E7E9E9;
+                border-radius: 12px;
+                &__top{
+                    display: flex;
+                    padding: 16px 16px 0px 16px;
+                    .left{
+                        width: 100%;
+                        padding-right: 20px;
+                        margin-right: 20px;
+                        border-right: 1px solid #E7E9E9;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+                    }
+                }
+                &__expiration{
+                    padding: 0px 16px 0px 16px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                &__bottom{
+                    padding: 0px 16px 16px 16px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            padding: 15px;
+            padding-bottom: 32px;
+            border: none;
+
+            &__left {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                border: none;
+
+                &__buttons {
+                    flex-direction: column-reverse;
+                    gap: 16px;
+                }
+            }
+        }
+    }
+}

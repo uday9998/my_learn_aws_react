@@ -1,0 +1,21 @@
+.lesson-menu {
+   position: absolute;
+   background: #ffffff;
+   margin-top: 8px;
+   width: 250px;
+   border-radius: 8px;
+   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+   border: solid 1px #dfe5eb;
+   user-select: none;
+   margin-bottom: 25px;
+}
+
+// @media screen and (max-width: 720px) {
+//    .lesson-menu {
+//       position: fixed;
+//       width: 100%;
+//       left: 0;
+//       right: 0;
+//       bottom: 72px;
+//    }
+// }

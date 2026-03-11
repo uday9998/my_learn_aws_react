@@ -1,0 +1,117 @@
+.SectionComponents{
+   position: relative;
+   line-height: 1;
+   color: rgba(0,0,0,.87);
+   font-weight: 400;
+   display: block;
+   flex-direction: column;
+   background: #fff;
+   padding: 16px 0px;
+   width: 100%;
+   box-sizing: border-box;
+   border-radius: 4px;
+   margin-bottom: 8px;
+}
+
+.SubSectionComponent {
+   padding: 4px 16px;
+   box-sizing: border-box;
+}
+
+.SectionComponents.menu .item {
+   padding-bottom: 12px;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   box-sizing: border-box;
+   cursor: pointer;
+   .component_arrow{
+      display: flex;
+   }
+}
+.SectionComponents.menu .item svg {
+   transform: rotate(90deg);
+   opacity: 0.65;
+}
+
+.SectionComponents.menu .item .component_arrow img {
+   transform: rotate(0deg);
+   transition: 0.3s;
+}
+
+.SectionComponents.menu .item .component_arrow__up img {
+   transform: rotate(180deg);
+}
+
+.SectionComponents.menu .item:before {
+   display: none;
+}
+
+.SectionComponents.menu .SectionComponents_name {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   gap: 8px;
+   background: #FFFFFF;
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   padding: 10px 16px;
+}
+.SectionComponents.menu .SectionComponents_name .component_icon_up{
+  display: none;
+}
+.SectionComponents.menu .SectionComponents_name .component_name {
+  color: #3f4f65;
+}
+
+.SectionComponents.menu .item img{
+   width: 16px !important;
+}
+
+.SectionComponents.menu .item .header {
+   padding: 10px !important;
+}
+
+.SectionComponent img {
+   border:none!important;
+}
+.SectionComponents .SectionComponent {
+   /* background-color:#f7f7f7; */
+   padding: 16px;
+}
+.SectionComponent {
+   -webkit-transition: 1s all;
+   -o-transition: 1s all;
+   transition: 1s all;
+}
+#section_remove_button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+}
+
+.link_delete {
+   box-sizing: border-box;
+   width: 90%;
+   box-sizing: border-box;
+   background: #7cb740 !important;
+   color: #fff !important;
+   margin: 12px 16px !important;
+}
+
+/* .sidebarContainer .mce-notification-inner {
+   display:none!important;
+}
+
+body .mce-widget.mce-notification.mce-notification-warning.mce-has-close.mce-in {
+   display: none!important;
+} */
+
+.menu__top{
+   display: flex;
+   align-items: center;
+   margin-bottom: 24px;
+   gap: 24px;
+}

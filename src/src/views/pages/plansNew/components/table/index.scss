@@ -1,0 +1,26 @@
+.plans__new__table{
+    width: 100%;
+    border-radius: 12px;
+    overflow-x: auto;
+    background-color: #fff;
+    table{
+        width: 100%;
+    }
+    th,td{
+        padding: 12px 20px;
+        text-align: start;
+        border-bottom: 1px solid #E7E9E9;
+    }
+    &__end{
+        text-align: end !important;
+    }
+    &__space{
+        padding: 11px 0px !important;
+        box-sizing: border-box;
+        width: 32px;
+        .checkBox{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

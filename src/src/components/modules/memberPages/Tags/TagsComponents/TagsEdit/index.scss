@@ -1,0 +1,28 @@
+.tag__inputs {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   padding: 24px;
+   background: #ffffff;
+   border: 1px solid #e7e9e9;
+   width: 37%;
+   border-radius: 12px;
+   .tag__add__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      svg {
+         cursor: pointer;
+      }
+   }
+   .tag__input {
+      min-height: 26px;
+      .tag__icon__button {
+         display: flex;
+         svg {
+            width: 18px;
+            height: 18px;
+         }
+      }
+   }
+}

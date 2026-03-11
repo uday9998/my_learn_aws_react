@@ -1,0 +1,12 @@
+.d-checkout {
+   display: flex;
+   justify-content: space-between;
+   box-sizing: border-box;
+   overflow: hidden;
+}
+
+.checkout {
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+}

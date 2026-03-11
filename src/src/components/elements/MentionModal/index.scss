@@ -1,0 +1,40 @@
+.mention_modal_wrapper {
+    position: absolute;
+    z-index: 99999;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #E7E9E9;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 300px;
+    width: 100%;
+    max-height: 220px;
+    overflow-x: hidden;
+
+    .user_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+        cursor: pointer;
+        padding: 0 16px;
+
+        img {
+            border-radius: 4px;
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
+    }
+
+    .footer__wrapper {
+        border-top: 1px solid #e7e9e9;
+        padding: 10px;
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}

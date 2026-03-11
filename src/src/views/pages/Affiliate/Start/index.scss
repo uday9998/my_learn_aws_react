@@ -1,0 +1,76 @@
+.affiliate__start__page{
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 40px 48px;
+    box-sizing: border-box;
+    &__start{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__items{
+        display: flex;
+        gap: 16px;
+    }
+    &__item{
+        background: #FFFFFF;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        cursor: default;
+        gap: 16px;
+        &__logo{
+            border-radius: 8px;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        &__links{
+            ul{
+                margin: 0px;
+                padding-left: 19px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        padding: 0;
+        border: none;
+
+        &__items {
+            flex-direction: column;
+        }
+
+        &__bottom {
+            margin-top: 32px;
+
+            & > button {
+                width: 100%;
+            }
+        }
+    }
+}

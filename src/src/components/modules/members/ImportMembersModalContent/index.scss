@@ -1,0 +1,93 @@
+.modalContent .modalContent_pos_center {
+   border-radius: 8px;
+}
+
+.ImportMemberModal {
+    width: 552px;
+    position: relative;
+
+   input[type="file"] {
+      opacity: 0;
+  }
+  .uploadCSV_btn {
+   width: 180px;
+  }
+  .createDomain__body {
+   padding: 40px;
+  }
+  .createDomain__header {
+   display: flex;
+   margin-bottom: 16px;
+}
+  .customFileUpload{
+
+   span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7cb740;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    line-height: 100%;
+    text-align: center;
+     width: 120px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    height: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
+   }
+  }
+  .updatecard__btns {
+   display: flex;
+   margin-top: 24px;
+   justify-content: flex-end;
+   &> div:not(:first-child){
+       padding-left: 16px;
+   }
+}
+
+.createDomain__close {
+   position: absolute;
+   right: 14px;
+   top: 14px;
+   cursor: pointer;
+   svg {
+      width: 24px;
+      height: 24px;
+   }
+}
+
+}
+
+@media screen and (max-width: 1023px) {
+   .ImportMemberModal {
+      padding: 0px !important;
+      width: auto;
+      .createDomain__body {
+         padding: 20px;
+         .btnBasic {
+            height: 40px;
+            width: 100%;
+            margin-bottom: 10px;
+         }
+         .updatecard__btns {
+            flex-direction: column;
+            >div {
+               width: 100%;
+               padding-left: 0;
+            }
+         }
+
+         .customFileUpload  {
+            span {
+               width: 100%;
+               box-sizing: border-box;
+            }
+         }
+      }
+   }
+}

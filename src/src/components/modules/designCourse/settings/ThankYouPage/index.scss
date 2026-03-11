@@ -1,0 +1,42 @@
+.ThankYouPage {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 32px;
+.thankYouPage_select {
+   .SelectElement {
+      label {
+         span{
+            color: #8a94a2 !important;
+         }
+      }
+   }
+}
+   .ThankYouPage_btn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+}
+@media screen and (max-width: 720px) {
+   .ThankYouPage {
+      .ThankYouPage_btn {
+         display: flex;
+         align-items: center;
+         flex-direction: column-reverse;
+         justify-content: flex-end;
+         width: 100%;
+
+         .btnBasic {
+
+            &:not(:first-child) {
+               margin: 0;
+            }
+
+            &:not(:last-child) {
+               margin: 0;
+               margin-top: 16px;
+            }
+         }
+      }
+   }
+}

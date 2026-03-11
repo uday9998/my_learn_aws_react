@@ -1,0 +1,106 @@
+.blogsettings__module__container {
+   padding: 24px 32px;
+   .save__btn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-top: 16px;
+      button {
+         border-radius: 4px;
+         font-size: 14px;
+         width: 141px;
+         height: 32px;
+      }
+   }
+}
+.blogsettings__module {
+   width: 100%;
+   padding: 40px;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+   .blogsettings__toggle {
+     display: flex;
+     align-items: center;
+     .blogSwitch__off {
+        cursor: pointer;
+        margin-right: 5px;
+        position: relative;
+        top: 3px;
+     }
+     .blogSwitch__on {
+        cursor: pointer;
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+     }
+   }
+   .blogSwitch__content {
+      display: flex;
+      align-items: center;
+   }
+   .blogsettings__content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      .blogsettings__inputs {
+         -webkit-box-flex: 1;
+         -webkit-flex: 1;
+             -ms-flex: 1;
+                 flex: 1;
+          margin-right: 64px;
+      }
+      .uploadImgs {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+
+         .uploadImg__container {
+            button {
+               max-width: 253px;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .blogsettings__module {
+      padding: 24px 24px 32px 24px;
+      .blogsettings__content {
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -webkit-flex-direction: column;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         .blogsettings__inputs {
+            margin-right: 0;
+         }
+      }
+   }
+   .blogsettings__module__container {
+      position: relative;
+      top: 68px;
+      padding: 24px 3px;
+      .save__btn {
+         margin-top: 16px;
+         @media screen and (max-width: 400px) {
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+         }
+      }
+   }
+
+}

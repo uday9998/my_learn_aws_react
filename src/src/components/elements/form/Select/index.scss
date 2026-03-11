@@ -1,0 +1,161 @@
+@font-face {
+   font-family: 'Avenir Next';
+   src: url('~assets/fonts/AvenirNextLTPro-Demi.otf');
+   /* IE9 Compat Modes */
+   src: url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('woff2'),
+      /* Super Modern Browsers */
+      url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('woff'),
+      /* Pretty Modern Browsers */
+      url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('svg');
+   /* Legacy iOS */
+}
+.SelectElement {
+   position: relative;
+   width: 100%;
+   height: inherit;
+
+   label {
+      width: 100%;
+   }
+
+   .CheckBox label {
+      width: 24px;
+      height: 24px;
+   }
+
+   .SelectElement-basic {
+      font-family: 'Avenir Next';
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      line-height: 1.5;
+      letter-spacing: 0.4px;
+      font-size: 16px;
+      background: #fbfdff;
+      border-radius: 4px;
+      border: 1px solid #cddaf1;
+      padding: 12px 32px 12px 16px;
+
+      >span {
+         font-size: 16px;
+      }
+
+      svg {
+         cursor: pointer;
+      }
+
+      .SelectElement__text {
+         width: 80%;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+      }
+
+   }
+   .disabled {
+      cursor: not-allowed;
+      .SelectElement__text span{
+         color: rgb(214, 214, 214) !important;
+      }
+      border: 1px solid rgb(214, 214, 214);
+   }
+   .SelectElement__drop-top {
+      transform: translateY(-90%);
+   }
+   .SelectElement__drop-down {
+      padding-bottom: 20px;
+      position: absolute;
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+      max-height: 200px;
+      overflow: auto;
+      .SelectElement__option {
+         margin: 8px 0;
+         padding: 10px 32px 10px 27px;
+         text-overflow: ellipsis;
+         overflow: hidden;
+         white-space: nowrap;
+
+         &_multiple {
+            padding:0 24px 8px;
+         }
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+   .SelectElement__type-oval {
+      background: #ffffff;
+      border: none;
+      height: inherit;
+
+      >span {
+         font-size: 14px;
+      }
+   }
+
+   .SelectElement__ovalBorder {
+      border: 1px solid #c2cedb
+   }
+
+   // .SelectElement__bordered {
+   //    border: 2px solid #7cb740;
+   //    svg {
+   //       transform: rotate(180deg);
+   //       g {
+   //          path:nth-of-type(2) {
+   //             fill: #7cb740!important;
+   //          }
+   //       }
+   //    }
+   // }
+}
+
+.selectedValuesList {
+   .selectedItem {
+      height: 20px;
+      border-radius: 4px;
+      background: rgba(194, 206, 219, 0.24);
+      padding: 3px 8px;
+      box-sizing: border-box;
+      margin-right: 8px;
+
+      .remove-icon {
+         margin-left: 8px;
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+.SelectElement__cursor-pointer {
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+@media (max-width: 1023px) {
+   .SelectElement {
+      .SelectElement-basic {
+         span {
+            margin: 0 !important;
+         }
+         .SelectElement__text {
+            width: 100%;
+         }
+      }
+   }
+}

@@ -1,0 +1,7 @@
+.divider_row {
+   display: flex;
+   gap: 8px;
+   >div {
+      cursor: pointer;
+   }
+}

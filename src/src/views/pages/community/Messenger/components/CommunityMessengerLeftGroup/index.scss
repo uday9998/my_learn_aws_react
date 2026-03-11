@@ -1,0 +1,27 @@
+.community__messenger__left__group{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 12px;
+    &__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        &__messages{
+            display: flex;
+            background: #36796F;
+            width: 24px;
+            border-radius: 60px;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 6px;
+        align-items: flex-end;
+    }
+}

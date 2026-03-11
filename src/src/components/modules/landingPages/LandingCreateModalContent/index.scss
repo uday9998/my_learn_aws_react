@@ -1,0 +1,96 @@
+.landing_section_modal {
+   //  max-width: 552px;
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar-track {
+       border-radius: 10px;
+       background-color: transparent;
+    }
+
+    &::-webkit-scrollbar {
+       width: 5px;
+       background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+       border-radius: 3px;
+       box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+       -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+       background-color: rgb(226, 226, 226);
+    }
+    img {
+       max-width: 100%;
+    }
+    .landing_section_content {
+       padding: 24px;
+    }
+    .landing_section_modal_title {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #3f4f65;
+    }
+    .field__2 {
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #3f4f65;
+        margin-bottom: 24px;
+    }
+    .landing_section_closeModal {
+         position: absolute;
+         right: 24px;
+          top: 24px;
+          cursor: pointer;
+    }
+    .landingModal__btns {
+       display: flex;
+       width: 100%;
+       margin: 24px 0 32px 0;
+       button {
+          &:last-child {
+             margin-left: 16px;
+          }
+       }
+    }
+
+ }
+
+ @media screen and (max-width: 1023px) {
+    .landing_section_modal {
+      width: 100%;
+      min-width: 80vw;
+
+      .landing_section_content {
+         padding: 0;
+
+         .landingModal__btns {
+            margin: 16px 0 16px 0;
+            flex-direction: column;
+            gap: 16px;
+            & > button {
+               margin: 0;
+            }
+         }
+
+         &__img__wrapper {
+            display: flex;
+            justify-content: center;
+         }
+      }
+    }
+ }

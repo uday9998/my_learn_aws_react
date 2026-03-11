@@ -1,0 +1,29 @@
+.plan__content{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    &__header{
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .tabs__line__tab{
+        padding: 0px 12px 8px 12px;
+        span {
+            white-space: nowrap;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 16px;
+        gap: 16px;
+
+        &__header{
+            gap: 16px;
+        }
+    }
+}

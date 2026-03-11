@@ -1,0 +1,12 @@
+.create__landing{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 34px 0px;
+  &__top{
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+    gap: 12px;
+  }
+}

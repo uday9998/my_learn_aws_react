@@ -1,0 +1,44 @@
+.innerWrapper_container {
+   padding: 24px;
+   padding-bottom: 48px;
+   .tooltip {
+      display: flex;
+   }
+   .innerWrapper {
+      display: flex;
+      flex-direction: column;
+      .innerWrapper__title {
+         display: flex;
+         align-items: center;
+         gap: 13px;
+         span{
+            line-height: 160%;
+         }
+      }
+      &__button {
+         display: flex;
+         justify-content: flex-end;
+         width: 100%;
+         button {
+            min-width: min-content;
+         }
+      }
+   }
+   .tabs__line {
+      white-space: nowrap;
+   }
+   .selected {
+      cursor: pointer;
+   }
+
+   .shadow {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+   }
+
+   .active {
+      position: relative;
+      box-shadow: inset 0 0 0 1px #7cb740;
+      border: 1px solid #7cb740;
+      box-sizing: border-box;
+   }
+}

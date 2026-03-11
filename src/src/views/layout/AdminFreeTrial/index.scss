@@ -1,0 +1,28 @@
+.adminfreetrial {
+    background-color: #f0f4f7;
+    .adminfreetrial__content {
+       padding: 8px 0;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 100%;
+      background-color: rgba(124, 183, 64, 0.1);
+      padding: 21px 32px 27px 32px;
+      position: relative;
+      .closeIcon {
+         cursor: pointer;
+         position: absolute;
+         right: 0;
+         top: 0;
+         padding: 8px;
+      }
+   }
+}
+
+
+@media screen and (max-width: 1023px) {
+  .adminfreetrial {
+   margin-top: 53px;
+   display: none;
+  }
+}

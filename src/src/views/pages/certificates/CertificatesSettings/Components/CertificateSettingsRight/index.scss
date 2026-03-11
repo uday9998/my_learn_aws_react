@@ -1,0 +1,31 @@
+.certificate__settings__right{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width:calc( 50% - 48px);
+    
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            padding: 0px 12px;
+        }
+
+        &__courses{
+            .certificate__card__courses{
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

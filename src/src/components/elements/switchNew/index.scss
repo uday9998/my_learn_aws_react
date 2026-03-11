@@ -1,0 +1,158 @@
+.toggle {
+   cursor: pointer;
+   display: flex;
+   gap: 12px;
+   align-items: center;
+}
+.toggle-switch {
+   display: inline-block;
+   background: var(--greyscale_20);
+   border-radius: 16px;
+   width: 42px;
+   height: 26px;
+   position: relative;
+   vertical-align: middle;
+   transition: background 0.25s;
+   &:active {
+      background: var(--greyscale_30);
+   }
+   &:before,
+   &:after {
+      content: "";
+   }
+   &:before {
+      display: block;
+      background: #fff;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: left 0.25s;
+   }
+   //  .toggle-checkbox:checked + & {
+   //     background: var(--primary_80);
+   //     &:active {
+   //        background: var(--primary_90);
+   //     }
+   //     &:before {
+   //        left: 17px;
+   //     }
+   //  }
+}
+.toggle-checkbox {
+   position: absolute;
+   visibility: hidden;
+}
+.switch_text {
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 400;
+   margin-bottom: -4px;
+   display: flex;
+   align-items: center;
+   font-size: 14px;
+   line-height: 168%;
+   font-feature-settings: "tnum" on, "lnum" on;
+   color: var(--greyscale_90);
+}
+.switch_tooltip {
+   margin-left: -4px;
+}
+.switch {
+   display: flex;
+   align-items: center;
+}
+.toggle_disabled_false {
+   background: var(--greyscale_10);
+   &:active {
+      background: var(--greyscale_10);
+   }
+}
+.toggle_disabled_true {
+   background: var(--greyscale_40) !important;
+   &:active {
+      background: var(--greyscale_40) !important;
+   }
+   &:before {
+      background: var(--greyscale_10) !important;
+   }
+}
+.switch__medium {
+   .toggle-switch {
+      width: 30px;
+      height: 20px;
+      position: relative;
+      vertical-align: middle;
+      transition: background 0.25s;
+      &:active {
+         background: var(--greyscale_30);
+      }
+      &:before,
+      &:after {
+         content: "";
+      }
+      &:before {
+         display: block;
+         background: #fff;
+         border-radius: 50%;
+         width: 16px;
+         height: 16px;
+         position: absolute;
+         top: 2px;
+         left: 2px;
+         transition: left 0.25s;
+      }
+   }
+   .toggle-switch-active {
+      background: var(--primary_80);
+      &:active {
+         background: var(--primary_90);
+      }
+      &:before {
+         left: 12px;
+      }
+   }
+}
+.switch__big {
+   .toggle-switch {
+      width: 42px;
+      height: 26px;
+      position: relative;
+      vertical-align: middle;
+      transition: background 0.25s;
+      &:active {
+         background: var(--greyscale_30);
+      }
+      &:before,
+      &:after {
+         content: "";
+      }
+      &:before {
+         display: block;
+         background: #fff;
+         border-radius: 50%;
+         width: 22px;
+         height: 22px;
+         position: absolute;
+         top: 2px;
+         left: 2px;
+         transition: left 0.25s;
+      }
+   }
+   .toggle-switch-active {
+      background: var(--primary_80);
+      &:active {
+         background: var(--primary_90);
+      }
+      &:before {
+         left: 17px;
+      }
+   }
+}
+.switch{
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}

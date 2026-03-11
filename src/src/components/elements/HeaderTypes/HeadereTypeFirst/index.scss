@@ -1,0 +1,30 @@
+.header__type__first{
+    background: #FFFFFF;
+    backdrop-filter: blur(9px);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e7e9e9;
+    justify-content: space-between;
+    padding: 14px 24px;
+    &__left{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .product-search-mob {
+        margin-right: 40px;
+    }
+
+    .playlist__buttons__wrapper {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+.search__add__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}

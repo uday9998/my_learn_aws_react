@@ -1,0 +1,68 @@
+.DomainsEditPopup__container {
+   >div {
+      border-radius: 8px;
+   }
+}
+
+.DomainsEditPopup {
+   padding: 48px;
+   position: relative;
+
+   .DomainsEditPopup__header {
+      display: flex;
+      justify-content: space-between;
+
+      .DomainsEditPopup__close {
+         cursor: pointer;
+         position: absolute;
+         top: 24px;
+         right: 24px;
+      }
+   }
+
+   .DomainsEditPopup__content {
+     span {
+      line-height: 24px;
+     }
+   }
+
+   .DomainsEditPopup__footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 24px;
+
+      >div {
+         width: 100%;
+         &:first-of-type {
+            max-width: 150px;
+            margin-right: 16px;
+         }
+         &:last-of-type {
+            max-width: 150px;
+         }
+         button {
+            width: 100%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .DomainsEditPopup {
+      padding: 24px;
+      overflow: scroll;
+      height: 100vh;
+      box-sizing: border-box;
+      .DomainsEditPopup__content {
+         .DomainsEditPopup__footer {
+            margin: 16px 0;
+            flex-direction: column;
+            div {
+               margin: 8px 0;
+               max-width: 100%;
+            }
+         }
+      }
+   }
+}

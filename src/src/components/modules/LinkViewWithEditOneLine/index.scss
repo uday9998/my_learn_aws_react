@@ -1,0 +1,30 @@
+.linkViewWithEditOnLine {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   width: 100%;
+   &__label {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 168%;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: #131f1e;
+      text-align: start;
+   }
+   &__content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      width: 100%;
+      @media (max-width: 1023px) {
+         flex-direction: column;
+         gap: 4px;
+         align-items: flex-start;
+      }
+      .inputLink {
+         min-width: 200px;
+      }
+   }
+}

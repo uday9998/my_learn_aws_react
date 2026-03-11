@@ -1,0 +1,104 @@
+.multi__select__item {
+   position: relative;
+   .multi__input {
+      padding: 10px 16px;
+      gap: 10px;
+      display: flex;
+      background: #ffffff;
+      cursor: pointer;
+      margin-top: 4px;
+      align-items: center;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+   }
+   .multi__input__left {
+      width: 100%;
+   }
+   input {
+      border: none;
+      outline: none;
+   }
+   .multi__icon {
+      cursor: pointer;
+      padding: 0px 6px;
+   }
+   .multi__select__value {
+      background: #f0f2f2;
+      padding: 2px 4px 2px 8px;
+      max-width: max-content;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #e7e9e9;
+      border-radius: 8px;
+      .multi__view__delete {
+         cursor: pointer;
+         max-height: max-content;
+         display: flex;
+         align-items: center;
+      }
+   }
+}
+
+.multi__select__options__wrapper {
+   display: flex;
+   flex-direction: column;
+   background: #ffffff;
+   border: 1px solid rgba(19, 31, 30, 0.1);
+   box-shadow: 0px 4px 10px rgba(19, 31, 30, 0.1),
+      1px 2px 2px rgba(19, 31, 30, 0.04);
+   border-radius: 12px;
+
+   .inputSearch {
+      padding: 16px;
+   }
+}
+
+.multi__select__options {
+   display: flex;
+   flex-direction: column;
+   min-width: 100%;
+   padding: 4px 0px;
+   overflow-y: auto;
+   max-height: 200px;
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   scrollbar-width: thin;
+   box-sizing: border-box;
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      margin: 5px 0px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 3px;
+      height: 2px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+}
+.multi__select__flex {
+   display: flex;
+   gap: 10px;
+   flex-wrap: wrap;
+}
+.multi__select__option {
+   padding: 12px 16px;
+   display: flex;
+   gap: 12px;
+   cursor: pointer;
+   align-items: center;
+   svg {
+      width: 13px;
+      height: 13px;
+      path {
+         fill: #131f1e;
+      }
+   }
+}

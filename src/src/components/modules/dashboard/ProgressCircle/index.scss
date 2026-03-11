@@ -1,0 +1,43 @@
+
+$progress-bar-stroke-width: 3px;
+$progress-bar-size: 160px;
+
+.progressCircle__dashboard {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 160px;
+   width: 100%;
+   min-height: 160px;
+
+
+   svg {
+      height: $progress-bar-size;
+      transform: rotate(-90deg);
+      width: $progress-bar-size;
+   }
+
+   .progress-bar__background {
+      fill: none;
+      stroke-width: $progress-bar-stroke-width;
+   }
+
+   .progress-bar__progress {
+      fill: none;
+      stroke-dasharray: 100 100;
+      stroke-dashoffset: 100;
+      stroke-linecap: round;
+      stroke-width: $progress-bar-stroke-width;
+   }
+
+   .progressCircle__icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+   span {
+      display: block;
+   }
+}

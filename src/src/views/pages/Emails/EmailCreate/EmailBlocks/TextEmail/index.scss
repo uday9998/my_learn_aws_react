@@ -1,0 +1,25 @@
+
+.text__email {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 560px;
+    background: inherit;
+    color:  #131F1E;
+    .textInlineEditor-new > div {
+      min-height: auto;
+    }
+    .textInlineEditor-new {
+      font-family: 'Open Sans', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    textarea {
+       text-align: center;
+       background: inherit;
+    }
+}

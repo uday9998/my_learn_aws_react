@@ -1,0 +1,140 @@
+.landing__header{
+  box-shadow: inset 5px 0 13px -11px #333;
+  background-color: #ffffff;
+  display:flex;
+  .landing__header_main {
+     display: flex;
+     justify-content: space-between;
+     padding: 24px 32px;
+     width: 100%;
+     align-items: center;
+     box-sizing: border-box;
+  }
+  > *{
+    flex: 1;
+  }
+  button {
+     border-radius: 4px;
+  }
+  .landing__search {
+     display: flex;
+     justify-content: center;
+     .landing__search__btn {
+        button {
+           width: 140px;
+         }
+      }
+
+     .landing__search__input {
+        margin-right: 16px;
+        .custom__search__input {
+           height: 40px;
+           box-sizing: border-box;
+           border-radius: 4px;
+        }
+        input {
+           font-size: 16px;
+           width: 380px;
+        }
+     }
+  }
+
+  .landing__search__mob {
+     display: none;
+  }
+  .landing__create {
+     display: flex;
+     justify-content: flex-end;
+  }
+  .landing_preview {
+     button {
+        width: 150px;
+     }
+  }
+}
+
+
+@media screen and (max-width: 1380px) {
+  .landing__header{
+     .landing__search {
+        .landing__search__input {
+           input {
+              width: auto;
+           }
+        }
+     }
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .landing__header{
+     > *{
+        flex: none;
+      }
+     .landing__search {
+        .landing__search__input {
+           input {
+              width: 150px;
+           }
+        }
+     }
+     .landing__create {
+        display: flex;
+        justify-content: flex-end;
+        button {
+           width: 184px;
+        }
+     }
+     .landing_preview {
+        button {
+           width: 120px;
+        }
+     }
+  }
+
+}
+
+
+@media screen and (max-width: 1023px) {
+  .landing__header {
+     position: relative;
+     top: 68px;
+     border-radius: 0;
+     flex-direction: column;
+     .landing__title {
+        display: none;
+     }
+     .landing__search {
+        display: none;
+     }
+     .landing__header_main {
+        padding: 24px 15px;
+     }
+     .landing__search__mob {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 24px 15px;
+        .landing__search__input {
+           .custom__search__input {
+              height: 40px;
+              box-sizing: border-box;
+              border-radius: 4px;
+              margin-bottom: 16px;
+           }
+           input {
+              font-size: 16px;
+           }
+        }
+     }
+     .landing__create {
+        flex-direction: column;
+     }
+     .landing_preview {
+        button {
+           margin-bottom: 16px;
+        }
+     }
+  }
+}
+

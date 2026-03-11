@@ -1,0 +1,49 @@
+.stripe_content {
+   .stripe-inputs {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      >div {
+         flex: 1;
+         &:first-child {
+            margin-right: 24px;
+         }
+      }
+      .textInput {
+         input{
+            &::placeholder {
+               color: rgb(117, 117, 117);
+               font-size: 18px;
+               font-weight: 400;
+            }
+         }
+         label {
+            margin-bottom: 5px;
+            span {
+               color: #333 !important;
+            }
+         }
+      }
+   }
+   .textInput {
+      input{
+         width: 100%;
+         height: 56px;
+         font-size: 18px;
+         font-family: Inter, sans-serif;
+         color: black;
+         background-color: #ffffff;
+         padding: 16px;
+         border-radius: 12px;
+         border: 1px solid #A1A5A5;
+      }
+   }
+}
+.template7,
+.checkoutPageSecond {
+   .stripe_content .textInput {
+      input{
+         border-radius: 3px;
+      }
+   }
+}

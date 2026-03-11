@@ -1,0 +1,58 @@
+.cropArea2 {
+    width: 100%;
+    max-height: 100vh;
+    z-index: 3;
+    // min-width: 618px;
+    border: 1px solid #e7e9e9;
+    border-radius: 12px;
+    position: relative;
+    background: #ffffff;
+    padding-top: 19px;
+    min-height: 300px;
+    padding-bottom: 28px;
+    min-width: 100%;
+    max-width: 100%;
+    span {
+       white-space: nowrap;
+    }
+    .justify-center {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 100%;
+    }
+ }
+ .crop__functions__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    gap: 10px;
+    min-width: 70%;
+    flex-wrap: wrap;
+    padding: 0 10px;
+
+    &__buttons {
+       display: flex;
+       gap: 12px;
+       flex-wrap: wrap;
+    }
+ }
+ .CircularProgressbar  {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .CircularProgressbarWithChildren__text {
+    margin-top: auto;
+     white-space: nowrap;
+     margin-top: 9px;
+ }
+
+ .CircularProgressbarWithChildren{
+    div{
+       position: relative !important;
+    }
+ }

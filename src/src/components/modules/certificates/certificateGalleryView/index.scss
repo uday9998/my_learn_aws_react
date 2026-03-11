@@ -1,0 +1,28 @@
+.certificate__view__gallery{
+    display: flex;
+    flex-direction: column;
+    &__canva{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__divider{
+        height: 1px;
+        margin: 20px 0px;
+        width: 100%;
+        background-color: #E7E9E9;
+    }
+    &__content:first-child {
+      .certificate__view__gallery__divider {
+         display: none;
+      }
+    }
+    &__item{
+        cursor: pointer;
+        img{
+            max-width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+    }
+}

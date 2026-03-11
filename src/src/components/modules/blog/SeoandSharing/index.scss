@@ -1,0 +1,100 @@
+.seo__module {
+   width: 100%;
+   padding: 24px;
+   box-sizing: border-box;
+   display: flex;
+   gap: 24px;
+   flex-direction: column;
+   max-width: 768px;
+   margin: 0 auto 40px auto;
+   .uploadImgs {
+      display: flex;
+      width: auto;
+   }
+
+   .custom_url {
+     position: relative;
+     display: flex;
+     gap: 16px;
+     align-items: center;
+     .inputNew input {
+      padding-right: 25px;
+     }
+     .copiedText {
+      position: absolute;
+      right: 20px;
+      top: -24px;
+      z-index: 20;
+      color: #fff;
+      background: #000;
+      padding: 5px 5px 6px 5px;
+      border-radius: 5px;
+   }
+     .copy_btn {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+     }
+     .copy_icon {
+      position: absolute;
+      top: 11px;
+      right: 16px;
+      cursor: pointer;
+     }
+   }
+   .blog__rightSide {
+      margin-top: 24px;
+      display: flex;
+      justify-content: flex-end;
+      button {
+         border-radius: 4px;
+         font-size: 14px;
+         width: 141px;
+         height: 32px;
+      }
+   }
+}
+
+@media screen and (max-width: 1130px) {
+   .seo__module {
+      padding: 24px 24px 32px 24px;
+      .custom_url {
+         .abs_text {
+            padding: 0 5px;
+         }
+         .copy_btn {
+            width: 48px;
+         }
+         span {
+            font-size: 14px;
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 720px) {
+   .seo__module {
+      padding: 24px 24px 32px 24px;
+      .custom_url {
+         margin-top: 60px;
+         label {
+            div {
+               position: relative;
+                 top: -48px;
+            }
+         }
+         .abs_text {
+            top: -30px;
+            border-right: none;
+         }
+         span {
+            font-size: 14px;
+         }
+         input {
+            padding-left: 16px;
+         }
+      }
+   }
+}

@@ -1,0 +1,122 @@
+.activity__list {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-top: 8px;
+   .activity__block {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      &__left {
+         display: flex;
+         align-items: center;
+         gap: 6px;
+         .activity__status {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+         }
+         img {
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+            border-radius: 4px;
+         }
+         .activity__status__active {
+            background-color: #379552;
+         }
+         .activity__status__inactive {
+            background-color: #d12d36;
+         }
+      }
+      &__right {
+         display: flex;
+         width: 100%;
+         flex-direction: column;
+         container-type: inline-size;
+
+         &__top {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2px;
+
+            @media (max-width: 1024px) {
+               gap: 20px;
+               row-gap: 0;
+            }
+
+            @container (max-width: 500px) {
+               & {
+                  flex-direction: column;
+                  align-items: flex-start;
+               }
+            }
+
+            &__flex {
+               display: flex;
+               gap: 4px;
+               align-items: center;
+
+               span:first-child {
+                  white-space: nowrap;
+               }
+
+               .textBasic {
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+               }
+
+               @container (max-width: 400px) {
+                  .textBasic {
+                     max-width: 25ch;
+                  }
+               }
+               @container (max-width: 320px) {
+                  .textBasic {
+                     max-width: 18ch;
+                  }
+               }
+               @container (max-width: 260px) {
+                  .textBasic {
+                     max-width: 15ch;
+                  }
+               }
+            }
+
+            &__date {
+               .textBasic {
+                  font-size: 14px;
+               }
+            }
+         }
+      }
+   }
+
+   .no__activity__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 35px;
+
+      img {
+         width: 48px;
+         height: 48px;
+      }
+
+      .text__wrapper {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}
+
+
+.activity__block__right__top__flex {
+
+}

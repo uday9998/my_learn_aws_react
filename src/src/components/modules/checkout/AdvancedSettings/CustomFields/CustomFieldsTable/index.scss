@@ -1,0 +1,93 @@
+.customFieldsTable {
+   .settings-footer-container{
+      display: flex;
+      flex-direction: column;
+      margin-right: 40px;
+      margin-left: 40px;
+      border: 2px solid #dfe5eb;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding-bottom: 16px;
+      .footer-container-title{
+        display: flex;
+        align-items: center;
+        height: 48px;
+        padding-top: 16px;
+        padding-left: 24px;
+        .header-1{
+          min-width: 350px;
+          .textBasic{
+            opacity: 0.5;
+          }
+        }
+        .header-2{
+          min-width: 210px;
+          .textBasic{
+            opacity: 0.5;
+          }
+        }
+        .header-3{
+          min-width: 130px;
+          display: flex;
+          justify-content: flex-end;
+          .textBasic{
+            opacity: 0.5;
+          }
+        }
+      }
+      .footer-container-list{
+        display: flex;
+        min-height: 64px;
+        position: relative;
+        .left-line{
+          background-color: #006dff;
+          width: 3px;
+          display: none;
+          position: absolute;
+          height: 100%;
+        }
+        .right-list-container{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          padding-left: 24px;
+          .list-name{
+            min-width: 350px;
+          }
+          .list-date{
+            min-width: 210px;
+          }
+          .list-action{
+            min-width: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .textBasic{
+              opacity: 0.5;
+            }
+            .delete-button {
+               cursor: pointer;
+            }
+            .edit-button{
+              padding-right: 16px;
+              button {
+               height: 32px;
+               width: 66px;
+               box-sizing: border-box;
+               padding: 0;
+               min-width: 62px;
+               font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .footer-container-list:hover{
+        background: rgba(0, 109, 255, 0.1);
+        .left-line{
+          display: block;
+          left: 0;
+        }
+      }
+    };
+}

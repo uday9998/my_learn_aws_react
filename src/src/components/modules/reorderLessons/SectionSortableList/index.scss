@@ -1,0 +1,45 @@
+.courseSection {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px;
+    position: relative;
+ 
+    .section__dragHandle {
+       position: absolute;
+       cursor: pointer;
+       left: 5px;
+       top: 22px;
+    }
+ 
+    .addedLessons {
+       width: 100%;
+       margin-top: 8px
+    }
+ 
+    .selectBtn-wrapper {
+       position: relative;
+       margin-top: 16px;
+       z-index: 2;
+    }
+ 
+    .selectBtn_active {
+       z-index: 3;
+    }
+ 
+ }
+ .lessonDragIcon {
+    height: 24px;
+ }
+ 
+ .courseSectionWrap {
+   // &:not(:first-of-type) {
+   //    margin-top: 16px;
+   // }
+}
+ 
+ @media screen and (max-width: 720px) {
+    .selectBtn-wrapper {
+       width: 100%;
+    }
+ }
+ 

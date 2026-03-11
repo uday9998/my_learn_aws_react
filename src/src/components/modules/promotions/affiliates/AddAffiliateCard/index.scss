@@ -1,0 +1,39 @@
+.addAffiliateCard {
+   padding: 24px 24px 30px 24px;
+
+   input {
+      margin-bottom: 24px;
+      padding-left: 16px!important;
+      padding-right: 16px!important;
+   }
+   .addAffiliateCard__btns {
+      display: flex;
+      justify-content: flex-end;
+      button {
+         &:last-of-type {
+            width: 150px;
+            padding: 0;
+            margin-left: 16px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .addAffiliateCard__btns {
+      flex-wrap: wrap;
+      button {
+         width: 100%!important;
+         height: 48px;
+         &:last-of-type {
+            margin-bottom: 16px;
+            margin-left: 0!important;
+            order: 1;
+         }
+      }
+      .addAffiliates__btn-cancel {
+         order: 2;
+         width: 100%;
+      }
+   }
+}

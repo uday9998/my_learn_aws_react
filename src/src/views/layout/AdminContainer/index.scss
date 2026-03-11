@@ -1,0 +1,108 @@
+.adminContainer {
+   background: #f4f7f7;
+   // height: 100%;
+   // padding-bottom: 32px;
+   width: 100%;
+   // width: calc(100% - 248px);
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -webkit-flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   overflow-y: auto;
+   -webkit-overflow-scrolling: touch;
+   scrollbar-width: thin;
+   height: 100%;
+
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+   .siteHeader {
+      width: auto;
+   }
+   .adminHeader {
+      // z-index: 2;
+   }
+   .adminContent {
+      z-index: 1;
+   }
+}
+.courses-create-edit{
+   height: auto;
+}
+
+@media screen and (max-width: 1280px) {
+   .adminContainer {
+      // width: calc(100% - 201px);
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .adminContainer {
+      width: 100% !important;
+      background-color: #fff;
+      padding-top: 60px;
+      //margin-bottom: 16px;
+      &.courses-create-edit .adminContent {
+         padding: 16px 0 0 0;
+      }
+      .adminHeader {
+         background: #F4F7F7;
+        // z-index: 2;
+      }
+      .adminContent {
+         width: 100%;
+         display: block;
+         overflow-x: hidden;
+         padding: 16px;
+       //  background-color: #fff !important;
+         .designCourse__addCourse {
+            .itemWrapper {
+               background-color: #fbfdff;
+            }
+         }
+         .designCourse__card {
+            .courseCard {
+               background-color: #fbfdff;
+            }
+         }
+      }
+   }
+}
+
+.icon__text__wrapper {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   gap: 5px;
+
+   svg {
+      margin-bottom: 2px;
+   }
+
+   .link__text {
+      margin-top: 10px;
+      cursor: pointer;
+      text-align: center;
+      color: #24554e;
+   }
+}

@@ -1,0 +1,36 @@
+.author-wraper-delete {
+   padding: 24px;
+   min-width: 200px;
+   .author-wraper-delete-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .closeIcon {
+         cursor: pointer;
+      }
+   }
+   .author-wraper-delete-content {
+      display: flex;
+      justify-content: center;
+      font-family: 'Avenir Next';
+   }
+   .author-wraper-delete-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
+      >div {
+         width: 100%;
+         &:first-of-type {
+            max-width: 120px;
+            margin-right: 16px;
+         }
+         &:last-of-type {
+            max-width: 120px;
+         }
+         button {
+            width: 100%;
+         }
+      }
+   }
+}

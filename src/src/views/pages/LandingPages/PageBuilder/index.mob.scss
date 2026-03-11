@@ -1,0 +1,18 @@
+.mob-pageBuilder {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 715px) {
+   .mob-pageBuilder {
+      >div {
+         &:nth-of-type(odd) {
+            margin-right: 16px;
+         }
+         &:last-of-type {
+            margin-right: 0;
+         }
+      }
+   }
+}

@@ -1,0 +1,441 @@
+$fontFamily: var(--primaryFont);
+$memberTextColor: var(--memberTextColor);
+$memberTextColorSecond: var(--memberTextColorSecond);
+
+.textBasic {
+   font-style: normal;
+   font-stretch: normal;
+   position: relative;
+   letter-spacing: normal;
+   -webkit-touch-callout: text;
+   -webkit-user-select: text;
+   -khtml-user-select: text;
+   -moz-user-select: text;
+   -ms-user-select: text;
+   user-select: text;
+   .mini-text{
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 150%;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: var(--memberTextColorGrey);
+      position: absolute;
+      margin-left: 4px;
+      top: 0%;
+      white-space: nowrap;
+   }
+}
+
+@media only screen and (max-width: 428px) {
+   .right-top-border {
+      font-size: 12px !important;
+   }
+}
+
+
+.textBasic_type_regular {
+   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+   font-weight: 400;
+   line-height: 1.5;
+   color: var(--greyscale_60);
+}
+
+.textBasic_type_bold800 {
+   font-weight: 800;
+   color: var(--greyscale_60);
+   line-height: 140%;
+}
+
+.textBasic_type_select {
+   font-weight: 400;
+   line-height: 132%;
+   color: $memberTextColor;
+}
+.textBasic_type_select_large {
+   font-weight: 400;
+   line-height: 168%;
+   color: $memberTextColor;
+}
+.textBasic_type_regularDefault {
+   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+   font-weight: 400;
+   line-height: 1.5;
+   color: $memberTextColor;
+}
+
+.textBasic_type_regularDefaultGrey {
+   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+   font-weight: 400;
+   line-height: 1.5;
+   color: var(--memberTextColorGrey);
+}
+
+.textBasic_type_bold700 {
+   font-weight: 700;
+}
+
+.textBasic_type_regularDefaultGrey145 {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   line-height: 145%;
+   color: var(--memberTextColorGrey);
+}
+
+.textBasic_type_regularDefaultGrey150 {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   line-height: 150%;
+   color: var(--memberTextColorGrey04);
+}
+
+
+.textBasic_type_regularDefault145 {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   line-height: 145%;
+   color: $memberTextColor;
+}
+
+
+.textBasic_type_regularDefaultSmallX {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   line-height: 132%;
+   color: $memberTextColor;
+}
+
+.textBasic_type_regularDefaultSmallXInter {
+   font-family: "Inter";
+   font-weight: 500;
+   line-height: 132%;
+   color: $memberTextColor;
+}
+
+.textBasic_type_regularDefaultSmall {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   line-height: 132%;
+   color: $memberTextColor;
+}
+
+
+.textBasic_type_regularDefaultSmallInter {
+   font-family: "Inter";
+   font-weight: 500;
+   line-height: 132%;
+   color: $memberTextColor;
+}
+
+
+.textBasic_type_regularLarge {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   line-height: 150%;
+   color: $memberTextColor;
+}
+
+.textBasic_type_medium {
+   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+   font-weight: 500;
+   line-height: 1.4;
+   color: $memberTextColorSecond;
+}
+
+.textBasic_type_medium140 {
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   line-height: 140%;
+   color: $memberTextColorSecond;
+}
+.textBasic_type_regular148 {
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   line-height: 148%;
+   color: $memberTextColor;
+}
+.textBasic_type_regular160 {
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   line-height: 160%;
+   color: $memberTextColor;
+}
+.textBasic_type_mediumLarge {
+   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+   font-weight: 500;
+   line-height: 1.5;
+   color: $memberTextColor;
+}
+
+.textBasic_type_mediumLargeGrey {
+   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+   font-weight: 500;
+   line-height: 1.5;
+   color: var(--memberTextColorGrey);
+}
+
+.textBasic_type_mediumSmall {
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   line-height: 148%;
+   color: $memberTextColor;
+}
+
+.textBasic_type_mediumSmallInter {
+   font-family: "Inter", sans-serif;
+   font-weight: 600;
+   line-height: 148%;
+   color: var(--greyscale_90);
+}
+
+.textBasic_type_mediumTitle {
+   font-family: "Inter", sans-serif;
+   font-weight: 600;
+   line-height: 148%;
+   color: $memberTextColor;
+}
+
+.textBasic_type_mediumXSmall {
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   line-height: 140%;
+   color: $memberTextColor;
+}
+
+
+.textBasic_type_medium160 {
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   line-height: 160%;
+   color: $memberTextColor;
+}
+
+.textBasic_type_medium150 {
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+   line-height: 150%;
+   color: $memberTextColor;
+}
+
+.textBasic_type_interNormal {
+   font-family: "Inter";
+   font-weight: 600;
+   line-height: 150%;
+   color: $memberTextColor;
+}
+
+
+.textBasic_type_medium153 {
+   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+   font-weight: 500;
+   line-height: 1.55;
+   color: $memberTextColor;
+}
+.textBasic_type_semiBold {
+   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+   font-weight: 600;
+   line-height: 1.4;
+   color: $memberTextColor;
+}
+.textBasic_type_bold {
+   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+   font-weight: 700;
+   line-height: 1.4;
+   color: $memberTextColor;
+}
+.textBasic_type_bold100 {
+   font-family: "Inter", sans-serif;
+   font-weight: 700;
+   line-height: 100%;
+   color: $memberTextColor;
+}
+.textBasic_type_bold133 {
+   font-family: "Inter", sans-serif;
+   font-weight: 700;
+   line-height: 133%;
+   color: $memberTextColor;
+}
+.textBasic_type_very_bold133 {
+   font-family: "Inter", sans-serif;
+   font-weight: 900;
+   line-height: 133%;
+   color: $memberTextColor;
+}
+
+.textBasic_type_regularMin {
+   font-family: "Inter", sans-serif;
+   font-weight: 400;
+   line-height: 130%;
+   color: $memberTextColorSecond;
+}
+.textBasic_type_regularMinInter {
+   font-family: "Inter";
+   font-weight: 600;
+   line-height: 130%;
+   color: $memberTextColorSecond;
+}
+
+.textBasic_type_small_12_weight {
+   font-weight: 500;
+   color: #24554E;
+}
+
+.textBasic_size_xlarge {
+   font-size: 20px;
+}
+
+.textBasic_size_xlarge_new_24 {
+   font-size: 24px;
+   font-weight: 500;
+}
+
+.textBasic_size_xlarge_new {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.textBasic_size_extraSmall {
+   font-size: 12px;
+   font-weight: 400;
+}
+
+.textBasic_size_large {
+   font-size: 18px;
+}
+
+.textBasic_size_large_new {
+   font-size: 18px;
+   font-weight: 500;
+   font-family: "Inter", sans-serif !important;
+}
+
+.textBasic_size_medium {
+   font-size: 16px;
+}
+
+.textBasic_size_small {
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.textBasic_size_small_new {
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.textBasic_size_small14 {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.textBasic_size_small_14 {
+   font-size: 14px;
+}
+
+.textBasic_size_big54 {
+   font-size: 54px;
+   color: #131F1E;
+}
+
+.textBasic_size_size_14{
+   font-size: 14px;
+}
+
+.textBasic_size_small14_500 {
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.textBasic_type_new__weight {
+   font-weight: 500;
+}
+
+.textBasic_type_new__weight__second {
+   font-weight: 400;
+}
+
+.textBasic_size_xsmall {
+   font-size: 12px;
+}
+
+.textBasic_size_xx_small {
+   font-size: 10px;
+}
+
+.textBasic_size_xxlarge {
+   font-size: 24px;
+}
+
+.textBasic_size_small_12 {
+   font-size: 13px;
+}
+.textBasic_size_xxlarge_new {
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.textBasic_size_bold700 {
+   font-weight: 700;
+}
+
+.textBasic_size_new36 {
+   font-size: 36px;
+   font-weight: 800;
+}
+
+.textBasic_size_new_size_28 {
+   font-size: 28px;
+}
+
+.textBasic_size_new_size_44 {
+   font-size: 44px;
+} 
+
+.textBasic_size_size_28 {
+   font-size: 28px;
+   @media screen and (max-width: 1023px) {
+     font-size: 24px;
+
+   }
+}
+.textBasic_size_size_28_res {
+   font-size: 28px;
+   @media screen and (max-width: 1023px) {
+     font-size: 20px;
+
+   }
+}
+
+.plan__main__left__bundle__item__left img {
+   flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+   .size-on-mobile {
+      font-size: 12px !important;
+   }
+}
+
+
+.textBasic_size_size_40 {
+   font-size: 40px;
+}
+
+.textBasic_size_size_56 {
+   font-size: 56px;
+}
+
+.textBasic_size_size_32 {
+   font-size: 32px;
+}
+
+.text-with-icon {
+   display: flex;
+   gap: 11px;
+   align-items: center;
+}
+.text__column{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+}

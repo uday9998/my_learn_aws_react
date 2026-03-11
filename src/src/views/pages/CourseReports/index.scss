@@ -1,0 +1,15 @@
+.courseReports-page {
+   width: calc(100% - 12px);
+}
+@media screen and (max-width: 1023px) {
+   .courseReports-page {
+      width: 100%;
+      .courseCommissions__container {
+         padding: 16px 16px 0;
+      }
+       .sales-content {
+         padding:  0 16px;
+         margin-top: 0;
+      }
+   }
+}

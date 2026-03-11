@@ -1,0 +1,44 @@
+.plan__tracking__page{
+    display: flex;
+    align-items: flex-start;
+    gap: 52px;
+    width: 100%;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 250px;
+      }
+    &__right{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 32px;
+        background: #FFFFFF;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        width: 100%;
+        &__block{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+            &__top{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        gap: 24px;
+
+        &__right {
+            padding: 16px;
+        }
+    }
+}

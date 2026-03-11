@@ -1,0 +1,33 @@
+.triangle {
+   position: absolute;
+   transform: translate(50%, -50%);
+   cursor: pointer;
+}
+
+.triangle_isOpen_true {
+   border-left: 6px solid transparent;
+   border-right: 6px solid transparent;
+   border-top: 7px solid #3f4f65;
+   right: 6px;
+   top: 25%;
+}
+
+.triangle_isOpen_false {
+   border-left: 7px solid #3f4f65;
+   border-top: 6px solid transparent;
+   border-bottom: 6px solid transparent;
+   right: 40px;
+   top: 50%;
+}
+
+.triangleSvg_isOpen_true {
+   transform: rotate(-90deg);
+}
+
+.triangleSvg_isOpen_false {
+   transform: rotate(90deg);
+}
+
+.down_isOpen_true {
+   transform: rotate(-90deg);
+}

@@ -1,0 +1,16 @@
+.customCode__editable {
+   margin: 8px 0;
+
+   .customCode_input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #cccccc;
+      color: rgba(34, 47, 62, .5);
+      padding: 10px;
+      cursor: pointer;
+
+      &:focus-within {
+         outline: none;
+      }
+   }
+}

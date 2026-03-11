@@ -1,0 +1,31 @@
+.net-revenue-form
+{
+    width: 100%;
+    &-flex{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .report-container-filter {
+       >div {
+          flex: 1;
+       }
+       .input_date {
+          .inputNew {
+             height: 44px;
+          }
+          .input_footer  {
+             margin-top: 0;
+          }
+       }
+    }
+    @media screen and (max-width: 701px) {
+      .report-container-filter {
+         flex-direction: column;
+         & > div {
+            width: 100%;
+         }
+      }
+    }
+}

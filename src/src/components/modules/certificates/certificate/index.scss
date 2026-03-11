@@ -1,0 +1,159 @@
+.sidebarBg {
+   background-color: #ffffff;
+   box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+}
+.certificatesContentDesign {
+   .certificateColumn {
+      display: flex-column;
+      width: 368px;
+      height: 580px;
+      overflow: scroll;
+      overflow-x: hidden;
+   }
+   .adminContent {
+      box-sizing: border-box;
+   }
+   .designContentRectangle {
+      padding: 24px;
+      padding: 0px 0 24px 0px;
+      border-radius: 8px;
+      height: calc(100% - 112px);
+      overflow: scroll;
+      overflow-x: hidden;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+   .content_left {
+      position: relative;
+      display: flex;
+      flex: none !important;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      border-right: none;
+      min-width: 288px;
+   }
+   .linkText{
+     margin-top: 4px;
+   }
+   .linkRectangle{
+      width: 80px;
+      height: 68px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+      span{
+         font-family: 'Avenir Next';
+         font-size: 12px;
+         font-weight: 600;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+         color: #a9a8a8;
+         text-decoration: none;
+      }
+
+   }
+   .linkRectangleActive{
+      width: 80px;
+      height: 68px;
+      background-color: rgba(124, 183, 64, 0.05);
+      color: rgb(124, 183, 64);
+      border-bottom: 2px solid #7cb740;
+      text-decoration: none;
+      span{
+         color: #7cb740;
+      }
+      .svgGreen{
+         fill: #7cb740;
+      }
+   }
+}
+
+.CertificatesTemplatesList{
+   .certificateColumn{
+      display: flex-column;
+      width: 264px;
+      height: 770px;
+      overflow: scroll;
+      overflow-x: hidden;
+   }
+   .designContentRectangle{
+      height: 100%;
+      background-color: #ffffff;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+     }
+     ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+}
+.certificateView {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.toggleMenu {
+   visibility: hidden;
+   margin-top: 367px;
+}
+
+.clearFlow {
+   width: 0px;
+   height: 100%;
+}
+
+.designContentRectangle.content_left {
+   overflow: visible;
+}
+
+@media (min-width: 1024px) and (max-width: 1320px) {
+   .toggleMenu {
+      visibility: visible;
+   }
+   .designContentRectangle.content_left {
+      min-width: unset;
+      z-index: 2;
+      position: absolute;
+      max-width: 514px;
+      transition: max-width .7s ease-in-out;
+   }
+   .menuClosed {
+      .templateList {
+         max-width: 0;
+         padding-left: 80px;
+         padding-right: 0;
+         .design {
+            display: none;
+         }
+      }
+   }
+}
+
+.templateList {
+   padding-top: 24px;
+   padding-left: 96px;
+   padding-right: 24px;
+   height: calc(100vh - 112px);
+   max-height: 735px;
+   overflow-x: hidden;
+   overflow-y: auto;
+   box-sizing: border-box;
+   &::-webkit-scrollbar {
+      display: none;
+   }
+}
+
+.templateMenu {
+   position: fixed;
+}

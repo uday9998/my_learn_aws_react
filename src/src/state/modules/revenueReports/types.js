@@ -1,0 +1,10 @@
+export const GET_REVENUE_STATISTIC_START = 'revenueReports/GET_REVENUE_STATISTIC_START';
+export const GET_REVENUE_STATISTIC_COMPLETED = 'revenueReports/GET_REVENUE_STATISTIC_COMPLETED';
+export const GET_REVENUE_STATISTIC_FAILED = 'revenueReports/GET_REVENUE_STATISTIC_FAILED';
+export const GET_GHOST_START = 'revenueReports/GET_GHOST_START';
+export const GET_GHOST_COMPLETED = 'revenueReports/GET_GHOST_COMPLETED';
+export const GET_GHOST_FAILED = 'revenueReports/GET_GHOST_FAILED';
+export const GET_STEPS_START = 'revenueReports/GET_STEPS_START';
+export const GET_STEPS_COMPLETED = 'revenueReports/GET_STEPS_COMPLETED';
+export const GET_STEPS_FAILED = 'revenueReports/GET_STEPS_FAILED';
+export const GET_REVENUE_FILTER_STATISTIC_START = 'revenueReports/GET_REVENUE_FILTER_STATISTIC_START';

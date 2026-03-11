@@ -1,0 +1,9 @@
+.plan__main{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column-reverse;
+    }
+}

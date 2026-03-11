@@ -1,0 +1,105 @@
+.playlist {
+   padding: 8px;
+   border-radius: 16px;
+   width: 100%;
+   display: flex;
+   gap: 12px;
+   align-items: center;
+   &__img {
+      position: relative;
+      padding-bottom: 8px;
+      padding-right: 8px;
+      .playlistBgImg {
+         width: 75px;
+         height: 42px;
+      }
+      .playlistRealImg {
+         width: 75px;
+         height: 42px;
+         object-fit: cover;
+         border-radius: 8px;
+         position: absolute;
+         left: 8px;
+         top: 8px;
+      }
+   }
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      // &__title {
+      //    text-overflow: ellipsis;
+      //    overflow: hidden;
+      //    white-space: nowrap;
+      //    max-width: 320px;
+      //    display: block !important;
+      // }
+      &__top {
+         display: flex;
+         gap: 8px;
+         .playlist__status {
+            background: #131F1E;
+            border-radius: 8px;
+            padding: 0 6px;
+         }
+      }
+      &__bottom {
+         display: flex;
+         gap: 8px;
+         &__mob {
+            display: none;
+            @media (max-width: 1023px) {
+               display: flex;
+               background-color:#F8FAFA;
+               border-radius: 8px;
+               padding: 4px 8px;
+               width: max-content;
+           }
+         }
+         &__listing {
+            @media (max-width: 1023px) {
+                display: none;
+            }
+         }
+         .grey_line {
+            background-color: #E7E9E9;
+            width: 1px;
+            height: 18px;
+         }
+      }
+   }
+   .playlist__status__wrapper__mob {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: #131F1E;
+      border-radius: 8px;
+      padding: 0 6px;
+      display: none;
+      @media (max-width: 1023px) {
+         display: block;
+      }
+   }
+   .playlist__status__wrapper {
+      @media (max-width: 1023px) {
+         display: none;
+      }
+   }
+
+   // .playlist__content__bottom {
+   //    @media (max-width: 1023px) {
+   //       display: none;
+   //    }
+   // }
+}
+.playlistBordered {
+   border: 1px solid #E7E9E9;
+}
+
+.playlistSingle {
+   padding-left: 0px;
+}
+
+.playlistMain {
+   width: 100%;
+}

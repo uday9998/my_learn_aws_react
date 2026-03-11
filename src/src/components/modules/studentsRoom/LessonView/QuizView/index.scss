@@ -1,0 +1,91 @@
+.LessonQuiz {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+   width: 610px;
+    .LessonQuiz__answer {
+      margin-bottom: 24px;
+    }
+    .LessonQuiz__btn {
+      display: flex;
+      justify-content: space-between;
+      .prev__btn{
+          margin-right: 16px;
+      }
+    }
+    .LessonQuiz__btn__result {
+      display: flex;
+      justify-content:  center;
+    }
+    &__numbers {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+      >div {
+         position: relative;
+      }
+      &__point {
+         background: var(--buttonBgcolor);
+         width: 4px;
+         height: 4px;
+         position: absolute;
+         border-radius: 50%;
+         bottom: -6px;
+         left: 0;
+         right: 0;
+         margin: 0 auto;
+      }
+      &__check {
+         position: absolute;
+         border-radius: 50%;
+         bottom: -6px;
+         left: 0;
+         right: 0;
+         margin: 0 auto;
+         width: 12px;
+         height: 12px;
+         svg {
+            path {
+               fill: var(--activeColor);
+            }
+         }
+
+      }
+      &__single {
+         background: #fff;
+         border: 1px solid rgba(19, 31, 30, 0.1);
+         border-radius: 4px;
+         display:  flex;
+         align-items: center;
+         justify-content: center;
+         width: 40px;
+         height: 40px;
+         cursor: pointer;
+      }
+      &__single__active {
+         background: #fff;
+         border: 1px solid var(--buttonBgcolor);
+         border-radius: 4px;
+         display:  flex;
+         align-items: center;
+         justify-content: center;
+         width: 40px;
+         height: 40px;
+         cursor: pointer;
+      }
+    }
+    &__content {
+      background: #FFFFFF;
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      padding: 56px 88px;
+    }
+
+    @media all and (max-width: 1024px) {
+         &__content {
+            padding: 16px;
+         }
+    }
+}

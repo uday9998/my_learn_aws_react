@@ -1,0 +1,17 @@
+.bulletEditable {
+   .colorInput  {
+      .colorInput__wrapper {
+         margin-top: 0;
+      }
+   }
+   .colorInput__input{
+      width: 100%;
+   }
+   &_disabledtext {
+      background: #f8fafa;
+      border: 1px solid #e7e9e9;
+      box-sizing: border-box;
+      border-radius: 12px;
+      padding: 8px 16px;
+   }
+}

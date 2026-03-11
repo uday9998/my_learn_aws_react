@@ -1,0 +1,48 @@
+.membersTable {
+
+   .membersTable__table {
+      display: flex;
+      flex-direction: column;
+   }
+
+}
+
+
+@media screen and (max-width: 720px) {
+   .membersTable {
+
+      .membersTable__table {
+         flex-direction: row;
+         height: 100%;
+
+         .tableHeader {
+            flex: 1;
+
+            .tableRow {
+               height: 100%;
+               flex-direction: column;
+
+               th {
+                  width: 100%;
+                  flex: 1!important;
+               }
+            }
+         }
+
+         .tableBody {
+            flex: 1;
+
+            .tableRow {
+               height: 100%;
+               flex-direction: column;
+
+               td {
+                  width: 100%;
+                  flex:1!important;
+               }
+            }
+         }
+      }
+   }
+
+}

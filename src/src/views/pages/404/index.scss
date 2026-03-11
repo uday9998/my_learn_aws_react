@@ -1,0 +1,23 @@
+.error__user{
+    position: relative;
+    img{
+        top: -170px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .site_logo_img {
+      max-height: 30px;
+    }
+    h1{
+        position: absolute;
+        left: 50%;
+        top: -95px;
+        font-size: 25px;
+        transform: translateX(-50%);
+    }
+}
+
+
+.sidebar{
+    display: none;
+}

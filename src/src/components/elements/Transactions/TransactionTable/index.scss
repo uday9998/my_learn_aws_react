@@ -1,0 +1,176 @@
+.transactionsTable {
+    width: 100%;
+   .transactions__table {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      .oval {
+            width: 8px;
+            height: 8px;
+            background-color: #0edd4d;
+            display: inline-block;
+            border-radius: 8px;
+            margin-right: 2px;
+      }
+      .tableHeader {
+         .tableRow {
+            margin-bottom: 32px;
+            padding: 0 8px;
+         }
+      }
+      .tableRow {
+
+         td {
+            -o-text-overflow: ellipsis;
+               text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-right: 8px;
+            span {
+               font-weight: normal;
+               line-height: 1.71;
+               letter-spacing: normal;
+               color: #333333;
+               padding: 0px 5px 0px 0px;
+               -o-text-overflow: ellipsis;
+                  text-overflow: ellipsis;
+               overflow: hidden;
+               white-space: nowrap;
+               max-width: 100%;
+            }
+            &:nth-child(1) {
+               -webkit-box-flex: 1;
+               -webkit-flex: 1;
+                   -ms-flex: 1;
+                       flex: 1;
+               span {
+                  display: inline-block;
+               }
+            }
+
+         }
+     }
+      th {
+         -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+         overflow: hidden;
+         white-space: nowrap;
+         span {
+            line-height: 1.71;
+            font-weight: 900;
+            -o-text-overflow: ellipsis;
+               text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+         }
+         &:nth-child(1){
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+                -ms-flex: 1;
+                    flex: 1;
+         }
+
+
+      }
+   }
+
+}
+
+@media screen and (max-width: 1280px) {
+   .transactionsTable {
+      .transactions__table {
+         width: 100%;
+      }
+   }
+}
+@media screen and (min-width: 1024px) {
+   .transactionsTable {
+      .mob-transactions-tabel {
+         display: none;
+      }
+      .transactions__table {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+      }
+   }
+}
+@media screen and (max-width: 1023px) {
+   .transactionsTable {
+      overflow-x: hidden;
+      .transactions__table{
+         display: none;
+      }
+
+      .mob-transactions-tabel {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -webkit-flex-direction: column;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         padding: 24px;
+         border-radius: 8px;
+         border: solid 1px #cddaf1;
+         background-color: #fbfdff;
+         margin: 12px 0;
+         .mob-transactions-tabel-row {
+            &.refund-row {
+               margin: 16px 16px 16px 0;
+            }
+            height: 24px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            width: 100%;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            font-size: 12px;
+            margin-top: 8px;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #3f4f65;
+            .header {
+               font-weight: 600;
+               -webkit-box-flex: 1;
+               -webkit-flex: 1 1;
+                   -ms-flex: 1 1;
+                       flex: 1 1;
+               margin-right: 8px;
+            }
+            .transactions-value {
+               font-weight: 500;
+               -webkit-box-flex: 1;
+               -webkit-flex: 1 1;
+                   -ms-flex: 1 1;
+                       flex: 1 1;
+               -o-text-overflow: ellipsis;
+                  text-overflow: ellipsis;
+               overflow: hidden;
+               white-space: nowrap;
+            }
+         }
+         .mob-transactions-tabel-bottom {
+            margin-top: 14px;
+            button {
+               width: 100%;
+            }
+         }
+      }
+   }
+}

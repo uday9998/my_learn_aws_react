@@ -1,0 +1,29 @@
+.editor-new {
+   // font-family: 'Open Sans', sans-serif;
+   // font-style: normal;
+   // font-weight: 600;
+   // font-size: 14px;
+   // line-height: 1;
+   >div {
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      padding: 8px 16px;
+      min-height: 79px;
+      &::selection {
+            background: #C5EEFF;
+            color: #131f1e;
+      }
+      &:focus-visible {
+         border: 1px solid #E7E9E9;
+         outline: none;
+      }
+   }
+  img {
+     max-width: 100%;
+  }
+
+}
+
+.editor-new-title {
+   margin-bottom: 8px;
+}

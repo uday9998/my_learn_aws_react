@@ -1,0 +1,76 @@
+export const GET_ALLMEMBERS_START = 'automation/GET_ALLMEMBERS_START';
+export const GET_ALLMEMBERS_COMPLETED = 'automation/GET_ALLMEMBERS_COMPLETED';
+export const GET_ALLMEMBERS_FAILED = 'automation/GET_ALLMEMBERS_FAILED';
+
+export const GET_SORTED_ALL_MEMBERS_START = 'automation/GET_SORTED_ALL_MEMBERS_START';
+export const GET_SORTED_ALL_MEMBERS_COMPLETED = 'automation/GET_SORTED_ALL_MEMBERS_COMPLETED';
+export const GET_SORTED_ALL_MEMBERS_FAILED = 'automation/GET_SORTED_ALL_MEMBERS_FAILED';
+
+export const GET_ALLCOUPONS_START = 'automation/GET_ALLCOUPONS_START';
+export const GET_ALLCOUPONS_COMPLETED = 'automation/GET_ALLCOUPONS_COMPLETED';
+export const GET_ALLCOUPONS_FAILED = 'automation/GET_ALLCOUPONS_FAILED';
+
+export const GET_COURSES_START = 'automation/GET_COURSES_START';
+export const GET_COURSES_COMPLETED = 'automation/GET_COURSES_COMPLETED';
+export const GET_COURSES_FAILED = 'automation/GET_COURSES_FAILED';
+
+export const GET_SORTED_COURSES_START = 'automation/GET_SORTED_COURSES_START';
+export const GET_SORTED_COURSES_COMPLETED = 'automation/GET_SORTED_COURSES_COMPLETED';
+export const GET_SORTED_COURSES_FAILED = 'automation/GET_COURSES_FAILED';
+
+export const GET_TAGS_START = 'automation/GET_TAGS_START';
+export const GET_TAGS_COMPLETED = 'automation/GET_TAGS_COMPLETED';
+export const GET_TAGS_FAILED = 'automation/GET_TAGS_FAILED';
+
+export const GET_AUTOMATION_START = 'automation/GET_AUTOMATION_START';
+export const GET_AUTOMATION_COMPLETED = 'automation/GET_AUTOMATION_COMPLETED';
+export const GET_AUTOMATION_FAILED = 'automation/GET_AUTOMATION_FAILED';
+
+export const UPDATE_AUTOMATION_START = 'automation/UPDATE_AUTOMATION_START';
+export const UPDATE_AUTOMATION_COMPLETED = 'automation/UPDATE_AUTOMATION_COMPLETED';
+export const UPDATE_AUTOMATION_FAILED = 'automation/UPDATE_AUTOMATION_FAILED';
+
+export const GET_AUTOMATIONS_START = 'automation/GET_AUTOMATIONS_START';
+export const GET_AUTOMATIONS_COMPLETED = 'automation/GET_AUTOMATIONS_COMPLETED';
+export const GET_AUTOMATIONS_FAILED = 'automation/GET_AUTOMATIONS_FAILED';
+
+export const DELETE_AUTOMATION_START = 'automation/DELETE_AUTOMATION_START';
+export const DELETE_AUTOMATION_COMPLETED = 'automation/DELETE_AUTOMATION_COMPLETED';
+export const DELETE_AUTOMATION_FAILED = 'automation/DELETE_AUTOMATION_FAILED';
+
+export const SAVE_TRIGGER_START = 'automation/SAVE_TRIGGER_START';
+export const SAVE_TRIGGER_COMPLETED = 'automation/SAVE_TRIGGER_COMPLETED';
+export const SAVE_TRIGGER_FAILED = 'automation/SAVE_TRIGGER_FAILED';
+
+export const ADD_TRIGGER_START = 'automation/ADD_TRIGGER_START';
+export const ADD_TRIGGER_COMPLETED = 'automation/ADD_TRIGGER_COMPLETED';
+export const ADD_TRIGGER_FAILED = 'automation/ADD_TRIGGER_FAILED';
+
+export const SAVE_ACTION_START = 'automation/SAVE_ACTION_START';
+export const SAVE_ACTION_COMPLETED = 'automation/SAVE_ACTION_COMPLETED';
+export const SAVE_ACTION_FAILED = 'automation/SAVE_ACTION_FAILED';
+
+export const ADD_ACTION_START = 'automation/ADD_ACTION_START';
+export const ADD_ACTION_COMPLETED = 'automation/ADD_ACTION_COMPLETED';
+export const ADD_ACTION_FAILED = 'automation/ADD_ACTION_FAILED';
+
+export const DELETE_ACTION_START = 'automation/DELETE_ACTION_START';
+export const DELETE_ACTION_COMPLETED = 'automation/DELETE_ACTION_COMPLETED';
+export const DELETE_ACTION_FAILED = 'automation/DELETE_ACTION_FAILED';
+
+export const DELETE_TRIGGER_START = 'automation/DELETE_TRIGGER_START';
+export const DELETE_TRIGGER_COMPLETED = 'automation/DELETE_TRIGGER_COMPLETED';
+export const DELETE_TRIGGER_FAILED = 'automation/DELETE_TRIGGER_FAILED';
+
+export const SET_INPUT = 'automation/SET_INPUT';
+export const SET_CONDITION_INPUT = 'automation/SET_CONDITION_INPUT';
+export const CHOOSE_TRIGGER = 'automation/CHOOSE_TRIGGER';
+export const CHOOSE_ACTION = 'automation/CHOOSE_ACTION';
+export const ADD_CONDITION = 'automation/ADD_CONDITION';
+export const DELETE_CONDITION = 'automation/DELETE_CONDITION';
+export const CHANGE_CONDITION = 'automation/CHANGE_CONDITION';
+
+
+export const GET_QUIZZES_START = 'automation/GET_QUIZZES_START';
+export const GET_QUIZZES_COMPLETED = 'automation/GET_QUIZZES_COMPLETED';
+export const GET_QUIZZES_FAILED = 'automation/GET_QUIZZES_FAILED';

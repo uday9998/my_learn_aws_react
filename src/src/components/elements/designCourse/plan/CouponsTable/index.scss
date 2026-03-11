@@ -1,0 +1,79 @@
+@media (min-width: 1024px)  and (max-width: 1280px) {
+   .couponsTable {
+      overflow-x: scroll;
+      .coupons {
+         min-width: 633px;
+      }
+   }
+}
+
+
+@media screen and (min-width: 1024px) {
+   .couponsTable {
+
+      .plans {
+         display: flex;
+         flex-direction: column;
+      }
+      .mob-plans-tabel {
+         display: none;
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .desctop-tab {
+      display: none;
+      .tableRow {
+         display: none;
+      }
+   }
+      .tableRow {
+         display: none;
+      }
+   .couponsTable {
+      overflow-x: hidden;
+      padding: 0;
+      .mob-plans-tabel {
+         display: flex;
+         flex-direction: column;
+         padding: 24px;
+         border-radius: 8px;
+         border: solid 1px #cddaf1;
+         background-color: #fbfdff;
+         margin: 12px 0;
+         .mob-plans-tabel-row {
+            height: 24px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            font-size: 12px;
+
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #3f4f65;
+            .header {
+               font-weight: 600;
+               flex: 1 1;
+            }
+            .plans-value {
+               font-weight: 500;
+               flex: 1 1;
+            }
+         }
+         .mob-plans-tabel-bottom {
+            margin-top: 14px;
+         }
+      }
+   }
+      .add-plan {
+         width: 100%;
+         button {
+            width: 100% !important;
+         }
+      }
+
+}

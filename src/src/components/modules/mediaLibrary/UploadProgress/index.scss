@@ -1,0 +1,101 @@
+.uploadCont{
+  &.progressFixed {
+   position: fixed;
+   bottom: 0px;
+   width: calc(100% - 248px);
+   margin-left: 248px;
+   left: 0;
+   box-shadow: 0 8px 6px -6px black;
+  }
+  justify-content: center;
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  box-sizing: content-box;
+  .uploadCont_wrapper{
+   &.fixed {
+      width: 50%;
+   }
+    .cancel_btn {
+       display: flex;
+       svg {
+          margin-left: 10px;
+       }
+    }
+  }
+  .uploadCont_uploadProgress {
+    background-color: #ddd;
+    border-radius: 15px;
+    margin-top: 5px;
+    height: 12px;
+  }
+ .uploadCont_uploadBar {
+    width: 20%;
+    height: 12px;
+    background-color: #7cb740;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+   .uploadCont.progressFixed{
+      width: calc(100% - 201px);
+      margin-left: 201px;
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .uploadCont{
+      width: 100%;
+      margin-left: 0px;
+      padding: 10px 20px 20px;
+      &.progressFixed {
+         margin-left: 0;
+         width: 100vw;
+      }
+      box-sizing: border-box;
+      .uploadCont_wrapper{
+         width: 100%;
+         &.fixed {
+            width: 100%;
+         }
+      }
+   }
+}
+.circl__proggress{
+   position: absolute;
+   width: 48px;
+   height: 48px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   .CircularProgressbar-text{
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 168%;
+      text-align: center;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      fill:  var(--primary_80) !important;
+      font-size: 20px;
+      text-anchor: middle;
+   }
+}
+.CircularProgressbar  {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .CircularProgressbarWithChildren__text {
+    margin-top: auto;
+     white-space: nowrap;
+     margin-top: 9px;
+ }
+
+ .CircularProgressbarWithChildren{
+    div{
+       position: relative !important;
+    }
+ }

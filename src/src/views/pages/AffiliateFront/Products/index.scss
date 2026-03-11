@@ -1,0 +1,20 @@
+.affiliate__front__products{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0px;
+    gap: 20px;
+    &__content{
+        background: #FFFFFF;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+    }
+}

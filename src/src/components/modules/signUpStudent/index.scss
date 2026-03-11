@@ -1,0 +1,228 @@
+.singUp__container {
+   width: 100%;
+   max-width: 576px;
+   margin-left: auto;
+   margin-right: auto;
+   a {
+      text-decoration: none;
+   }
+   .form-label-group {
+      input  {
+         font-family: var(--school-font);
+      }
+      input:focus {
+         border: 1px solid var(--button-color-text);
+      }
+      label {
+         font-family: var(--school-font);
+      }
+   }
+   .textBasic_type_regular {
+      font-family: var(--school-font);
+   }
+   .textBasic_type_normal {
+      font-family: var(--school-font);
+   }
+   .login__img {
+      width: 623px;
+      height: 200px;
+      border-radius: 8px 8px 0 0 !important;
+      // border-top-left-radius: 8px;
+      // border-top-right-radius: 8px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .logIn__title__courses {
+         text-align: center;
+         // margin-top: 24px;
+         padding-top: 24px;
+      }
+   }
+
+   .logIn {
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+      .darkBlack_btn {
+         margin-top: 40px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         button {
+            border-radius: 8px;
+            line-height: 1.5;
+            letter-spacing: 1.14px;
+            height: 56px;
+            font-family: var(--school-font);
+            font-weight: 900;
+            background-color: var(--button-color-text);
+            text-transform: uppercase;
+         }
+      }
+      .logIn__account {
+         margin: 7px 0 0px 0;
+         a {
+            span {
+               color: var(--button-color-text);
+            }
+         }
+      }
+      .miestroLogo {
+         margin-bottom: 45px;
+      }
+
+      .logIn__main {
+         flex: 1 1;
+         max-width: 416px;
+         min-width: 350px;
+      }
+      .logIn__form {
+         margin-top: 24px;
+      }
+      .logIn__artwork {
+         margin-top: 170px;
+         margin-left: 50px;
+         width: 100%;
+         max-width: 416px;
+         img {
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+      .logIn__rememberMe {
+         display: flex;
+         justify-content: space-between;
+         margin-top: 23px;
+         margin-bottom: 40px;
+         a {
+            text-decoration: none;
+         }
+         .FilledCheckBox__label {
+            margin-left: 5px;
+            position: relative;
+            top: 1px;
+            span {
+               font-size: 18px;
+               line-height: 1.33;
+               font-family: var(--school-font);
+               font-weight: 400;
+         }
+       }
+      }
+      .logIn__social {
+         display: flex;
+         justify-content: center;
+
+         .facebook {
+            width: 85px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #3b5998;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            cursor: pointer;
+         }
+         .google {
+            width: 85px;
+            height: 60px;
+            border-radius: 30px;
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+         }
+         svg {
+            fill: #fff;
+          }
+      }
+   }
+}
+
+.logIn__withImage {
+   max-width: 1128px;
+}
+
+@media screen and (max-width: 1023px) {
+   .logIn__container {
+      max-width: 551px!important;
+         .login__img {
+            width: initial !important;
+         }
+      .logIn {
+         .miestroLogo {
+            display: none;
+         }
+         .logIn__form {
+            margin-top: 12px 0 0;
+         }
+      }
+   }
+   .logIn__rememberMe {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      flex-direction: column;
+      div{
+         text-overflow: ellipsis;
+         overflow: hidden;
+         white-space: nowrap;
+         margin-bottom: 2px;
+         margin-top: 2px;
+         a {
+            width: 20px;
+
+            span {
+               min-width: 100%;
+               text-overflow: ellipsis;
+               overflow: hidden;
+               white-space: nowrap;
+            }
+         }
+      }
+   }
+   .logIn__main {
+      max-width: none!important;
+      min-width: 0!important;
+   }
+   .logIn__artwork {
+      display: none!important;
+   }
+}
+
+
+@media screen and (max-width: 724px) {
+   .logIn {
+      padding: 24px;
+   }
+}
+
+
+.login-with-google-btn {
+   transition: background-color .3s, box-shadow .3s;
+
+   padding: 12px 16px 12px 42px;
+   border: none;
+   border-radius: 3px;
+   box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+   text-align: center;
+   margin-top: 8px;
+   color: #757575;
+   max-width: max-content;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: 500;
+   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+   background-color: white;
+   background-repeat: no-repeat;
+   background-position: 12px 11px;
+
+}
+
+

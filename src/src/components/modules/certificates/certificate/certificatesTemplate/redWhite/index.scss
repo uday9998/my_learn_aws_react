@@ -1,0 +1,105 @@
+.redWhite {
+   width: 776px;
+   height: 548px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   input {
+      border: none;
+      min-width: 350px;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   textarea {
+      border: none;
+      min-width: 250px;
+      resize: none;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   .redWhiteTitle {
+      margin-bottom: 27px;
+      input{
+         font-size: 28px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+         width: 420px;
+      }
+   }
+   .redWhiteBelowTitle {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-bottom: 4px;
+   }
+   .redWhiteName {
+      font-size: 56px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+   }
+   .redWhiteNote {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-bottom: 8px;
+   }
+   .redWhiteCourseName {
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-bottom: 10px;
+   }
+   .redWhiteDate {
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+   }
+   .redWhiteBackground{
+      background-color: #d35543;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 776px;
+      height: 550px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .redWhiteInnerBackground{
+      width: 645px;
+      height: 483px;
+      background-color: #ffffff;
+      border: 8px solid #000033;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .redWhiteLogo{
+      margin-top: 27px;
+      margin-bottom: 24px;
+      .defaultLogo {
+         width: 79px;
+         height: 83px;
+      }
+   }
+}

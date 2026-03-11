@@ -1,0 +1,37 @@
+.edit__payment {
+   form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+   &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+   &__flex {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 49% 49%;
+   }
+   &__date-cvv {
+      gap: 12px;
+   }
+   &__input {
+      position: relative;
+      max-width: 100%;
+      background: #ffffff;
+      outline: none;
+      border: 1px solid var(--greyscale_10);
+      box-sizing: border-box;
+      border-radius: 12px;
+      padding: 11px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .StripeElement {
+         width: 100%;
+      }
+   }
+}

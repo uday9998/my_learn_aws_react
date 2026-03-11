@@ -1,0 +1,91 @@
+.affiliate__product__item {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+
+    &__divider {
+        background-color: #E7E9E9;
+        height: 100%;
+        width: 1px;
+    }
+
+    &__left {
+        width: 50%;
+
+        .left__top {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+
+            &__image_wrapper {
+                border: 1px solid #E7E9E9;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            img {
+                width: 80px;
+                object-fit: cover;
+                height: 45px;
+                border-radius: 8px;
+            }
+        }
+
+        .left__urls {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 20px 20px 20px;
+            gap: 12px;
+        }
+
+        .left__url {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            &__bottom {
+                display: flex;
+                align-items: center;
+                gap: 15.5px;
+            }
+        }
+    }
+
+    &__right {
+        height: 100%;
+        background: #F8FAFA;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        &__promotions {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 16px;
+            border-bottom: 1px solid #E7E9E9;
+            .content {
+                display: grid;
+                grid-template-columns: repeat(3,auto);
+                gap: 16px;
+
+                .affiliate__promotion__file {
+                    min-width: min-content;
+                }
+            }
+            .top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}

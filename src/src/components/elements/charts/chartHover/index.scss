@@ -1,0 +1,28 @@
+.focus text {
+   font-size: 14px;
+}
+
+.tooltip {
+   fill: white;
+   stroke: #E7E9E9;
+   .__react_component_tooltip {
+      z-index: 999999999999999999;
+   }
+}
+
+.tooltip-border {
+   fill: #E7E9E9;
+}
+
+.tooltip-circle {
+   fill: #36796F;
+}
+
+.tooltip-date, .tooltip-likes, .tooltip-value, .tooltip-second-likes, .tooltip-second-value {
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 150%;
+   fill: #444C4B;
+}

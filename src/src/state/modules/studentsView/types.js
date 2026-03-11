@@ -1,0 +1,3 @@
+export const GET_CHECKOUT_START = 'studentsView/GET_CHECKOUT_START';
+export const GET_CHECKOUT_COMPLETED = 'studentsView/GET_CHECKOUT_COMPLETED';
+export const GET_CHECKOUT_FAILED = 'studentsView/GET_CHECKOUT_FAILED';

@@ -1,0 +1,97 @@
+.affiliate__offer__page{
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    padding: 40px 48px;
+    justify-content: space-between;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &__title{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        &__offers{
+            display: grid;
+            grid-template-columns: repeat(3,32%);
+            gap: 24px;
+        }
+        .info{
+            margin-top: 8px;
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    @media screen and (max-width: 1023px) {
+        padding: 0;
+        border: none;
+
+        &__top__offers {
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media screen and (max-width: 701px) {
+        &__top__offers {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+.affiliate__offer{
+    width: 100%;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    cursor: pointer;
+    box-sizing: border-box;
+    &__top{
+        position: relative;
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 12px 12px 0px 0px;
+            height: 162px;
+        }
+        &__actions{
+            position: absolute;
+            top: 12px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0px 12px;
+            &__right{
+                display: flex;
+                gap: 14px;
+                &__info{
+                    background: rgba(19, 31, 30, 0.7);
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    padding: 8px;
+                    gap: 8px;
+                }
+                &__unlock{
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    padding: 8px;
+                    gap: 8px;
+                    background: var(--buttonBgcolor);
+                }
+            }
+        }
+    }
+    &__bottom{
+        padding: 16px 24px 12px 24px;
+    }
+}

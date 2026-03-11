@@ -1,0 +1,102 @@
+.community__right {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   min-width: 331px;
+   @media screen and (max-width: 1440px) {
+      min-width: min-content;
+   }
+   .colendar {
+      z-index: 1;
+   }
+   &__info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      box-sizing: border-box;
+      background: #ffffff;
+      border-radius: 12px;
+      // .status__simple {
+      //    margin-top: 2px;
+      //    margin-bottom: 12px;
+      // }
+      &__blocks {
+         margin-top: 24px;
+         display: flex;
+         width: 100%;
+         gap: 12px;
+      }
+      &__block {
+         box-sizing: border-box;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         padding: 6px 0px 6px;
+         gap: 4px;
+         width: 100%;
+         background: #ffffff;
+         border: 1px solid #e7e9e9;
+         border-radius: 12px;
+      }
+   }
+   &__block {
+      background: #ffffff;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 40px;
+      &__content{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         gap: 12px;
+      }
+      &__empty{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         gap: 16px;
+         align-items: center;
+         width: 100%;
+         span{
+            text-align: center;
+         }
+      }
+   }
+   .communityStatusSimple{
+      max-width: max-content;
+      padding: 0px 4px;
+      display: flex;
+      gap: 4px;
+      cursor:default;
+      align-items: center;
+      border-radius: 8px;
+      background: rgb(255, 238, 246);
+      margin-bottom: 12px;
+      span{
+          white-space: nowrap;
+      }
+  }
+}
+.community__highest__activity{
+   background-color: #E7E9E9;
+   border: 1px solid #F8FAFA;
+   border-radius: 12px;
+   padding: 12px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 8px;
+   margin-top: 24px;
+   svg{
+      width: 30px;
+   }
+   span{
+      text-align: left;
+   }
+}

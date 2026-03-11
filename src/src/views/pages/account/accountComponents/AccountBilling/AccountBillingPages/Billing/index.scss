@@ -1,0 +1,19 @@
+.account__billing {
+   margin-top: 24px;
+   display: flex;
+   gap: 16px;
+   flex-direction: column;
+   &__inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      button {
+         max-width: min-content;
+      }
+      &__flex {
+         display: grid;
+         grid-template-columns: 49% 49%;
+         gap: 16px;
+      }
+   }
+}

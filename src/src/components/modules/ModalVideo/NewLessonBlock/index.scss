@@ -1,0 +1,50 @@
+.video_lesson_block {
+    background: var(--mainBgColorTransparent);
+    padding: 20px 20px 12px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--borderColor);
+    width: 100%;
+    &__left__image {
+      max-width: 576px;
+    }
+    .image_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+        .info_wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+            @media screen and (max-width: 1023px) {
+               flex-wrap: wrap;
+            }
+
+        }
+    }
+
+    .instructor_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .instructor_wrapper_small {
+      display: block;
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      color: var(--textColor);
+      div {
+         color: var(--textColor);
+      }
+  }
+
+  .instructor__onlineCourse {
+      margin-top: 8px;
+  }
+}

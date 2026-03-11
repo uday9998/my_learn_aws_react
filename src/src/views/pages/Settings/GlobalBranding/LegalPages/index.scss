@@ -1,0 +1,9 @@
+.legal-pages {
+   display: flex;
+   flex-direction: column;
+   margin-top: 32px;
+   gap: 32px;
+   .text_area_new {
+      height: 480px;
+   }
+}

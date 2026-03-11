@@ -1,0 +1,38 @@
+.appBuilder__container {
+    flex-grow: 1;
+    box-sizing: border-box;
+    overflow-y: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+    scrollbar-width: thin;
+    
+    .appBuilder__content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 34px;
+        padding-bottom: 40px;
+        
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .appBuilder__container {
+        margin-top: 60px;
+        background-color: #fff;
+
+        .appBuilder__content {
+            padding: 16px;
+            padding-bottom: 51px;
+            gap: 16px;
+
+            .appBuilder__container__header {
+                .textBasic {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

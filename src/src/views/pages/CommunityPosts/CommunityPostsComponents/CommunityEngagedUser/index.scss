@@ -1,0 +1,26 @@
+.community__engaged__user{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 8px;
+   padding: 4px;
+   gap: 4px;
+   cursor: pointer;
+   width: 100%;
+   transition: 0.3s;
+   &__left{
+      display: flex;
+      align-items: center;
+      img{
+         width: 32px;
+         height: 32px;
+         object-fit: cover;
+         margin-left: 4px;
+         border-radius: 8px;
+         margin-right: 12px;
+      }
+   }
+   &:hover{
+      background: #E8F2F1;
+   }
+}

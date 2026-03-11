@@ -1,0 +1,27 @@
+.wait-card {
+   width: 742px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 4px 4px 12px 4px;
+   &-title{
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+   }
+   &-form{
+      width: 100%;
+      display: flex;
+      gap: 13px;
+   }
+   &-btns{
+      margin-top: 40px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      align-items: center;
+   }
+   @media screen and (max-width: 1024px) {
+      width: 75vw;
+   }
+}

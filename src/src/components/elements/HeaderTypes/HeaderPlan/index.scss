@@ -1,0 +1,29 @@
+.header__plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &__left{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        width: 70%;
+        span {
+            display: inline-block;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &__delete{
+            padding-right: 16px;
+            cursor: pointer;
+            border-right: 1px solid #D9D9D9;
+        }
+    }
+}

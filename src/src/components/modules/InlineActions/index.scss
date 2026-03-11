@@ -1,0 +1,107 @@
+.Section.above_content .mark:not(.Section), .Section.below_content .mark:not(.Section) {
+   position: relative;
+   background-color:inherit;
+ }
+
+.Section.above_content .mark:not(.Section):after, .Section.below_content .mark:not(.Section):after {
+  background-color:inherit;
+}
+
+.Section.above_content .text.mark:not(.Section):before, .Section.below_content .text.mark:not(.Section):before,
+.text.mark:before, .bullet.mark:before {
+  content: "";
+  background:inherit;
+}
+
+.Section.above_content, .Section.below_content, .checkout-drag {
+ .text, .button, .image, .video, .bullets, .bullet, .banner, .customcode_section_content, .countdown_section_content {
+    position: relative;
+}
+}
+
+
+.actionButtons {
+  display: none;
+  top: -35px;
+  left:0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+//  width: 0;
+
+&:hover {
+  display: flex;
+}
+
+}
+
+.dragButton {
+  height: 36px;
+  width: 36px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #FFFFFF;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #E7E9E9;
+  z-index: 99999999;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  img{
+    object-fit: cover;
+  }
+}
+
+
+.deleteButton {
+  height: 36px;
+  width: 36px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #FFFFFF;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #E7E9E9;
+  z-index: 99999999;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+.duplicateButton {
+  height: 36px;
+  width: 36px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #FFFFFF;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #E7E9E9;
+  z-index: 99999999;
+  line-height: 1;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Section.above_content, .Section.below_content,  .checkout-drag {
+    .mark:not(.Section)  {
+       .actionButtons {
+          display: flex;
+       }
+    }
+ }
+

@@ -1,0 +1,48 @@
+.loginWith {
+   padding: 24px 40px 40px;
+
+   .loginWith__hasBorder {
+      border-top: 1px solid #c2cedb80;
+      border-bottom: 1px solid #c2cedb80;
+   }
+
+   .loginWith__btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 24px;
+
+      >div {
+         width: 100%;
+
+         button {
+            width: 100%;
+         }
+
+         &:first-of-type {
+            max-width: 120px;
+            margin-right: 16px;
+         }
+
+         &:last-of-type {
+            max-width: 150px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .loginWith {
+      padding: 24px 24px 32px 24px;
+
+      .loginWith__btns {
+         flex-direction: column-reverse;
+         >div {
+            max-width: none !important;
+
+            &:first-of-type {
+               margin: 16px 0 0 0;
+            }
+         }
+      }
+   }
+}

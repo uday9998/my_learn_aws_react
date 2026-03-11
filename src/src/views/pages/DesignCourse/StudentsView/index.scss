@@ -1,0 +1,86 @@
+.studentsView {
+   background-color: #f0f4f7;
+   position: relative;
+
+   .studentsView__main {
+
+      padding: 32px 156px 64px 156px;
+
+      .studentsView__cards {
+         display: flex;
+
+         .leftSide {
+            margin-right: 24px;
+            width: 648px;
+         }
+
+         .rightSide {
+            width: 456px;
+         }
+
+         .leftSide,
+         .rightSide {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+         }
+      }
+
+      .footerBtnBlock {
+         max-width: 194px;
+         margin-top: 16px;
+
+         button {
+            width: 100%;
+         }
+      }
+   }
+}
+
+.couponCardPopup {
+   width: 552px;
+   display: flex;
+   align-items: center;
+   margin: 24px;
+}
+
+.privacyLink {
+   color: #006dff;
+}
+
+.privacyLabel {
+   color: #8a94a2;
+   font-size: 12px;
+}
+
+@media screen and (min-width: 1441px) {
+   .leftSide {
+      flex: 2 2;
+   }
+
+   .rightSide {
+      flex: 1 1;
+   }
+}
+
+@media screen and (max-width: 1210px) {
+   .studentsView__cards {
+      display: block!important;
+      margin-bottom: 24px;
+      .leftSide, .rightSide {
+         width: 100%!important;
+      }
+   }
+}
+
+@media screen and (max-width: 850px) {
+   .studentsView__main {
+      padding: 32px 56px 64px 56px!important;
+   }
+   .studentsView {
+      .main-style {
+         padding-left: 56px;
+         padding-right: 56px;
+      }
+   }
+}

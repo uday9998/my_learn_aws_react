@@ -1,0 +1,24 @@
+.text {
+   display: flex;
+   overflow-wrap: break-word;
+   word-break: break-word;
+}
+
+
+.authorcard {
+   .avatar {
+       width: 40px;
+       height: 40px;
+       min-height: 40px;
+       min-width: 40px;
+       img {
+           width: 100%;
+           height: 100%;
+           border-radius: 100%;
+       }
+   }
+   .no-description-author {
+       display: flex;
+       align-items: center;
+   }
+}

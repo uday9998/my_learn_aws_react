@@ -1,0 +1,60 @@
+.class__progress__users{
+   width: 35.66%;
+   background: #FFFFFF;
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   max-height: 256px;
+   overflow: hidden;
+   &__wrapper{
+      padding: 20px 24px 0px;
+   }
+   &__top{
+      margin-bottom: 20px;
+   }
+   .class__progress__no_student {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+   }
+   &__list{
+      max-height: 211px;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &::-webkit-scrollbar {
+         display: none;
+       }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+   }
+   &__user{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #E7E9E9;
+      &:last-child{
+         border-bottom: none;
+      }
+      &__left{
+         display: flex;
+         align-items: center;
+         span{
+            &:nth-child(1){
+               margin-right: 8px;
+               color: #727978;
+               min-width: 13.64px;
+            }
+         }
+         img{
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            border-radius: 8px;
+            object-fit: cover;
+         }
+      }
+   }
+}

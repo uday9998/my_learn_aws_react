@@ -1,0 +1,32 @@
+.navItem {
+   margin-right: 24px;
+   margin-bottom: 2px;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+
+   .navItem__link {
+      display: inline-block;
+      padding: 8px 0 16px;
+      text-transform: uppercase;
+   }
+   .navItem__link_active {
+      border-bottom: 2px solid var(--active-color);
+      margin-bottom: -2px;
+      cursor: pointer;
+
+      span {
+         color: var(--active-color) !important;
+      }
+   }
+
+   .navItem__link:hover {
+      border-bottom: 2px solid var(--active-color);
+      margin-bottom: -2px;
+      cursor: pointer;
+
+      span {
+         color: var(--active-color) !important;
+      }
+   }
+
+}

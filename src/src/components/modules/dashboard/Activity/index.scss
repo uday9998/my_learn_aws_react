@@ -1,0 +1,175 @@
+.miestro_activity {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   .grey_scale {
+      height: 1px;
+      width: 100%;
+      background: #E7E9E9;
+   }
+
+   .recent-activity-empty {
+      background-color: rgba(247, 252, 252, 1);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 40px;
+      margin: 28px 16px;
+      >span {
+         max-width: 186px;
+         text-align: center;
+      }
+   }
+
+   .recent-activity {
+      position: relative;
+      width: 100%;
+      min-height: 200px;
+      &-users {
+         padding: 20px 0px;
+         gap: 20px;
+         display: flex;
+         flex-direction: column;
+         min-height: 100px;
+      }
+      .user-last-date {
+         white-space: nowrap;
+      }
+      &-user {
+         display: flex;
+         align-items: flex-start;
+         gap: 12px;
+         padding: 0px 20px 0px 15px;
+
+         .left {
+            display: inline-flex;
+            align-items: center;
+            .status {
+               width: 6px;
+               display: flex;
+               align-items: center;
+               height: 6px;
+               margin-right: 15px;
+               border-radius: 50%;
+               &-active {
+                  background: #379552;
+               }
+               &-inActive {
+                  background: #d12d36;
+               }
+            }
+            .user-image {
+               width: 24px;
+               height: 24px;
+               border-radius: 4px;
+               img {
+                  width: 100%;
+                  object-fit: cover;
+                  height: 100%;
+               }
+            }
+         }
+         .right {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .user-name {
+               text-decoration-line: underline;
+            }
+            .user-price {
+               color: #d12d36;
+            }
+            .plan-status {
+               border-radius: 8px;
+               padding: 0px 4px;
+               margin-left: 6px;
+               &-subscribed {
+                  background: #fff1f1;
+                  color: #a61c23;
+               }
+               &-oneTime {
+                  background: #f1f6ff;
+                  color: #3060bd;
+               }
+               &-split {
+                  background: #fdf1ff;
+                  color: #8830bd;
+               }
+               &-free {
+                  color: #444c4b;
+                  background: #e7e9e9;
+               }
+            }
+            .user-text-transparent {
+               margin-left: 4px;
+               color: #727978;
+            }
+            .success-text {
+               color: #36796f;
+            }
+            .free-text {
+               color: #131f1e;
+            }
+            .user-info {
+               display: flex;
+               flex-direction: column;
+               justify-content: flex-end;
+            }
+         }
+      }
+      &-footer {
+         text-align: center;
+         margin-bottom: 24px;
+         span {
+            cursor: pointer;
+            text-decoration: underline;
+         }
+      }
+      .recent-activity-header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 14px;
+         padding: 0 20px;
+         @media(max-width: 1023px) {
+            padding: 0;
+         }
+         .SelectItem__button {
+            width: 121px;
+            height: 36px;
+            box-sizing: border-box;
+            align-items: center;
+            span {
+               position: relative;
+            }
+            svg {
+               transform: rotate(0);
+            }
+         }
+      }
+      .loading__SpinnerContainer {
+         position: absolute;
+         img {
+            width: 150px;
+            height: 150px;
+         }
+      }
+      .notFound {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+      .user-image{
+         img{
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            border-radius: 8px;
+         }
+      }
+   }
+
+}

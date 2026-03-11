@@ -1,0 +1,13 @@
+.upsell__section__edit{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__params{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .colorInput .colorInput__input{
+            min-width: inherit;
+        }
+    }
+}

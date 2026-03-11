@@ -1,0 +1,23 @@
+.status__prsent{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    gap: 6px;
+    border-radius: 8px;
+    margin-top: 8px;
+    &__Down{
+        border: 1px solid #F8C5C5;
+        span{
+            color: #D12D36;
+        }
+    }
+    &__Up{
+        border: 1px solid #A8DEB7;
+        span{
+            color: #379552;
+        }
+    }
+    span{
+        margin: 0px !important;
+    }
+}

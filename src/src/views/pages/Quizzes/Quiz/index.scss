@@ -1,0 +1,16 @@
+.single_quiz {
+   margin: 30px 0;
+
+   @media screen and (max-width: 1024px) {
+      .tabs__line > div {
+            margin-top: 0;
+      }
+   }
+}
+
+.single_quiz_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 28px 0 24px 0;
+}

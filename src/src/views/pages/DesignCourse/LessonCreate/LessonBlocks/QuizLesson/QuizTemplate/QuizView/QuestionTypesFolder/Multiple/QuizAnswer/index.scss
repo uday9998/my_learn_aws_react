@@ -1,0 +1,87 @@
+.multiple_answer {
+   background-color: #fff;
+   margin-top: 12px;
+   .quizItem__answer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 8px;
+      padding: 14px 8px;
+      gap: 12px;
+      .quizItem_number {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border-radius: 50%;
+         height: 32px;
+         min-width: 32px;
+         cursor: pointer;
+      }
+
+      .quizItem_form {
+         position: relative;
+         width: 100%;
+         margin: 0;
+
+         .quizItem_checkbox {
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            height: 100%;
+            width: 48px;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #cddaf1;
+
+            .icon_checkbox_selected {
+               path {
+                  fill: #7cb740;
+               }
+            }
+
+            .CheckBox {
+               width: 21px;
+               height: 21px;
+            }
+         }
+
+         .quizItem_input {
+            position: relative;
+            top: 5px;
+            .quizItem_delete {
+               position: absolute;
+               right: 0px;
+               top: 0px;
+               cursor: pointer;
+            }
+         }
+      }
+
+      .quizItem_bar {
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+      }
+   }
+
+   .quizItem__answer__inActive {
+      border: 1px solid #E7E9E9;
+      .quizItem_number {
+         background-color: #F8FAFA;
+         border: 1px solid #E7E9E9;
+      }
+   }
+   .quizItem__answer__active {
+      border: 1px solid #36796F;
+      .quizItem_number {
+         background-color: #36796F;
+         border: 1px solid #36796F;
+      }
+   }
+
+}
+
+
+.answers_dropable {
+      background-color: #FFF;
+}

@@ -1,0 +1,22 @@
+.member-container {
+   max-width: 1440px;
+   padding: 0 56px;
+   box-sizing: border-box;
+   margin: 0px auto;
+   // height: 100%;
+   width: 100%;
+
+   &-wrapper {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 34px 0px;
+   }
+
+   @media screen and (max-width: 1024px) {
+      padding: 16px;
+
+   &-wrapper {
+      padding: 0;
+   }
+   }
+}

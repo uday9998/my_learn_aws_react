@@ -1,0 +1,32 @@
+.page-view-container{
+    max-width: 1088px;
+    margin: 0px auto;
+    @media screen and (max-width: 1424px) {
+    }
+}
+.page-view{
+    &-print{
+        background: #FFFFFF;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+    &-header
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 32px;
+    }
+    &-loader{
+        position: relative;
+        width: 100%;
+        height: 84px;
+        background: #FFFFFF;
+        border-bottom: 1px solid #E7E9E9;
+    }
+}

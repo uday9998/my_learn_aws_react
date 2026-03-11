@@ -1,0 +1,129 @@
+.signatureEmail {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   margin-top: 32px;
+   .SelectItem__options {
+      span {
+         font-size: 14px;
+       }
+   }
+   &-web {
+      margin-top: 24px;
+   }
+   &-address {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+   &-address-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+   }
+   &-address-notDefault {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+   &-social {
+      display: flex;
+      gap: 16px;
+      align-items: flex-end;
+      width: 100%;
+      @media screen and (max-width: 1250px) {
+         flex-direction: column;
+         gap: 12px;
+         &-left{
+            min-width: 100% !important;
+         }
+         &-right{
+            width: 100% !important;
+         }
+      }
+      &-left {
+         min-width: 30%;
+      }
+      &-right {
+         &-input{
+            display: flex;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            max-height: 44px;
+            padding: 12px 16px 8px 16px;
+            input{
+                border: none;
+                outline: none;
+            }
+            span{
+                white-space: nowrap;
+            }
+         }
+      }
+   }
+   &-socialContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-left {
+         display: flex;
+         align-items: center;
+         gap: 16px;
+      }
+   }
+   &-preview {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+   &-preview-content {
+      box-sizing: border-box;
+      display: flex;
+      gap: 32px;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 40px 12px;
+      width: 100%;
+      background: #F8FAFA;
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      &-img {
+         height: 127px;
+         width: 216px;
+         border: 1px solid #e7e9e9;
+         border-radius: 12px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 12px;
+         }
+      }
+      &-text {
+         display: flex;
+         flex-direction: column;
+         gap: 4px;
+
+      }
+   }
+   .social-icons {
+      display: flex;
+      gap: 8px;
+   }
+   &-website {
+      text-decoration: underline;
+      color: #6127FD;
+   }
+}
+.flex{
+   display: flex;
+}
+
+.flex-col{
+   flex-direction: column;
+}

@@ -1,0 +1,52 @@
+.react__timer__view {
+   background: #f8fafa;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 6px 12px 6px 8px;
+   gap: 8px;
+   &__block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+.react__timer__view__second {
+   &__time {
+      background: #e8f2f1;
+      border-radius: 8px;
+      height: 40px;
+      display: flex;
+      padding: 0px 18px;
+      align-items: center;
+      white-space: nowrap;
+      min-width: 58px;
+      width: 100%;
+      justify-content: center;
+   }
+   background-color: inherit;
+   .react__timer__view__block {
+      gap: 8px;
+   }
+}
+.react__timer__view__second__mini {
+   .react__timer__view__second__time {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 5px 8px;
+
+      height: 24px;
+      min-width: 28px;
+      max-width: max-content;
+      /* primary/5 */
+
+      background: #e8f2f1;
+      border-radius: 8px;
+   }
+   background-color: inherit;
+   .react__timer__view__block {
+      gap: 4px;
+   }
+}

@@ -1,0 +1,47 @@
+.live-stream-name-and-return-button {
+  width: 100%;
+  height: 100px;
+  padding: 12px 16px;
+}
+
+.live-stream-name-and-return-button-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: 100%;
+}
+
+.live-stream-name {
+  color: var(--grey-scale-90, #131F1E);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-family: Inter, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 153%; /* 27.54px */
+}
+
+.live-stream-back-button {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--grey-scale-90, #131F1E);
+  display: flex;
+  height: 44px;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.2s;
+
+  &:hover {
+    background: #131F1E;
+    color: white;
+  }
+}
+
+

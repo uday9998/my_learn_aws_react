@@ -1,0 +1,32 @@
+.updatesCard {
+   overflow: hidden;
+   flex: 1;
+   border-radius: 8px;
+   background: #ffffff;
+   a {
+      text-decoration: none;
+   }
+   .ellipsis {
+         display: block;
+         display: -webkit-box;
+         max-width: 100%;
+
+         font-size: 14px;
+         line-height: 1;
+         -webkit-line-clamp: 4;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         text-overflow: ellipsis;
+   }
+}
+
+.updatesCard__image {
+   width: 100%;
+}
+
+.updatesCard__text {
+   padding: 0 24px 20px;
+   display: flex;
+   flex-direction: column;
+}
+

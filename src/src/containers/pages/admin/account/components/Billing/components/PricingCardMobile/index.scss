@@ -1,0 +1,99 @@
+.pricing__card__mobile__wrapper {
+    border: 1px solid #E7E9E9;
+    padding: 22px 22px 24px 22px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    // background-position: -6px 35%, 64% 31%;
+
+    .footer__wrapper {
+        margin-top: 20px;
+    }
+
+    .drop__menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .drop__triggle {
+            transform: rotate(90deg);
+        }
+    }
+
+    .top__section__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .title__wrapper {
+            margin-bottom: 8px;
+        }
+    }
+
+    .center__section__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        .billing__date__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            .payment__wrapper {
+                display: flex;
+                gap: 40px;
+            }
+
+            .date__wrapper {
+                display: flex;
+                gap: 20px;
+            }
+        }
+
+        .top__payment__wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .left__section {
+            display: flex;
+            flex-direction: column;
+
+            span:first-child {
+                margin-bottom: 10px;
+            }
+
+            span:nth-child(3) {
+                margin-top: 10px;
+            }
+
+            
+        }
+
+        .current__plan__wrapper {
+            background-color: #F4F7F7;
+            padding: 5px 8px 5px 8px;
+            border-radius: 8px;
+            width: 84px;
+
+            span {
+                font-size: 12px;
+                font-weight: 700;
+                color: #727978;
+            }
+        }
+
+    }
+
+    .buttons__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        gap: 10px;
+
+        button {
+            min-height: 44px !important;
+        }
+    }
+}

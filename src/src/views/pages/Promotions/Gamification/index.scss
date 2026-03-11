@@ -1,0 +1,81 @@
+.d-gamification {
+    //max-width: 456px;
+    display: flex;
+}
+
+.gamification__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .firstBadgeCardWrapper {
+       max-width: 456px;
+    }
+
+    .gamification__left {
+       width: 40%;
+       box-sizing: border-box;
+       border-right: 2px solid #c2cedb;
+
+       .itemWrapper {
+          margin-bottom: 12px;
+       }
+    }
+
+    .gamification__right {
+       margin-left: 24px;
+       width: 60%;
+       box-sizing: border-box;
+    }
+ }
+
+
+ .modalContent .modalContent_pos_center, .congratulationsCard {
+    border-radius: 8px;
+}
+@media screen and (min-width: 1280px) {
+   .gamification__content{
+     max-width: calc(100vw - 301px);
+   }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+   .gamification__content{
+     max-width: calc(100vw - 249px);
+   }
+}
+@media screen and (min-width: 1024px) {
+   .gamification__content {
+      .mob_addBadgeButton {
+         display: none;
+      }
+   }
+}
+@media screen and (max-width: 1023px) {
+   .gamification__content {
+      padding: 24px 16px 0;
+      width: auto;
+      justify-content: center;
+      .mobile-gamification-hidden {
+         display: none;
+      }
+      .gamification__left {
+        width: 100%;
+        border: none;
+        .gamification__leftContent {
+           margin-right: 0;
+        }
+      }
+      .gamification__right {
+         margin-left: 0;
+         width: auto;
+      }
+      .firstBadgeCardWrapper {
+         .firstBadgeCard__addBadge {
+          .btnWrapper {
+             width: 100%;
+             max-width: 100%;
+          }
+         }
+      }
+   }
+}

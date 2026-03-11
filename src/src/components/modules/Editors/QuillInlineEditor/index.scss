@@ -1,0 +1,40 @@
+.quillInlineEditor {
+   .ql-bubble .ql-picker {
+      height: auto;
+    }
+    .ql-bubble .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+      right: -12px;
+    }
+    .ql-bubble {
+        font-size: inherit;
+        font-family: inherit;
+     }
+      .ql-bubble .ql-tooltip {
+        z-index: 999;
+      }
+      &__isEmail {
+         flex-direction: column;
+         display: flex;
+         .ql-editor {
+            font-size: 14px;
+          }
+      }
+      &__isGeneral {
+         display: flex;
+         justify-content: center;
+         .ql-editor {
+            font-size: 16px;
+            // text-align: center;
+          }
+          .ql-bubble .ql-tooltip {
+            min-width: 560px;
+            @media all and (max-width: 1023px) { 
+               min-width: auto;
+            }
+          }
+      }
+
+      .ql-editor p, .ql-editor ol, .ql-editor ul, .ql-editor pre, .ql-editor blockquote, .ql-editor h1, .ql-editor h2, .ql-editor h3, .ql-editor h4, .ql-editor h5, .ql-editor h6 {
+         margin: revert;
+      }
+}

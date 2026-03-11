@@ -1,0 +1,15 @@
+.banner__title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 7;
+    position: absolute;
+    flex-direction: column;
+    .inlineEditor{
+        *{
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 130%;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.playlists__wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    .title {
+        span {
+            font-weight: 400;
+        }
+    }
+
+    .content__wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 32px;
+        align-items: center;
+
+        .content__loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content__inner__wrapper {
+            min-height: 554px;
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            padding: 40px 48px;
+            border: 1px solid #e7e9e9;
+            max-width: 1440px;
+            width: 100%;
+        }
+
+        .center__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            .texts__wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+                margin-top: 24px;
+                margin-bottom: 32px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            padding: 16px 0 0 0;
+            height: 100%;
+
+            .content__inner__wrapper {
+                height: 100%;
+                border-radius: 0;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 95px;
+
+                .title {
+                    width: 100%;
+                    text-align: left;
+                }
+
+                .center__block {
+                    text-align: center;
+                    justify-content: flex-start;
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // @media (max-width: 1024px) {
+    //     overflow-y: hidden;
+    // }
+}
+
+
+.search__input__wrapper {
+    padding: 8px 16px;
+    background-color: #fff;
+}

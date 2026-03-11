@@ -1,0 +1,15 @@
+.text__lesson {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 80px;
+    box-sizing: border-box;
+    background: inherit;
+    textarea {
+       text-align: center;
+       background: inherit;
+    }
+}

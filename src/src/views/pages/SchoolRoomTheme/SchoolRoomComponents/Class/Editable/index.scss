@@ -1,0 +1,33 @@
+// .testimonialEditable {
+//       img {
+//          width: 43px;
+//          height: 43px;
+//          object-fit: cover;
+//          margin: 0 auto;
+//          display: flex;
+//       }
+//    .colorInput  {
+//       .colorInput__wrapper {
+//          margin-top: 0;
+//       }
+//       .colorInput__input {
+//          min-width: 200px;
+//       }
+//    }
+// }
+
+
+.classEditable {
+   .SelectItem {
+      min-width: 100%;
+      .SelectItem__button__medium  {
+         >span {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 90%;
+         }
+      }
+   }
+
+}

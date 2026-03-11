@@ -1,0 +1,95 @@
+.appBuilder__firstCard {
+    display: flex;
+    min-height: 398px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #e7e9e9;
+    background-image: url('../../../../assets/images/appBuilder/firstCardBack.png');
+
+    .firstCard__info__container {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .firstCard__info {
+            max-width: 317px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+    
+            .text__info {
+                display: grid;
+                gap: 8px;
+            }
+        }
+    }
+
+
+    .firstCard__phone {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        max-width: 50%;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .appBuilder__firstCard {
+        .firstCard__info__container {
+            .firstCard__info {
+                max-width: 250px;
+
+            }
+        }
+
+        .firstCard__phone {
+            max-width: 60%;
+    
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .appBuilder__firstCard {
+        padding-top: 55px;
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+    
+        .firstCard__info__container {
+            padding: 0 10px;
+
+            .firstCard__info {
+                align-items: stretch;
+
+                .text__info {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .appBuilder__firstCard {
+        min-height: 563px;
+
+        .firstCard__phone {
+            width: 100%;
+            max-width: none;
+            
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+    }
+}

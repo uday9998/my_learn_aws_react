@@ -1,0 +1,107 @@
+.audioLesson {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 40px;
+   .dynamicWrapper {
+      span {
+         font-family: 'Avenir Next';
+      }
+   }
+   audio {
+      &:focus {
+         outline: none;
+      }
+   }
+   .audio-title{
+      margin-bottom: 20px;
+   }
+   .audio_fieldsDescription{
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+      width: 100%;
+   }
+   .uploadcare_widget {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     .uploadcare--widget__button_type_open {
+        &:focus {
+           outline: none;
+        }
+        display: none;
+     }
+     .uploadcare--widget__button_type_cancel {
+
+      display: none;
+     }
+     #uploadcare--widget__text {
+        display: none;
+     }
+     .uploadcare--widget__progress {
+        position: absolute !important;
+         left: 50%;
+         top: 64%;
+      }
+      .uploadcare--progress_type_canvas {
+         color: #7cb740;
+         display: none;
+      }
+  }
+}
+
+.audioLesson__fields {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.audioLesson__buttons {
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+   margin-top: 24px;
+   .cancel__btn__small {
+      display: none;
+   }
+   .save__cancel__btns {
+      display: flex;
+   }
+}
+
+@media screen and (max-width: 1130px) and (min-width: 1024px) {
+   .audioLesson {
+      .audioLesson__buttons {
+         button {
+            min-width: 65px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .audioLesson {
+      padding: 0;
+      height: 100%;
+      justify-content: space-between;
+
+      .audioLesson__buttons {
+         display: flex;
+         flex-direction: column-reverse;
+         width: 100%;
+         margin-top: 24px;
+
+         div {
+          //  width: 100%;
+            margin-left: 0;
+            button {
+               width: 100%;
+            }
+         }
+         button {
+            width: 100%;
+            margin-bottom: 12px;
+         }
+      }
+   }
+}

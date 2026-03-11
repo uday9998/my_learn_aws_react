@@ -1,0 +1,117 @@
+.yellowFloral {
+   width: 776px;
+   height: 548px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   input {
+      border: none;
+      min-width: 350px;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   textarea {
+      border: none;
+      min-width: 250px;
+      resize: none;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   background-position: center center;
+   .yellowFloralTitle {
+      margin-bottom: 92px;
+      textarea{
+         font-family: Norwester;
+         font-size: 32px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+         text-align: start;
+      }
+   }
+   .yellowFloralBelowTitle {
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-bottom: 8px;
+      input{
+         text-align: start;
+      }
+   }
+   .yellowFloralName {
+      font-size: 56px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-bottom: 40px;
+   }
+   .yellowFloralNote {
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-bottom: 24px;
+      input{
+         text-align: start;
+      }
+   }
+   .yellowFloralName {
+      font-size: 32px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-bottom:40px;
+   }
+   .yellowFloralDate {
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+   }
+   .yellowFloralBackground{
+      display: flex;
+      background-color: #fff9f0;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-left: 11px;
+   }
+   .yellowFloralLeftSideBackground{
+      background-color: #f1b840;
+      width: 264px;
+      height: 539px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+   }
+   .yellowFloralLogo{
+      background-color: #f1b840;
+      display: inline-block;
+      margin-bottom: 44px;
+      &.defaultLogo {
+         width: 107px;
+         height: 141px;
+      }
+   }
+   .yellowFloralTextsRectangle{
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+      margin-top: 49px;
+   }
+}

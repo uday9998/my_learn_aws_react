@@ -1,0 +1,49 @@
+.report-container {
+   max-width: 1440px;
+   margin: 0px auto 40px;
+   padding: 0 56px;
+   box-sizing: border-box;
+   min-height: 80vh;
+   @media screen and (max-width: 1400px) {
+      padding-left: 40px;
+      max-width: 100%;
+      padding-right: 40px;
+   }
+
+   @media screen and (max-width: 1024px) {
+      padding: 0 16px 46px;
+   }
+}
+.report-container-filter {
+   max-width: 1440px;
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+   justify-content: center;
+   margin: 0px auto;
+   padding: 20px 34px;
+   box-sizing: border-box;
+   .date_input,
+   .inputSearch {
+      .inputNew {
+         max-height: 44px;
+         box-sizing: border-box;
+      }
+   }
+   .input_footer {
+      margin: 0;
+   }
+   .SelectItem__button__transactions {
+      height: 44px;
+      box-sizing: border-box;
+   }
+   @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+      // padding-left: 40px;
+      // padding-right: 40px;
+      padding: 16px;
+   }
+   .SelectItem {
+      width: 100%;
+   }
+}

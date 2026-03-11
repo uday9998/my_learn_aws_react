@@ -1,0 +1,13 @@
+.button {
+   display: flex;
+   overflow-x: hidden;
+   .button-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-sizing: border-box;
+   }
+}
+
+

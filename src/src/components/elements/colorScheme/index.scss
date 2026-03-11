@@ -1,0 +1,27 @@
+.color__scheme {
+   display: flex;
+   flex-wrap: wrap;
+   background: #ffffff;
+   border: 1px solid #e7e9e9;
+   padding: 8px;
+   border-radius: 12px;
+   gap: 8px;
+   .color {
+      border: 1px solid #e7e9e9;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      cursor: pointer;
+      height: 24px;
+      &__background {
+         width: 16px;
+         height: 16px;
+         border-radius: 4px;
+      }
+   }
+   .color__selected {
+      border: 1px solid #24554e;
+   }
+}

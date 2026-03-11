@@ -1,0 +1,41 @@
+.result__list__mobile__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #F0F2F2;
+    border-radius: 12px;
+
+    &__userinfo{
+        display: flex;
+        align-items: center;
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+    & > div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child{
+            padding: 12px;
+        }
+
+        &:not(:first-child) {
+            padding: 8px 12px;
+            border-top: 1px solid #F0F2F2;
+            & > span {
+                font-weight: 500;
+            }
+        }
+    }
+}

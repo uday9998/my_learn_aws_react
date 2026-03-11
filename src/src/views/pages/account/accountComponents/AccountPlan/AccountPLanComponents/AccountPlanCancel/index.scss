@@ -1,0 +1,26 @@
+.account__plan__cancel {
+   margin-top: 24px;
+   padding-top: 24px;
+   .delete__modal__content{
+      max-width: 414px;
+   }
+   border-top: 1px solid #e7e9e9;
+   &__help {
+      margin: 24px 0px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 12px;
+      gap: 16px;
+      justify-content: center;
+      background: #ffffff;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+      text-align: center;
+   }
+   &__buttons {
+      display: flex;
+      justify-content: flex-start;
+      gap: 12px;
+   }
+}

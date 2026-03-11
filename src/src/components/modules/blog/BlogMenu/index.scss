@@ -1,0 +1,41 @@
+.blogMenuHeader {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   .blogMenu {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+   }
+   &_btns {
+      display: flex;
+      flex: 0.3;
+      justify-content: flex-end;
+      .grey_line {
+         border: 1px solid #E7E9E9;
+      }
+      button {
+         margin-left: 24px;
+      }
+   }
+   &_left {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      cursor: pointer;
+      flex: 0.3;
+   }
+
+   .preview__wrapper {
+      border: 1px solid var(--primary_80);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+
+      button {
+         margin: 0;
+      }
+   }
+}
+

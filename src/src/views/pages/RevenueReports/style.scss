@@ -1,0 +1,36 @@
+.revenue-reports {
+   display: flex;
+   width: 100%;
+   .mob-courseSelect {
+      display: none;
+   }
+   .revenue-reports_total-sales {
+      flex: 1;
+      max-width: 552px;
+      margin-right: 24px;
+   }
+   .revenue-reports_total-members {
+      flex: 1;
+      max-width: 264px;
+   }
+}
+@media screen and (max-width: 1023px) {
+   .revenue-reports{
+     flex-direction: column;
+     padding: 16px;
+     width: initial;
+     .mob-courseSelect {
+        display: flex;
+        margin-bottom: 20px;
+     }
+     .revenue-reports_total-sales {
+        width: 100%;
+        max-width: 100%;
+     }
+     .revenue-reports_total-members {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 24px;
+     }
+   }
+}

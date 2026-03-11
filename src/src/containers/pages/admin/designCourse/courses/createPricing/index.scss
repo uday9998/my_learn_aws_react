@@ -1,0 +1,16 @@
+.course__pricing__create {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+   margin-bottom: 24px;
+   .course__createtion__form {
+      max-width: 1000px;
+      margin: 0px auto;
+      .course__createtion__form__left {
+         width: 100%;
+         border: none;
+         padding: 0;
+       //  background-color: red;
+      }
+   }
+}

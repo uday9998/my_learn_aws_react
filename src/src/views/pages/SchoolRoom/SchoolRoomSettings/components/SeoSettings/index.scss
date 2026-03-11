@@ -1,0 +1,28 @@
+.schoolroom__seo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    &__block{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    textarea{
+        min-height: 88px;
+    }
+    .upload__view{
+        height: 405px;
+    }
+    .tabs__line__tab{
+        // max-width: 50%;
+        justify-content: center;
+        // width: 50%;
+    }
+    .upload__with__media__content {
+        width: 100%;
+    }
+    .upload__with__media{
+        width: 100%;
+    }
+}

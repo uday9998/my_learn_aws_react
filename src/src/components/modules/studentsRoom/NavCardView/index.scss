@@ -1,0 +1,39 @@
+.resourceBlock {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #dfe5eb;
+  background-color: #ffffff;
+  padding: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &.resourse_dark {
+    background-color: transparent;
+  }
+}
+
+.resource__download  {
+    button {
+        font-size: 14px;
+        min-width: 176px;
+        box-sizing: border-box;
+    }
+}
+.NavCardView{
+  padding: 24px;
+  >span {
+   margin-bottom: 24px;
+   display: block;
+  }
+
+   .NotFound{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+   }
+}

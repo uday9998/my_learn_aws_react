@@ -1,0 +1,12 @@
+.mob-memberSelected {
+   width: 100%;
+
+   .memberStaticCards {
+      display: flex;
+      flex-direction: column;
+
+      .staticCard {
+         width: 100%;
+      }
+   }
+}

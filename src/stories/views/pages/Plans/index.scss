@@ -1,0 +1,9 @@
+.plansPage {
+   padding: 24px 32px 32px 32px;
+   .planCards {
+      display: flex;
+      .SelectedWrapper {
+         flex: 1 1;
+      }
+   }
+}

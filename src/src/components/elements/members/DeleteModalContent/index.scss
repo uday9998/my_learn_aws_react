@@ -1,0 +1,66 @@
+.modalContent_pos_center {
+   border-radius: 8px;
+}
+.deleteModal {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    .memberUpdat__select {
+       display: flex;
+       align-items: flex-end;
+       .SelectElement__drop-down {
+          max-height: 204px;
+          .SelectElement__option {
+             position: relative;
+             display: flex;
+             align-items: center;
+             &:hover {
+                background-color: rgba(124, 183, 64, 0.05);
+
+                span {
+                   color: #7cb740 !important;
+                }
+                &:before {
+                   content: url(~assets/images/checkbox.png);
+                   position: absolute;
+                   display: block;
+                   left: 32px;
+                   top: 7px;
+                }
+
+             }
+
+          }
+       }
+    }
+    .deleteModal__btns {
+       display: flex;
+       justify-content: flex-end;
+       .cancel__btn {
+          margin-right: 16px;
+       }
+       .memberUpdate__btn {
+          button {
+             width: 100%;
+          }
+       }
+    }
+    .memberUpdate__btn {
+       margin-top: 32px;
+       text-align: right;
+    }
+
+ }
+ @media screen and (max-width: 1023px) {
+    .deleteModal {
+       padding: 24px;
+       .deleteModal__btns {
+          flex-direction: column;
+          .memberUpdate__btn {
+             width: 100%;
+             max-width: 100%;
+             margin-right: 0;
+          }
+       }
+    }
+ }

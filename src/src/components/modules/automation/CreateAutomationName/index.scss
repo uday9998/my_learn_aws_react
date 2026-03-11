@@ -1,0 +1,58 @@
+.CreateAutomationName {
+   border-radius: 8px;
+   box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+   background-color: #ffffff;
+   display: flex;
+   align-items: center;
+   padding: 24px;
+   justify-content: space-between;
+   .CreateAutomationSwitch {
+      margin-top: 20px;
+   }
+   .CreateAutomationInput {
+      width: 40%;
+   }
+}
+@media (max-width: 1023px) {
+   .CreateAutomationName {
+      border-radius: 8px;
+      box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 24px;
+      justify-content: space-between;
+      .CreateAutomationSwitch {
+         margin-top: 20px;
+         width: 30%;
+         .customSwitch {
+            width: 100%;
+         }
+      }
+      .CreateAutomationInput {
+         width: 40%;
+      }
+   }
+}
+
+@media (max-width: 600px) {
+   .CreateAutomationName {
+      border-radius: 8px;
+      box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+      background-color: #ffffff;
+      display: block;
+      align-items: center;
+      padding: 24px;
+      justify-content: space-between;
+      .CreateAutomationSwitch {
+         margin-top: 20px;
+         width: 100%;
+         .customSwitch {
+            width: 100%;
+         }
+      }
+      .CreateAutomationInput {
+         width: 100%;
+      }
+   }
+}

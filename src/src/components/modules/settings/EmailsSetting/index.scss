@@ -1,0 +1,55 @@
+.emailSettingsWrapper {
+   width: 100%;
+   .emailSettingsInfo {
+      margin-right: 16px;
+      margin-top: 12px;
+      h3 {
+         font-family: 'Avenir Next regular';
+         font-size: 14px;
+         color: #3f4f65;
+         line-height: 1.5;
+      }
+   }
+}
+.emailSettingsActions {
+   @media(max-width: 500px) {
+      flex-direction: column;
+      .m-r-m {
+         margin-right: 0;
+      }
+      div:not(:first-child) {
+         margin-top: 8px;
+      }
+   }
+}
+.mailPreview {
+   color: #3f4f65;
+   margin-top: 16px;
+   h3 {
+      margin: 8px 0;
+      font-family: 'Avenir Next bold';
+      font-size: 16px;
+   }
+   ul {
+      list-style: none;
+      margin: 0;
+      padding: 16px;
+      background-color: #f0f4f7;
+      border-radius: 8px;
+      border: solid 1px #dfe5eb;
+      li {
+         font-family: 'Avenir Next regular';
+         font-size: 14px;
+         span {
+            font-family: 'Avenir Next demiBold';
+            margin-right: 8px;
+         }
+      }
+   }
+}
+.emailsSetting {
+   width: 100%;
+   box-sizing: border-box;
+   margin-top: 24px;
+
+}

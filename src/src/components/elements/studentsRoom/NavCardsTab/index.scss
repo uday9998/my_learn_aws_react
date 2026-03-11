@@ -1,0 +1,56 @@
+.navCard {
+   padding: 0px 0px 14px 0px;
+   // border-radius: 8px;
+   // box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+   background-color: inherit;
+   position: relative;
+   box-sizing: border-box;
+    cursor: pointer;
+    //width: 242px;
+   //  flex: 1 1;
+    margin-right: 24px;
+    &:last-of-type {
+       margin-right: 0;
+    }
+    span {
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 0 8px;
+    }
+
+    .navCard__content {
+       display: flex;
+       align-items: center;
+       padding-top: 8px;
+
+       span {
+          margin-left: 8px;
+       }
+       img {
+         width: 40px;
+         height: 40px;
+         border-radius: 50px;
+         object-fit: cover;
+       }
+    }
+ }
+.navCard-active{
+   position: relative;
+   // border: solid 2px #7cb740;
+   border-bottom: solid 2px #006dff;
+   z-index: 2;
+   .navCard__triangle{
+      position: absolute;
+      bottom: -13px;
+      left: 50%;
+      z-index: 10;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      transform: rotate(135deg);
+      border: solid 2px #7cb740;
+      border-bottom-width: 0px;
+      border-left-width: 0px;
+   }
+}

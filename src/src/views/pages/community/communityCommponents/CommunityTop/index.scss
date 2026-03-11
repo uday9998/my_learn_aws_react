@@ -1,0 +1,188 @@
+.community__top {
+   display: flex;
+    color: #36796f;
+    grid-gap: 20px;
+    gap: 20px;
+    align-items: center;
+    padding: 12px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e7e9e9;
+   path{
+      fill: #36796f;
+   }
+   .inputSearch {
+      width: 100%;
+      .inputNew {
+         padding: 6px 12px;
+         height: auto;
+         min-height: 44px;
+      }
+   }
+   .delete__modal__content{
+      max-width: 414px;
+   }
+   &__actions {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      grid-gap: 10px;
+      gap: 10px;
+      border-radius: 12px;
+      font-size: 12px;
+   }
+   &__action {
+      border-radius: 8px;
+      padding: 4px;
+      height: 36px;
+      cursor: pointer;
+      transition: 0.3s;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 400;
+      font-size: 12px;
+      background: #F8FAFA;
+      &__active{
+         background: #E8F2F1;
+         box-shadow: 0px 0px 4px #54938B;
+         path{
+            fill: #36796f;
+         }
+      }
+      &__circle{
+         position: absolute;
+         right: 0;
+         top: 0;
+         background: #36796F;
+         border-radius: 60px;
+         width: 12px;
+         height: 12px;
+      }
+      &::before {
+         content: "adsasd";
+         background: #ffffff;
+         border: 1px solid #e7e9e9;
+         position: absolute;
+         border-radius: 12px;
+         box-sizing: border-box;
+         display: none;
+         flex-direction: column;
+         font-size: 14px;
+         font-feature-settings: "tnum" on, "lnum" on;
+         color: #131f1e;
+         align-items: flex-start;
+         padding: 16px 16px 20px;
+         white-space: nowrap;
+         top: 150%;
+         left: 50%;
+         transform: translateX(-50%);
+         gap: 12px;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         top: 120%;
+         display: none;
+         border-left: 10px solid transparent;
+         border-right: 10px solid transparent;
+         border-bottom: 10px solid #fff;
+         width: 0;
+         height: 0;
+         -webkit-filter: drop-shadow(0 0 0px #e7e9e9);
+      }
+      &:hover {
+         background: #e8f2f1;
+         &::before {
+         }
+         &::after {
+         }
+         path {
+          //  fill: #36796f;
+         }
+      }
+      &:nth-child(1) {
+         &::before {
+            content: "Add Member";
+         }
+      }
+      &:nth-child(2) {
+         &::before {
+            content: "Setting up notifications";
+         }
+      }
+      &:nth-child(3) {
+         &::before {
+            content: "Customizing the room view";
+         }
+      }
+      &:nth-child(4) {
+         &::before {
+            content: "Settings";
+         }
+      }
+      &:nth-child(5) {
+         &::before {
+            content: "Delete Room";
+         }
+      }
+   }
+   &__action__delete {
+      transition: 0.3s;
+      &:hover {
+         background: #fff1f1;
+         path {
+            fill: #d12d36;
+         }
+      }
+   }
+}
+.community__top__actions__box{
+   display: flex;
+   gap: 10px;
+   background: #F8FAFA;
+   border-radius: 12px;
+}
+.verticalLine{
+   margin: 6px 0;
+   border-left: 1px solid #e7e9e9;
+}
+.community_message_with_icon{
+   cursor: pointer;
+   width: 80px;
+}
+.community_person{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 4px;
+   background: transparent;
+   &:hover{
+      background: transparent;
+   }
+   img{
+      width: 32px;
+      height: 32px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+   }
+}
+.community_person_name{
+   font-size: 14px;
+   color: #131F1E;
+   width: 75px;
+   text-align: center;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.notification-popover{
+   .text-with-icon{
+      padding: 12px 16px;
+   }
+   .text-with-icon:last-child {
+      border-top: 1px solid lightgray;
+   }
+}

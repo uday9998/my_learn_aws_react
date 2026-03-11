@@ -1,0 +1,18 @@
+.notificationsCard {
+   padding: 24px 40px 40px;
+   width: 100%;
+   box-sizing: border-box;
+   >div {
+      display: flex;
+      flex-direction: column;
+      .FilledCheckBox {
+         margin-bottom: 8px;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .notificationsCard {
+      padding: 24px 24px 32px 24px;
+   }
+}

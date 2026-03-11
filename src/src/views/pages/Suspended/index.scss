@@ -1,0 +1,59 @@
+.Suspended-wraper{
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     padding: 80px 40px;
+     box-sizing: border-box;
+    .SuspendedPopup {
+      max-width:528px;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      border-radius: 8px;
+      padding: 48px;
+      .btnWrapper {
+         margin-top: 24px;
+         display: flex;
+         gap: 12px;
+         justify-content: center;
+         a {
+            margin-right: 16px;
+         }
+         button {
+            min-width: 200px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .Suspended-wraper{
+      padding: 0px 20px;
+      .SuspendedPopup  {
+         padding: 0 48px;
+         .btnWrapper {
+            flex-wrap: wrap;
+            a {
+               margin-right: 0px;
+               margin-bottom: 16px;
+               width: 100%;
+            }
+           button {
+              width: 100%;
+           }
+         }
+      }
+
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+.report-dashboard-activity {
+   position: relative;
+   min-height: 200px;
+   .report-dashboard-activity-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .SelectItem__button {
+         width: max-content;
+         height: 36px;
+         box-sizing: border-box;
+         align-items: center;
+         span {
+            position: relative;
+            top: 2px;
+            white-space: nowrap;
+         }
+         svg {
+            transform: rotate(0);
+         }
+      }
+   }
+   .loading__SpinnerContainer {
+      position: absolute;
+      img {
+         width: 150px;
+         height: 150px;
+      }
+   }
+   .notFound {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .user-image{
+      img{
+         width: 20px;
+         height: 20px;
+         object-fit: cover;
+         border-radius: 8px;
+      }
+   }
+
+   .recent-activity-empty {
+      background-color: rgba(247, 252, 252, 1);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 40px;
+      margin: 28px 16px;
+      >span {
+         max-width: 186px;
+         text-align: center;
+      }
+   }
+
+   @media screen and (max-width: 1024px) {
+      &-users {
+         max-height: none !important;
+      }
+
+   }
+
+   @media screen and (max-width: 701px) {
+      &-user {
+         padding: 0 12px !important;
+         align-items: center !important;
+         
+         & > .right {
+            flex-direction: column-reverse;
+         }
+      }
+   }
+}
+
+.activity-header-options {
+   & span {
+      white-space: nowrap;
+   }
+   width: max-content !important;
+}

@@ -1,0 +1,97 @@
+.my__account__comments{
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        min-height: 0;
+    }
+
+    &__left{
+        padding: 24px;
+        border-right: 1px solid #E7E9E9;
+        max-width: 28%;
+        min-width: 28%;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+
+        &__courses{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        &__course{
+            width: 100%;
+            padding: 4px 12px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .iconButton{
+                background-color: transparent !important;
+            }
+        }
+
+        &__spliter {
+            position: absolute;
+            right: -15px;
+            cursor: pointer;
+            display: none;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid #E7E9E9;
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 1024px) {
+
+            &__spliter {
+                display: flex;
+            }
+            
+            padding: 16px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            width: 100%;
+            min-width: auto;
+            max-width: none;
+            z-index: 1;
+            top: -1px;
+            border-radius: 12px;
+            transition: .6s ease;
+            min-height: 100%;
+
+            &.opened {
+                left: 0px;
+                border: 1px solid #E7E9E9;
+            }
+
+            &.closed {
+                left: -101%;
+                border: none;
+            }
+        }
+    }
+    &__right{
+        padding: 24px 24px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        box-sizing: border-box;
+        width: 100%;
+
+        @media screen and (max-width: 1024px) {
+            padding: 16px;
+        }
+    }
+}

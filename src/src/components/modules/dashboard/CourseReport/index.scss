@@ -1,0 +1,26 @@
+.courseReport {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   .grey_scale {
+      height: 1px;
+      width: 100%;
+      background: #E7E9E9;
+   }
+   .courseReport__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px 16px;
+      @media(max-width: 1023px) {
+         padding:  0 0px 16px;
+      }
+
+   }
+   .courseReport__complations {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 20px 16px;
+   }
+}

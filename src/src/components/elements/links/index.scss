@@ -1,0 +1,35 @@
+.link{
+   background-color: inherit;
+   border: none;
+   color: #131F1E;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 168%;
+   font-feature-settings: 'tnum' on, 'lnum' on;
+   cursor: pointer;
+   transition: 0.3s ease;
+   padding: 0px;
+   &:hover{
+      color: rgba(19, 31, 30, 0.6);
+   }
+   &:active{
+      color: #24554E;
+   }
+}
+.link-disabled{
+   background-color: inherit;
+   border: none;
+   color: #131F1E;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 168%;
+   font-feature-settings: 'tnum' on, 'lnum' on;
+   color: rgba(19, 31, 30, 0.4);
+}
+.breadcrumb__icon{
+   margin: 0px 8px;
+}

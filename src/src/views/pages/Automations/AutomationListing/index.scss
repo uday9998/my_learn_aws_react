@@ -1,0 +1,30 @@
+.automation__listing{
+   width: 100%;
+   table{
+      background: #FFFFFF;
+      width: 100%;
+      border-radius: 12px;
+   }
+   th, td {
+      text-align: left;
+      padding: 12px 20px;
+      span{
+         white-space: nowrap;
+      }
+      border-bottom: 1px solid #E7E9E9;
+    }
+    &__actions{
+      display: flex;
+      justify-content: flex-end;
+    }
+    tr{
+      cursor: pointer;
+    }
+
+    .mobile__automation__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+}

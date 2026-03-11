@@ -1,0 +1,29 @@
+.videoAnalyticsContainer {
+
+   .design-course {
+      box-shadow: inset 5px 5px 13px -11px #333;
+      height: 100%;
+      .design-course__content {
+         padding-bottom: 0;
+      }
+   }
+
+   .sidebar {
+      min-height: 0!important;
+      .sidebar__settings {
+         display: none!important;
+      }
+      .sidebarItem {
+         &:last-of-type {
+            border-top: 1px solid #c2cedb!important;
+            margin-top: 40px!important;
+         }
+      }
+   }
+}
+
+.videoAnalyticsCard__container {
+   margin-left: 280px;
+   margin-top: 32px;
+   margin: 32px 24px 150px 280px;
+}

@@ -1,0 +1,58 @@
+.welcomeDashboardTutorials {
+   display: flex;
+   width: 100%;
+   background: linear-gradient(267.84deg, #F1F2F4 44.8%, #E2E3E5 92.76%);
+   border-radius: 12px;
+   border: 1px solid #E7E9E9;
+   padding: 0 8px;
+   box-sizing: border-box;
+   position: relative;
+   &__greyDots {
+      position: absolute;
+      right: 0;
+      top: 0;
+   }
+   &__content {
+      display: flex;
+      width: 100%;
+      background-size: contain;
+      @media screen and (max-width: 1023px) {
+         width: 100%;
+       }
+       @media screen and (max-width: 370px) {
+         flex-direction: column;
+       }
+      &__img {
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         padding-top: 20px;
+         justify-content: center;
+         img {
+            display: block;
+            max-width: 100%;
+            min-width: 147px;
+         }
+      }
+      &__text {
+         display: flex;
+         flex-direction: column;
+         padding: 36px 24px;
+         justify-content: center;
+          div {
+            &:nth-child(1) {
+               margin-bottom: 4px;
+            }
+            &:nth-child(2) {
+               margin-bottom: 16px;
+               max-width: 526px;
+            }
+          }
+      }
+      @media(max-width: 1250px) {
+         &__content {
+            background-size: 70% auto;
+         }
+      }
+   }
+}

@@ -1,0 +1,43 @@
+.commonQuestions {
+   padding: 40px 128px;
+   box-sizing: border-box;
+   text-align: center;
+   .commonQuestions__list {
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .commonQuestions__left {
+         flex: 1 1;
+         margin-right: 72px;
+         min-width: 300px;
+      }
+      .commonQuestions__right {
+         flex: 1 1;
+         min-width: 300px;
+      }
+      .commonQuestion {
+         margin-top: 24px;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .commonQuestions {
+      padding: 24px 24px 32px 24px;
+      text-align: left;
+      width: 100%;
+      max-width: 328px;
+      .commonQuestions__list {
+         display: block;
+
+         .commonQuestions__left {
+            margin: 0;
+         }
+         .commonQuestions__right {
+            min-width: 100%;
+         }
+      }
+   }
+}

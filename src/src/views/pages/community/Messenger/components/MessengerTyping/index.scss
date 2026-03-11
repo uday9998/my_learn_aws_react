@@ -1,0 +1,49 @@
+.messenger__typing{
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: max-content;
+    position: absolute;
+    top: 0px;
+    gap: 4px;
+    .circle{
+        background: #A1A5A5;
+        width: 4px;
+        height: 4px;   
+        border-radius: 50%;
+        animation: typing 1.5s infinite;
+        &:nth-child(0){
+        }
+        &:nth-child(1){
+            animation-delay: 0.5s;
+        }
+        &:nth-child(2){
+            animation-delay: 1s;
+        }
+    }
+    
+}
+
+@keyframes wave {
+    0%,
+      60%,
+      100% {
+      transform: initial;
+    }
+    30% {
+      transform: translateY(-6px);
+    }
+  }
+  
+  @keyframes typing {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,40 @@
+.backdropFilterWrapper {
+   position: relative;
+   padding: 0 16px;
+
+   .popupContainer {
+      position: fixed;
+      z-index: 999;
+      background-color: rgba(63, 79, 101, 0.6);
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+   }
+
+   .backdropFilter {
+      filter: blur(6px);
+      overflow: hidden;
+      height: 100vh;
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .backdropFilterWrapper {
+      .popupContainer {
+         position: absolute !important;
+      }
+      .backdropFilter {
+         filter: blur(6px);
+         overflow: hidden;
+         height: 1100px;
+      }
+   }
+}
+
+.backdropFixed {
+   height: 100vh;
+   overflow: hidden;
+}

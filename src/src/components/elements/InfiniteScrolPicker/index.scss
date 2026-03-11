@@ -1,0 +1,27 @@
+.infinite__scroll__picker{
+    max-height: 152px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    &__item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        width: 82.67px;
+        min-height: 48px;
+        cursor: pointer;
+    }
+    &__item__active{
+        z-index: 7;
+        background: #E8F2F1;
+    }
+}

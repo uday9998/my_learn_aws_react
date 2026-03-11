@@ -1,0 +1,15 @@
+.products__wrapper {
+    padding: 20px;
+
+    .products__card__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 25px;
+        gap: 16px;
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+}

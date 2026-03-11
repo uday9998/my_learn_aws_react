@@ -1,0 +1,46 @@
+.image__view{
+    width: 100%;
+    border-radius: 12px;
+    position: relative;
+    margin-top: 12px;
+    img{
+        border-radius: 12px;
+        width: 100%;
+    }
+    &_content{
+        position: relative;
+    }
+    &__change{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &__clear{
+        position: absolute;
+        left: 85%;
+        top: 3%;
+        padding: 4px !important;
+        min-width: 0px;
+        svg{
+            padding: 0px;
+        }
+    }
+    button{
+       max-width: max-content;
+       gap: 0px;
+    }
+
+    .video__wrapper {
+        border-radius: 12px;
+
+        button {
+            z-index: 1;
+        }
+
+        video {
+            border-radius: 12px;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.watching__section{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__top{
+        display: flex;
+        align-items: center;
+        gap: 12px;   
+    }
+    img{
+        width: 100%;
+    }
+}

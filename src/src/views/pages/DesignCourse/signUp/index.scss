@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 1023px) {
+    .course-signUp {
+        padding: 0px 16px 16px;
+        width: initial;
+        height: initial;
+        box-sizing: border-box;
+        .course-signUp-tabs {
+            border: none;
+
+            .course-signUp-tabs-content {
+                margin-right: 0;
+            }
+        }
+        .course-signUp-right {
+            margin-left: 0px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+            border: solid 1px #dfe5eb;
+            background-color: #ffffff;
+            padding: 24px;
+            flex: 1 !important;
+            .itemWrapper {
+                border: none;
+                box-shadow: none;
+                .courseDetails {
+                    padding: 0;
+                }
+                .siteChanges {
+                    padding: 0;
+                }
+                .seo {
+                    padding: 0;
+                }
+                .instructorDetails {
+                    padding: 0;
+                }
+            }
+        }
+    }
+ }

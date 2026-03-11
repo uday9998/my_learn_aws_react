@@ -1,0 +1,87 @@
+// .pagePagination {
+//    display: flex;
+
+//    .paginationItem {
+//       height: 32px;
+//       border-radius: 2px;
+//       border: solid 1px #c6cbd4;
+//       box-sizing: border-box;
+//       display: flex;
+//       padding: 0 11px;
+//       align-items: center;
+//       &:hover {
+//          cursor: pointer;
+//       }
+//       margin-right: 4px;
+//       background: #ffffff;
+//    }
+
+//    .paginationLeft {
+//       transform: rotate(180deg);
+//       margin-right: 8px;
+//    }
+
+//    .paginationLeft, .paginationRight {
+//       padding: 0 3px;
+//    }
+
+//    .paginationLastItem {
+//       margin: 0;
+//    }
+
+//    .paginationDotes {
+//       margin-right: 8px;
+//       margin-left: 4px;
+//       display: flex;
+//       align-items: flex-end;
+//       justify-content: center;
+//       cursor: pointer;
+//       span {
+//          margin-bottom: 4px;
+//          letter-spacing: 1px;
+//       }
+//    }
+
+//    .paginationItem__active {
+//       background-color: #006dff;
+//       border: none;
+//       span {
+//          color: #ffffff!important;
+//       }
+//    }
+
+//    .paginationItem__disabled {
+//       opacity: 0.3;
+//    }
+// }
+.pagePagination {
+   display: flex;
+   justify-content: center;
+   gap: 8px;
+
+   .paginationItem {
+      background: #ffffff;
+      /* grey scale/10 */
+      border: 1px solid #e7e9e9;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      span {
+         display: flex;
+      }
+   }
+   .paginationDotes {
+      display: flex;
+      align-items: center;
+   }
+   .paginationItem__active {
+      background: #24554e;
+
+      border: 1px solid #153833;
+      border-radius: 8px;
+   }
+}

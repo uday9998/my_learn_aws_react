@@ -1,0 +1,14 @@
+.linkViewWithEdit {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   width: 100%;
+   &__label {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 168%;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: #131f1e;
+      text-align: start;
+   }
+}

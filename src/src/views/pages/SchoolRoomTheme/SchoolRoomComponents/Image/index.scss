@@ -1,0 +1,34 @@
+.image-content-template1 {
+   img {
+      max-width: 100%;
+      object-fit: cover;
+      display: block;
+   }
+}
+
+.image-content-template2 {
+   img {
+      max-width: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+   }
+}
+
+.image-content-template3 {
+   img {
+      max-width: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+   }
+}
+
+.image {
+   display: flex;
+}
+
+
+.uploadImg_full img {
+   height: 100%;
+}

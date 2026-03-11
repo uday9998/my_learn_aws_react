@@ -1,0 +1,38 @@
+.advanced__filter__modal {
+   background: #ffffff;
+   position: absolute;
+   z-index: 100;
+   right: 0;
+   border: 1px solid #e7e9e9;
+   box-shadow: 0px 0px 6px rgba(19, 31, 30, 0.1);
+   border-radius: 12px;
+   width: 367px;
+   display: flex;
+   flex-direction: column;
+   padding: 16px;
+   gap: 20px;
+   &__buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+   }
+   .middle__line {
+      height: 1px;
+      background: rgba(19, 31, 30, 0.1);
+      width: 100%;
+   }
+   .advanced__filter__flex {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .input__header {
+         margin: 0px;
+      }
+   }
+   .inputNew {
+      padding: 6px 8px;
+   }
+   .SelectItem__button__large {
+      padding: 10px 12px;
+   }
+}

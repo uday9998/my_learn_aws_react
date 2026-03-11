@@ -1,0 +1,44 @@
+.advanced {
+   .noIntegration {
+      img {
+       width: 250px;
+      }
+   }
+   .emptyIntegration{
+      margin-top: 7px;
+      margin-bottom: 7px;
+   }
+   .connect {
+      margin-top: 16px;
+      button {
+         border: solid 2px #006dff;
+         background: #fff;
+         width: 290px;
+      }
+   }
+ }
+
+ .signUpCard.advanced_autoresponder {
+   padding: 40px;
+    .btnsBlock {
+       button {
+          margin-right: 0;
+          width: 132px;
+       }
+    }
+ }
+
+ @media screen and (max-width: 540px) {
+    .advanced {
+       .noIntegration {
+          text-align: center;
+       }
+       .connect {
+          margin-top: 16px;
+          text-align: center;
+          button {
+             width: 260px;
+          }
+       }
+     }
+ }

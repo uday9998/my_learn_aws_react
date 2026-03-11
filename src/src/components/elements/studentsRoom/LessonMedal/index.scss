@@ -1,0 +1,11 @@
+.finished {
+   max-width: 100px;
+}
+
+.unfinished {
+  max-width: 100px;
+  margin: 0 20px;
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+
+}

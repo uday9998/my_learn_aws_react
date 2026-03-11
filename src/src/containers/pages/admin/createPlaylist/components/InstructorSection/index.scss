@@ -1,0 +1,36 @@
+.instructor__tabs {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .instructor__name__wrapper {
+        display: flex;
+        align-items: flex-end;
+        gap: 16px;
+
+        button {
+            padding: 24px 16px !important;
+        }
+
+        @media (max-width: 1024px) {
+            .selectItem__label {
+                span {
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+
+            .SelectItem__button__large {
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .loading__SpinnerContainer {
+        z-index: 10000;
+    }
+}

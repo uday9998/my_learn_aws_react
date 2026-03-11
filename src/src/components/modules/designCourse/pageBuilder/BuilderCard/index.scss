@@ -1,0 +1,77 @@
+.builderCard {
+   border-radius: 8px;
+   border: solid 1px #cddaf1;
+   background-color: #fbfdff;
+   display: inline-block;
+   max-width: 450px;
+   box-sizing: border-box;
+   flex: 1 1;
+
+   .builderCard__imgBlock {
+      padding: 2px;
+      box-sizing: border-box;
+
+      img {
+         object-fit: cover;
+         width: 100%;
+      }
+   }
+
+   .buttonsBlock {
+      display: flex;
+      padding: 16px 10px;
+      justify-content: center;
+      box-sizing: border-box;
+      display: flex;
+
+      .builderCard__btn {
+         width: 100%;
+
+         button {
+            width: 100%;
+         }
+
+         &:first-of-type {
+            margin-right: 16px;
+            max-width: 112px;
+         }
+
+         &:last-of-type {
+            max-width: 168px;
+         }
+      }
+   }
+}
+
+.builderCard_checked_true {
+   border: 2px solid #7cb740;
+   outline: none;
+
+   .builderCard__imgBlock {
+      padding: 0;
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .builderCard {
+      width: 100%;
+      max-width: 328px;
+
+      .buttonsBlock {
+         padding: 12px 24px 24px;
+         flex-direction: column-reverse;
+
+         .builderCard__btn {
+            max-width: none !important;
+
+            button {
+               height: 48px;
+            }
+
+            &:last-of-type {
+               margin-bottom: 16px;
+            }
+         }
+      }
+   }
+}

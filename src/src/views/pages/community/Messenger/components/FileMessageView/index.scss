@@ -1,0 +1,16 @@
+.file__message{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    &__icon{
+        background: #F8FAFA;
+        border-radius: 8px;
+        min-width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

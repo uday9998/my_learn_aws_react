@@ -1,0 +1,21 @@
+.courseType {
+   max-width: 216px;
+   box-sizing: border-box;
+   padding: 24px 0;
+   span {
+      display: block;
+      text-align: center;
+      &:last-of-type {
+         line-height: 1.33;
+         margin-top: 4px;
+      }
+   }
+   .btnWrapper {
+      max-width: 152px;
+      margin: 0 auto;
+      margin-top: 24px;
+      button {
+         width: 100%;
+      }
+   }
+}

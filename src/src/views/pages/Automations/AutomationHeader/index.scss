@@ -1,0 +1,19 @@
+.automation__create__header{
+   background-color: white;
+   padding: 12px 24px;
+   min-height: 72px;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #E7E9E9 ;
+   &__left{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      &__input{
+         border: 0px;
+         outline: none;
+      }
+   }
+}

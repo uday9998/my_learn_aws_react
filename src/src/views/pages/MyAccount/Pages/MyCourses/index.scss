@@ -1,0 +1,157 @@
+.my__account__courses{
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    cursor: pointer;
+    .course_desc {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &__filter{
+        display: flex;
+        gap: 24px;
+
+        @media screen and (max-width: 701px) {
+            gap: 12px;
+        }
+        .inputSearch{
+            width: 100%;
+        }
+        .sort__button__new{
+            button{
+                height: 100%;
+            }
+        }
+        &__buttons{
+            display: flex;
+            gap: 12px;
+        }
+
+        @media (max-width: 1024px) {
+            button {
+                width: 44px;
+            }
+        }
+    }
+    &__data{
+        display: flex;
+        gap: 24px;
+        width: 100%;
+        flex-wrap: wrap;
+        @media screen and (max-width: 793px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__empty {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            img {
+                width: 300px;
+            }
+        }
+    }
+}
+
+.my__account__course{
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    flex-direction: column;
+    width: 366px;
+    gap: 16px;
+    overflow: hidden;
+    border-radius: 12px;
+
+    @media screen and (max-width: 793px) {
+        width: 100%;
+        max-width: 366px;
+
+        &__bottom__info {
+            flex-direction: column;
+            align-items: flex-start !important;
+        }
+        &__bottom__progress {
+            width: 100% !important;
+        }
+    }
+    &__top{
+        position: relative;
+        img{
+            width: 100%;
+            height: 162px;
+            object-fit: cover;
+        }
+        width: 100%;
+        &__status{
+            position: absolute;
+            top: 15px;
+            left: 13px;
+        }
+        &__lessonsCount{
+            position: absolute;
+            top: 12px;
+            background: rgba(19, 31, 30, 0.7);
+            border-radius: 8px;
+            padding: 8px;
+            right: 12px;
+        }
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        height: 100%;
+        justify-content: space-between;
+        padding: 0px 24px 24px 24px;
+        &__info{
+            display: flex;
+            margin-top: 16px;
+            gap: 20px;
+            align-items: center;
+        }
+        &__author{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 8px 6px 6px;
+            border: 1px solid #E7E9E9;
+            border-radius: 8px;
+          img{
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+            border-radius: 8px;
+          }
+        }
+        &__progress{
+            display: flex;
+            align-items: center;
+            span{
+                white-space: nowrap;
+            }
+            width: 50%;
+            gap: 8px;
+            &__bar{
+                background: #EAE8F2;
+                border-radius: 100px;
+                overflow: hidden;
+                height: 8px;
+                width: 100%;
+                position: relative;
+                &__pr{
+                    position: absolute;
+                    background: var(--buttonBgcolor);
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

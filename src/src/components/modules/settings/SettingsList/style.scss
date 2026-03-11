@@ -1,0 +1,6 @@
+.settingsList {
+  width: 100%;
+}
+.settingsList__item:not(:first-of-type) {
+  margin-top: 8px;
+}

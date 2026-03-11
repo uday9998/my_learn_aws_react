@@ -1,0 +1,13 @@
+.affiliateCommission {
+   padding: 24px 20px 32px 20px;
+   display: flex;
+   box-sizing: border-box;
+   align-items: flex-start;
+   .affiliateCommission__text {
+      margin-left: 6px;
+      margin-top: 2px;
+      span {
+         display: block;
+      }
+   }
+}

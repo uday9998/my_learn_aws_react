@@ -1,0 +1,77 @@
+.lesson__settings__inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media screen and (max-width: 1023px) {
+      gap: 16px;
+   }
+    &__center{
+        display: flex;
+        &__status{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            border-right: 1px solid #E7E9E9;
+            width: 100%;
+            padding-right: 24px;
+            margin-right: 24px;
+        }
+        &__comments{
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &__comment{
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    &__options{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__options__flex{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__option{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__left{
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__line{
+        width: 100%;
+        height: 1px;
+        background-color: #E7E9E9;
+    }
+
+    .drip_static {
+      position: relative;
+      white-space: nowrap;
+      padding: 0px 7px;
+      box-sizing: border-box;
+      border: 1px solid  #e7e9e9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+      background: #F8FAFA;
+      align-items: center;
+      border-radius: 12px;
+   }
+}

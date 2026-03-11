@@ -1,0 +1,174 @@
+.landingGeneral__settings {
+    width: 100%;
+    padding: 24px 40px 40px 40px;
+    box-sizing: border-box;
+
+    .custom_url {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      .copiedText {
+       position: absolute;
+       right: -30px;
+       top: -15px;
+       z-index: 20;
+       color: #fff;
+       background: #000;
+       padding: 5px 5px 6px 5px;
+       border-radius: 5px;
+    }
+      .input_with_text {
+         width: 100%;
+         .input_with_text_content {
+            display: flex;
+            align-items: center;
+            border: 1px solid #cddaf1;
+            background: #fbfdff;
+            border-radius: 4px;
+            height: 48px;
+            box-sizing: border-box;
+            span {
+               background-color: #e5f0ff;
+               padding-left: 7px;
+               padding-right: 5px;
+               padding-top: 1px;
+               padding-bottom: 1px;
+               margin-left: 16px;
+               border-radius: 4px;
+            }
+            &:focus-within {
+               box-shadow: 0 0 0px 2px #7cb740;
+               border: 1px solid #fbfdff;
+               outline: none;
+            }
+            .textInput {
+               flex: 1;
+               input {
+                  background: inherit;
+                  border: none;
+                  color: #8a94a2;
+                  &:focus {
+                     box-shadow:none;
+                     border: none;
+                  }
+               }
+            }
+         }
+      }
+      .copy_btn {
+         border-radius: 4px;
+         background-color: #e5f0ff;
+         color: #006dff;
+         width: 102px;
+         height: 48px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+         margin-left: 16px;
+         span {
+            color: #006dff !important;
+         }
+      }
+       .abs_text {
+          position: absolute;
+          top: 21px;
+          left: 1px;
+          border-radius: 4px 0px 0px 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 46px;
+          border-right: solid 1px #cddaf1;
+          background-color: #f2f7ff;
+          padding: 0 16px;
+       }
+    }
+    .landingGeneral__settings__visibility {
+      width: 100%;
+      box-sizing: border-box;
+      padding-top: 32px;
+      .visibility__info {
+         margin-left: 28px;
+      }
+      .published__radio {
+         display: flex;
+         margin: 16px 0 24px 0;
+         .published__radioBox {
+            padding: 16px 24px 16px 16px;
+            border-radius: 4px;
+            border: solid 1px #cddaf1;
+            background-color: #fbfdff;
+            &:last-child {
+               margin-left: 16px;
+            }
+         }
+         .radioBox {
+            span {
+            font-weight: 600;
+            line-height: 1.33;
+            position: relative;
+            top: 1px;
+         }
+
+      }
+         label {
+            cursor: pointer;
+         }
+      }
+   }
+   
+   .landingGeneral__settings__save {
+      margin-top: 24px;
+      display: flex;
+      justify-content: flex-end;
+      button {
+         &:last-child {
+            margin-left: 16px;
+            width: 150px;
+         }
+
+      }
+   }
+ }
+
+ 
+ 
+ @media screen and (max-width: 720px) {
+    .landingGeneral__settings  {
+      .custom_url {
+         flex-direction: column;
+         align-items: flex-start;
+         >div {
+            margin: 8px 0;
+         }
+      }
+      .landingGeneral__settings__save {
+         flex-direction: column;
+         button {
+            width: 100&;
+            margin: 8px 0;
+            &:last-child {
+               margin-left: 0;
+               width: 100%;
+            }
+         }
+      }
+      .landingGeneral__settings__visibility {
+         padding: 24px 24px 32px 24px;
+         .published__radio {
+            flex-direction: column;
+            align-items: flex-start;
+            .published__radioBox {
+              margin: 8px 0;
+              &:last-child {
+                 margin-left: 0;
+              }
+            }
+         }
+      }
+    }
+ }
+ 
+
+

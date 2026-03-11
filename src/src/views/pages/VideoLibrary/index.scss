@@ -1,0 +1,139 @@
+.d-videolibrary {
+   width: 100%;
+   .title {
+      display: flex;
+      align-items: baseline;
+      .textBasic_size_base {
+         font-size: 21px;
+         padding-right: 8px;
+      }
+      span {
+         line-height: 1.52;
+      }
+   }
+   .line {
+      background-color: #c2cedb;
+      height: 1px;
+      width: 100%;
+      margin: 5px 0 -20px 0;
+   }
+   .settingTransaction__transaction_empty {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 40px;
+   }
+   .d-videolibrary__content {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 36px;
+      .content {
+         display: flex;
+         flex-direction: column;
+         margin-left: calc(24px / 2);
+         margin-right: calc(24px / 2);
+         margin-bottom: 24px;
+         .content__title {
+            margin: 18px 0 4px 0;
+         }
+      }
+   }
+   .videolibrary-button-content{
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 10px;
+      .actions{
+         align-items: center;
+         .actions-item{
+            cursor: pointer;
+            align-items: center;
+            display: flex;
+            margin: 0 4px;
+            width: 24px;
+            height: 24px;
+         }
+         .downlod{
+            width: 34px;
+            height: 24px;
+         }
+      }
+   }
+
+   .videolibrary__search{
+      width: 100%;
+      height: max-content;
+      display: flex;
+      align-items: flex-start;
+      align-items: center;
+      margin: 16px 0;
+      .search__input {
+         position: relative;
+         width: 100%;
+
+         svg {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+         }
+      }
+      .search__button {
+         button {
+            height: '48px';
+            width: '168px'
+         }
+      }
+   }
+
+}
+
+@media screen and (min-width: 1600px) {
+   .d-videolibrary__content {
+      .content {
+         width: 268px;
+      }
+      .designCourse__addCourse {
+         width: 268px;
+      }
+   }
+}
+@media screen and (min-width: 1300px) {
+   .d-videolibrary__content {
+      .content {
+         width: 22.6%;
+      }
+   }
+}
+@media (max-width: 1300px) and (min-width: 1024px) {
+   .d-videolibrary__content {
+      .content {
+        width: 30%;
+      }
+   }
+}
+@media screen and (max-width: 1023px) {
+   .d-videolibrary{
+      padding: 0 16px 0;
+      margin-top: 16px;
+      width: initial;
+      .videolibrary__search {
+         flex-direction: column;
+         .search__button {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 16px;
+            button {
+               width: 100%;
+            }
+         }
+      }
+      .d-videolibrary__content {
+         width: auto;
+         .content {
+           width: 100%;
+         }
+      }
+   }
+}
+
+
+

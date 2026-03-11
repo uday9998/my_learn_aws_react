@@ -1,0 +1,23 @@
+.textarea__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .textarea_component {
+        border: 1px solid #e7e9e9;
+        border-radius: 12px;
+        outline: none;
+        padding: 16px;
+        resize: vertical;
+        height: 150px;
+        min-height: 150px;
+        max-height: 300px;
+    }
+
+    span {
+        font-weight: 400;
+        color: #131F1E;
+        font-size: 14px;
+    }
+}
+

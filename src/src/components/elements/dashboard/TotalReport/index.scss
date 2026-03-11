@@ -1,0 +1,11 @@
+.totalReport {
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   &__left {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+   }
+}

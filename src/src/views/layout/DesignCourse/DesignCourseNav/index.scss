@@ -1,0 +1,36 @@
+.design__course__nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 50px;
+    @media screen and (max-width: 1023px) {
+      overflow-x: auto;
+    }
+    &__item{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        @media screen and (max-width: 1023px) {
+         span {
+            white-space: nowrap;
+           }
+       }
+
+    }
+
+    .design__course__nav__item {
+      padding: 8px 12px;
+      border-radius: 12px;
+      transition: .2s ease-in;
+
+      &:hover {
+        background-color: #E8F2F1;
+      }
+    }
+}
+
+.textBasic_size_small_12 {
+  font-size: 16px !important;
+}

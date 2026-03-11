@@ -1,0 +1,10 @@
+.text {
+   display: flex;
+   overflow-wrap: break-word;
+   word-break: break-word;
+}
+
+.Section .mark.text:before {
+   content: "";
+   background:inherit;
+}

@@ -1,0 +1,67 @@
+.questionTypesViews {
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   max-width: 720px;
+   width: 100%;
+   padding: 8px  55px 24px;
+   box-sizing: border-box;
+   min-height: 405px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   >div {
+      position: relative;
+   }
+}
+
+.questionTypeViews {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   position: relative;
+   background-color: #FFFFFF;
+   margin-top: 16px;
+   .questionDelete {
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      background: #FFFFFF;
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      top: 8px;
+      right: -44px;
+   }
+   img {
+      border-radius: 12px;
+   }
+   .block__upload__media__view {
+      position: relative;
+      .upload__media__image__view__button {
+         // left: auto;
+         // right: 20px;
+      }
+   }
+   .grey__line {
+      background: #E7E9E9;
+      height: 1px;
+      width: 100%;
+   }
+   .questionDragHandleIcon {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 8px;
+      left: -44px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+   }
+
+}
+

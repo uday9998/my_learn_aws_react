@@ -1,0 +1,99 @@
+.class__progress__chart{
+   width: 61.4%;
+   background: #FFFFFF;
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   &__loader{
+      position: relative;
+      height: 100px;
+      width: 100%;
+   }
+   &__wrapper{
+      padding: 20px 24px 27px;
+   }
+   &__items{
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+   }
+   &__header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      span{
+         &:nth-child(2){
+            color: #727978;
+         }
+      }
+   }
+   .chart__top{
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 32px;
+      span{
+         word-break: keep-all;
+      }
+   }
+   .chart__bottom{
+      &__progress{
+         position: relative;
+         top: -2px;
+         span{
+            color: #36796F;
+         }
+      }
+      &__completed{
+         position: relative;
+         top: -2px;
+         span{
+            color: #BD30B7;
+         }
+      }
+      &__inactive{
+         position: relative;
+         top: -2px;
+      }
+      span{
+         &:nth-child(1){
+            margin-right: 8px;
+         }
+      }
+   }
+   &__item{
+      display: flex;
+      flex-direction: column;
+      .chart__item{
+         position: relative;
+         border-radius: 8px;
+         width: 100%;
+         height: 8px;
+         div{
+            position: absolute;
+            left: 0;
+            border-radius: 8px;
+            top: 0;
+            height: 100%;
+         }
+         &__in__progress{
+            background: #E8F2F1;
+            div{
+               background: #36796F;
+            }
+         }
+         &__completed{
+            background: #FAEBF8;
+            div{
+               background: #BD30B7;
+            }
+         }
+         &__inactive{
+            background: #E7E9E9;
+            div{
+               background: #444C4B;
+            }
+         }
+      }
+   }
+}

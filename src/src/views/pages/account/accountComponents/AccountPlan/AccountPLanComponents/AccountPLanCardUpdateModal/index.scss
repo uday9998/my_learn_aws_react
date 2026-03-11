@@ -1,0 +1,25 @@
+.account__card {
+   width: auto;
+   max-width: 100%;
+   .account__card__modal {
+      display: flex;
+      gap: 16px;
+      &__content {
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+         width: 100%;
+      }
+  }
+  .card__buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+   .account__card {
+      min-width: 320px;
+   }
+}

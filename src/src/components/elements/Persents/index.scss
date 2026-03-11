@@ -1,0 +1,29 @@
+.persents{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid ;
+    border-radius: 8px;
+    padding: 4px;
+    &__block{
+        display: flex;
+        align-items: center;
+        width: 19px;
+        height: 19px;
+        border-radius: 4px;
+        justify-content: center;
+    }
+}
+.persents__down{
+    border-color: #F8C5C5;
+    .persents__block{
+        background: #FFF1F1;
+    }
+}
+
+.persents__up{
+    border-color:  #A8DEB7;
+    .persents__block{
+        background: #DEFBE6;
+    }
+}

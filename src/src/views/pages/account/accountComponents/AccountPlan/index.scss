@@ -1,0 +1,46 @@
+.account__plans {
+   margin-top: 21px;
+
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &__switch {
+         width: 100%;
+         margin: 0px auto;
+         position: relative;
+         .save__20 {
+            transform: rotate(9deg);
+            background-color: #D0D2D2;
+            border-radius: 6.297px;
+            outline: 4px solid #fff;
+            box-shadow: 0px 0px 2.42892px 0px rgba(19, 31, 30, 0.10);
+            padding: 6px 8px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 20px;
+            top: -16px;
+            span {
+               color: rgba(19, 31, 30, 0.6);
+            }
+         }
+         .save__20__y {
+            span {
+               background: linear-gradient(90deg, #36796F 0%, #7CAE7B 100%);
+               background-clip: text;
+               -webkit-background-clip: text;
+               -webkit-text-fill-color: transparent;
+            }
+         }
+      }
+   }
+
+   @media screen and (max-width: 1024px) {
+      &__content {
+         &__switch {
+           width: 100%;
+         }
+      }
+   }
+}

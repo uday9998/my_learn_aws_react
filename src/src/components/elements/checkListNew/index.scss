@@ -1,0 +1,42 @@
+.checklist {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   &__item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+   }
+   &__checked {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #24554e;
+      border-radius: 20px;
+      cursor: pointer;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 52.5%;
+         transform: translate(-50%, -50%);
+         width: 8px;
+         height: 8px;
+         background: #24554e;
+         border-radius: 50%;
+      }
+   }
+   &__unchecked {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #24554e;
+      border-radius: 20px;
+      cursor: pointer;
+   }
+   &__subtitle {
+      position: relative;
+      margin-top: -12px;
+      margin-left: 30px;
+   }
+}

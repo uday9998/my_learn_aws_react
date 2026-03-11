@@ -1,0 +1,43 @@
+.media__folder__version__first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 12px;
+    padding: 9px 13px;
+    cursor: pointer;
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+.media__folder__version__first__active {
+    background: #36796F;
+    >div>svg path{
+        fill: #fff;
+    }
+    .media__folder__version__first__left {
+      path{
+         fill: #fff;
+     }
+    }
+}
+
+
+.media__folder__version__first__right__rename {
+   position: relative;
+   input {
+      padding-right: 65px;
+   }
+   &__btns {
+      position: absolute;
+      right: 16px;
+      top: 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      top: 5px;
+      right: 5px;
+   }
+}

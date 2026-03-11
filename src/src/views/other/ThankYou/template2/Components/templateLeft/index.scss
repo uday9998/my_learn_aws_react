@@ -1,0 +1,50 @@
+.thankyou__template2__left {
+    width: 50%;
+    max-width: 540px;
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+    .logo__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+
+        & > img {
+            max-width: 60px;
+            height: auto;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    &__button {
+        width: 100%;
+        margin: 32px 0;
+    }
+
+    .social__links {
+        width: 100%;
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+     @media all and (max-width: 1023px) {
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+        padding: 24px;
+        padding-bottom: 44px;
+    }
+}

@@ -1,0 +1,11 @@
+.brandingImages__item {
+  flex: 1;
+  &.favicon {
+    img {
+      max-width: 60px;
+    }
+  }
+  &:not(:first-child) {
+    margin-left: 40px;
+  }
+}

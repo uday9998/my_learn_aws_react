@@ -1,0 +1,64 @@
+.delete_section_modal {
+    width: 552px;
+  //  height: 400px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .delete_section_content {
+       padding: 48px;
+    }
+    .delete_section_modal_title {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #3f4f65;
+    }
+    .field__2 {
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #3f4f65;
+        margin-bottom: 24px;
+    }
+    .delete_section_closeModal {
+         position: absolute;
+         right: 24px;
+          top: 24px;
+          cursor: pointer;
+    }
+    .deleteModal__btns {
+       display: flex;
+       justify-content: flex-end;
+       width: 100%;
+       button {
+        width: 100%;
+        margin: 0 4px;
+       }
+    }
+
+ }
+
+ @media screen and (max-width: 1023px) {
+    .delete_section_modal {
+        height: 100vh;
+        width: 100vw;
+       //width: 100%;
+        .deleteModal__btns {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 100%;
+            button {
+             width: 100%;
+             margin: 4px 0;
+            }
+         }
+    }
+ }

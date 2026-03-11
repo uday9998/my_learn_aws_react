@@ -1,0 +1,22 @@
+.school__codes {
+   margin: 24px 0px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   &__header {
+      display: flex;
+      flex-direction: column;
+      .top {
+         display: flex;
+         align-items: center;
+         svg {
+            margin-left: 6px;
+         }
+      }
+   }
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+}

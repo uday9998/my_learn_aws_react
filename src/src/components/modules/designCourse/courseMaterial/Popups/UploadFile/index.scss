@@ -1,0 +1,50 @@
+.uploadFileCard {
+   padding: 48px 80px 40px 80px;
+   .uploadFileCard__btns {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1 1;
+      >div {
+         flex: 1 1;
+         max-width: 150px;
+         button {
+            width: 100%;
+         }
+      }
+   }
+   .addIcon-wrapp {
+      margin-right: 8px;
+      &:hover {
+         cursor: pointer;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .uploadFileCard {
+      padding: 64px 16px 32px 16px;
+      .uploadActions {
+         display: block;
+         .addIcon-wrapp {
+            margin: 0 0 24px 0;
+            display: flex;
+            justify-content: center;
+         }
+         .uploadFileCard__btns {
+            flex-direction: column-reverse;
+            >div  {
+               width: 100%;
+               max-width: none;
+               margin: 0;
+               &:last-of-type {
+                  margin-bottom: 16px;
+               }
+               button {
+                  width: 100%!important;
+                  height: 48px!important;
+               }
+            }
+         }
+      }
+   }
+}

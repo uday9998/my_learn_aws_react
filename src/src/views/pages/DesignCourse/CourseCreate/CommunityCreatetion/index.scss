@@ -1,0 +1,37 @@
+.community__createation{
+    max-width: 1200px;
+    margin: 0px auto;
+    .community__logo {
+        margin-top: 16px;
+        .uploadImg_medium_upload .upload__view, .uploadImg_medium_upload .image__view {
+            max-height: 174px;
+            min-height: 174px;
+        }
+    }
+    .text_area_new    {
+      padding-right: 45px;
+   }
+    @media screen and (max-width: 1300px) {
+        padding: 0px 64px;
+    }
+    @media screen and (max-width: 1023px) {
+      padding: 24px 16px;
+      width: 100%;
+      background: white;
+  }
+    .uploadImg_medium{
+        .upload__view{
+            max-height: 295px;
+        }
+    }
+    .community__settings{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+.community__settings__mulit{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

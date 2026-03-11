@@ -1,0 +1,52 @@
+.noMatchBlock {
+   display: flex;
+   justify-content: center;
+   position: relative;
+   margin-bottom: 72px;
+   .noMatchBlock__text {
+      position: absolute;
+      top: 156px;
+      span {
+         display: block;
+         text-align: center;
+         max-width: 262px;
+      }
+   }
+}
+
+.dataTable {
+   display: flex;
+   justify-content: space-between;
+   margin-right: 10%;
+
+   .dataTable__head,
+   .dataTable__data {
+      padding: 20px 0;
+      margin-right: 12px;
+      box-sizing: border-box;
+      flex: 1 1;
+
+      span {
+         line-height: 1.71;
+      }
+   }
+
+   .dataTable__head {
+      padding: 12px 0;
+
+      span {
+         color: rgba(51, 51, 51, 0.5);
+         font-weight: 900 !important;
+      }
+   }
+
+   .hasInterval {
+      margin-bottom: 8px;
+   }
+
+   .dataTable__data {
+      &:last-of-type {
+         margin-bottom: 0!important;
+      }
+   }
+}

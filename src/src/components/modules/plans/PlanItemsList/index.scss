@@ -1,0 +1,39 @@
+.planItemsList {
+   padding: 40px;
+   width: 100%;
+
+   .planItemsList__table {
+      width: 100%;
+      margin-left: -5px;
+
+      td {
+         padding-top: 18px;
+      }
+   }
+}
+
+
+@media screen and (max-width: 1280px) {
+   .planItemsList {
+      padding: 20px 20px;
+      .textBasic_size_small {
+         font-size: 15px;
+      }
+   }
+}
+
+
+@media screen and (max-width: 1110px) {
+   .planItemsList {
+      padding: 20px 15px;
+      .textBasic_size_small {
+         font-size: 14px;
+      }
+      .planItem {
+         >img {
+            margin-right: 2px;
+         }
+      }
+   }
+}
+

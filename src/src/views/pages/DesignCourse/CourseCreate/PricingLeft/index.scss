@@ -1,0 +1,10 @@
+.course__pricing__left {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+    .plan__create__left__plan {
+       background-color: inherit;
+       padding: 0;
+    }
+}

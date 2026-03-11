@@ -1,0 +1,72 @@
+.uploadInput {
+   width: 100%;
+   max-width:92px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   .defaultImg {
+      width: 92px;
+      height: 92px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4.2px;
+      background-color: rgba(0, 109, 255, 0.1);
+   }
+
+   .uploadImgContainer {
+      display: inline-block;
+      max-width: 92px;
+      max-height: 92px;
+      min-width: 32px;
+      min-height: 32px;
+      border-radius: 4.2px;
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         border-radius: 4.2px;
+      }
+   }
+
+   input[type="file"] {
+      opacity: 0;
+      position: absolute;
+      pointer-events: none;
+      width: 1px;
+      height: 1px;
+   }
+
+   input[type="file"]+label {
+      width: 92px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 110, 255, 0.1);
+      border-radius: 4px;
+      margin-top: 16px;
+
+      &:hover {
+         cursor: pointer;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .uploadInput {
+      width: 100%;
+      max-width: none;
+      .uploadImgContainer, .defaultImg {
+         width: 112px!important;
+         height: 112px!important;
+         max-width: none;
+         max-height: none;
+      }
+      label {
+         width: 100%!important;
+         height: 48px!important;
+      }
+   }
+}

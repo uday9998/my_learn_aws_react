@@ -1,0 +1,306 @@
+// .welcomeDashboardCourses {
+//    display: flex;
+//    width: 100%;
+
+//    .title__wrapper {
+//       @media (max-width: 1024px) {
+//          span {
+//             hyphens: none;
+//             font-size: 36px;
+//          }
+//       }
+//    }
+
+//    .how_it_works {
+//       display: flex;
+//       align-items: center;
+//       gap: 30px;
+//       padding: 0 0 64px 36px;
+//       margin-top: 20px;
+
+//       .play__button__wrapper {
+//          cursor: pointer;
+//          display: flex;
+//          align-items: center;
+//          padding: 1px 1px;
+//          border-radius: 12px;
+//          background-image: linear-gradient(170deg, #14EAD1, rgb(36, 85, 78), rgb(36, 85, 78));
+
+//          @media(max-width: 1024px) {
+//             width: 282px;
+//          }
+
+//          div {
+//             gap: 11px;
+//             background: white;
+//             padding: 11px 14px;
+//             border-radius: 11px,;
+            
+
+//             @media(max-width: 1024px) {
+//                padding: 11px 82px;
+//             }
+
+//             @media(max-width: 1060px) {
+//                span {
+//                   font-size: 14px;
+//                }
+//             }
+//          }
+//       }
+
+//       @media(max-width: 1024px) {
+//          display: flex;
+//          flex-direction: column;
+//          padding: 0 0 64px 0;
+//       }
+//    }
+
+//    .large__text__wrapper {
+//       text-align: start;
+//       margin-top: 15px;
+//       @media(max-width: 1024px) {
+//          text-align: center;
+
+//          span {
+//             hyphens: none;
+//             font-size: 14px;
+//          }
+//       }
+//    }
+
+//    .buttons__wrapper {
+//       display: flex;
+//       align-items: center;
+//       gap: 20px;
+
+//       @media (max-width: 1050px) {
+//          span {
+//             font-size: 14px;
+//          }
+//       }
+//    }
+
+//    &__content {
+//       display: flex;
+//       width: 100%;
+//       align-items: center;
+//       // padding: 0 0 0 100px;
+//       background: #FFFFFF;
+//       border: 1px solid #E7E9E9;
+//       border-radius: 12px;
+//       @media(max-width: 1250px) {
+//          padding: 0;
+//       }
+//       @media(max-width: 1023px) {
+//          flex-direction: column;
+//          // padding: 0 16px;
+//       }
+//       &__title {
+//          position: relative;
+//          width: 355px;
+//          margin-bottom: 10px;
+//          @media(max-width: 1023px) {
+//            width: auto;
+//          }
+//          svg {
+//             position: absolute;
+//             left: -32px;
+//             z-index: 0;
+//             bottom: 18px;
+//             @media(max-width: 1023px) {
+//                top: 34px;
+//                left: 0;
+//             }
+//          }
+//          span {
+//             z-index: 1;
+//          }
+//          // .textBasic_type_mediumSmallInter {
+//          //    font-weight: 800;
+//          // }
+//       }
+//       &__text {
+//          text-align: center;
+//          display: flex;
+//          flex-direction: column;
+//          align-items: center;
+//          padding: 64px 0 0 35px;
+//          @media(max-width: 1023px) {
+//             padding: 36px 0 13px 0;
+
+//             background-image: url(../../../../assets/images/dashboard/dots.png);
+//             background-repeat: no-repeat;
+//             background-position: left;
+//             background-size: inherit;
+//          }
+//           div {
+//             &:nth-child(1) {
+//                // margin-bottom: 16px;
+//             }
+//             &:nth-child(2) {
+//                margin-bottom: 8px;
+//             }
+//             &:nth-child(3) {
+//                margin: 20px 0 26px 0;
+//                max-width: 432px;
+//             }
+//           }
+//       }
+
+//       &__img {
+//          // background-image: url(../../../../assets/images/dashboard/courses2.png);
+//          background-position: center;
+//          background-size: cover;
+//          background-repeat: no-repeat;
+//          width: 100%;
+//          height: 100%;
+
+//          // @media (max-width: 1024px) {
+//          //    background-image: url(../../../../assets/images/dashboard/courses2_mobile.png);
+//          //    height: 35vh;
+//          //    border-top-right-radius: 0;
+//          //    border-bottom-left-radius: 12px;
+//          // }
+//       }
+//    }
+//    img {
+//       height: 100%;
+//       width: 100%;
+//       border-top-right-radius: 12px;
+//       border-bottom-right-radius: 12px;
+      
+
+//       @media (max-width: 1024px) {
+//          border-top-right-radius: 0;
+//          border-bottom-left-radius: 12px;
+//       }
+//    }
+
+//    .inner__wrapper {
+//       display: flex;
+//       flex-direction: column;
+//       width: 100%;
+//       align-items: flex-start;
+      
+//       @media (max-width: 1250px) {
+//          align-items: center;
+//       }
+
+//       @media (max-width: 1024px) {
+//          padding: 0 19px;
+//          align-items: center;
+//       }
+//    }
+// }
+
+// .dashboard_video.modal__new__content {
+//       width: 1000px;
+//       padding: 0;
+//       overflow: hidden;
+//       display: flex;
+//       flex-direction: column;
+//       .VideoItem {
+//          margin: 0;
+//          aspect-ratio: 16 /9;
+//          width: 100%;
+//          video {
+//             width: 100%;
+//             height: 100%;
+//             border: none;
+//          }
+//       }
+//    }
+
+
+
+.welcomeMiestro {
+   background-color: #F0F7FF;
+   border-radius: 8px;
+   width: 100%;
+   padding: 32px;
+   // margin-bottom: 24px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+   
+   &__content {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     gap: 48px;
+     
+     @media (max-width: 1023px) {
+       flex-direction: column;
+       align-items: flex-start;
+     }
+   }
+   
+   &__text {
+     flex: 1;
+     max-width: 600px;
+   }
+   
+   &__buttons {
+     display: flex;
+     gap: 16px;
+     margin-top: 24px;
+     
+     @media (max-width: 767px) {
+       flex-direction: column;
+       width: 100%;
+     }
+   }
+   
+   &__button {
+     padding: 12px 24px;
+     border-radius: 4px;
+     font-weight: 500;
+     cursor: pointer;
+     transition: all 0.2s ease;
+     
+     &--primary {
+       background-color: #2563EB; // Blue color from the design
+       color: white;
+       border: none;
+       
+       &:hover {
+         background-color: #1D4ED8;
+       }
+     }
+     
+     &--secondary {
+       background-color: white;
+       color: #111827;
+       border: 1px solid #E5E7EB;
+       
+       &:hover {
+         background-color: #F9FAFB;
+       }
+     }
+   }
+   
+   &__image {
+     flex: 1;
+     max-width: 280px;
+     display: flex;
+     justify-content: center;
+     
+     img {
+       width: 100%;
+       height: auto;
+       object-fit: contain;
+     }
+     
+     @media (max-width: 1023px) {
+       margin-top: 24px;
+       align-self: center;
+     }
+   }
+ }
+.welcomeMiestro__text {
+   display: flex;
+   flex-direction: column;
+}
+
+
+ 

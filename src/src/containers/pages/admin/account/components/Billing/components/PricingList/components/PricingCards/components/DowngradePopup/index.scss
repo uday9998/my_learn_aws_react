@@ -1,0 +1,43 @@
+.downgrade__popup__wrapper {
+    width: 100%;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999999;
+
+    .inner__popup__wrapper {
+        width: 800px;
+        height: max-content;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .top__section__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            svg {
+                cursor: pointer;
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        .buttons__wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}

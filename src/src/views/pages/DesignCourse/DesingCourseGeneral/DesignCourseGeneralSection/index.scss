@@ -1,0 +1,96 @@
+.design__section__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e7e9e9;
+    border-radius: 12px;
+    padding: 0px 12px 0px 20px;
+    min-height: 43px;
+   gap: 12px;
+
+    .delete__modal__content{
+        width: 414px;
+    }
+    &__left{
+       display: flex;
+       align-items: center;
+       gap: 8px;
+
+        span:first-child {
+            white-space: nowrap;
+        }
+
+        @media screen and (max-width: 500px){
+            margin: 0 auto;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media screen and (max-width: 500px){
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 1100px){
+            gap: 10px;
+        }
+
+        &__timer{
+            position: relative;
+        }
+        .react__timer__view{
+           margin-right: 26px;
+
+           @media screen and (max-width: 1150px){
+               margin-right: 0px;
+           }
+        }
+        &__comments{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        &__line{
+            height: 28px;
+            width: 1px;
+            background-color: #E7E9E9;
+        }
+        &__transfer{
+           width: 28px;
+           height: 28px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           cursor: pointer;
+        }
+    }
+    &__modal{
+        display: flex;
+        flex-direction: column;
+        max-width: 480px;
+        min-height: 464px;
+        justify-content: space-between;
+
+        &__top{
+            display: flex;
+            flex-direction: column;
+            &__checkbox{
+                margin-top: 24px;
+                display: flex;
+                gap: 12px;
+                align-items: center;
+            }
+        }
+        &__bottom{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 16px;
+        }
+    }
+}

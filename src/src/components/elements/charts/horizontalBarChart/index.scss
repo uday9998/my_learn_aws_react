@@ -1,0 +1,82 @@
+.line-bar-chart {
+   width: 100%;
+   height: auto;
+}
+
+#barChart {
+   #yBarAxis {
+      text {
+        fill: #131F1E;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 168%;
+      }
+   }
+
+      #xBarAxis {
+      text {
+         fill: #727978;
+         font-family: 'Inter';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 168%;
+      }
+   }
+
+
+  .x.axis path {
+     display: none;
+  }
+
+  #yBarAxis .tick line ,  #xBarAxis .tick line {
+      visibility:hidden;
+    }
+
+    #xBarAxis .domain {
+       display: none;
+    }
+
+  .overlay {
+     fill: none;
+     pointer-events: all;
+  }
+
+  .focus circle {
+     fill: #36796F;
+  }
+
+  .focus text {
+     font-size: 14px;
+  }
+
+ .tick line{
+   opacity: 0.1;
+   stroke-dasharray: 5,5;
+ }
+
+ .grid .domain {
+   display: none;
+ }
+
+ .bar-label{
+   fill: #131F1E;
+   text-anchor: middle;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 168%;
+}
+
+.landing-name {
+   font-size: 14px;
+   fill: #131F1E;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+}
+
+}

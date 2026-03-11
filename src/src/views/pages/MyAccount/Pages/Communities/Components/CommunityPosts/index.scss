@@ -1,0 +1,8 @@
+.account__community__posts{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .community__post{
+        border: 1px solid #E7E9E9;
+    }
+}

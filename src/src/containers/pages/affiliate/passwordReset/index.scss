@@ -1,0 +1,33 @@
+.passwordReset {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_content {
+        width: min(487px, 90vw);
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        padding: 44px;
+        border-radius: 24px;
+        background-color: #ffffff;
+        
+        &_info {
+            text-align: center;
+            display: grid;
+            gap: 12px;
+        }
+
+        &_form {
+            display: grid;
+            gap: 32px;
+            
+            &_buttons {
+                display: grid;
+                gap: 12px;
+            }
+        }
+    }
+
+}

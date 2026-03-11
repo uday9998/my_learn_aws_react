@@ -1,0 +1,80 @@
+.event__create__inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__tab{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__selectors{
+        align-items: center;
+        gap: 16px;
+        display: flex;
+        align-items: flex-end;
+    }
+    .inputNew{
+        max-height: 44px;
+    }
+    .SelectItem{
+        width: 100%;
+    }
+    &__line{
+        background: #E7E9E9;
+        width: 100%;
+        height: 1px;
+    }
+    &__virtual{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+.room__types{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__tab{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__member{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        &__or{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            &__line{
+                background-color: #E7E9E9;
+                width: 100%;
+                height: 1px;
+            }
+            span{
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.time__picker__field__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    .ant-picker-outlined {
+        border-color: #e7e9e9 !important;
+        box-shadow: none !important;
+
+        &:hover {
+            border-color: #e7e9e9 !important;
+        }
+    }
+
+    .custom-time-picker-dropdown {
+        pointer-events: none;
+    }
+}

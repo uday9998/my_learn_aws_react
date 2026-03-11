@@ -1,0 +1,18 @@
+.studentCertifactes{
+   display: flex;
+   flex-direction: column;
+   background-color: #ffffff;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+   border: solid 1px #dfe5eb;
+   position: relative;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 24px 24px 6px;
+   .certificate_title {
+      margin-bottom: 24px;
+      span {
+         font-family: var(--school-font);
+      }
+   }
+}

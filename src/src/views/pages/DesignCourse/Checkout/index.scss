@@ -1,0 +1,19 @@
+.d-checkout {
+   background: #fff;
+  // min-height: calc(100vh - 154px);
+   height: 100%;
+   position: relative;
+}
+
+.checkout-overflow {
+   height: 100%;
+   .checkout-templates {
+      height: 100%;
+      .checkout-main-container {
+         height: 100%;
+         .checkout-container {
+            height: 100%;
+         }
+      }
+   }
+}

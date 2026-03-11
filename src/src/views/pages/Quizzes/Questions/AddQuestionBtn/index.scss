@@ -1,0 +1,32 @@
+  .quiz__add__question__btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      position: relative;
+      &__icon {
+         width: 32px;
+         height: 32px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border: 1px solid #24554E;
+         border-radius: 8px;
+      }
+      .quiz__add__question {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         cursor: pointer;
+         position: relative;
+         &__icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #24554E;
+            border-radius: 8px;
+         }
+      }
+   }

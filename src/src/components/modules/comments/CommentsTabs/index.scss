@@ -1,0 +1,13 @@
+.comments___tabs{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .tabs__line{
+        max-width: max-content;
+        &__tab{
+            min-width: 139px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

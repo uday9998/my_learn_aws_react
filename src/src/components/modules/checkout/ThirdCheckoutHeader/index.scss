@@ -1,0 +1,18 @@
+
+.checkoutSubheaderThird {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-top: 30px;
+   >div {
+      width: 100%;
+   }
+   .checkoutSubheader_empty {
+      height: 30px;
+      width: 100%;
+  }
+}
+
+
+

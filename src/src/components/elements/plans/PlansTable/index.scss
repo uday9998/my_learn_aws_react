@@ -1,0 +1,31 @@
+.plansTable {
+   min-width: 700px;
+   overflow: auto;
+   .plansTable__header {
+      display: flex;
+      padding: 12px 0;
+   }
+
+   .plansTable__row {
+      display: flex;
+      padding: 20px 0;
+      border-top: 1px solid rgba(194, 206, 219, 0.5);
+   }
+
+   .plansTable__column {
+      flex: 1;
+      &:last-child{
+         span {
+            text-transform: capitalize;
+         }
+      }
+
+      // &:nth-of-type(2) {
+      //    width: 235px;
+      // }
+
+      // &:nth-of-type(4) {
+      //    max-width: 50px;
+      // }
+   }
+}

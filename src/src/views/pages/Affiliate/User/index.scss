@@ -1,0 +1,11 @@
+.affiliate__user{
+    padding: 34px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__top{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}

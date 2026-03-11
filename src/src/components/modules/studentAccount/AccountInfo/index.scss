@@ -1,0 +1,160 @@
+.accountInfo {
+   padding: 24px;
+   width: 100%;
+   box-sizing: border-box;
+   .textInput .textInput__input {
+      padding: 19px 16px 19px 16px;
+      border-radius: 8px;
+      font-family: var(--school-font);
+      font-weight: 400;
+      color: #555555;
+      font-size: 18px;
+      border: solid 1px #949bbf;
+      &::placeholder {
+         color: #555555;
+       }
+   }
+   .form-label-group {
+      input {
+         font-family: var(--school-font);
+      }
+      label {
+         font-family: var(--school-font);
+      }
+   }
+   .uploadProgress__content {
+      .uploadBar {
+         background-color: var(--button-color-text);
+      }
+      .cancel_btn  {
+         span {
+            font-family: var(--school-font);
+         }
+      }
+   }
+   .password_content {
+      margin-bottom: 40px;
+   }
+   .change_password {
+      display: flex;
+      justify-content: flex-end;
+      text-decoration: underline;
+      text-decoration-color: var(--button-color-text);
+      cursor: pointer;
+      margin-bottom: 40px;
+      span {
+         font-family: var(--school-font);
+         font-weight: 400;
+      }
+   }
+   .accountTitle {
+      span {
+         font-family: var(--school-font);
+         font-weight: 700;
+      }
+   }
+   .accountInfo__avatar {
+      margin-bottom: 24px;
+      >div:first-of-type {
+         margin-top: 24px;
+         margin-bottom: 16px;
+         span {
+            font-family: var(--school-font);
+            font-weight: 400;
+         }
+      }
+   }
+   .accountInfo__createBtn {
+      margin-bottom: 24px;
+      button {
+         width: 100%;
+         padding-left: 0;
+         padding-right: 0;
+      }
+   }
+   .accountInfo__btns {
+      display: flex;
+      justify-content: flex-end;
+      >div {
+         &:first-of-type {
+            margin-right: 16px;
+
+         }
+         button {
+            width: 200px;
+            height: 56px;
+            font-family: var(--school-font);
+         }
+      }
+   }
+
+   .accountInfo__image {
+      display: flex;
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 4px;
+      overflow: hidden;
+      img {
+         max-width: 100%;
+         max-height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   .account__line{
+      border-bottom: 1px solid #dcdfe2;
+      margin-bottom: 24px;
+   }
+
+   .accountInfo__upload {
+      width: 100%;
+      button {
+         font-size: 14px !important;
+         border-radius: 4px;
+         width: 200px;
+         height: 40px;
+         background-color: var(--button-color-text);
+         color: #fff;
+         font-family: var(--school-font);
+      }
+      .uploadProgress {
+         margin-top: 0px;
+         margin-bottom: 15px;
+      }
+      .uploadcare_widget {
+         display: none;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .accountInfo {
+      padding: 24px 24px 32px 24px;
+      .accountInfo__avatar {
+         margin-bottom: 8px;
+         >div:first-of-type {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+         }
+      }
+      .accountInfo__createBtn {
+         max-width: none;
+         margin-bottom: 16px;
+      }
+      .accountInfo__btns {
+         display: flex;
+         flex-direction: column-reverse;
+         >div {
+            width: 100%;
+            max-width: none!important;
+            &:first-of-type {
+               margin: 16px 0 0 0;
+            }
+            button {
+               width: 100%;
+            }
+         }
+      }
+   }
+}

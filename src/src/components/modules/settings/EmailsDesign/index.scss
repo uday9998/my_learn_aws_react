@@ -1,0 +1,32 @@
+.emailsDesign {
+   margin-top: 24px;
+   width: 100%;
+
+   .emailsDesign__headers {
+      border-bottom: 1px solid #c2cedb;
+      padding-bottom: 24px;
+   }
+
+   .emailsDesign__footer {
+      margin-top: 24px;
+   }
+
+   .emailsDesign__btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 24px;
+      >div {
+         width: 100%;
+         &:first-of-type {
+            max-width: 120px;
+            margin-right: 16px;
+         }
+         &:last-of-type {
+            max-width: 150px;
+         }
+         button {
+            width: 100%;
+         }
+      }
+   }
+}

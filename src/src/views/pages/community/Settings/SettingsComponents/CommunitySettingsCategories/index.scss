@@ -1,0 +1,56 @@
+.communityCategories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__header {
+        display: flex;
+        gap: 16px;
+        justify-content: space-between; 
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding: 16px;
+        gap: 6px;
+        &__general {
+            display: flex;
+            justify-content: space-between;
+            svg {
+                cursor: pointer;
+            }
+        }
+        &__title {
+            display: flex;
+            gap: 16px;
+            width: 100%;
+            .inputLink {
+                width: 100%;
+            }
+            svg {
+                cursor: pointer;
+            }
+        }
+        &__desc {
+            display: flex;
+            gap: 16px;
+            .inputLink {
+                width: 100%;
+            }
+            svg {
+                cursor: pointer;
+            }
+        }
+    }
+    &__content {
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

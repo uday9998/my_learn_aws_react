@@ -1,0 +1,15 @@
+.freePlan {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 32px;
+   .close{
+      cursor: pointer;
+   }
+   .characters-small-text{
+      margin-top: 2px;
+      span{
+         font-size: 12px;
+         color: #9c9c9c
+      }
+   }
+}

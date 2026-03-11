@@ -1,0 +1,25 @@
+.course__create__header{
+    background: #FFFFFF;
+    backdrop-filter: blur(18px);
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__back{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    &__line{
+        width: 50%;
+        background-color: #24554E;
+        height: 4px;
+        left: -20px;
+        bottom: -6px;
+        position: absolute;
+    }
+}

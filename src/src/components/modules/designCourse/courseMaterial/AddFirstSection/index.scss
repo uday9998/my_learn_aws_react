@@ -1,0 +1,17 @@
+.addFirstSection {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 40px 35px;
+   text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+   .addFirstSection {
+      text-align: center;
+      padding: 40px 24px 32px;
+      background-color: #fbfdff;
+      border: solid 1px #cddaf1;
+      border-radius: 8px;
+   }
+}

@@ -1,0 +1,35 @@
+.pricing__integration__elem{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__top{
+        border-radius: 8px;
+        padding: 12px 4px;
+        background: #F8FAFA;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        &__left{
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+        &__right{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 0px 24px 16px;
+        &__inputs{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+}

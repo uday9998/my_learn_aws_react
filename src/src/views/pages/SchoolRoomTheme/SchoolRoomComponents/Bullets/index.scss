@@ -1,0 +1,118 @@
+.bullets {
+   display: flex;
+}
+.bullets-content-template1 {
+   display: flex;
+   padding-top: 16px;
+   flex-wrap: wrap;
+   .bullet {
+      display: flex !important;
+      min-width: 49%;
+      margin-bottom: 20px;
+      // &:first-child {
+      //   margin-right: 2%;
+      // }
+      div {
+         font-family: "Avenir Next Regular";
+         font-size: 14px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.29;
+         letter-spacing: normal;
+         color: #ffffff;
+         word-break: break-word;
+      }
+   }
+   .bullet-content {
+      display: flex;
+      align-items: center;
+      margin: 2px 0;
+      svg {
+         margin-right: 8px;
+      }
+   }
+}
+
+.bullets-content-template2 {
+   display: flex;
+   flex-direction: column;
+   .bullet {
+      display: flex;
+      margin-bottom: 24px;
+      .bullet-content {
+         display: flex;
+         align-items: center;
+         margin: 2px 0;
+         svg {
+            margin-right: 16px;
+         }
+         >div {
+            font-family: 'Avenir Next regular';
+            font-weight: 500;
+            font-size: 21px;
+            color: inherit;
+            word-break: break-word;
+         }
+      }
+      .icon {
+         padding-right: 16px;
+      }
+   }
+}
+
+.bullets-content-template3 {
+   display: flex;
+   flex-direction: column;
+   .bullet {
+      display: flex;
+      margin-bottom: 24px;
+      .bullet-content {
+         display: flex;
+         align-items: center;
+         margin: 2px 0;
+         svg {
+            margin-right: 16px;
+         }
+         >div {
+            font-family: 'Avenir Next regular';
+            font-weight: 500;
+            font-size: 21px;
+            color: inherit;
+            word-break: break-word;
+         }
+      }
+      .icon {
+         padding-right: 16px;
+      }
+   }
+}
+
+.bullets-content-1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 2px 0;
+   .bullet {
+      display: flex;
+      margin-bottom: 24px;
+      .bullet-content {
+         display: flex;
+         align-items: center;
+         svg {
+            margin-right: 16px;
+         }
+         >div {
+            font-family: 'Avenir Next regular';
+            font-weight: 500;
+            font-size: 21px;
+            color: inherit;
+            word-break: break-word;
+         }
+      }
+      .icon {
+         padding-right: 16px;
+      }
+   }
+}
+

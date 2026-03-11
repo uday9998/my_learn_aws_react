@@ -1,0 +1,44 @@
+.notification__list {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   &__top {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+   }
+   &__text {
+      width: 44%;
+   }
+   &__switch {
+      width: 14%;
+      display: flex;
+      justify-content: flex-end;
+      span {
+         white-space: nowrap;
+      }
+   }
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+   }
+   &__item {
+      gap: 20px;
+      display: flex;
+   }
+   &__edit {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 4px;
+      gap: 10px;
+      margin-left: 13%;
+      width: 28px;
+      cursor: pointer;
+      height: 28px;
+      border: 1px solid #24554e;
+      border-radius: 8px;
+   }
+}

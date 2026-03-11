@@ -1,0 +1,105 @@
+.limit__wrapper {
+    width: 100%;
+
+    .limit__title {
+        background-color: #E7E9E9;
+        width: 100%;
+        padding: 12px 16px;
+    }
+
+    .top__section {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .lastSection {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .options__wrapper {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e7e9e9;
+
+        .limit__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 16px;
+            border-top: 1px solid #e7e9e9;
+
+            .limit__title__wrapper {
+                width: 286px;
+
+                span {
+                    width: 286px;
+                    display: block;
+                }
+            }
+
+            .list__item {
+                display: list-item;
+                margin-left: 46px;
+                width: 240px;
+
+                span {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                @media (max-width: 1024px) {
+                    margin-left: 16px;
+                }
+            }
+
+            // .bold__title {
+            //     span {
+            //         font-weight: 700;
+            //     }
+            // }
+
+            .right__limits__wrapper {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                & > div {
+                    width: 216px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .color__icon {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #e7e9e9;
+                    border-radius: 4px;
+                }
+
+                @media (max-width: 1024px) {
+                    gap: 16px;
+
+                    span {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 12px;
+    }
+}
+
+.icon__text__wrapper {
+    @media (max-width: 1024px) {
+        span {
+            font-weight: 400 !important;
+        }
+    }
+}

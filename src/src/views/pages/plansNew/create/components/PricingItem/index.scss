@@ -1,0 +1,488 @@
+.plan__create__left__plan {
+    background: #F8FAFA;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 24px;
+    
+    .SelectItem {
+        width: 100%;
+    }
+    
+    .inputNew {
+        max-height: 44px;
+    }
+    
+    &__amount {
+        width: 100%;
+        display: flex;
+        gap: 24px;
+        
+        .input_number {
+            width: 100%;
+        }
+        
+        .SelectItem {
+            min-width: 150px;
+        }
+    }
+}
+
+.plan__create__left__plan__membership {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    
+    &__content {
+        border: 1px solid #E7E9E9;
+        padding: 24px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        position: relative;
+        
+        .deletePricingMembership {
+            position: absolute;
+            right: 24px;
+            top: 12px;
+        }
+    }
+    
+    .SelectItem {
+        width: 100%;
+    }
+    
+    .inputNew {
+        max-height: 44px;
+    }
+    
+    &__amount {
+        width: 100%;
+        display: flex;
+        gap: 24px;
+        
+        .input_number {
+            width: 100%;
+        }
+        
+        .SelectItem {
+            min-width: 150px;
+        }
+    }
+}
+
+.payment-type-section {
+    width: 100%;
+    
+    .section-label {
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        color: #1a1a1a;
+        margin-bottom: 12px;
+    }
+    
+    .payment-type-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+        @media (min-width: 768px) {
+            flex-direction: row;
+            gap: 12px;
+        }
+        
+        .payment-type-card {
+            flex: 1;
+            padding: 16px;
+            border: 2px solid #e7e9e9;
+            border-radius: 12px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            
+            &:hover {
+                border-color: #24554e;
+                box-shadow: 0 2px 8px rgba(36, 85, 78, 0.1);
+            }
+            
+            &.active {
+                border-color: #24554e;
+                background: #f6f9f8;
+                box-shadow: 0 2px 8px rgba(36, 85, 78, 0.15);
+            }
+            
+            .card-radio {
+                .radio-circle {
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid #e7e9e9;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.2s ease;
+                    
+                    &.checked {
+                        border-color: #24554e;
+                        background: #24554e;
+                        
+                        .radio-dot {
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background: white;
+                        }
+                    }
+                }
+            }
+            
+            .card-content {
+                flex: 1;
+                
+                .card-title {
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #1a1a1a;
+                    margin: 0 0 4px 0;
+                }
+                
+                .card-description {
+                    font-size: 14px;
+                    color: #6c757d;
+                    margin: 0 0 8px 0;
+                    line-height: 1.4;
+                }
+                
+                .card-benefit {
+                    font-size: 14px;
+                    color: #28a745;
+                    margin: 0;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.billing-interval-section {
+    width: 100%;
+    
+    .section-label {
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        color: #1a1a1a;
+        margin-bottom: 12px;
+    }
+    
+    .billing-interval-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+        
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        .billing-interval-card {
+            padding: 16px;
+            border: 2px solid #e7e9e9;
+            border-radius: 12px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            min-height: 100px;
+            
+            &:hover {
+                border-color: #24554e;
+                box-shadow: 0 2px 8px rgba(36, 85, 78, 0.1);
+            }
+            
+            &.active {
+                border-color: #24554e;
+                background: #f6f9f8;
+                box-shadow: 0 2px 8px rgba(36, 85, 78, 0.15);
+                
+                .interval-icon {
+                    color: #24554e;
+                }
+            }
+            
+            .interval-icon {
+                color: #6c757d;
+                transition: color 0.2s ease;
+                
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            
+            .interval-content {
+                .interval-title {
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #1a1a1a;
+                    margin: 0 0 4px 0;
+                }
+                
+                .interval-description {
+                    font-size: 12px;
+                    color: #6c757d;
+                    margin: 0;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+}
+
+.free-trial-section {
+    width: 100%;
+    
+    .free-trial-header {
+        background: #f0f4ff;
+        border: 1px solid #e0e7ff;
+        border-radius: 12px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        
+        .trial-icon {
+            color: #24554e;
+            flex-shrink: 0;
+            
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+        .trial-content {
+            flex: 1;
+            
+            .trial-title {
+                font-weight: 600;
+                font-size: 16px;
+                color: #1a1a1a;
+                margin: 0 0 4px 0;
+            }
+            
+            .trial-subtitle {
+                font-size: 14px;
+                color: #6c757d;
+                margin: 0;
+                line-height: 1.4;
+            }
+        }
+        
+        .trial-toggle {
+            flex-shrink: 0;
+            
+            .toggle-switch {
+                position: relative;
+                display: inline-block;
+                width: 52px;
+                height: 28px;
+                
+                input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                    
+                    &:checked + .toggle-slider {
+                        background-color: #24554e;
+                        
+                        &:before {
+                            transform: translateX(24px);
+                        }
+                    }
+                    
+                    &:focus + .toggle-slider {
+                        box-shadow: 0 0 0 2px rgba(36, 85, 78, 0.2);
+                    }
+                }
+                
+                .toggle-slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    transition: .3s;
+                    border-radius: 28px;
+                    
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        height: 20px;
+                        width: 20px;
+                        left: 4px;
+                        bottom: 4px;
+                        background-color: white;
+                        transition: .3s;
+                        border-radius: 50%;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.plan__create__left__plan,
+.plan__create__left__plan__membership__content {
+    .free-trial-tabs-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+        .free-trial-tabs-label {
+            font-weight: 500;
+            font-size: 14px;
+            color: #333;
+            margin: 0;
+        }
+        
+        .tabs-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            
+            .tab-button {
+                padding: 8px 16px;
+                border: 1px solid #E7E9E9;
+                border-radius: 6px;
+                background: white;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                font-size: 14px;
+                color: #666;
+                
+                &:hover {
+                    background: #f8f9fa;
+                    border-color: #24554e;
+                }
+                
+                &.active {
+                    background: #24554e;
+                    color: white;
+                    border-color: #24554e;
+                }
+            }
+        }
+    }
+    
+    .tabs-container {
+        width: 100%;
+        
+        .tab-item {
+            padding: 8px 16px;
+            border: 1px solid #E7E9E9;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            
+            &.active {
+                background: #24554e;
+                color: white;
+                border-color: #24554e;
+            }
+            
+            &:hover:not(.active) {
+                background: #f8f9fa;
+            }
+        }
+    }
+    
+    .error-message-wrapper {
+        width: 100%;
+        
+        .error-message {
+            color: #dc3545;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+    }
+    
+    .help-text {
+        font-size: 12px;
+        color: #6c757d;
+        margin-top: 4px;
+    }
+    
+    input:focus,
+    select:focus {
+        outline: 2px solid #24554e;
+        outline-offset: 2px;
+    }
+    
+    .SelectItem:focus-within {
+        outline: 2px solid #24554e;
+        outline-offset: 2px;
+        border-radius: 4px;
+    }
+    
+    transition: box-shadow 0.2s ease;
+    
+    &:hover {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    &[data-pricing-type="0"] {
+        border-left: 4px solid #28a745;
+    }
+    
+    &[data-pricing-type="1"] {
+        border-left: 4px solid #ffc107;
+    }
+    
+    &[data-pricing-type="2"] {
+        border-left: 4px solid #24554e;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan__create__left__plan__amount,
+    .plan__create__left__plan__membership__amount {
+        flex-direction: column;
+        gap: 16px;
+        
+        .SelectItem {
+            min-width: unset;
+            width: 100%;
+        }
+    }
+    
+    .plan__create__left__plan {
+        padding: 12px;
+        gap: 16px;
+    }
+    
+    .plan__create__left__plan__membership__content {
+        padding: 16px;
+        gap: 16px;
+        
+        .deletePricingMembership {
+            right: 16px;
+            top: 8px;
+        }
+    }
+}

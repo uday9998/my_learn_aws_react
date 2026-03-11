@@ -1,0 +1,15 @@
+.reorderCourses__categoryItem {
+  width: 100%;
+  border: 1px solid #c2cedb;
+  border-radius: 8px;
+  min-height: 150px;
+  max-width: 600px;
+  margin-top: 16px;
+  .reorderCourses__categoryItem__categoryName {
+    padding: 12px;
+  }
+  .reorderCourses__categoryItem__courses {
+    padding-left: 40px;
+    padding-bottom: 16px;
+  }
+}

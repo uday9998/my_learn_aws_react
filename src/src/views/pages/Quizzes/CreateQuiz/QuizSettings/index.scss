@@ -1,0 +1,18 @@
+.quizSettings {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   .grey__line {
+      height: 1px;
+      background: #E7E9E9;
+      width: 100%;
+   }
+   .after_submissuion {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+   .passing_grade_desc {
+      margin-top: 4px;
+   }
+}

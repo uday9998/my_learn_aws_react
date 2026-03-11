@@ -1,0 +1,14 @@
+.planTypeMenuItem{
+    padding: 10px 15px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(204, 204, 204);
+    }
+    .planTypeMenuItem__content{
+        display: flex;
+        align-items: center;
+        span{
+            margin-left: 10px;
+        }
+    }
+}

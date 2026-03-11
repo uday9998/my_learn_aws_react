@@ -1,0 +1,66 @@
+.checkoutPageSecond-leftContent {
+ .select-pricing {
+   .payment-credit-title {
+      color: #1b2125;
+      font-size: 16px;
+      padding-left: 34px;
+      font-family: 'Avenir Next';
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 1.5em;
+   }
+
+
+   input[type=radio] {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      opacity: 0;
+   }
+
+   input[type="radio"]:checked + label:before,
+   input[type="radio"]:not(:checked) + label:before {
+       content: '';
+       position: absolute;
+       left: 0;
+       top: 2px;
+       width: 18px;
+       height: 18px;
+       border: 2px solid #dde3e8;
+       border-radius: 100%;
+       background: inherit;
+       box-sizing: border-box;
+   }
+
+   input[type="radio"]:checked + label:before {
+       border: 2px solid #006dff;
+   }
+
+   input[type="radio"]:checked + label:after,
+   input[type="radio"]:not(:checked) + label:after {
+       content: '';
+       width: 8px;
+       height: 8px;
+       background: #006dff;
+       position: absolute;
+       top: 7px;
+       left: 5px;
+       border-radius: 100%;
+       -webkit-transition: all 0.2s ease;
+       transition: all 0.2s ease;
+   }
+   input[type="radio"]:not(:checked) + label:after {
+       opacity: 0;
+       -webkit-transform: scale(0);
+       transform: scale(0);
+   }
+   input[type="radio"]:checked + label:after {
+       opacity: 1;
+       -webkit-transform: scale(1);
+       transform: scale(1);
+   }
+
+
+}
+}

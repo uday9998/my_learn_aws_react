@@ -1,0 +1,39 @@
+.communityProducts {
+    padding: 36px 32px;
+    background-color: #FAFCFC;
+    width: 100%;
+    scrollbar-color: rgba(119, 119, 119, 0.3) #e2e2e2;
+    scrollbar-width: thin;
+    overflow-y: auto;
+    //max-height: calc(100vh - 149px);
+    max-height: 100%;
+    @media all and (max-width: 1024px) {
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        padding: 36px 16px;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        @media all and (max-width: 1024px) {
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    &__btns {
+        display: flex;
+        gap: 16px;
+        .inputSearch  {
+            width: 360px;
+        }
+        @media all and (max-width: 1024px) {
+            .inputSearch  {
+                width: 100%;
+            }
+            flex-direction: column;
+        }
+    }
+}
+

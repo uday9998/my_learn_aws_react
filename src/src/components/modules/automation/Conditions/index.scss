@@ -1,0 +1,244 @@
+.conditions-card {
+   width: 800px;
+   max-width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   box-sizing: border-box;
+   position: relative;
+   overflow: auto;
+   max-height: 100vh;
+   display: flex;
+   flex-direction: column;
+
+   align-items: flex-start;
+   .SelectElement .SelectElement__drop-down {
+      max-height: 172px;
+   }
+   .date__input{
+      position: relative;
+      .calendar {
+         position: absolute;
+         top: 9px;
+         right: 16px;
+      }
+      .SelectElement .SelectElement-basic {
+          padding-right: 16px;
+      }
+   }
+   .member-inactive-input {
+      display: flex;
+      align-items: center;
+      max-width: 120px;
+      .textInput {
+         max-width: 80px;
+         padding-right: 4px;
+      }
+   }
+   .react-datepicker-wrapper {
+      display: flex;
+
+      input {
+         border: 1px solid #cddaf1;
+         box-sizing: border-box;
+         border-radius: 4px;
+         font-family: 'Avenir Next regular';
+         width: 100%;
+         line-height: 1.5;
+         letter-spacing: 0.4px;
+         font-size: 16px;
+         padding: 7px 16px;
+         background: #fbfdff;
+         font-weight: bold;
+         color: #3f4f65;
+         height: 48px;
+      }
+
+      input:focus {
+         box-shadow: 0 0 0px 2px #7cb740;
+         border: 1px solid #fbfdff;
+         outline: none;
+      }
+   }
+   .select-content {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      span{
+         white-space: nowrap;
+      }
+      .selectFirst {
+         .SelectElement__option__title {
+            font-family: 'Avenir Next';
+            font-size: 15px;
+            left: 13px;
+            position: absolute;
+            margin-bottom: 5px;
+            color: #a9a9a9;
+            top: 10px;
+            width: 100px;
+         }
+         .SelectElement__option__titleTags {
+            font-family: 'Avenir Next';
+            font-size: 15px;
+            left: 13px;
+            position: absolute;
+            color: #a9a9a9;
+            top: 155px;
+            width: 100px;
+         }
+         .SelectElement__option__titleCourse {
+            font-family: 'Avenir Next';
+            font-size: 15px;
+            left: 13px;
+            position: absolute;
+            color: #a9a9a9;
+            top: 210px;
+            width: 100px;
+         }
+         .SelectElement__option__titleCoupon {
+            font-family: 'Avenir Next';
+            font-size: 15px;
+            left: 13px;
+            position: absolute;
+            color: #a9a9a9;
+            top: 292px;
+            width: 100px;
+         }
+         .SelectElement__option {
+            color: #a9a9a9;
+            margin: 0;
+            padding: 5px 32px 5px 27px;
+            &:nth-child(5) {
+               margin-top: 25px;
+             }
+            &:nth-child(9) {
+               margin-top: 20px;
+             }
+             &:nth-child(10) {
+               margin-top: 20px;
+             }
+             &:last-child {
+               margin-top: 20px;
+               margin-bottom: 5px;
+             }
+         }
+      }
+
+      >div {
+         margin-right: 8px;
+         flex: 1;
+      }
+      .contain {
+         max-width: 165px;
+      }
+      .selectFirst {
+         max-width: 208px;
+      }
+      .delete__item {
+         max-width: 24px;
+      }
+
+      @media screen and (max-width: 1024px) {
+         flex-direction: column;
+         gap: 8px;
+
+         & > div {
+            width: 100%;
+            margin: 0;
+         }
+      }
+   }
+   .select-content-course {
+      .selectFirst {
+         min-width: 208px;
+      }
+      .contain {
+         flex: 3;
+         max-width: 332px;
+      }
+   }
+   .delete__item {
+      cursor: pointer;
+   }
+   .conditions-card-type {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      width: 50%;
+      gap: 16px;
+      span{
+         white-space: nowrap;
+      }
+   }
+   .grey_line {
+      border-bottom: 1px solid #c2cedb;
+      width: 100%;
+   }
+   .delete_section_closeModal {
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      cursor: pointer;
+ }
+   .conditions-card-title {
+      margin-bottom: 4px;
+      text-align: center;
+   }
+   .conditions-card-content {
+      width: 100%;
+      .conditions-card-content-title {
+         margin-bottom: 8px;
+      }
+   }
+   .select-any {
+      margin: 0 8px;
+   }
+   .SelectElement .SelectElement-basic {
+      padding: 16px;
+   }
+   // .conditions-add-btn {
+
+   // }
+   .conditions-content-new{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 16px;
+   }
+   .conditions-add-footer{
+      display: flex;
+      align-items: center;
+      margin-top: 56px;
+      width: 100%;
+      justify-content: space-between;
+   }
+   .conditions-card-btns {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+   }
+}
+
+.condition-line {
+   width: 1px;
+   height: 12px;
+   border-left: 1px solid #cddaf1;
+   margin-left: 24px;
+}
+.condition-or_add {
+   width: 48px;
+   height: 48px;
+   border: 1px solid #cddaf1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+   color: #8a94a2;
+}
+.modal__new__content{
+   z-index: 1000 !important;
+}
+.modal__new__background{
+   z-index: 999 !important;
+}

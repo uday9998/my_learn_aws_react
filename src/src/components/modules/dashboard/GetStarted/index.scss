@@ -1,0 +1,155 @@
+.getStarted {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+  // height: 288px;
+   margin-top: 24px;
+   background: #ffffff;
+   border-radius: 8px;
+   border: solid 1px #dfe5eb;
+
+   .getStarted__progress {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 23%;
+      border-right: 1px solid #dfe5eb;
+      padding: 28px;
+      box-sizing: border-box;
+      justify-content: center;
+   }
+
+   .getStarted__diagram {
+      position: relative;
+      margin: 34px 0 14px 0;
+   }
+
+   .pos-center {
+      display: flex;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+
+   .getStarted__steps {
+      width: 77%;
+    //  border-right: 1px solid #dfe5eb;
+      //padding: 24px;
+      height: auto;
+      box-sizing: border-box;
+      &>div:not(:last-child) {
+         border-bottom: solid 1px #dfe5eb;
+      }
+      img {
+         max-width: 100%;
+      }
+      .getStarted__step1 {
+         display: flex;
+         padding: 21px 18px 17px 18px;
+         .getStarted__step1__container {
+            padding-left: 16px;
+            padding-right: 16px;
+            flex: 1;
+         }
+         .getStarted__step1__content {
+            padding-top: 3px;
+            span {
+               font-size: 12px;
+               line-height: 1.33;
+            }
+         }
+      }
+      .step__undone {
+         width: 142px;
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         button {
+            border-radius: 4px;
+            height: 40px;
+         }
+      }
+      .step__done {
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+         padding-right: 22px;
+         span {
+            padding: 5px 0 0 3px;
+            color: #7cb740 !important;
+         }
+      }
+   }
+
+   .getStarted__signUp {
+      width: 47%;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 32px 24px 32px 32px;
+
+      .getStarted__text {
+         flex: 1;
+      }
+
+      .getStarted__buttons {
+         display: flex;
+         justify-content: flex-end;
+         align-items: flex-end;
+         flex: 1;
+      }
+   }
+
+}
+
+
+@media screen and (max-width: 1350px) {
+   .getStarted {
+      height: auto;
+      flex-wrap: wrap;
+      .getStarted__progress {
+        width: 25%;
+        padding: 10px;
+      }
+      .getStarted__steps {
+         width: 75%;
+      }
+      .getStarted__signUp {
+         width: auto;
+      }
+      .getStarted__buttons {
+         margin-top: 24px;
+      }
+   }
+}
+@media screen and (max-width: 1023px) {
+   .getStarted__signUp_desctop {
+      display: none;
+   }
+   .getStarted__signUp_mobile  {
+      display: flex;
+   }
+}
+@media screen and (min-width: 1024px) {
+   .getStarted__signUp_desctop {
+      display: flex;
+   }
+   .getStarted__signUp_mobile  {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .getStarted {
+      .getStarted__step1 {
+         flex-direction: column;
+         align-items: center;
+         .getStarted__step1__container {
+            padding: 16px;
+            text-align: center;
+         }
+      }
+}
+}

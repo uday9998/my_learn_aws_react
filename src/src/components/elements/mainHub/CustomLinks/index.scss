@@ -1,0 +1,21 @@
+.custom-links {
+   display: flex;
+   align-items: center;
+
+   &.header-links {
+      gap: 40px;
+   }
+
+   &.footer-links {
+      width: 100%;
+      justify-content: space-between;
+   }
+
+   @media all and (max-width: 701px) {
+      &.footer-links {
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 16px;
+      }
+   }
+}

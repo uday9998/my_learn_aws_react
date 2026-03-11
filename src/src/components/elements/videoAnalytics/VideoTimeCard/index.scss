@@ -1,0 +1,21 @@
+.videoTimeCard {
+   padding: 16px;
+
+   .videoTimeCard__line {
+      border-radius: 3px;
+      background-color: rgba(63, 79, 101, 0.3);
+      height: 6px;
+      position: relative;
+      margin-top: 13px;
+      margin-bottom: 6px;
+      img {
+         position: absolute;
+         top: -4px;
+         left: 0;
+      }
+   }
+   .videoTimeCard__txt {
+      display: flex;
+      justify-content: space-between;
+   }
+}

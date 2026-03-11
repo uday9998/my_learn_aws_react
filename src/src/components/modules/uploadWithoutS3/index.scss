@@ -1,0 +1,186 @@
+.upload {
+      // position: relative;
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   gap: 8px;
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+   }
+
+   .icon__wrapper {
+      z-index: 2;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      opacity: 0.3;
+      svg {
+         width: 32px;
+         height: 32px;
+      }
+   }
+}
+.originalImage {
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: none;
+}
+
+.cropArea {
+   width: 100%;
+   max-height: 100vh;
+   z-index: 3;
+   min-width: 618px;
+   border: 1px solid #e7e9e9;
+   border-radius: 12px;
+   position: relative;
+   background: #ffffff;
+   padding-top: 19px;
+   padding-bottom: 28px;
+   span {
+      white-space: nowrap;
+   }
+   .justify-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+}
+.crop__functions__content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 24px;
+   gap: 10px;
+   min-width: 70%;
+   padding: 0 10px;
+
+   &__buttons {
+      display: flex;
+      gap: 12px;
+   }
+}
+
+.upload__view {
+   width: 100%;
+   height: 224px;
+   background: #ffffff;
+   border: 1px solid #e7e9e9;
+   border-radius: 12px;
+   position: relative;
+   &__center {
+      position: absolute;
+      left: 50%;
+      height: 100%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 0px;
+      width: 100%;
+      &__middle{
+         display: flex;
+         justify-content: center;
+         gap: 16px;
+         flex-direction: column;
+         align-items: center;
+      }
+      &__messages {
+         display: grid;
+         gap: 12px;
+      }
+   }
+   .CircularProgressbar  {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .CircularProgressbarWithChildren__text {
+      margin-top: auto;
+       white-space: nowrap;
+       margin-top: 9px;
+   }
+
+   .CircularProgressbarWithChildren{
+      div{
+         position: relative !important;
+      }
+   }
+   &__progress {
+      background: #f7fcfc;
+      border: 1px solid #24554e;
+   }
+}
+.upload__view__active {
+   background: #f7fcfc;
+   border: 1px dashed #24554e;
+}
+
+@media all and (max-width: 1024px) {
+   .modal__new__content.crop_modal {
+      width: 90%;
+      max-width: 800px;
+   }
+   .cropArea {
+      min-width: auto;
+   }
+}
+
+@media all and (max-width: 701px) {
+   .crop__functions__content {
+      flex-direction: column;
+   }
+}
+
+.dont__close__message {
+   text-align: center;
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   justify-content: center;
+
+   .loader__icon__wrapper {
+      @media (max-width: 1024px) {
+         align-items: flex-start;
+         gap: 3px;
+      }
+   }
+
+   & > div {
+      background-color: #e8f2f1;
+      padding: 10px 25px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+
+      svg {
+         path {
+            fill: #24554E;
+         }
+      }
+
+      span {
+         font-weight: 400;
+         color: #24554E;
+      }
+   }
+}
+
+.CircularProgressbarWithChildren {
+   &.progress__text > div > div > div > span {
+      display: contents !important;
+   }
+}

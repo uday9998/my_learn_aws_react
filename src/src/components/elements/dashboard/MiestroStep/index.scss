@@ -1,0 +1,27 @@
+.miestroStep {
+   padding: 11px 43px 11px 24px;
+   display: flex;
+   align-items: center;
+   position: relative;
+
+   .miestroStep__icon-wrapper {
+      margin-right: 16px;
+      height: 24px;
+      width: 24px;
+   }
+
+}
+
+.miestroStep_finished_false {
+   background: rgba(0, 109, 255, 0.05);
+   border-right: 1px solid #006dff;
+}
+
+.miestroStep__right-triangle {
+   border-left: 3px solid #006dff;
+   position: absolute;
+   right: -4px;
+   z-index: 3;
+   border-top: 3px solid transparent;
+   border-bottom: 3px solid transparent;
+}

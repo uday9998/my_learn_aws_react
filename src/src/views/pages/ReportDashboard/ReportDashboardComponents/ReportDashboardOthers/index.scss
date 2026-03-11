@@ -1,0 +1,157 @@
+.report-dashboard-other {
+    margin-top: 32px;
+    max-width: 100%;
+    width: 100%;
+
+    &-cards {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 4px;
+
+        .other-card {
+            flex: 1;
+
+            @media screen and (max-width: 1424px) {
+                max-width: 100%;
+                width: 100%;
+            }
+
+            &-container {
+                height: 100%;
+                min-height: 98px;
+                display: flex;
+                gap: 16px;
+                padding: 20px 20px 20px 16px;
+            }
+
+            &-line {
+                display: grid;
+                gap: 16px;
+                grid-template-columns: repeat(2, 49%);
+                margin-top: 12px;
+                margin-bottom: 12px;
+                width: 100%;
+
+                @media screen and (max-width: 1424px) {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+
+            &-right {
+                height: 100%;
+                display: flex;
+                gap: 8px;
+                flex-direction: column;
+                justify-content: space-between;
+
+                span {
+                    display: block;
+
+                    &:nth-child(2) {
+                        margin-top: 4px;
+                        color: #727978;
+                    }
+
+                    &:nth-child(1) {
+                        line-height: 148%;
+                    }
+                }
+
+                &-view {
+                    background-color: inherit;
+                    display: flex;
+                    gap: 4px;
+                    align-items: center;
+                    border: none;
+                    cursor: pointer;
+
+                    span {
+                        text-decoration-line: underline;
+                        line-height: 144%;
+                    }
+                }
+            }
+
+            &-left {
+                border-radius: 12px;
+                padding: 8px 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                svg {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                &-green {
+                    background: #E8F2F1;
+
+                    path {
+                        fill: #24554E;
+                    }
+                }
+
+                &-light {
+                    background: #F1F6FF;
+
+                    path {
+                        fill: #3060BD;
+                    }
+                }
+
+                &-purple {
+                    background: #FAEBF8;
+
+                    path {
+                        fill: #BD30B7;
+                    }
+                }
+
+                &-alarm {
+                    background: #FFF6D7;
+
+                    path {
+                        fill: #AC890A;
+                    }
+                }
+
+                &-video {
+                    background: #FFF1F1;
+
+                    path {
+                        fill: #D12D36;
+                    }
+                }
+
+                &-refunds {
+                    background: #F6F1FF;
+
+                    path {
+                        fill: #8830BD;
+                    }
+                }
+
+                &-email {
+                    background: #FFEEF6;
+                }
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            gap: 16px;
+            .other-card-line {
+                grid-template-columns: 1fr;
+                margin: 0;
+            }
+        }
+    }
+}

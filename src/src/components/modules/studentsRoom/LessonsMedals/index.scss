@@ -1,0 +1,58 @@
+.lessonsMedals {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   .finishedLesson {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 295px;
+      .lesson_medal {
+         margin-top: 16px;
+         max-width: 100px;
+      }
+      margin-bottom: 56px;
+
+      >span {
+         margin-top: 20px;
+         display: block;
+         text-align: center;
+      }
+   }
+
+   .unfinishedLessons {
+      display: inline-block;
+
+      >svg {
+         margin-right: 25px;
+      }
+   }
+}
+   .NotFoundLessonItem{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+@media screen and (max-width: 1023px) {
+   .lessonsMedals {
+      .unfinishedLessons {
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+
+         svg:last-of-type {
+            display: none;
+         }
+
+         svg:nth-of-type(even) {
+            margin: 0;
+         }
+      }
+
+      .finishedLesson {
+         margin: 0 auto;
+         margin-bottom: 40px;
+      }
+   }
+}

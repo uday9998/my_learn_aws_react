@@ -1,0 +1,25 @@
+.quizTypes {
+   width: 262px;
+   box-shadow: 0px 0px 6px rgba(19, 31, 30, 0.1);
+   border-radius: 12px;
+&__item {
+      display: flex;
+      padding: 12px 16px;
+      gap: 12px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      cursor: pointer;
+      svg {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+}
+
+.quizTypes__modal {
+   position: absolute;
+   z-index: 9999;
+   background: #fff;
+   left: 40px;
+}

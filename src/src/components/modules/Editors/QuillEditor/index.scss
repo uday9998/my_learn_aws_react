@@ -1,0 +1,28 @@
+.quillEditor {
+    .ql-snow {
+        font-size: inherit;
+    }
+    .ql-editor {
+        font-size: 16px;
+        font-family: 'Inter';
+    }
+    &__withoutBorder {
+        .quill {
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            padding: 8px 16px;
+            min-height: 79px;
+            .ql-toolbar.ql-snow {
+                border: none;
+                border-bottom: 1px solid #ccc;
+            }
+            .ql-container.ql-snow {
+                border: none;
+            }
+            p {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+} 

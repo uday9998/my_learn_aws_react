@@ -1,0 +1,299 @@
+.checkoutPageSecond-leftContent {
+   padding: 48px 48px;
+   box-sizing: border-box;
+
+   .button-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .input-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-top: 24px;
+
+      .inputNew {
+         width: 100%;
+         height: 56px;
+         font-family: Inter, sans-serif;
+         color: black;
+         background-color: #ffffff;
+         padding: 16px;
+         border-radius: 3px;
+         border: 1px solid #A1A5A5;
+
+         .input_new {
+            font-size: 18px;
+         }
+      }
+
+      .textInput {
+         padding-bottom: 16px;
+
+         input {
+            height: 54px;
+            border: 1px solid #d4d9dd;
+            border-radius: 3px;
+            padding: 20px 16px;
+            font-size: 18px;
+            color: #555555;
+            box-sizing: border-box;
+            font-family: "Avenir Next Regular";
+         }
+
+         label {
+            span {
+               color: #d4d9dd !important;
+               font-size: 12px;
+               padding-bottom: 6px;
+            }
+         }
+      }
+   }
+
+   .payment-details-stripe {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+   }
+
+   .payment-details-title {
+      padding-top: 24px;
+      padding-bottom: 25px;
+   }
+
+   .payment-details-container {
+      border: 1px solid #dde3e8;
+
+      .payment-details {
+         margin: 40px 40px;
+
+         .credit-card {
+            input {
+               margin-right: 16px;
+            }
+         }
+
+         .credit-text-container {
+            margin-left: 33px;
+            width: 65%;
+         }
+
+         .inputs {
+            padding-top: 32px;
+
+            .second-inputs {
+               display: flex;
+               flex-wrap: wrap;
+               padding-top: 24px;
+
+               .name-on-card {
+                  width: 262px;
+                  padding-right: 25px;
+                  margin-bottom: 10px;
+               }
+
+               .expiry-date {
+                  padding-right: 25px;
+                  width: 100px;
+
+                  input {
+                     -webkit-appearance: none;
+                  }
+               }
+
+               .cvv-code {
+                  width: 90px;
+               }
+            }
+         }
+      }
+   }
+
+   .paypal-container {
+      margin: 16px 0;
+      border: 1px solid #dde3e8;
+
+      .paypal-details {
+         margin: 40px 40px;
+
+         .paypal {
+            input {
+               margin-right: 16px;
+            }
+         }
+
+         .paypal-text-container {
+            margin-left: 33px;
+            width: 65%;
+         }
+      }
+   }
+
+   .choose-title {
+      padding-top: 24px;
+      // padding-bottom: 25px;
+   }
+
+   .mastercode-class-container {
+      border: 1px solid #dde3e8;
+
+      .mastercode-class-details {
+         margin: 40px 40px;
+
+         .mastercode-class {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            input {
+               margin-right: 16px;
+            }
+         }
+      }
+   }
+
+   .payment-plan-container {
+      margin-top: 16px;
+      border: 1px solid #dde3e8;
+
+      .payment-plan-details {
+         margin: 40px 40px;
+
+         .payment-plan {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .last-part {
+               display: flex;
+               flex-direction: row;
+
+               .price {
+                  padding-left: 8px;
+               }
+            }
+
+            input {
+               margin-right: 16px;
+            }
+         }
+      }
+   }
+
+   .item-amount-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #c2cedb;
+   }
+
+   .price-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+   }
+
+   .footer-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 40px;
+
+      >div {
+         border-radius: 3px;
+         width: 100%;
+      }
+
+      >div>div {
+         font-family: 'Avenir Next';
+         font-size: 16px;
+         border: none;
+         line-height: 100%;
+         text-align: center;
+         width: auto;
+         min-width: 250px;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding-left: 15px;
+         padding-right: 15px;
+         box-sizing: border-box;
+         letter-spacing: 1px;
+      }
+   }
+
+   .promocode {
+      .promo-code-form {
+         display: flex;
+         align-items: center;
+         gap: 20px;
+         width: 100%;
+         // padding-top: 16px;
+
+         .inputNew {
+            width: 100%;
+            height: 56px;
+            font-family: Inter, sans-serif;
+            color: black;
+            background-color: #ffffff;
+            padding: 16px;
+            border-radius: 3px;
+            border: 1px solid #A1A5A5;
+
+            .input_new {
+               font-size: 18px;
+            }
+         }
+
+         .labelsRectangle {
+            height: 0px;
+         }
+
+         .textInput {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+
+            input {
+               height: 34x;
+               border: 1px solid #949bbf;
+            }
+
+            width: 145px;
+            padding-right: 24px;
+            padding-bottom: 0;
+         }
+
+         .button-content {
+            height: 34px !important;
+            width: 124px;
+            border-radius: 8px;
+         }
+      }
+   }
+
+   .terms-conditions-text {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 16px;
+
+      .checkbox {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding-right: 8px;
+
+         .textBasic {
+            padding-left: 5px;
+         }
+      }
+      .terms-condition-and {
+         margin: 0px 4px;
+      }
+   }
+}

@@ -1,0 +1,80 @@
+.addItemModal {
+    padding: 24px;
+    position: relative;
+    width: 100%;
+    position: relative;
+    max-width: 500px;
+    background-color: #fff;
+    outline: none;
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+    }
+    .items-list {
+        padding: 0;
+        list-style: none;
+        .item {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            min-height: 32px;
+            padding: 12px 12px 0;
+            margin-bottom: 12px;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            &:hover  {
+                &:not(.active-item) {
+                    background-color: #f6f6f6;
+                }
+                .actions {
+                    display: -webkit-inline-box;
+                    display: -webkit-inline-flex;
+                    display: -ms-inline-flexbox;
+                    display: inline-flex;
+                }
+            }
+            &.active-item {
+                background-color: #7cb740;
+                span {
+                    color: #fff!important;
+                }
+            }
+            .actions {
+                width: 76px;
+                display: none;
+                display: -webkit-inline-box;
+                display: -webkit-inline-flex;
+                display: -ms-inline-flexbox;
+                svg {
+                    width: 24px;
+                    height: 24px;
+                }
+                button {
+                    background: none;
+                    border: none;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.editItemModal__footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}

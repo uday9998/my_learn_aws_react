@@ -1,0 +1,114 @@
+
+.inputRnew {
+   position: relative;
+   max-width: 100%;
+   background: #ffffff;
+   outline: none;
+   border: 1px solid var(--greyscale_10);
+   box-sizing: border-box;
+   border-radius: 12px;
+   padding: 8px 16px;
+   display: flex;
+   align-items: center;
+   height: 100%;
+   justify-content: space-between;
+   .inputEdit {
+      &__btns {
+         position: absolute;
+         right: 16px;
+         top: 0;
+         display: flex;
+         gap: 8px;
+         top: 8px;
+         right: 8px;
+         button {
+            &:nth-child(2) {
+               padding: 0 1px;
+               svg {
+                  g {
+                     fill: #24554E;
+                  }
+               }
+            }
+         }
+
+      }
+      &__icon {
+         position: absolute;
+         top: 12px;
+         left: 8px;
+      }
+      .inputRnew {
+         padding-left: 32px;
+         padding-right: 68px;
+      }
+   }
+   input {
+      background-color: inherit;
+      padding-right: 60px;
+   }
+   .inputRnew_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+   }
+   .inputRnew_icon_inactive {
+      path {
+         fill: #727978;
+      }
+   }
+
+   svg {
+      cursor: pointer;
+   }
+   .show-hide {
+      cursor: pointer;
+      display: flex;
+      align-items: flex-end;
+   }
+   &_helper {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: var(--greyscale_40);
+      text-align: right;
+      font-feature-settings: "tnum" on, "lnum" on;
+   }
+   &_active {
+      background: #ffffff;
+      border: 1px solid #e7e9e9;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 4px #54938b;
+      border-radius: 12px;
+   }
+   &_label {
+      display: inline-block;
+      font-family: "Inter";
+      font-style: normal;
+      top: -58%;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 168%;
+      transition: 0.2s ease-in-out;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: var(--greyscale_90);
+      &_error {
+         color: var(--additional_error);
+      }
+      &_disabled {
+         color: var(--greyscale_30);
+      }
+   }
+   &_label_animation {
+      position: absolute;
+      color: var(--greyscale_40) !important;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+   &__calendar {
+      position: relative;
+   }
+}

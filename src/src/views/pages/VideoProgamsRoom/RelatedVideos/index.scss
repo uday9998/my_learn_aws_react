@@ -1,0 +1,45 @@
+.relatedVideos {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   flex-wrap: wrap;
+   &__text {
+      padding-right: 16px;
+      span {
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         display: block;
+      }
+   }
+   .image__with__blur {
+      border-radius: 12px;
+   }
+   .image__with__blur__blur {
+      border-radius: 12px;
+   }
+   .image__with__icons {
+      width: 218px;
+      height: 124px;
+   }
+   img {
+      max-width: 100%;
+      border-radius: 12px;
+      width: 218px;
+      height: 124px;
+      object-fit: cover;
+   }
+   &__content {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      >div {
+         display: flex;
+         flex-direction: column;
+         gap: 12px;
+         cursor: pointer;
+         overflow: hidden;
+         width: 218px;
+      }
+   }
+}

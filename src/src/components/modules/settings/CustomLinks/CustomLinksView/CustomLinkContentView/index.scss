@@ -1,0 +1,122 @@
+.customLink__view {
+   display: flex;
+   justify-content: space-between;
+   z-index: 99999999999;
+   align-items: flex-end;
+   gap: 16px;
+   width: 100%;
+   .customLink__title_content {
+      display: flex;
+      align-items: flex-end;
+      width: 100%;
+      gap: 12px;
+      svg {
+         cursor: pointer;
+      }
+   }
+   .customLink__title {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .customLink__actions {
+      display: flex;
+      gap: 12px;
+
+      .customLink__edit {
+         cursor: pointer;
+      }
+
+      .customLink__divider {
+         background-color: #E7E9E9;
+         width: 1px;
+         height: 24px;
+         cursor: pointer;
+      }
+
+      .customLink__delete {
+         cursor: pointer
+      }
+   }
+
+   .customLinks__createModal {
+      width: 100%;
+      .SelectItem__button {
+         height: 44px;
+      }
+      .colorInput__label {
+         padding-bottom: 8px;
+      }
+      .colorInput__wrapper, .colorInput__label {
+         margin: 0;
+      }
+      .createModal__header {
+         display: flex;
+         justify-content: space-between;
+
+         .createModal__close {
+            cursor: pointer;
+         }
+      }
+
+      .createModal__content {
+         width: 100%;
+         .createModal__select {
+            display: flex;
+            gap: 24px;
+            align-items: flex-end;
+            >div {
+               width: 50%
+            }
+         }
+      }
+
+      .createModal__footer {
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         margin-top: 24px;
+
+         >div {
+            width: 100%;
+            &:first-of-type {
+               max-width: 120px;
+               margin-right: 16px;
+            }
+            &:last-of-type {
+               max-width: 150px;
+            }
+            button {
+               width: 100%;
+            }
+         }
+      }
+   }
+
+   @media screen and (max-width: 1023px) {
+      .customLinks__createModal {
+         padding: 24px;
+         .createModal__content {
+            .createModal__select {
+               flex-direction: column;
+               >div {
+                  width: 100%;
+                  margin-left:0;
+               }
+            }
+            .createModal__footer {
+               margin: 16px 0;
+               flex-direction: column;
+               div {
+                  margin: 8px 0;
+                  max-width: 100%;
+               }
+            }
+         }
+      }
+   }
+
+}
+
+
+

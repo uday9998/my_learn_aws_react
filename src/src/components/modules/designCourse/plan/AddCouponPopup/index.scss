@@ -1,0 +1,315 @@
+.noFocus {
+   &:focus {
+      outline: none;
+   }
+}
+.addCoupon__close{
+   position: absolute;
+   right: 32px;
+   top: 32px;
+   cursor: pointer;
+}
+.addCouponPopup {
+   position: relative;
+   padding: 32px;
+   max-width: 100%;
+   width:552px;
+   .addCouponPopup__input {
+      width: 100%;
+      margin: 16px 0;
+      display: flex;
+      align-items: center;
+      .textInput {
+         display: flex;
+         label {
+            display: flex;
+            align-items: center;
+            width: 45%;
+         }
+         .textInput__wrapper {
+            width: 55%;
+         }
+         input {
+            padding: 5px 16px;
+         }
+      }
+
+   }
+   .addCouponPopup_duration {
+      position: relative;
+      .textInput {
+         label {
+            width: calc(45% + 25px);
+         }
+      }
+
+      .hint-block {
+         position: absolute;
+         left: 155px;
+         top: -4px;
+      }
+
+      .hint-text {
+         position: absolute;
+         top: -9px;
+         left: 30px;
+         background: #e1e0e0;
+         padding: 0px 5px;
+         border-radius: 4px;
+         pointer-events:auto;
+         flex: 1;
+         white-space:nowrap;
+         visibility: hidden;
+         opacity: 0;
+         z-index: 1;
+         span {
+            font-size: 13px;
+            line-height: 1;
+         }
+
+      }
+       .hint-block:hover  .hint-text {
+         visibility: visible;
+         opacity: 1;
+         display: flex;
+         border: solid 1px #cddaf1;
+         border-radius: 8px;
+         background-color: #fbfdff;
+         padding: 5px 7px 3px 7px;
+       }
+
+      .hint-icon{
+         height: 24px;
+         width: 24px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         cursor: pointer;
+         svg {
+            width: 22px;
+            height: 22px;
+         }
+      }
+   }
+   .addCouponPopup_switch {
+      display: flex;
+      .addCouponPopup_switch_title {
+         span {
+            color: rgb(63, 79, 101);
+            font-size: 14px;
+            line-height: 1.43;
+            font-family: 'Avenir Next';
+         }
+      }
+      .addCouponPopup_switch_value {
+         display: flex;
+         margin-left: 10px;
+         span {
+            color: rgb(63, 79, 101);
+            line-height: 1.43;
+            font-family: 'Avenir Next';
+            padding-left: 10px;
+         }
+      }
+   }
+   .addCouponPopup_expire {
+      position: relative;
+      .react-datepicker {
+         box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.1);
+         border: none;
+         padding: 24px;
+      }
+      .react-datepicker__day-name {
+         padding: 6px;
+         opacity: 0.65;
+         font-family: Avenir Next Regular;
+         font-size: 16px;
+         line-height: 1.5;
+         color: rgba(52, 72, 94, 0.54);
+      }
+      .react-datepicker__header {
+         background: #fff;
+         border: none;
+      }
+      .react-datepicker__current-month {
+         color: #6b7897;
+         font-family: Avenir Next Regular;
+         font-size: 16px;
+         text-align: left;
+         padding-left: 19px;
+         font-weight: 500;
+     }
+     .react-datepicker__navigation--previous {
+         right: 50px;
+         left: auto;
+         top: 32px;
+      }
+      .react-datepicker__navigation--next {
+         top: 32px;
+         right: 32px;
+      }
+     .react-datepicker__day-names {
+         margin-top: 23px;
+       }
+
+      .react-datepicker__day--keyboard-selected, .react-datepicker__day--selected {
+         border-radius: 50%;
+         background-color: #7cb740;
+      }
+      .react-datepicker__day:hover {
+         border-radius: 50%;
+      }
+      .react-datepicker__day {
+         font-size: 14px;
+         padding: 6px;
+         font-family: Avenir Next Regular;
+      }
+      .react-datepicker-wrapper {
+         width: 100%;
+      }
+      input {
+         border: 1px solid #cddaf1;
+         box-sizing: border-box;
+         border-radius: 4px;
+         font-family: 'Avenir Next regular';
+         width: 100%;
+         line-height: 1.5;
+         letter-spacing: 0.4px;
+         font-size: 16px;
+         padding: 7px 16px;
+         background: #fbfdff;
+         font-weight: bold;
+         color: #3f4f65;
+      }
+      input:focus {
+         box-shadow: 0 0 0px 2px #7cb740;
+         border: 1px solid #fbfdff;
+         outline: none;
+     }
+      .CalendarCoupon {
+         z-index: -1;
+         position: absolute;
+         display: flex;
+         top: 29px;
+         right: 24px;
+      }
+   }
+   .addCouponPopup_price {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 24px;
+      margin-bottom: 24px;
+   }
+   .addCouponPopup_amount {
+      margin-left: 16px;
+      flex: 1;
+   }
+   .addCouponPopup_flat_rate {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 2;
+      .customSwitch {
+         width: 250px;
+         height: 36px;
+      }
+      .SelectElement__text {
+         span {
+            font-size: 16px;
+         }
+      }
+      .SelectElement .SelectElement__drop-down .SelectElement__option {
+         span {
+            font-size: 16px;
+         }
+     }
+      .SelectElement .SelectElement__drop-down .SelectElement__option:hover {
+         background: rgba(124, 183, 64, 0.05);
+     }
+     .SelectElement__drop-down .SelectElement__option:hover span {
+      color: #7cb740 !important;
+   }
+   }
+
+   .addCouponPopup__btns {
+      display: flex;
+      justify-content: flex-end;
+   }
+}
+
+.couponModal {
+   .modalContent_pos_center {
+      border-radius: 8px;
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .addCouponPopup {
+      padding: 40px 24px 32px 24px;
+      width: auto;
+      min-width: 320px;
+      box-sizing: border-box;
+      overflow: scroll;
+      height: 98vh;
+      >div:first-of-type {
+         display: block;
+         .addCouponPopup__input:first-of-type {
+            margin-bottom: 24px;
+         }
+      }
+      .addCouponPopup_flat_rate {
+         .SelectElement .SelectElement-basic .SelectElement__text {
+            margin-left: 0;
+         }
+         .SelectElement .SelectElement-basic {
+            padding-left:18px;
+        }
+      }
+      .addCouponPopup__input {
+         max-width: none;
+      }
+      .addCouponPopup__btns {
+         flex-direction: column-reverse;
+         >div:last-of-type {
+            margin: 0 0 8px 0;
+         }
+      }
+      .addCouponPopup_price {
+         flex-direction: column;
+     }
+      .addCouponPopup_flat_rate {
+         flex-direction: column;
+         width: 100%;
+     }
+     .addCouponPopup_amount {
+         margin-left: 0px;
+         width: 100%;
+         margin-top: 24px;
+     }
+   .addCouponPopup_expire {
+      .react-datepicker {
+         padding: 4px;
+      }
+      .react-datepicker__day-name {
+         padding: 0px;
+      }
+     .react-datepicker__day {
+        padding: 0;
+     }
+     .react-datepicker__day-names {
+         margin-top: 12px;
+       }
+       .react-datepicker__navigation--previous {
+         top: 9px;
+      }
+      .react-datepicker__navigation--next {
+         top: 9px;
+      }
+      input::placeholder {
+         color: #8a94a2;
+       }
+   }
+}
+}

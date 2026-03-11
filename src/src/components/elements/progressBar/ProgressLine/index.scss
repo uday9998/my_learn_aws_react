@@ -1,0 +1,20 @@
+.progress-bar {
+    width: 100%;
+    position: relative;
+
+    .progress-bar__outside {
+        height: 8px;
+        border-radius: 4px;
+        width: 100%;
+        opacity: 0.2;
+    }
+
+    .progress-bar__line {
+        height: 8px;
+        border-radius: 4px;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

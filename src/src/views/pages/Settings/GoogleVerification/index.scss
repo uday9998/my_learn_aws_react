@@ -1,0 +1,29 @@
+.google__verification{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    &__input{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        &__text{
+            color: #727978;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            a{
+                text-decoration: none;
+                color: #3060BD;
+            }
+        }
+    }
+    button{
+        margin-top: 8px;
+    }
+}

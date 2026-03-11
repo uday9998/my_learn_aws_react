@@ -1,0 +1,25 @@
+.design__course__specific__date{
+    &__input{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #E7E9E9;
+            padding: 10px 16px;
+            border-radius: 12px;
+            &__button{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            &__button__active{
+                path{
+                    fill: #22272f;
+                }
+            }
+        }
+    }
+}

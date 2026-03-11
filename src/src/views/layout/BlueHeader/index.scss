@@ -1,0 +1,73 @@
+.header-container {
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .header-content {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.main-style {
+    background-color: #3f4f65;
+    padding: 24px 0px;
+}
+
+.studentsRoom-style {
+    padding: 24px;
+    background-color: '#ffffff';
+    height: 34px;
+}
+
+
+.main-styleIcon {
+    width: 168px;
+    height: 39px;
+    path {
+        fill: #ffffff;
+        fill-opacity: 1;
+    }
+}
+
+.studentsRoom-styleIcon {
+    width: 103px;
+    height: 24px;
+    path {
+        fill: #34495e;
+        fill-opacity: 1;
+    }
+}
+@media screen and (max-width: 1023px) {
+   .main-style {
+      .left-icon {
+         svg{
+            .arrow-left {
+               fill: #ffffff;
+               fill-opacity: 1;
+           }
+         }
+      }
+   }
+    .header-container {
+        .header-content {
+            width:90%;
+        }
+    }
+    .main-styleIcon {
+        width: 127px;
+        height: 44px;
+    }
+    .avatar-container {
+        width: 70px;
+    }
+    .mainHubHeader__loginBtn {
+       button {
+        //   background-color: transparent;
+       }
+    }
+ }

@@ -1,0 +1,18 @@
+.delete__button__new{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 8px;
+    border: 1px solid #D12D36;
+    border-radius: 12px;
+    background-color: inherit;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 132%;
+    letter-spacing: 0.01em;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #D12D36;
+}

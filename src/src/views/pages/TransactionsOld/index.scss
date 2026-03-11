@@ -1,0 +1,80 @@
+// .transactions-page {
+//     width: 100%;
+//     .line {
+//         background-color: #f0f4f7;
+//         border-bottom: 2px solid #f0f4f7;
+//         margin-top: 24px;
+//         margin-bottom: 24px;
+//     }
+//     .settingTransaction__transaction_empty {
+//         display: flex;
+//         align-items: center;
+//         flex-direction: column;
+//         margin-bottom: 40px;
+//      }
+//      .transaction-page-serach-header {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         .export-csv{
+//             button {
+//                height: 40px;
+//             }
+//       }
+//      }
+// }
+
+// @media screen and (max-width: 1023px) {
+//    .transactions-page{
+//       padding: 0 16px;
+//       width: auto;
+//       .itemWrapper{
+//          padding: 24px 16px !important;
+//          span {
+//             margin-bottom: 0;
+//          }
+//          .transaction__searchFilter {
+//             .searchFilter__inputs {
+//                flex-direction: column;
+//                width: 100%;
+//                .searchFilter__input {
+//                   margin-right: 0;
+//                   margin-bottom: 8px;
+//                }
+//             }
+//             .searchFilter__button {
+//                margin-left: 0;
+//                width: 100%;
+//                margin-top: 8px;
+//                button {
+//                   width: 100%;
+//                }
+//             }
+//          }
+//       }
+//       .transaction-page-serach-header{
+//          flex-direction: column;
+//          .export-csv{
+//             margin-top: 8px;
+//          }
+//          &>div{
+//             width: 100%;
+//             button {
+//                height: 48px;
+//                width: 100%;
+//             }
+//          }
+//       }
+
+//    }
+
+// }
+// @media (min-width: 1024px) and (max-width: 1088px) {
+//    .transaction-page-serach-header{
+//       flex-direction: column;
+//       align-items: flex-start !important;
+//       .export-csv{
+//          margin-top: 8px;
+//       }
+//    }
+// }

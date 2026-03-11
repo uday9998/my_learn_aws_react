@@ -1,0 +1,409 @@
+.emailStatusesTable {
+   width: 100%;
+   display: flex;
+   .react__timer__view {
+      white-space: nowrap;
+   }
+   &_left {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      gap: 16px;
+
+      &_name {
+         text-wrap: nowrap;
+      }
+
+      &_date {
+         .textBasic {
+            @media screen and (max-width: 450px) {
+               font-size: 12px;
+               font-weight: 400;
+            }
+         }
+      }
+   }
+
+   .emailStatusTable__actions  {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      row-gap: 16px;
+      
+      @media screen and (max-width: 1100px) {
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+         order: 1;
+         width: 80%;
+         margin: auto;
+      }
+
+      >div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 4px;
+         position: relative;
+
+         @media screen and (max-width: 1100px) {
+            flex-direction: row;
+            align-items: center;
+         }
+
+         .textBasic {
+            text-wrap: nowrap;
+            line-height: normal;
+         }
+
+         .lds-ring {
+            position: static;
+            width: 15px;
+            height: 15px;
+            top: 75%;
+            transform: translate(0, 0);
+
+            div {
+               width: 95%;
+               height: 95%;
+
+               @media screen and (max-width: 500px) {
+                  width: 75%;
+                  height: 75%;
+               }
+            }
+         }
+      }
+   }
+
+   .emailStatusTable__status {
+      display: flex;
+      gap: 20px;
+      row-gap: 12px;
+      justify-content: flex-end;
+      align-items: center;
+
+      @media screen and (max-width: 500px) {
+         flex-wrap: wrap;
+         width: min-content;
+      }
+
+      &__preview__button {
+         cursor: pointer;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .status {
+         @media screen and (max-width: 500px) {
+            order: 1;
+         }
+      }
+   }
+
+   #emailStatusesTable{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .disabled_checkbox {
+         width: 20px;
+         height: 20px;
+         background-color: rgba(19, 31, 30, 0.2);
+         border-radius: 4px;
+      }
+
+      & > div {
+         width: 100%;
+         display: flex;
+         gap: 12px;
+         align-items: center;
+      }
+
+      .email_wrapper {
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+         background: #fff;
+         padding: 16px;
+         border-radius: 12px;
+         border: 1px solid #E7E9E9;
+         gap: 20px;
+         row-gap: 12px;
+         flex-wrap: wrap;
+
+         @media screen and (max-width: 1100px) {
+            justify-content: flex-end;
+         }
+         
+         @media screen and (max-width: 1100px) {
+            gap: 8px;
+         }
+      }
+   }
+
+   .transactions__table {
+      display: flex;
+      flex-direction: column;
+      .oval {
+            width: 8px;
+            height: 8px;
+            background-color: #7cb740;
+            display: inline-block;
+            border-radius: 8px;
+            margin-right: 2px;
+      }
+      .ovalBlack {
+         background-color: #666666;
+         width: 8px;
+         height: 8px;
+         display: inline-block;
+         border-radius: 8px;
+         margin-right: 2px;
+      }
+
+      .draft__box {
+         width: 106px;
+         visibility: hidden;
+      }
+
+      .tableBody .tableRow {
+         padding: 20px 16px;
+         height: auto !important;
+         margin-bottom: 0;
+         position: relative;
+         &::after {
+            content: " ";
+            height: 1px;
+            background-color: #dfe5eb;
+            display: block;
+            width: calc(100% - 225px);
+            position: absolute;
+            left: 0;
+            top: 0px;
+         }
+         &:nth-child(1) {
+            &::after {
+               visibility: hidden;
+            }
+         }
+         &:hover {
+            border-radius: 8px;
+            box-shadow: 0px 0px 0px 2px #7cb740 inset;
+            background-color: #fbfdff;
+            cursor: pointer;
+            &::after {
+               visibility: hidden;
+            }
+            &+.tableRow {
+               &::after {
+                  visibility: hidden;
+               }
+            }
+
+         }
+         td {
+            padding: 0 15px 0 0;
+            box-sizing: border-box;
+             flex: none;
+            span {
+               font-weight: normal;
+               line-height: 1.71;
+               letter-spacing: normal;
+               color: #333333;
+               padding: 0px 5px 0px 0px;
+               font-size: 14px !important;
+            }
+            &:nth-child(1) {
+
+                width: 100px;
+               span {
+                  display: inline-block;
+                  text-transform: capitalize;
+               }
+            }
+            &:nth-child(2) {
+               width: 250px;
+              // flex: 0.5;
+               span {
+                  text-transform: none;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  display: block;
+                  white-space: nowrap;
+               }
+            }
+            &:nth-child(3) {
+               width: 100px;
+            }
+            &:nth-child(4) {
+               width: 100px;
+            }
+            &:nth-child(5) {
+               width: 100px;
+            }
+            &:nth-child(6) {
+               width: 195px;
+               padding: 0;
+               display: flex;
+               button {
+                  &:nth-child(1) {
+                     margin-right: 15px;
+                  }
+               }
+            }
+            .emailStatusTable__btns {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap: 20px;
+
+               button {
+                  font-size: 14px !important;
+                  min-width: 90px;
+
+               }
+            }
+
+         }
+     }
+      th {
+         flex: none !important;
+         span {
+            line-height: 1.71;
+            font-weight: 900;
+            font-size: 14px !important;
+         }
+         &:nth-child(1) {
+            width: 100px;
+        }
+        &:nth-child(2) {
+           width: 250px;
+         //  flex: 0.5;
+        }
+        &:nth-child(3) {
+           width: 100px;
+        }
+        &:nth-child(4) {
+           width: 100px;
+        }
+        &:nth-child(5) {
+           width: 100px;
+        }
+        &:nth-child(6) {
+           width: 195px;
+           padding: 0;
+        }
+
+
+      }
+   }
+   .tableHeader {
+      .tableRow {
+         padding: 20px 16px;
+         th{
+
+            &:nth-child(3){
+               span {
+
+               }
+
+            }
+         }
+      }
+
+   }
+
+   .drip_hover {
+      position: absolute;
+      white-space: nowrap;
+      top: -27px;
+      right: 0px;
+      opacity: 0;
+      padding: 0px 7px;
+      box-sizing: border-box;
+      border: 1px solid  #e7e9e9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+      background: #F8FAFA;
+      align-items: center;
+      border-radius: 12px;
+   }
+   .emailStatusTable__status_scheduled {
+      position: relative;
+      &:hover {
+         .drip_hover {
+            opacity: 1;
+         }
+      }
+   }
+
+}
+
+@media screen and (max-width: 1228px) {
+   .emailStatusesTable {
+  //    overflow-x: scroll;
+      .transactions__table {
+       //  width: 870px;
+         .tableBody .tableRow {
+            td {
+               &:nth-child(2) {
+                  width: 250px;
+                  flex: none;
+               }
+
+               }
+            }
+         }
+         th {
+            &:nth-child(2) {
+               width: 250px;
+               flex: none;
+            }
+         }
+      }
+}
+
+/*
+@media screen and (max-width: 720px) {
+   .transactionsTable {
+
+      .transactions__table {
+         flex-direction: row;
+         height: 100%;
+
+         .tableHeader {
+            flex: 1;
+
+            .tableRow {
+               height: 100%;
+               flex-direction: column;
+
+               th {
+                  width: 100%;
+                  flex: 1!important;
+               }
+            }
+         }
+
+         .tableBody {
+            flex: 1;
+
+            .tableRow {
+               height: 100%;
+               flex-direction: column;
+
+               td {
+                  width: 100%;
+                  flex:1!important;
+               }
+            }
+         }
+      }
+   }
+
+}
+*/

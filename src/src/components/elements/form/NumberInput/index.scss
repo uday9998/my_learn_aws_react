@@ -1,0 +1,125 @@
+@font-face {
+   font-family: 'Avenir Next';
+   src: url('~assets/fonts/AvenirNextLTPro-Demi.otf');
+   /* IE9 Compat Modes */
+   src: url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('embedded-opentype'),
+      /* IE6-IE8 */
+      url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('woff2'),
+      /* Super Modern Browsers */
+      url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('woff'),
+      /* Pretty Modern Browsers */
+      url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('truetype'),
+      /* Safari, Android, iOS */
+      url('~assets/fonts/AvenirNextLTPro-Demi.otf') format('svg');
+   /* Legacy iOS */
+}
+
+@font-face {
+   font-family: 'Avenir Next regular';
+   src: url('~assets/fonts/AvenirNextLTPro-Regular.otf');
+}
+
+.textInput {
+   width: 100%;
+
+   ::placeholder {
+      color: #8a94a2;
+   }
+
+   .input__subLabel {
+      margin: 5px 0;
+   }
+
+   label {
+      width: 100%;
+   }
+
+   .textInput__input {
+      border: 1px solid #E7E9E9;
+      box-sizing: border-box;
+      border-radius: 12px;
+      font-family: 'Avenir Next regular';
+      width: 100%;
+      line-height: 1.5;
+      letter-spacing: 0.4px;
+      font-size: 16px;
+      padding: 11px 16px;
+      background: #fbfdff;
+      font-weight: bold;
+      color: #3f4f65;
+   //   user-select: none;
+   }
+
+   .textInput__input:focus {
+      box-shadow: 0 0 0px 2px #7cb740;
+      border: 1px solid #fbfdff;
+      outline: none;
+   }
+   .textInput__input:disabled{
+      cursor: not-allowed;
+      color: rgb(214, 214, 214);
+      border: 1px solid rgb(214, 214, 214);
+   }
+
+   .userLabel {
+      display: flex;
+      align-items: center;
+      .userLabel_avatar {
+         width: 24px;
+         height: 24px;
+         margin-bottom: 4px;
+         img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            height: 100%;
+         }
+      }
+   }
+
+   .textInput__wrapper {
+      display: flex;
+
+      .leftText{
+         display: flex;
+         align-items: center;
+
+         span:first-child{
+            color: rgb(138, 148, 162);
+            font-size: 0.9em;
+            margin-right: 15px;
+         }
+      }
+
+      .textInput__InputWrapper {
+         position: relative;
+         width: 100%;
+
+
+         .inputIcon {
+            position: absolute;
+            right: 24px;
+            transform: translateY(-50%);
+            top: 50%;
+         }
+
+      }
+
+      .hintIcon {
+         margin-left: 12px;
+         display: flex;
+         align-items: flex-end;
+
+         svg {
+            min-width: 24px;
+            min-height: 24px;
+            margin-bottom: 15px;
+         }
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+}

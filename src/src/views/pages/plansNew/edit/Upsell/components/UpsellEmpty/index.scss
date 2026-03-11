@@ -1,0 +1,33 @@
+.upsel__plan__empty{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 8px;
+    height: 603px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    span{
+        max-width: 588px;
+        text-align: center;
+    }
+    img{
+        margin-bottom: 16px;
+    }
+    button{
+        margin-top: 24px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        border: none;
+
+        button {
+            width: 100%;
+            margin-top: 32px;
+        }
+    }
+}

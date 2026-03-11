@@ -1,0 +1,13 @@
+.signUpCard {
+   #order-input {
+      margin: 0px 0 24px 0;
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .signUpCard {
+      #order-input {
+         margin: 16px 0;
+      }
+   }
+}

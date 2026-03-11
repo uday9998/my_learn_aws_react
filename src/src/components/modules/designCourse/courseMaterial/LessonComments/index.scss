@@ -1,0 +1,56 @@
+.lessonComments__item {
+   width: 100%;
+   margin: 12px 0;
+}
+.lessonComments__buttons {
+   width: 100%;
+   margin-top: 12px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+.lessonComments__visibility {
+   margin-bottom: 24px;
+   .visibility {
+      width: 100%;
+      margin-top: 16px;
+      border-radius: 8px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      .visibility__left {
+         padding-right: 12px;
+         .circle {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid #cddaf1;
+            cursor: pointer;
+         }
+         .circle__checked {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid #7cb740;
+            cursor: pointer;
+            .green__circle {
+               background-color: #7cb740;
+               width: 12px;
+               height: 12px;
+               border-radius: 50%;
+               margin-left: 3px;
+               margin-top: 3px;
+            }
+         }
+      }
+      .visibility__right {
+         >div {
+            display: flex;
+            position: relative;
+            align-items: center;
+         }
+      }
+   }
+}
+

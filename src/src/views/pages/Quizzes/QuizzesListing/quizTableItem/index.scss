@@ -1,0 +1,23 @@
+.quiz__new__table__item{
+    .quiz__new__table__actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+        >div {
+         cursor: pointer;
+         display: flex;
+        }
+    }
+    .drop__triggle__icon{
+        transform: rotate(90deg);
+        padding: 4px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+    }
+    .drop__triggle__icon__active {
+      svg path {
+         fill: #36796F;
+      }
+    }
+}

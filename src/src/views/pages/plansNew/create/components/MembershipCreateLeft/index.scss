@@ -1,0 +1,85 @@
+.plan__create__left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-right: 1px solid #E7E9E9;
+    padding-right: 48px;
+    margin-right: 48px;
+    min-width: 50%;
+    .upload__with__media__content{
+        width: 100%;
+    }
+    .cropArea{
+        min-width:min-content;
+        max-width: 100%;
+    }
+    .upload__with__media__view{
+        *{
+            min-width: min-content;
+        }
+    }
+    &__buttons{
+        display: flex;
+        width: 100%;
+        margin-top: 8px;
+        justify-content: flex-end;
+    }
+    &__inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        &__line{
+            width: 100%;
+            height: 1px;
+            background-color: #E7E9E9;
+        }
+        &__tab{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+    &__plan{
+        background: #F8FAFA;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 24px;
+        .SelectItem{
+            width: 100%;
+        }
+        .inputNew{
+            max-height: 44px;
+        }
+        &__amount{
+            width: 100%;
+            display: flex;
+            .input_number {
+                width: 100%;
+            }
+            .SelectItem{
+               //  width: max-content;
+                min-width: 150px;
+            }
+            gap: 24px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        border-right: none;
+        padding: 0;
+        margin: 0;
+
+        &__plan{
+            background: #FFFFFF !important;
+            padding: 0 !important;
+        }
+        &__buttons {
+            flex-direction: column-reverse;
+            gap: 16px;
+        }
+    }
+}

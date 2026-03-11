@@ -1,0 +1,20 @@
+.integration {
+   width: 100%;
+   box-sizing: border-box;
+   margin-top: 24px;
+
+   @media screen and (max-width: 1024px) {
+      .integrationElem__left {
+         padding: 16px;
+      }
+      .integrationElem__middle {
+         padding: 16px;
+      }
+   }
+
+   @media screen and (max-width: 721px) {
+      .integrationElem > div {
+         width: 100%;
+      }
+   }
+}

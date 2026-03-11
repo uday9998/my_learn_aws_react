@@ -1,0 +1,60 @@
+.couponCard {
+   width: 100%;
+   padding: 40px 40px 56px 40px;
+   box-sizing: border-box;
+   position: relative;
+
+   .couponCard__form {
+      display: flex;
+      align-items: flex-start;
+
+      .btnWrapper {
+         display: flex;
+
+         button {
+            width: 124px;
+            margin-top: 29px;
+            margin-left: 8px;
+         }
+      }
+
+      .textInput {
+         input {
+            padding: 8px 12px 6px 12px;
+            font-size: 12px;
+            max-height: 32px;
+            margin-top: 8px;
+         }
+
+         label {
+            span {
+               font-size: 12px;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .couponCard {
+      padding: 64px 16px 24px 16px;
+
+      .couponCard__form {
+         display: block;
+         input {
+            padding: 8px 12px 6px 12px;
+            font-size: 12px;
+         }
+         .btnWrapper {
+            margin-top: 64px;
+            width: 100% !important;
+
+            button {
+               width: 100% !important;
+               height: 48px !important;
+               margin: 0;
+            }
+         }
+      }
+   }
+}

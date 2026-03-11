@@ -1,0 +1,146 @@
+.settingTransaction {
+   width: 100%;
+   margin-top: 12px;
+
+
+   .settingTransaction__transaction {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #c2cedb;
+
+      .settingTransaction__transaction_empty {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         margin-bottom: 40px;
+      }
+
+      .transaction {
+         .membersTable {
+            th {
+               &:first-of-type {
+                  flex: 4;
+               }
+            }
+            td {
+               &:first-of-type {
+                  flex: 4;
+               }
+            }
+         }
+      }
+   }
+
+   .settingTransaction__subscription {
+      display: flex;
+      flex-direction: column;
+
+      .subscription {
+         .membersTable {
+            th {
+               &:first-of-type {
+                  flex: 6;
+               }
+            }
+            td {
+               &:first-of-type {
+                  flex: 6;
+               }
+            }
+         }
+      }
+
+      .subscriptionTitle {
+         margin-top: 24px;
+         width: 100%;
+         display: flex;
+         align-items: center;
+      }
+
+      .settingTransaction__subscription_empty {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin: 24px 0 16px;
+      }
+
+      .settingTransaction__subscription_btns {
+         margin-top: 24px;
+         display: flex;
+         justify-content: flex-end;
+         >div {
+            flex: 1 1;
+            max-width: 132px;
+            button {
+               width: 100%;
+            }
+         }
+      }
+
+   }
+}
+
+
+@media screen and (max-width: 1320px) {
+   .settingTransaction {
+      .settingTransaction__transaction {
+      .transaction {
+         .membersTable {
+            th {
+               &:first-of-type {
+                  flex: 3;
+               }
+            }
+            td {
+               &:first-of-type {
+                  flex: 3;
+               }
+            }
+         }
+      }
+   }
+   }
+ }
+
+ @media screen and (max-width: 1110px) {
+   .settingTransaction {
+      .settingTransaction__transaction {
+      .transaction {
+         .membersTable {
+            th {
+               &:first-of-type {
+                  flex: 2;
+               }
+            }
+            td {
+               &:first-of-type {
+                  flex: 2;
+               }
+            }
+         }
+      }
+   }
+   }
+ }
+
+ @media screen and (max-width: 1050px) {
+   .settingTransaction {
+      .settingTransaction__transaction {
+      .transaction {
+         .membersTable {
+            th {
+               &:first-of-type {
+                  flex: 1;
+               }
+            }
+            td {
+               &:first-of-type {
+                  flex: 1;
+               }
+            }
+         }
+      }
+   }
+   }
+ }
+

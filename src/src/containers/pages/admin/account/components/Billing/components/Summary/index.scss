@@ -1,0 +1,113 @@
+.summary__wrapper {
+    max-width: 361px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-left: 1px solid #E7E9E9;
+    height: 100%;
+
+    .summary__header {
+        background-color: #36796F;
+        padding: 8px 24px;
+        border-top-right-radius: 12px;
+
+        span {
+            line-height: 1 !important;
+        }
+
+        @media (max-width: 1500px) {
+            padding: 8px;
+        }
+    }
+
+    .summary__info__wrapper {
+        padding: 0 24px 15px 24px;
+
+        .top__section__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+
+            span {
+                line-height: 1 !important;
+            }
+
+            .title__wrapper {
+                @media (max-width: 1464px) {
+                    span {
+                        font-size: 16px;
+                    }
+                }
+
+                @media (max-width: 1200px) {
+                    span {
+                        font-size: 14px;
+                    }
+                }
+
+                @media (max-width: 1165px) {
+                    span {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .right__widget__wrapper {
+                background-color: #F4F7F7;
+                border-radius: 8px;
+                padding: 5px 8px;
+            }
+
+            @media (max-width: 1440px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+
+        .summary__texts__wrapper {
+            display: flex;
+            flex-direction: column;
+            margin-left: 12px;
+            gap: 12px;
+            margin-top: 12px;
+
+            .texts__wrapper {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .icon {
+                    width: 12px;
+                    height: 12px;
+                    border: 1px solid #A1A5A5;
+                    border-radius: 4px;
+                }
+
+                @media (max-width: 1440px) {
+                    #last__icon {
+                        width: 14px;
+                    }
+                }
+            }
+
+            @media (max-width: 1440px) {
+                margin-left: 0;
+            }
+
+            @media (max-width: 1530px) {
+                margin-left: 0;
+            }
+        }
+        
+        @media (max-width: 1530px) {
+            padding: 0 8px 15px 8px;
+        }
+
+        @media (max-width: 1440px) {
+            padding: 0 24px 15px 13px;
+        }
+    }
+}

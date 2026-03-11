@@ -1,0 +1,143 @@
+.quiz__template{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    max-width: 100%;
+    width: 720px;
+    &__tab{
+        max-width: 440px;
+        margin-bottom: -8px;
+        width: 100%;
+
+        .tabs__line__tab{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+        }
+        span{
+            white-space: nowrap;
+        }
+        .tabs__line{
+            gap: 24px;
+            width: 100%;
+            >div {
+               flex: 1;
+               max-width: 220px;
+            }
+        }
+    }
+    .quiz__icon {
+      position: absolute;
+      opacity: 0.3;
+      top: 20px;
+      left: 20px;
+      svg {
+       width: 32px;
+       height: 32px;
+      }
+   }
+    &__content{
+        width: 100%;
+        position: relative;
+        min-height: 370px;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__content__withtypes {
+      width: 100%;
+      position: relative;
+      height: 370px;
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      .quizTypes {
+         margin-top: 42px;
+      }
+  }
+   //  quiz__template__ {
+   //    background: #FFFFFF;
+   //    border: 1px solid #E7E9E9;
+   //    border-radius: 12px;
+   //    width: 720px;
+   //    height: 405px;
+   //    padding: 40px 88px 20px;
+   //    align-items: center;
+   //    justify-content: space-between;
+   //    display: flex;
+   //    flex-direction: column;
+   //    box-sizing: border-box;
+   //    .tabs {
+   //       max-width: 335px;
+   //    }
+   //       .upload__with__link__url {
+   //          flex: 1;
+   //          width: 100%;
+   //          display: flex;
+   //          align-items: flex-end;
+   //          .inputNew {
+   //             padding: 0;
+   //          }
+   //          .text_area  {
+   //             width: 100%;
+   //             textarea {
+   //                height: 178px;
+   //             }
+   //          }
+   //          input {
+   //             padding: 8px 16px;
+   //             border-radius: 12px;
+   //          }
+   //          input:focus {
+   //             box-shadow: 0px 0px 4px #54938B;
+   //          }
+   //       }
+   //       .upload__with__link__embed {
+   //          flex: 1;
+   //          width: 100%;
+   //          display: flex;
+   //          align-items: center;
+   //          .inputNew {
+   //             padding: 0;
+   //          }
+   //          .text_area  {
+   //             width: 100%;
+   //             textarea {
+   //                height: 178px;
+   //             }
+   //          }
+   //          input {
+   //             padding: 8px 16px;
+   //             border-radius: 12px;
+   //          }
+   //          input:focus {
+   //             box-shadow: 0px 0px 4px #54938B;
+   //          }
+   //       }
+   //       .upload__with__link__desc {
+   //          text-align: center;
+   //          flex: 1;
+   //          display: flex;
+   //          align-items: flex-end;
+   //         a {
+   //            color: #3060BD;
+   //         }
+   //       }
+   //       .upload__with__link__desc__embed {
+   //          text-align: center;
+   //          display: flex;
+   //          align-items: flex-end;
+   //         a {
+   //            color: #3060BD;
+   //         }
+   //       }
+   //  }
+}

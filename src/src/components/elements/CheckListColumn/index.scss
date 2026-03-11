@@ -1,0 +1,23 @@
+.column__checklist__wrapper {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid #e7e9e9;
+    border-radius: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    .icons__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .icon {
+            padding: 7px;
+
+            &.active {
+                transform: rotate(90deg);
+            } 
+        }
+    }
+}

@@ -1,0 +1,154 @@
+.lesson__block__container {
+   border-top: 1px solid #E7E9E9;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   align-items: center;
+   padding: 84px 20px;
+   grid-gap: 36px;
+   gap: 36px;
+   position: relative;
+
+   @media (max-width: 1024px) {
+      padding-top: 60px !important;
+   }
+
+   .upload__media__image__view__change {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 80px;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      min-height: 255px;
+      //  height: auto;
+
+      @media (max-width: 1024px) {
+         margin: 0 40px;
+      }
+
+      @media (max-width: 600px) {
+         margin: 0;
+      }
+
+      &.embed-container {
+         min-height: auto;
+         aspect-ratio: 16 /9;
+         height: auto;
+      }
+   }
+
+   .cropArea {
+      min-width: 484px;
+   }
+
+   &__add {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      box-sizing: border-box;
+      width: 32px;
+      height: 32px;
+      background: #FFFFFF;
+      border: 1px solid #D0D2D2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: -16px;
+      cursor: pointer;
+   }
+
+   &__right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 20px;
+      gap: 20px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      .grey__line {
+         width: 1px;
+         height: 36px;
+         background: #E7E9E9;
+      }
+
+      &__actionleft {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 8px;
+
+         >div {
+            width: 36px;
+            height: 36px;
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+         }
+      }
+
+      &__quizsettings {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 8px;
+         cursor: pointer;
+
+         >div {
+            width: 36px;
+            height: 36px;
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+         }
+      }
+
+      &__actionright {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 8px;
+
+         >div {
+            width: 36px;
+            height: 36px;
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+         }
+      }
+   }
+
+   &__left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #FFFFFF;
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      width: 119px;
+      height: 36px;
+      cursor: pointer;
+   }
+}

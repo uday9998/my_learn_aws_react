@@ -1,0 +1,224 @@
+/* Filter Dropdown Styling */
+.offers__page__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    gap: 24px;
+    
+    &.template1 {
+      justify-content: flex-end;
+    }
+  
+    .inputSearch {
+      width: 100%;
+    }
+  
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+  
+      .sort__button__new__drop {
+        // left: -200%;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        overflow: hidden;
+        min-width: 220px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(8px);
+      }
+  
+      .sort__button__new__drop__new {
+        width: 240px;
+        left: -140px !important;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        transition: all 0.2s ease;
+      }
+  
+      .sort__button__new {
+        button {
+          height: 44px;
+          transition: all 0.2s ease;
+          font-weight: 500;
+          
+          &:hover {
+            opacity: 0.9;
+          }
+          
+          @media screen and (min-width: 1024px) {
+            height: 44px;
+          }
+        }
+      }
+  
+      &__content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // background-color: white;
+        
+        .filter__category__new {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 16px 20px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          margin-bottom: 4px;
+          font-weight: 600;
+          color: #333;
+        }
+        
+        .filter__item {
+          padding: 12px 20px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          transition: background-color 0.15s ease;
+          color: #444;
+          
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.03);
+          }
+          
+          &:active {
+            background-color: rgba(0, 0, 0, 0.06);
+          }
+          
+          // Selected state styling
+          &.selected {
+            background-color: rgba(0, 0, 0, 0.05);
+          }
+          
+          // Ensure icon color works with white background
+          .text-with-icon {
+            svg {
+              color: #444 !important; // Override any inline color styling
+            }
+          }
+        }
+      }
+  
+      button:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  
+  // Animation for dropdown
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .sort__button__new__drop__new, 
+  .sort__button__new__drop {
+    animation: fadeIn 0.2s ease;
+  }
+  
+  // Input styling in the filter
+  .input__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 500px;
+    
+    input[type="search"] {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      height: 44px;
+      color: white;
+      padding: 0 16px;
+      width: 100%;
+      transition: all 0.2s ease;
+      
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.2);
+        outline: none;
+      }
+      
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  
+  // Responsive adjustments
+  .offers__page__filter__mini {
+    max-width: 936px;
+    min-width: 936px;
+    
+    @media screen and (max-width: 1024px) {
+      max-width: 100%;
+      min-width: 100%;
+      padding: 0 24px;
+    }
+  }
+  
+  // Custom scrollbar for the dropdown
+  .offers__page__filter__right__content {
+    max-height: 320px;
+    overflow-y: auto;
+    
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.03);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+    }
+    
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.25);
+    }
+  }
+  
+  // Filter icon styles
+  .tech__section {
+    .input__wrapper {
+      .sort__button__new {
+        button {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: white;
+          background-color: #22272F;
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          border-radius: 8px;
+          padding: 0 16px;
+          height: 44px;
+          
+          &:hover {
+            background-color: #2A3039;
+          }
+          
+          svg {
+            transition: transform 0.2s ease;
+          }
+          
+          &[aria-expanded="true"] svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }

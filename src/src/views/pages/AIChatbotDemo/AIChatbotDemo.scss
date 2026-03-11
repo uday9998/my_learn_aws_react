@@ -1,0 +1,106 @@
+.ai-chatbot-demo {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+
+  .demo-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0 60px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23grid)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+
+      h3 {
+        color: white;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero-features {
+        margin-top: 24px;
+
+        .MuiChip-root {
+          background: rgba(255, 255, 255, 0.2);
+          color: white;
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+
+    .demo-controls {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .MuiContainer-root {
+    position: relative;
+    z-index: 1;
+  }
+
+  .MuiCard-root {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .MuiList-root {
+    .MuiListItem-root {
+      padding-left: 0;
+    }
+
+    .MuiListItemText-primary {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .MuiListItemText-secondary {
+      color: #666;
+      font-size: 13px;
+    }
+  }
+
+  .MuiAlert-root {
+    border-radius: 8px;
+
+    ul {
+      margin: 8px 0 0 0;
+      padding-left: 24px;
+
+      li {
+        margin: 4px 0;
+      }
+    }
+  }
+
+  @media (max-width: 960px) {
+    .demo-hero {
+      padding: 60px 0 40px;
+
+      .hero-content {
+        text-align: center;
+
+        h3 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

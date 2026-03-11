@@ -1,0 +1,203 @@
+.member__transactions {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #e7e9e9;
+   border-radius: 12px;
+   padding: 24px;
+   margin-top: 8px;
+   gap: 28px;
+   background-color: white;
+   .transaction__table__item {
+      td {
+         border-top: 1px solid #f0f2f2;
+      }
+   }
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      svg {
+         padding: 0px;
+         width: 18px;
+         height: 18px;
+      }
+      &__filter {
+         display: flex;
+         gap: 12px;
+         &__date {
+            position: relative;
+         }
+         &__datepicker {
+            position: absolute;
+            left: -200px;
+            z-index: 3;
+         }
+         &__course {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            button {
+               min-width: 100px;
+               justify-content: flex-start;
+            }
+            &__dropdown {
+               position: absolute;
+               border: 1px solid #e7e9e9;
+               background: #ffffff;
+               border-radius: 12px;
+               grid-gap: 20px;
+               gap: 20px;
+               // width: 100%;
+               position: absolute;
+               z-index: 100;
+               top: 100%;
+               right: 0;
+               .wrapper {
+                  display: flex;
+                  flex-direction: column;
+                  max-width: min-content;
+                  width: 100%;
+               }
+               .course__option {
+                  cursor: pointer;
+                  padding: 8px 4px;
+                  span {
+                     min-width: 100px;
+                     max-width: 100%;
+                  }
+               }
+            }
+         }
+      }
+   }
+   &__table {
+      overflow-x: auto;
+      &::-webkit-scrollbar-track {
+         border-radius: 10px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar {
+         width: 5px;
+         height: 5px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+         border-radius: 3px;
+         box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         background-color: rgb(226, 226, 226);
+      }
+   }
+   table {
+      background: #ffffff;
+      width: 100%;
+      overflow-x: scroll;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+      thead {
+         border-bottom: 1px solid #e7e9e9;
+      }
+      th {
+         width: 18.75%;
+         text-align: start;
+         padding: 12px 20px;
+      }
+      td {
+         padding: 12px 20px;
+         width: 18.95%;
+         img {
+            width: 24px;
+            height: 24px;
+            object-fit: cover;
+         }
+      }
+      tr {
+      }
+      .table-col-3 {
+         padding: 8px 12px;
+         button {
+            padding: 8px;
+            font-size: 12px;
+            min-width: none;
+            line-height: 132%;
+         }
+      }
+      .table-col-1 {
+         width: 12.5%;
+      }
+      .table-col-2 {
+         width: 23.3%;
+      }
+   }
+   .table-flex {
+      display: flex;
+      width: 100%;
+      gap: 8px;
+   }
+   span {
+      white-space: nowrap;
+   }
+   .table-tipe {
+      border-radius: 8px;
+      padding: 4px 4px;
+   }
+   .table-tipe-Subscription {
+      background: #fdf1ff;
+      color: #8830bd;
+      border-radius: 8px;
+      padding: 4px 4px;
+   }
+   .table-tipe-OneTimePayment {
+      background: #f1f6ff;
+      color: #3060bd;
+      border-radius: 8px;
+      padding: 4px 4px;
+   }
+
+   @media screen and (max-width: 1024px) {
+      border: none;
+      padding: 0;
+
+      &__top {
+         padding-bottom: 12px;
+         border-bottom: 1px solid #e7e9e9;
+
+         &__filter {
+            button {
+               min-width: min-content;
+               padding: 4px !important;
+               border: 1px solid #24554E;
+               width: 36px;
+               height: 36px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               & > div {
+                  display: none;
+               }
+
+               span {
+                  display: none;
+               }
+            }
+            .member__transactions__top__filter__datepicker {
+               left: auto;
+               right: -35px;
+            }
+         }
+      }
+   }
+   &__empty {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      img {
+          width: 300px;
+      }
+  }
+}

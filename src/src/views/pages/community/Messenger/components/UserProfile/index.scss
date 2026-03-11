@@ -1,0 +1,159 @@
+.messenger__user__info {
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+    width: 100%;
+
+    &__picture {
+        position: relative;
+        height: 40px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        &__circle {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #36796F;
+            border-radius: 60px;
+        }
+        &__isAdmin {
+            width: 15px;
+            height: 15px;
+            transform: translate(40%, -5px);
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                font-size: 0.7em;
+                color: #fff;
+                line-height: 0;
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+        width: 120px;
+
+        p {
+            &:nth-child(1) {
+                width: 120px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+
+        br {
+            display: none;
+        }
+
+        &__cut {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        &__group {
+            // display: flex;
+            width: 90px;
+            p {
+                margin: 0px;
+            }
+        }
+
+        &__keepLength {
+            width: auto;
+        }
+    }
+}
+
+.messenger__left__typing {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: max-content;
+    top: 0px;
+    gap: 4px;
+
+    .circle {
+        background: #A1A5A5;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        animation: typing 1.5s infinite;
+
+        &:nth-child(0) {}
+
+        &:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 1s;
+        }
+    }
+}
+
+.name__time__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+};
+
+.text__notifications__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+@keyframes wave {
+
+    0%,
+    60%,
+    100% {
+        transform: initial;
+    }
+
+    30% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

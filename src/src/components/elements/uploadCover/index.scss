@@ -1,0 +1,41 @@
+.upload__cover{
+    .modal__new__background {
+        height: 100%;
+    }
+    &__modal{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .cropArea{
+        min-width: 100%;
+    }
+    &__image{
+        position: relative;
+        width: 100%;
+        img{
+            border-radius: 12px;
+            width: 100%;
+        }
+        &__buttons{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            transition: 0.3s;
+            visibility: hidden;
+            opacity: 0;
+        }
+        &__buttons_active{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+
+.cropArea{
+    min-width: 100%;
+}

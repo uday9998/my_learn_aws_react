@@ -1,0 +1,64 @@
+.tier{
+   display: flex;
+   align-items: center;
+   padding: 18px 0px;
+   &__edit{
+      display: flex;
+      &__buttons{
+         align-items: center;
+         display: flex;
+      }
+      &__cancel{
+         margin-right: 12px;
+         cursor: pointer;
+      }
+      &__accept{
+         border: 1px solid #24554E;
+         box-sizing: border-box;
+         cursor: pointer;
+         padding: 4px;
+         border-radius: 8px;
+      }
+      &__delete{
+         cursor: pointer;
+      }
+
+   }
+   &__drag__icon{
+      display: flex;
+      margin-right: 16px;
+      align-items: center;
+      cursor: pointer;
+   }
+   &__title{
+      border: none;
+      background-color: inherit;
+   }
+   &__title,&__edit__title{
+      padding: 8px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 148%;
+      display: flex;
+      margin-right: 16px;
+      align-items: center;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: var(--greyscale_90);
+   }
+   &__edit__title{
+      padding: 8px;
+      outline: none;
+      background: #FFFFFF;
+      border: 1px solid #E7E9E9;
+      box-sizing: border-box;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+   }
+   .tier__edit__rename__icon{
+      cursor: pointer;
+      margin-right: 12px;
+   }
+}

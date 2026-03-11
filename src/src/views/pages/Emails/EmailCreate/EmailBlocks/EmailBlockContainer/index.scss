@@ -1,0 +1,174 @@
+
+ .email__block__container__full {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .email__block__container__fit {
+      width: 100%;
+      max-width: 656px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+   //  :last-child {
+   //    background-color: green;
+   //    .email__block__container__fit {
+   //       padding-bottom: var(--paddingBottom);
+   //    }
+   // }
+   //  &:first-child {
+   //    .email__block__container__fit {
+   //       padding-top: var(--paddingTop);
+   //    }
+   // }
+
+ }
+
+
+ .email__block__container__full:last-of-type {
+   background-color: green;
+   .email__block__container__fit {
+      padding-bottom: var(--paddingBottom);
+   }
+}
+ .email__block__container {
+   //border-top: 1px solid #E7E9E9;
+   cursor: pointer;
+   max-width: 656px;
+   margin: 20px 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+    background-color: #fff;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 36px;
+
+    .upload__media__image__view__change{
+       width: 100%;
+       max-width: 720px;
+       align-items: center;
+       justify-content: center;
+       display: flex;
+       min-height: 255px;
+       height: auto;
+       }
+       .cropArea {
+         min-width: 484px;
+      }
+    &__add {
+       position: absolute;
+       left: 0;
+       right: 0;
+       margin: 0 auto;
+       box-sizing: border-box;
+       width: 32px;
+      height: 32px;
+      background: #FFFFFF;
+      border: 1px solid #D0D2D2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: -16px;
+      cursor: pointer;
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      .grey__line {
+         width: 1px;
+         height: 36px;
+         background: #E7E9E9;
+      }
+      &__actionleft {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 8px;
+         >div {
+            width: 36px;
+            height: 36px;
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+         }
+      }
+      &__quizsettings {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 8px;
+         cursor: pointer;
+         >div {
+            width: 36px;
+            height: 36px;
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+         }
+      }
+      &__actionright {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 8px;
+         >div {
+            width: 36px;
+            height: 36px;
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+         }
+      }
+    }
+    &__left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #FFFFFF;
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      width: 119px;
+      height: 36px;
+      cursor: pointer;
+    }
+}
+
+
+.email__block__container__avtive {
+   border: 1px solid #36796F;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.email__block__container__line {
+   background: #E7E9E9;
+   height: 1px;
+   width: 100%;
+   max-width: 536px;
+   margin: 0 auto;
+}

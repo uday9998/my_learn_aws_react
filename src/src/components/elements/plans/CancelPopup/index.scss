@@ -1,0 +1,38 @@
+.deleteLesson {
+    padding: 48px 48px;
+ 
+    .deleteLesson__btns {
+       display: flex;
+       justify-content: flex-end;
+       padding-top: 4px;
+ 
+       >div {
+          flex: 1 1;
+          max-width: 190px;
+ 
+          button {
+             width: 100%;
+          }
+       }
+    }
+ }
+ 
+ @media screen and (max-width: 720px) {
+    .deleteLesson {
+       padding: 48px 24px 32px 24px;
+       .deleteLesson__btns {
+          flex-direction: column-reverse;
+          >div {
+             margin: 0;
+             width: 100%;
+             max-width: none;;
+             &:last-of-type {
+                margin-bottom: 16px;
+             }
+             button {
+                height: 48px!important;
+             }
+          }
+       }
+    }
+ }

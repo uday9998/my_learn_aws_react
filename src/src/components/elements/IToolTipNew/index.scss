@@ -1,0 +1,56 @@
+.tooltipNew_container {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   .tooltipNew {
+      display: flex;
+      width: revert !important;
+   }
+}
+
+#tooltip1, #tooltip2 {
+   width: 124px;
+   background-color: #fff;
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   color: #131F1E;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 168%;
+   padding: 8px 16px;
+}
+
+// #tooltip1::after {
+//    border: 10px solid transparent;
+//    border-bottom-color: white;
+// }
+
+
+// #tooltip1::before {
+//    border: 9px solid transparent;
+//    border-bottom-color: white;
+// }
+
+#tooltip1::after {
+   border-top-color: #fff;
+   display: none;
+}
+
+#tooltip2::after {
+   border-top-color: #fff;
+   display: none;
+}
+
+.__react_component_tooltip.whiteTooltip {
+   color: #131F1E;
+   background: #fff;
+   box-shadow: 1px 2px 2px 0px rgba(19, 31, 30, 0.04), 0px 4px 10px 0px rgba(19, 31, 30, 0.10);
+}
+
+
+.__react_component_tooltip.whiteTooltip::after {
+   background: #fff !important;
+   box-shadow: 1px 2px 2px 0px rgba(19, 31, 30, 0.04), 0px 4px 10px 0px rgba(19, 31, 30, 0.10);
+}

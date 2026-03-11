@@ -1,0 +1,40 @@
+.lesson {
+   border-radius: 12px;
+   padding: 8.5px 12px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   &__selected {
+      background: #36796f;
+   }
+   &__right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+   }
+   &__left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+   }
+   &__progress {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      &__wrapper {
+         position: relative;
+         width: 52px;
+         background: #e8f2f1;
+         border-radius: 100px;
+         height: 8px;
+      }
+      &__prsentage {
+         position: absolute;
+         left: 0;
+         top: 0;
+         height: 100%;
+         background: #54938b;
+         border-radius: 100px;
+      }
+   }
+}

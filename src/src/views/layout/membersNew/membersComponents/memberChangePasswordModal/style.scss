@@ -1,0 +1,16 @@
+.password__change__modal{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__inputs{
+       display: flex;
+       flex-direction: column;
+       gap: 12px;
+    }
+    &__buttons{
+       display: flex;
+       gap: 12px;
+       align-items: center;
+       justify-content: flex-end;
+    }
+ }

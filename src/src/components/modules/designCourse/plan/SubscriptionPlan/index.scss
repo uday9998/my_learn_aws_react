@@ -1,0 +1,120 @@
+.subscriptionPlan {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 32px;
+   overflow-x: hidden;
+   .characters-small-text{
+      margin-top: 2px;
+      span{
+         font-size: 12px;
+         color: #9c9c9c
+      }
+   }
+   .close{
+      cursor: pointer;
+   }
+   .planRatePrice {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .number_of_payments {
+      .textInput {
+         margin-top: -12px;
+      }
+   }
+   .planRate {
+      flex: 1;
+      width: 100%;
+   }
+   .planPrice {
+      flex: 1;
+      margin-left: 4px;
+   }
+   .freeTrial {
+      margin-left: 0;
+   }
+   .freeTrialSelect {
+      .SelectElement__drop-down {
+         width: 50%;
+      }
+   }
+   .bundlesOptional {
+      font-style: italic;
+      color: grey;
+      padding-left: 3px;
+   }
+
+   .selectedValuesList {
+      .remove-icon {
+         display: none;
+      }
+   }
+
+   .multiSelect .multiSelect__drop-down .multiSelect__option {
+      padding: 10px 32px 10px 27px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+  }
+
+}
+
+@media screen and (max-width: 1153px) {
+   .subscriptionPlan {
+      padding: 24px;
+      padding-bottom: 0;
+      .subscriptionPlan__buttons {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         margin-top: 24px;
+
+         .btnBasic {
+
+            &:not(:first-child) {
+               margin-top: 16px;
+            }
+
+            &:not(:last-child) {
+               margin: 0;
+            }
+         }
+      }
+
+      .btnBasic {
+         height: 48px!important;
+      }
+   }
+
+}
+
+
+
+@media screen and (max-width: 720px) {
+   .subscriptionPlan {
+      padding: 24px;
+
+      .subscriptionPlan__buttons {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         margin-top: 24px;
+
+         .btnBasic {
+
+            &:not(:first-child) {
+               margin-top: 16px;
+            }
+
+            &:not(:last-child) {
+               margin: 0;
+            }
+         }
+      }
+
+      .btnBasic {
+         height: 48px!important;
+      }
+   }
+
+}

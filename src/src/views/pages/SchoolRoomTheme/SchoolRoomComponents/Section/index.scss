@@ -1,0 +1,75 @@
+/* .mark {
+   border: 2px dashed #36796F;
+   position:relative;
+}
+
+   .mark:after {
+   content:"";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   }
+
+
+.mark:before {
+  content: 'EDIT';
+  font-size:16px;
+  position:absolute;
+  top:50%;
+  cursor: pointer;
+  left:50%;
+  padding: 8px 12px;
+  color:#131F1E;
+  z-index: 99999999;
+  line-height: 1;
+  transform: translate(-50%,-50%);
+  background: #FFFFFF;
+  border: 1px solid #E7E9E9;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 132%;
+}
+
+.mark-header:before {
+  top:40px;
+}
+
+
+.paymentSection {
+  background-color: #fff;
+} */
+
+
+.header__hover:hover {
+  position: absolute !important;
+}
+
+.offers__section__editor:hover {
+  position:relative;
+  box-sizing: border-box;
+  outline: 2px dashed #36796F;
+
+  &:before {
+    content: 'EDIT';
+    font-size:16px;
+    position:absolute;
+    top:50%;
+    cursor: pointer;
+    left:50%;
+    padding: 8px 12px;
+    color:#131F1E;
+    z-index: 99999999;
+    line-height: 1;
+    transform: translate(-50%,-50%);
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 132%;
+  }
+}

@@ -1,0 +1,12 @@
+.tooltip__with__text {
+   display: flex;
+   width: 16px;
+   height: 16px;
+   background: #000;
+   border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+   .tooltip {
+      display: flex;
+   }
+}

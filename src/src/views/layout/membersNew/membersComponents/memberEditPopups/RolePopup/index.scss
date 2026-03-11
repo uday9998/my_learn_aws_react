@@ -1,0 +1,15 @@
+.member__more__role {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   &__checkboxes {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .checkbox__circle > div:nth-child(2) {
+         flex: 1;
+         cursor: pointer;
+      }
+   }
+
+}

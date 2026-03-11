@@ -1,0 +1,155 @@
+.accountInfo {
+   width: 100%;
+   box-sizing: border-box;
+   height: 100%;
+   .btnBasic_disable_true {
+      opacity: 1;
+      cursor: pointer;
+  }
+   .subdomain-name {
+      display: flex;
+      align-items: flex-end;
+      .textInput {
+         width: 30%;
+      }
+   }
+
+   .settings__domain {
+      position: relative;
+      .textInput__input:disabled {
+         cursor: default;
+         border: 1px solid #cddaf1;
+         color: #8a94a2;
+      }
+   }
+
+   .settings__subdomain {
+      position: relative;
+      .textInput__input:disabled {
+         cursor: default;
+         border: 1px solid #cddaf1;
+         color: #8a94a2;
+      }
+   }
+
+   .accountInfo__upload_loader {
+      width: 135px !important;
+   }
+
+
+   .accountInfo__avatar {
+      margin-bottom: 24px;
+
+      >div:first-of-type {
+         margin-top: 24px;
+         margin-bottom: 12px;
+      }
+
+      .accountInfo__image {
+         display: flex;
+         width: 72px;
+         height: 72px;
+         border-radius: 50%;
+         overflow: hidden;
+         margin-left: 12px;
+
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         }
+      }
+
+      .accountInfo__upload {
+         width: 100%;
+         .uploadProgress {
+            margin-top: 0px;
+            margin-bottom: 15px;
+         }
+         .uploadcare_widget {
+            display: none;
+         }
+      }
+   }
+
+   .accountInfo__createBtn {
+      max-width: 150px;
+      margin-bottom: 24px;
+
+      button {
+         width: 100%;
+         padding-left: 0;
+         padding-right: 0;
+      }
+   }
+
+   .accountInfo__btns {
+      display: flex;
+      justify-content: flex-end;
+
+      >div {
+         width: 100%;
+
+         &:first-of-type {
+            max-width: 120px;
+            margin-right: 16px;
+         }
+
+         &:last-of-type {
+            max-width: 150px;
+         }
+
+         button {
+            width: 100%;
+         }
+      }
+   }
+   .oneTimeUser {
+      span {
+         font-style: italic;
+         border: 1px solid #cddaf1;
+         background: #fbfdff;
+         padding: 5px 9px;
+         border-radius: 4px;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .accountInfo {
+      padding: 24px 24px 32px 24px;
+
+      .accountInfo__avatar {
+         margin-bottom: 8px;
+
+         >div:first-of-type {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+         }
+      }
+
+      .accountInfo__createBtn {
+         max-width: none;
+         margin-bottom: 16px;
+      }
+
+      .accountInfo__btns {
+         display: flex;
+         flex-direction: column-reverse;
+
+         >div {
+            width: 100%;
+            max-width: none !important;
+
+            &:first-of-type {
+               margin: 16px 0 0 0;
+            }
+
+            button {
+               width: 100%;
+            }
+         }
+      }
+   }
+}

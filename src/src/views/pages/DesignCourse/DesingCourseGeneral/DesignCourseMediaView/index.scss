@@ -1,0 +1,31 @@
+.design__course__media__view {
+   display: flex;
+   border: 1px solid #e7e9e9;
+   border-radius: 12px;
+   box-sizing: border-box;
+   width: 100%;
+   min-height: 420px;
+   position: relative;
+   @media screen and (max-width: 1024px) {
+      border: none;
+      flex-direction: column ;
+   }
+}
+
+
+.design__course__media__view__video {
+   display: flex;
+   box-sizing: border-box;
+   width: 100%;
+   min-height: 420px;
+   flex-direction: column;
+   gap: 24px;
+   .design__course__media__lessons {
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+
+      @media (max-width: 1024px) {
+         border: none;
+      }
+   }
+}

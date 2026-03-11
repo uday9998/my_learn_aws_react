@@ -1,0 +1,13 @@
+.header-product-btns {
+   display: flex;
+   gap: 12px;
+   @media screen and (max-width: 1023px) {
+      gap: 10px;
+   }
+   .reOrderbtnProduct {
+      @media screen and (max-width: 1023px) {
+         width: 36px;
+         height: 36px;
+      }
+   }
+}

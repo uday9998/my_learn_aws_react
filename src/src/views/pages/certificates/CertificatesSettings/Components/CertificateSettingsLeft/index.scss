@@ -1,0 +1,11 @@
+.certificate__settings__left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: calc(50% - 97px);
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+}

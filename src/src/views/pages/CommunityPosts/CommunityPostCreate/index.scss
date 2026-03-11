@@ -1,0 +1,166 @@
+.community__post__create {
+   margin-top: 32px;
+   background: #ffffff;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   padding: 40px 210px;
+   gap: 25px;
+   max-width: 960px;
+   margin-left: auto;
+   min-width: 960px;
+   margin-right: auto;
+   border: 1px solid #e7e9e9;
+   border-radius: 12px;
+   &__button{
+     display: flex;
+     margin-top: 7px;
+     align-items: center;
+     justify-content: flex-end;
+   }
+   @media screen and (max-width: 1270px) {
+      width: 860px;
+      min-width: 860px;
+      padding: 40px 110px;
+   }
+   @media screen and (max-width: 1170px) {
+      width: 760px;
+      min-width: 760px;
+      padding: 40px 110px;
+   }
+   &__line {
+      background-color: #e7e9e9;
+      width: 100%;
+      height: 1px;
+   }
+   &__editor {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      padding: 16px 20px;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+
+      .trix-content .attachment {
+        display: block; // so that it looks like in the created post
+      }
+      .fileView{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding: 8px;
+         gap: 8px;
+         background: #FFFFFF;
+         border: 1px solid #E7E9E9;
+         border-radius: 12px;
+       }
+       .fileViewIcon{
+         display: flex;
+         flex-direction: row;
+         align-items: flex-start;
+         padding: 8px;
+         gap: 10px;
+         background: #F8FAFA;
+         border-radius: 8px;
+       }
+       .fileViewTitle{
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 150%;
+         font-feature-settings: 'tnum' on, 'lnum' on;
+         color: #131F1E;
+       }
+       a{
+         color: #24554E;
+       }
+       a:hover{
+         color: #24554E;
+       }
+       .poll__item {
+         background: #ffffff;
+         box-sizing: border-box;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 20px 20px 28px;
+         gap: 8px;
+         border: 1px solid #e7e9e9;
+         border-radius: 8px;
+       }
+       .poll__item__title {
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 160%;
+       }
+       .poll__item__subtitle {
+         font-weight: 400;
+         font-size: 14px;
+         color: #727978;
+         line-height: 168%;
+       }
+       .poll__item__option {
+         box-sizing: border-box;
+         background: #ffffff;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding: 8px 16px;
+         gap: 8px;
+         font-weight: 500;
+         font-size: 14px;
+         line-height: 168%;
+         width: 100%;
+         border: 1px solid #e7e9e9;
+         border-radius: 12px;
+       }
+       iframe{
+         max-width: 100%;
+       }
+       .mention-user{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding: 0px 4px;
+         gap: 4px;
+         background: #F1F6FF;
+         color: #3060BD !important;
+         border-radius: 8px;
+       }
+      &__title {
+        resize: none;
+        outline: none;
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+        border: none;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 160%;
+        margin-bottom: 12px;
+        height: 30px;
+        text-align: start;
+        overflow: visible;
+        &::-webkit-scrollbar {
+           display: none;
+        }
+        &::placeholder{
+        color: #727978;
+
+        }
+        & {
+           -ms-overflow-style: none;
+           scrollbar-width: none;
+        }
+        &:focus {
+           box-shadow: none;
+        }
+      }
+   }
+
+   @media all and (max-width: 1024px) {
+    width: 100%;
+    padding: 16px;
+    min-width: auto;
+   }
+
+}

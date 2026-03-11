@@ -1,0 +1,32 @@
+.changePlanError {
+    position: relative;
+    .createDomain__close {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        cursor: pointer;
+        svg {
+            width: 24px;
+            height: 24px;
+         }
+    }
+    .createDomain__body {
+        padding: 40px 40px 30px;
+        max-width: 500px;
+        width: 100%;
+        box-sizing: border-box;
+        .createDomain__header {
+            padding-bottom: 24px;
+        }
+    }
+    .error__btns {
+       display: flex;
+       justify-content: flex-end;
+       padding-top: 24px;
+       >div {
+          &:first-child {
+             margin-right: 16px;
+          }
+       }
+    }
+}

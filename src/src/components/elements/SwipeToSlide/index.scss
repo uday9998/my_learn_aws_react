@@ -1,0 +1,197 @@
+.SwipeToSlide {
+   div {
+      &:focus {
+         outline: none;
+      }
+   }
+
+   .slick-slide {
+      height: auto;
+      display: flex;
+      width: 318px !important;
+
+      img {
+         max-width: 100%;
+      }
+   }
+
+   .slick-track {
+      display: flex;
+      margin-left: inherit;
+      margin-right: inherit;
+      // width: 100% !important;
+
+      .slick-slide {
+         >div {
+            display: flex;
+            width: 100%;
+            max-width: 400px;
+         }
+      }
+   }
+
+   .swipeSliderNext {
+      &::before {
+         display: none;
+      }
+   }
+
+   .slide-arrow-dark:hover svg path[fill="#333"] {
+      fill: #ffffff;
+      transition: all 0.5s ease-in-out;
+   }
+
+   .slide-arrow-light:hover svg path[fill="#333"] {
+      fill: #d6d6d6;
+      transition: all 0.5s ease-in-out;
+   }
+
+   .swipeSliderPrev {
+      &::before {
+         display: none;
+      }
+   }
+
+   .slick-prev,
+   .slick-next {
+      width: auto;
+      height: auto;
+
+   }
+
+   .slick-next {
+      right: 2%;
+   }
+
+   .slick-prev {
+      left: 2%;
+   }
+
+   .slick-list {
+      overflow: visible;
+   }
+
+   .slick-prev,
+   .slick-next {
+      position: absolute;
+      top: calc(50% - 20px);
+      transform: translateY(-50%);
+      z-index: 1000;
+      background: rgb(188 186 186 / 17%);
+      height: 40px;
+      width: 40px;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      border-radius: 12px;
+      cursor: pointer;
+      visibility: hidden;
+      transition: all 0.01s;
+
+      svg {
+         width: 30px;
+      }
+   }
+
+   .slick-disabled {
+      display: none;
+   }
+
+   &:hover .slick-prev:not(.slick-disabled),
+   &:hover .slick-next:not(.slick-disabled) {
+      transition: all 0.01s;
+      visibility: visible;
+      /* Show the arrows on hover */
+   }
+
+   .slick-slider .slick-arrow path:nth-child(1) {
+      fill: none;
+   }
+
+
+
+}
+
+
+
+.SwipeToSlide.offer__cards__list {
+   display: block !important;
+
+   .slick-arrow {
+      visibility: visible;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+}
+
+
+
+.offer__item__content__name {
+   max-width: 300px;
+}
+
+@media screen and (max-width: 1800px) {
+   .offer__item__content__name {
+      max-width: 330px;
+   }
+}
+
+@media screen and (max-width: 1600px) {
+   .offer__item__content__name {
+      max-width: 300px;
+   }
+}
+
+
+
+@media screen and (max-width: 1500px) {
+   .offer__item__content__name {
+      max-width: 270px;
+   }
+}
+
+@media screen and (max-width: 1400px) {
+   .offer__item__content__name {
+      max-width: 250px;
+   }
+}
+
+@media screen and (max-width: 1350px) {
+   .offer__item__content__name {
+      max-width: 300px;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .offer__item__content__name {
+      max-width: 24vw;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .offer__item__content__name {
+      max-width: 34vw;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .offer__item__content__name {
+      max-width: 300px;
+   }
+}
+
+
+// @media screen and (max-width: 400px) {
+//    .offer__item__content__name {
+//       overflow: unset !important;
+//       max-width: 200px;
+//    }
+// }
+
+
+.cards__wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 24px;
+}

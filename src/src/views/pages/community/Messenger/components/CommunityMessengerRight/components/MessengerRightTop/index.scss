@@ -1,0 +1,29 @@
+.messenger__right__top{
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E7E9E9;
+    width: 100%;
+    &__right{
+        height: 44px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding-left: 24px;
+        margin-left: 5px;
+        border-left: 1px solid #E7E9E9;
+        .drop__triggle__icon{
+            transform: rotate(90deg);
+            width: 28px;
+            height: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .drop__triggle__icon__active{
+            background: #E8F2F1;
+            border-radius: 8px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.uploadImg_medium {
+   width: 200px;
+   max-width: 100%;
+   &_upload {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .upload__view,
+      .image__view {
+         max-height: 174px;
+         img {
+            object-fit: cover;
+            max-height: 174px;
+            height: 100%;
+         }
+      }
+   }
+   .upload__modal {
+      .upload__view {
+         max-width: 400px;
+      }
+   }
+   img {
+   }
+}
+
+.uploadImg_full {
+   width: 100%;
+   img {
+      object-fit: cover;
+      max-height: 600px;
+   }
+   .image__view__clear {
+      left: auto;
+      right: 16px;
+   }
+
+}

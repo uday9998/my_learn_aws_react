@@ -1,0 +1,38 @@
+.add_item {
+   border-radius: 8px;
+   background: #F7FCFC;
+   border: 1px dashed #24554E;
+   border-radius: 12px;
+   padding: 16px;
+   height: 73px;
+   box-sizing: border-box;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &:hover {
+      border: dashed 2px #24554E;
+   }
+}
+
+@media (max-width: 1023px) {
+   .add_item {
+   height: 67px;
+      .add_item__title {
+         span {
+            font-size: 14px;
+         }
+      }
+   }
+}
+
+@media (max-width: 600px) {
+   .add_item {
+      .add_item__title {
+         span {
+            font-size: 10px;
+         }
+      }
+   }
+}

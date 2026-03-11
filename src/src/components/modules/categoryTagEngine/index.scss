@@ -1,0 +1,24 @@
+.category-tag-engine {
+    button {
+        width: 36px;
+        height: 0;
+        border: none;
+        padding: 0;
+        &:hover {
+            cursor: pointer;
+        }
+        &:focus {
+            outline: none;
+        }
+        margin-left: 8px;
+        background-color: transparent;
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                    -ms-grid-row-align: center;
+                align-self: center;
+        svg {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

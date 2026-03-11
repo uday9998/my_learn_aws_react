@@ -1,0 +1,116 @@
+.createCertificatesContainer {
+   .adminContent{
+      width: 100%;
+      padding: 0px;
+      max-width: 100%;
+      overflow-y: hidden !important;
+   }
+   .header{
+      margin: 0px;
+   }
+   width: 100%;
+   .certificatesContentDesignLeft{
+      display: flex;
+      .certificate__navbar{
+      }
+   }
+   .uploadButton{
+      display: flex;
+      gap: 12px;
+   }
+   .adminContainer {
+      padding: 0px;
+   }
+   .header{
+      max-width: 100%;
+      width: 100%;
+      border-bottom: 1px solid #E7E9E9;
+      padding: 18px 24px;
+      background-color: #fff;
+   }
+   .certificateView{
+      width: 100%;
+
+   }
+   .subTitle {
+      font-family: AvenirNext;
+      font-size: 24px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: #3f4f65;
+   }
+
+   .main{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .filtersortByTitle {
+      margin-right: 12px;
+      font-family: Avenir;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #8a8b8b;
+   }
+
+   .navText{
+      color: rgb(63, 79, 101);
+      font-size: 14px;
+      line-height: 1.43;
+      font-family: Avenir Next;
+      margin-right: 24px;
+      margin-bottom: 2px;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-top: 24px;
+      margin-bottom: 1px;
+   }
+   .navText:hover{
+      border-bottom: 2px solid #006dff;
+      margin-bottom: -2px;
+      cursor: pointer;
+   }
+
+   .navTextActive{
+      color:#006dff;
+      border-bottom: 2px solid #006dff;
+      margin-bottom: -2px;
+   }
+
+   @media only screen and (max-width: 1445px) {
+      .templateScroll{
+       width: calc(100% - 350px);
+       overflow-X: scroll;
+
+      }
+   }
+   @media only screen and (max-width: 1500px) {
+      .saveButton{
+         margin-right: 50px;
+      }
+    }
+   @media only screen and (max-width: 1450px) {
+      .saveButton{
+         margin-right: 120px;
+      }
+    }
+   @media only screen and (max-width: 1370px) {
+      .saveButton{
+         margin-right: 170px;
+      }
+    }
+   @media only screen and (max-width: 1330px) {
+      .saveButton{
+         margin-right: 200px;
+      }
+    }
+
+}

@@ -1,0 +1,52 @@
+.settings--taxes {
+   padding: 24px 0px;
+   .inputNew {
+      padding: 10px 16px;
+      input {
+         padding: 0px;
+      }
+   }
+}
+
+.enableVatTaxing {
+   .enableVatTaxing__switch {
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+   }
+   &__billing__address{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .item{
+         display: flex;
+         gap: 8px;
+         align-items: center;
+      }
+   }
+}
+.taxesFormActions {
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 16px;
+}
+.enableVatTaxing__switch {
+   margin-right: 16px;
+}
+.enableVatTaxing{
+   display: flex;
+   flex-direction: column;
+}
+.enableVatTaxing__bottom{
+   &__address{
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      &__top{
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+      }
+   }
+}

@@ -1,0 +1,25 @@
+.checkoutPageSecond {
+   width: 100%;
+   min-height: 100vh;
+   background-color: inherit;
+   position: relative;
+   padding: 0 15px;
+   box-sizing: border-box;
+   .checkoutPageSecond-content {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+      .checkoutPageSecond-right {
+         max-width: 560px;
+         display: flex;
+         flex-direction: column;
+      }
+      .checkoutPageSecond-left {
+         max-width: 680px;
+         margin-right: 32px;
+         margin-bottom: 50px;
+      }
+
+   }
+}
+

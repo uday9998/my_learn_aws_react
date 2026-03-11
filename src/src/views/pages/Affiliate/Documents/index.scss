@@ -1,0 +1,25 @@
+.affiliate__documents{
+    background: #FFFFFF;
+    padding: 40px 48px;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    &__buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width: 1023px) {
+        padding: 0;
+        border: none;
+    }
+}

@@ -1,0 +1,25 @@
+.plan__pricing__page{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px 48px;
+  gap: 48px;
+  background: #FFFFFF;
+  border: 1px solid #E7E9E9;
+  border-radius: 12px;
+  .plan__create__right {
+    max-width: 40%;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 20px;
+    border: none;
+    gap: 24px;
+    flex-direction: column-reverse;
+
+    .plan__create__right {
+      max-width: none;
+    }
+  }
+}

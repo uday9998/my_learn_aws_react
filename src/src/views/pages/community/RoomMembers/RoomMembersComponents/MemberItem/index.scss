@@ -1,0 +1,123 @@
+.member__item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E7E9E9;
+    padding-bottom: 12px;
+    @media all and (max-width: 1024px) {
+        gap: 5px
+     }
+    &:last-child{
+        border: none;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        &__image{
+            position: relative;
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 12px;
+            }
+            &__status{
+                position: absolute;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                gap: 10px;
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                right: 0px;
+                bottom: 0px;
+                background: #36796F;
+                border: 2px solid rgba(255, 255, 255, 0.8);
+                border-radius: 60px;
+            }
+        }
+    }    
+    .delete__modal__content{
+        max-width: 414px;
+    }
+  
+    &__right{
+        .drop__triggle__icon{
+            padding: 6px;
+            border-radius: 8px;
+            border: 1px;
+        }
+        .drop__triggle__icon__active{
+            svg{
+                path{
+                    fill: #36796F;
+                }
+            }
+        }
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    &__report{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 32px;
+        border-radius: 12px;
+        &__top{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        &__buttons{
+            display: flex;
+            gap: 16px;
+            justify-content: flex-end;
+        }
+        &__options{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        &__user{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 5px 0px;
+            &__image{
+                position: relative;
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 8px;
+                }
+            }
+            &__status{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+                gap: 10px;
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                right: 0px;
+                bottom: 0px;
+                background: #36796F;
+                border: 1px solid rgba(255, 255, 255, 0.8);
+                border-radius: 60px;
+            }
+        }
+    }
+}
+.delete__modal{
+    margin-top: -12px;
+}
+.modal__new{
+    margin-top: -12px;
+}

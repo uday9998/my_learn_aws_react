@@ -1,0 +1,68 @@
+.lessonSettings__item {
+   margin-top: 24px;
+   width: 100%;
+   flex-wrap: wrap;
+   .drip__radio {
+      display: flex;
+      label {
+         cursor: pointer;
+      }
+      .drip_days {
+         margin-right: 24px;
+      }
+      span {
+         font-weight: 600;
+         font-size: 15px;
+         line-height: 1.33;
+         position: relative;
+         top: 2px;
+      }
+   }
+   .searchFilter__input {
+      min-width: 240px;
+   }
+
+   .specific_date,
+   .days_after_join {
+      cursor: pointer;
+   }
+
+   .react-datepicker-wrapper {
+      display: flex;
+
+      input {
+         border: 1px solid #cddaf1;
+         box-sizing: border-box;
+         border-radius: 4px;
+         font-family: 'Avenir Next regular';
+         width: 100%;
+         line-height: 1.5;
+         letter-spacing: 0.4px;
+         font-size: 16px;
+         padding: 11px 16px;
+         background: #fbfdff;
+         font-weight: bold;
+         color: #3f4f65;
+      }
+
+      input:focus {
+         box-shadow: 0 0 0px 2px #7cb740;
+         border: 1px solid #fbfdff;
+         outline: none;
+      }
+   }
+}
+
+.lessonSettings__buttons {
+   margin-top: 24px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.pre-draft {
+   display: flex;
+   align-items: center;
+   position: relative;
+}

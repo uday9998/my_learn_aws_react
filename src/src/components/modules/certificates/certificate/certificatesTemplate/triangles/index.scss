@@ -1,0 +1,106 @@
+.trianglesTemplate{
+   width: 776px;
+   height: 548px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   input {
+      border: none;
+      overflow: visible;
+      min-width: 400px;
+      background-color: inherit;
+      outline: none;
+      text-align:end;
+   }
+   textarea {
+      border: none;
+      overflow-y: visible;
+      height: 80px;
+      min-width: 250px;
+      resize: none;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   .trianglesTitle{
+      textarea{
+         font-size: 32px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1;
+         letter-spacing: normal;
+         text-align: right;
+         margin-top: 32px;
+      }
+   }
+   .trianglesBelowTitle{
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      text-align: right;
+   }
+   .trianglesStudentName{
+      font-family: BebasNeue;
+      font-size: 28px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: right;
+      margin-top: 16px;
+   }
+   .trianglesCourseName{
+      font-family: BebasNeue;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: right;
+      margin-top: 10px;
+   }
+   .trianglesNote{
+      // width: 262px;
+      height: 44px;
+      margin-top: 8px;
+      textarea{
+         min-width: 380px;
+         font-size: 16px;
+         font-weight: 400 !important; 
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+         text-align: right;
+      }
+   }
+   .trianglesDate{
+      font-size: 11.7px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+   }
+   .triangles{
+      height: 255px;
+      width: 562px;
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+   .trianglesLogo{
+      display: inline-block;
+      margin-top: 132px;
+      &.defaultLogo {
+         height: 64px;
+         width: 47px;
+      }
+   }
+}

@@ -1,0 +1,50 @@
+.tableBody {
+
+   .tableRow {
+      display: flex;
+      justify-content: space-between;
+      height: 42px;
+      align-items: center;
+      padding: 0 8px;
+      margin-bottom: 5px;
+      td {
+         flex: 1;
+         span {
+            text-transform: capitalize;
+            word-break: break-all;
+          }
+      }
+     
+   }
+}
+
+
+.tableHeader {
+   .tableRow {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 12px;
+      margin-bottom: 8px;
+     
+      th{
+         flex:1;
+         text-align: left;
+         opacity: 0.5;
+        
+         &:nth-child(3){
+            opacity: 1;
+            span {
+               color: #4b74ff !important;
+              
+            }
+            
+         }
+      }
+   }
+
+}
+
+.checked {
+   border: solid 2px #7cb740;
+   background-color: #fbfdff;
+}

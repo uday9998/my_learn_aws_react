@@ -1,0 +1,16 @@
+.textWithSeeMore {
+   display: flex;
+   align-items: flex-end;
+   .see-more-btn {
+      display: block;
+      font-family: var(--primaryFont);
+      line-height: 168%;
+      color: var(--memberTextColor);
+      white-space: nowrap;
+      background: inherit;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+   }
+}
+

@@ -1,0 +1,76 @@
+.addCoursePopup {
+   padding: 16px 48px;
+   padding-bottom: 56px;
+
+   .addCoursePopup__form {
+      margin-bottom: 24px;
+      margin-top: 20px;
+
+      .textInput {
+         input{
+            height: 48px;
+         }
+         label {
+            span {
+               font-size: 16px;
+               font-family: 'Avenir Next regular';
+               font-weight: 600;
+            }
+         }
+
+         .textInput__input {
+            margin-top: 8px;
+            padding: 7px 12px;
+            font-size: 12px;
+         }
+      }
+   }
+
+   .addCoursePopup__btns {
+      display: flex;
+      justify-content: flex-end;
+
+      .btnWrapper {
+         &:first-of-type {
+            width: 92px;
+         }
+
+         &:last-of-type {
+            width: 200px;
+         }
+
+         button {
+            width: 100%;
+            min-width: 90px;
+            padding: 0;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .addCoursePopup {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      height: calc(100vh - 80px);
+      .addCoursePopup__btns {
+         flex-direction: column-reverse !important;
+         justify-content: baseline !important;
+
+         .btnWrapper {
+            width: 100% !important;
+            margin: 0 !important;
+
+            &:last-of-type {
+               margin-bottom: 16px !important;
+            }
+
+            button {
+               width: 100%;
+               height: 48px;
+            }
+         }
+      }
+   }
+}

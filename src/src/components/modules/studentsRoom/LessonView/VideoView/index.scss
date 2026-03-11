@@ -1,0 +1,46 @@
+.LessonVideo, .LessonIframe {
+  @media(min-width: 1024px) {
+    max-width: 100%;
+    width: var(--video-width);
+    margin: auto;
+  }
+}
+
+.LessonVideo {
+   flex-direction: column;
+   gap: 12px;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   max-width: 100%;
+   box-sizing: content-box;
+   &__download {
+      justify-content: flex-end !important;
+      button {
+         color: var(--buttonBgcolor);
+         border-color: var(--buttonBgcolor);
+         svg{
+            path {
+               fill: var(--buttonBgcolor);
+            }
+         }
+      }
+      button:hover {
+         background-color: #fff;
+      }
+   }
+}
+
+.Lesson__full {
+   .LessonVideo {
+      max-width: 100%;
+   }
+}
+
+.LessonVideoShowPlaybar .vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar, .LessonVideoShowPlaybar .vjs-has-started .vjs-control-bar {
+  // opacity: 0;
+}
+
+.LessonVideoSmallButton .video-js .vjs-big-play-button {
+   //font-size: 2em;
+}

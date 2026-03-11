@@ -1,0 +1,83 @@
+.offer__lesson__block {
+    width: 100%;
+    display: flex;
+    padding: 20px 20px 12px;
+    // border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+
+    .offer__lesson__block__left__btns {
+        display: flex;
+        gap: 16px;
+    }
+
+    @media screen and (max-width:1024px) {
+       // max-width: 343px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .progress{
+            width: 100%;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media screen and (max-width:1024px) {
+            flex-direction: column;
+            gap: 24px;
+            .offer__lesson__block__left__btns{
+                width: 100%;
+            }
+            .offer__editor__button {
+                width: 100%;
+                max-width: 100%;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 132%;
+                font-family:  var(--primaryFont);
+            }
+
+        }
+    }
+
+    &__left {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        &__img {
+            background: #f3f4f4;
+            border-radius: 4px;
+            padding: 14px;
+            svg {
+                display: block;
+            }
+        }
+        &__text {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         gap: 8px;
+        }
+        &__instructor {
+            display: flex;
+            gap: 8px
+        }
+        @media screen and (max-width:1024px) {
+            flex-direction: column;
+
+        }
+
+        &__image {
+            width: 145px;
+            height: 82px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+    }
+}

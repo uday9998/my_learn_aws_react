@@ -1,0 +1,26 @@
+.timeSetting {
+   width: 100%;
+   box-sizing: border-box;
+   margin-top: 24px;
+   .SelectElement .SelectElement__drop-down .SelectElement__option {
+      padding: 10px 32px 10px 27px;
+   }
+   .timeSetting__btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 24px;
+      >div {
+         width: 100%;
+         &:first-of-type {
+            max-width: 120px;
+            margin-right: 16px;
+         }
+         &:last-of-type {
+            max-width: 150px;
+         }
+         button {
+            width: 100%;
+         }
+      }
+   }
+}

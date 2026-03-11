@@ -1,0 +1,612 @@
+.AutomationCreateContent {
+   width: 100%;
+   overflow: auto;
+   min-height: calc( 100vh - 75px );
+   max-height:calc( 100vh - 75px );
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   scrollbar-width: thin;
+   padding: 0 0 50px 0;
+   padding-top: 100px;
+   box-sizing: border-box;
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+}
+.addAutomationContent {
+    width: 100%;
+    .conditionEnd {
+      cursor: pointer;
+      text-align: center;
+      height: 45px;
+      position: relative;
+      .conditionalTopLineGrey {
+        width: 0;
+        margin: 8px auto;
+        height: 19.5px;
+        border: 1px solid #E7E9E9;
+      }
+      span {
+         font-size: 12px;
+      }
+      .conditionEndContent {
+         background: rgb(63, 79, 101);
+      padding: 12px 45.5px;
+      background: #E7E9E9;
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      }
+    }
+    .conditionIcon {
+       text-align: center;
+       height: 45px;
+       position: relative;
+       margin-top: 25px;
+       .conditionIconPosition {
+        width: 35px;
+        margin: -3px auto 0 auto;
+        cursor: pointer;
+       }
+       .conditionalTopLineGrey {
+         width: 0;
+         margin: 0 auto;
+         height: 24px;
+         border: 1px solid #E7E9E9;
+       }
+    }
+
+
+    .addTriggerContent {
+        display: flex;
+        width: 100%;
+        margin: 0px auto;
+        justify-content: center;
+        .triggerCardWrapper {
+            width: 25%;
+            max-width: 274px;
+            padding-left: 16px;
+            height: 73px;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            flex-wrap: wrap;
+            gap: 12px;
+
+            & > .triggerCardWrapper {
+                min-width: max-content;
+
+                .delete__action {
+                    bottom: -33px;
+                }
+            }
+        }
+    }
+    .item__title {
+       span {
+          text-transform: capitalize;
+          white-space: nowrap;
+       }
+    }
+    .trigger_line_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .trigger_line {
+            border: 2px solid   #E7E9E9;
+            border-top: none;
+            height: 19.5px;
+        }
+    }
+    .addStepContent {
+        width: 100% ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .w-full {
+            position: relative;
+            width:100%;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .stepCardWrapper {
+            width: 25%;
+            margin: 0 auto;
+            min-width: 200px;
+            max-width: 250px;
+        }
+        .addIconWrapper {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div {
+                svg {
+                    margin-bottom: -7px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .addIconLine {
+            width: 0;
+            margin: 8px auto;
+            border-left: 1px solid #E7E9E9;
+            border-right: 1px solid #E7E9E9;
+            height: 19.5px;
+        }
+        .conditionalSplitWrapper {
+            width: 100%;
+            .conditionalSplitBottom {
+               width: 50%;
+               height: 130px;
+               margin: 0 auto;
+               position: relative;
+               top: -7px;
+               .conditionalTopLine {
+                   width: 0;
+                   margin: 0 auto;
+                   height: 24px;
+                   border: 1px solid #E7E9E9;
+
+               }
+               .conditionalSplitTypeContent {
+                   width: 100%;
+                   margin: 0 auto;
+                   height: 80px;
+                   border: 2px solid #E7E9E9;
+                   border-top: none;
+                   margin-bottom: -4px;
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: flex-start;
+                   font-size: 14px;
+                   position: relative;
+                   box-sizing: border-box;
+
+                   .conditionalSplitYes {
+                       width: 68px;
+                       height: 32px;
+                       background-color: #7cb740;
+                       color:#fff;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       border-radius: 4px;
+                       position: absolute;
+                       top: -16px;
+                       left: -34px;
+                   }
+
+                   .conditionalSplitNo {
+                       width: 68px;
+                       height: 32px;
+                       background-color: #ff647c;
+                       color:#fff;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       border-radius: 4px;
+                       position: absolute;
+                       top: -16px;
+                       right: -34px;
+                   }
+               }
+               .conditionalSplitAddIcons {
+                   width: 100%;
+                   height: 24px;
+                   display: flex;
+                   justify-content: space-between;
+                   position: relative;
+                   div {
+                       &:first-child {
+                           position: absolute;
+                           left: -12px;
+                           cursor: pointer;
+                           z-index: 100000;
+                       }
+                       &:last-child {
+                           position: absolute;
+                           right: -11px;
+                           cursor: pointer;
+                           z-index: 100000;
+                       }
+                   }
+               }
+           }
+
+            .conditionalSplitHeader {
+                height: 42px;
+                margin: 0 auto;
+                min-width: 102px;
+                .conditionalTopLine {
+                    width: 0;
+                    margin: 0 auto;
+                    height: 24px;
+                    border: 1px solid #E7E9E9;
+                }
+                .conditionalSplitTypeContent {
+                  //   width: 100%;
+                  //   margin: 0 auto;
+                  //   height: 80px;
+                  //   border: 2px solid #E7E9E9;
+                  //   border-bottom: none;
+                  //   margin-bottom: -4px;
+                  //   display: flex;
+                  //   justify-content: space-between;
+                  //   align-items: flex-start;
+                  //   font-size: 14px;
+                  //   position: relative;
+                  //   box-sizing: border-box;
+
+                    .conditionalSplitYes {
+                        width: 68px;
+                        height: 32px;
+                        background-color: #7cb740;
+                        color:#fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 4px;
+                        position: absolute;
+                        top: -16px;
+                        left: -34px;
+                    }
+
+                    .conditionalSplitNo {
+                        width: 68px;
+                        height: 32px;
+                        background-color: #ff647c;
+                        color:#fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 4px;
+                        position: absolute;
+                        top: -16px;
+                        right: -34px;
+                    }
+                }
+                .conditionalSplitAddIcons {
+                    width: 100%;
+                    height: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    div {
+                        &:first-child {
+                            position: absolute;
+                            left: -12px;
+                            cursor: pointer;
+                            z-index: 100000;
+                        }
+                        &:last-child {
+                            position: absolute;
+                            right: -11px;
+                            cursor: pointer;
+                            z-index: 100000;
+                        }
+                    }
+                }
+            }
+            .conditionalSplitContent {
+             //  display: flex;
+             //  justify-content: space-between;
+               margin-top: -41px;
+            //   border: 2px solid #E7E9E9;
+            //   border-top: none;
+            //   padding-bottom: 20px;
+               display: flex;
+               justify-content: center;
+               .conditionalTopLine {
+                  width: 0;
+                  margin: 0 auto;
+                  height: 24px;
+                  border: 1px solid #E7E9E9;
+              }
+              .leftIconEnd {
+               min-width: 200px;
+               margin-bottom: 3px;
+               position: relative;
+              }
+               .leftIcon {
+                  min-width: 200px;
+                  margin-bottom: -6px;
+                  position: relative;
+                  .conditionalSplitTypeContent {
+                     width: 40px;
+                     height: 26px;
+                     color: #fff;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                     border-radius: 4px;
+                     position: absolute;
+                     top: -8px;
+                     right: 0;
+                     margin: 0 auto;
+                     left: 0;
+                     z-index: 1;
+                  }
+                 .yesIcon {
+                     display: inline-block;
+                     cursor: pointer;
+                  }
+               }
+               .rightIconEnd {
+                  min-width: 200px;
+                  margin-bottom: 3px;
+                  position: relative;
+               }
+               .rightIcon {
+                  min-width: 200px;
+                  margin-bottom: -6px;
+                  position: relative;
+                  .conditionalSplitTypeContent {
+                         width: 37px;
+                        height: 26px;
+                        color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 4px;
+                        position: absolute;
+                        top: -8px;
+                        right: 0;
+                        margin: 0 auto;
+                        left: 0;
+                  }
+                 .noIcon {
+                     display: inline-block;
+                     cursor: pointer;
+                  }
+               }
+            }
+
+            .conditionalSplitLeftContent {
+               text-align: center;
+               position: relative;
+               padding: 0px;
+               transition: all 0.5s;
+               -webkit-transition: all 0.5s;
+               -moz-transition: all 0.5s;
+               display: inline-block;
+               vertical-align: top;
+               margin: 0 -2px 0 -2px;
+               top: 25px;
+            }
+
+            .conditionalSplitRightContent {
+               text-align: center;
+               position: relative;
+               padding: 0px;
+               transition: all 0.5s;
+               -webkit-transition: all 0.5s;
+               -moz-transition: all 0.5s;
+               display: inline-block;
+               vertical-align: top;
+               margin: 0 -2px 0 -2px;
+               top: 25px;
+            }
+
+            .conditionalSplitLeftContent::after {
+               content: '';
+               position: absolute;
+               left: 50%;
+               border-top: 2px solid #E7E9E9;
+               width: 50% ;
+               height: 20px;
+              // min-width: 102px;
+            }
+
+            .conditionalSplitLeftContent::before {
+               content: '';
+               position: absolute;
+               top: 0;
+               left: 50%;
+               border-top: 2px solid #E7E9E9;
+               width: 50% ;
+               height: 20px;
+             //  min-width: 102px;
+            }
+
+
+            .conditionalSplitRightContent::before {
+               content: '';
+               position: absolute;
+               top: 0;
+               border-top: 2px solid #E7E9E9;
+               width: 50% ;
+               height: 20px;
+               left: auto;
+               right: 50%;
+             //  min-width: 102px;
+            }
+
+            .conditionalSplitRightContent::after {
+               content: '';
+               position: absolute;
+               border-top: 2px solid #E7E9E9;
+               width: 50% ;
+               height: 20px;
+               left: auto;
+               right: 50%;
+              // min-width: 102px;
+            }
+
+            .conditionalSplitLeftContent:empty::after,
+            .conditionalSplitLeftContent:empty::before,
+            .conditionalSplitRightContent:empty::after,
+            .conditionalSplitRightContent:empty::before {
+               border: 0 none;
+            }
+        }
+    }
+}
+
+
+// @media (max-width: 1023px) {
+//     .addAutomationContent {
+//         width: 100%;
+//         .addTriggerContent {
+//             display: flex;
+//             width: 100%;
+//             justify-content: center;
+//             .triggerCardWrapper {
+//                 width: 25%;
+//                 max-width: 274px;
+//                 padding-left: 8px;
+//                 height: 67px;
+//                 &:first-child {
+//                     padding-left: 0;
+//                 }
+//             }
+//         }
+//         .addStepContent {
+//             width: 100% ;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             flex-direction: column;
+
+
+//             .stepCardWrapper {
+//                 width: 25%;
+//                 margin: 0 auto;
+//             }
+//             .addIconLine {
+//                 width: 0;
+//                 margin: 0 auto;
+//                 border-left: 1px solid #E7E9E9;
+//                 border-right: 1px solid #E7E9E9;
+//                 height: 20px;
+//                 &:first-of-type {
+//                     margin-bottom: -2px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 600px) {
+//     .addAutomationContent {
+//         width: 100%;
+//         .addTriggerContent {
+//             display: flex;
+//             width: 100%;
+//             justify-content: center;
+//             .triggerCardWrapper {
+//                 width: 25%;
+//                 max-width: 274px;
+//                 padding-left: 4px;
+//                 height: 67px;
+//                 &:first-child {
+//                     padding-left: 0;
+//                 }
+//             }
+//         }
+//         .trigger_line_wrapper {
+//             .trigger_line {
+//                 height: 18px;
+//             }
+//         }
+//         .addStepContent {
+//             width: 100% ;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             flex-direction: column;
+
+//             .stepCardWrapper {
+//                 width: 25%;
+//                 margin: 0 auto;
+//             }
+//             .addIconWrapper {
+//                 height: 38px;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 // margin-bottom: -6px;
+//                 div {
+//                     svg {
+//                         margin-bottom: -7px;
+//                     }
+//                 }
+//             }
+//             .addIconLine {
+//                 width: 0;
+//                 margin: 0 auto;
+//                 border-left: 1px solid #E7E9E9;
+//                 border-right: 1px solid #E7E9E9;
+//                 height: 20px;
+//                 &:first-of-type {
+//                     margin-bottom: -2px;
+//                 }
+//             }
+//             .conditionalSplitWrapper {
+//                 .conditionalSplitHeader {
+//                     height: 94px;
+//                     width: 40%;
+//                     .conditionalTopLine {
+//                         height: 20px;
+//                     }
+//                     .conditionalSplitTypeContent {
+//                         font-size: 12px;
+//                         height: 50px;
+//                         .conditionalSplitYes {
+//                             width: 50px;
+//                             height: 28px;
+//                             top: -14px;
+//                             left: -25px;
+//                         }
+//                         .conditionalSplitNo {
+//                             width: 50px;
+//                             height: 28px;
+//                             top: -14px;
+//                             right: -25px;
+//                         }
+//                     }
+//                 }
+//                 .conditionalSplitContent {
+//                     display: flex;
+//                     justify-content: space-between;
+//                     margin-top: -7px;
+//                     margin-bottom: 50px;
+//                     .conditionalSplitLeftContent {
+//                         width: 50%;
+//                         height: auto;
+//                         // border: 2px solid #E7E9E9;
+//                     }
+//                     .conditionalSplitRightContent {
+//                         width: 50%;
+//                         height: auto;
+//                         // border: 2px solid #E7E9E9;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+.delete__action {
+   cursor: pointer;
+}

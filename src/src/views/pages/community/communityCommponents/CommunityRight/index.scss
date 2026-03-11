@@ -1,0 +1,59 @@
+.community__right {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   min-width: 331px;
+   @media screen and (max-width:1440px) {
+    min-width: min-content;
+   }
+   .colendar{
+       z-index: 1;
+   }
+   &__info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      box-sizing: border-box;
+      background: #ffffff;
+      border-radius: 12px;
+    //   .status__simple{
+    //       margin-top: 2px;
+    //       margin-bottom: 12px;
+    //   }
+      &__blocks{
+          margin-top: 24px;
+          display: flex;
+          width: 100%;
+          gap: 12px;
+      }
+      &__block{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 0px 6px;
+        gap: 4px;
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+      }
+   }
+   .colendar{
+       box-shadow: none;
+       filter: none;
+       margin: 0px auto;
+       @media screen and (min-width: 1440px) {
+           width: 100%;
+           .days__week{
+           }
+           .days__area{
+               .area{
+               }
+           }
+       }
+   }
+}

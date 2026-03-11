@@ -1,0 +1,26 @@
+.mob-plans {
+   .mob-plansCard {
+      margin: 24px 0;
+      .itemWrapper {
+         border: solid 1px #cddaf1;
+         background-color: #fbfdff;
+      }
+   }
+   .plans__dataTable {
+      height: 288px;
+      position: relative;
+      .SelectedWrapper {
+         height: 100%;
+      }
+      .plansData__btn {
+         position: absolute;
+         width: calc(100% - 48px);
+         height: 48px;
+         left: 24px;
+         bottom: 32px;
+         button {
+            font-size: 14px!important;
+         }
+      }
+   }
+}

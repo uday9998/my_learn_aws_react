@@ -1,0 +1,114 @@
+.sketch-picker {
+   .flexbox-fix {
+      > div {
+         &:nth-child(1) {
+            > div {
+               height: 15px !important;
+               &:nth-child(2) {
+                  margin-top: 0 !important;
+               }
+               > div {
+                  > div {
+                     > div {
+                        > div {
+                           width: 5px !important;
+                           height: 13px !important;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.colorInput {
+   width: 100%;
+   ::placeholder {
+      color: #8a94a2;
+   }
+
+   label {
+      width: 100%;
+   }
+
+   .colorInput__input {
+      box-sizing: border-box;
+      font-family: "Inter";
+      width: 100%;
+      font-size: 14px;
+      padding: 10px 44px 10px 16px;
+      font-weight: 400;
+      color: #131f1e;
+      line-height: 168%;
+      background: #ffffff;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+      height: 44px;
+   }
+
+   .colorInput__input:focus {
+      box-shadow: 0 0 0px 2px rgb(36, 85, 78);
+      border: 1px solid #ffffff;
+      outline: none;
+   }
+
+   .colorInput__wrapper {
+      display: flex;
+
+      .colorInput__inputWrapper {
+         position: relative;
+         width: 100%;
+         display: flex;
+         gap: 12px;
+         align-items: center;
+         .colorHash {
+            position: absolute;
+            right: 12px;
+            transform: translateY(-50%);
+            top: 53%;
+         }
+         .colorInput__icon {
+            // position: absolute;
+            // right: 32px;
+            // transform: translateY(-50%);
+            // top: 50%;
+         }
+
+         .colorInput__picker {
+            // position: absolute;
+            // right: 32px;
+            // transform: translateY(-50%);
+            // top: 50%;
+         }
+
+         .colorInput__pickerMainhub {
+            position: absolute;
+            right: 1px;
+            transform: translateY(-50%);
+            top: 50%;
+         }
+      }
+
+      .hintIcon {
+         margin-left: 12px;
+         display: flex;
+         align-items: flex-end;
+
+         svg {
+            min-width: 24px;
+            min-height: 24px;
+            margin-bottom: 15px;
+         }
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+.custom-popover {
+   z-index: 20000 !important;
+}

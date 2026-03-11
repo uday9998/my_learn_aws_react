@@ -1,0 +1,50 @@
+.affiliate__main{
+    padding: 34px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .tabs__line{
+            justify-content: center;
+            max-width: max-content;
+            gap: 24px;
+            border-bottom: none;
+        }
+        &__wrapper{
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 40px 48px 48px;
+            gap: 24px;
+        }
+
+        @media screen and (max-width: 1023px) {
+            
+            &__wrapper {
+                padding: 0;
+                border: none;
+                margin-top: 32px;
+            }
+
+            .tabs__line {
+                gap: 16px;
+                span {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}

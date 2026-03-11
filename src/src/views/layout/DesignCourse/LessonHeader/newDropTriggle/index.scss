@@ -1,0 +1,135 @@
+
+.triggle__popover__lesson {
+   padding: 4px 0px;
+   background: #ffffff;
+   border: 1px solid rgba(19, 31, 30, 0.1);
+   box-shadow: 0px 4px 10px rgba(19, 31, 30, 0.1),
+      1px 2px 2px rgba(19, 31, 30, 0.04);
+   border-radius: 12px;
+   @media screen and (max-width: 1023px) {
+      position: fixed;
+      top: auto;
+      width: 100%;
+      bottom: 0;
+      border-radius: 12px 12px 0px 0px;
+      left:0;
+   }
+   .triggle__popover__lesson__btns {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 16px;
+      padding: 16px;
+      .grey__line {
+         height: 1px;
+         background: #E7E9E9;
+         width: 100%;
+      }
+   }
+   &__flex {
+      display: flex;
+      flex-direction: column;
+   }
+   &__item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 12px 16px;
+      gap: 12px;
+      background: #ffffff;
+      border-top-right-radius: 12px;
+      &__border{
+         border-top: 1px solid #e7e9e9;
+         border-top-right-radius: 0;
+      }
+   }
+   &__item__trash {
+      path {
+         fill: #d12d36;
+      }
+      span {
+         color: #d12d36;
+      }
+   }
+   &__item__toggleOffM {
+      path {
+         fill: #d12d36;
+      }
+      span {
+         color: #d12d36;
+      }
+   }
+   .sort__title {
+      display: none;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      padding: 12px 16px;
+      box-sizing: border-box;
+      svg {
+         cursor: pointer;
+      }
+      @media screen and (max-width: 1023px) {
+         display: flex;
+      }
+   }
+}
+
+.drop__triggle__icon {
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+}
+
+
+.triggle__popover__lesson__one {
+   padding: 4px 0px;
+   background: #ffffff;
+   border: 1px solid rgba(19, 31, 30, 0.1);
+   box-shadow: 0px 4px 10px rgba(19, 31, 30, 0.1),
+      1px 2px 2px rgba(19, 31, 30, 0.04);
+   display: flex;
+   border-radius: 12px;
+   align-items: center;
+   justify-self: center;
+   .triggle__popover__lesson__flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-self: center;
+   }
+   .triggle__popover__lesson__item {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 7px 16px;
+      gap: 12px;
+      background: #ffffff;
+   }
+
+   .triggle__popover__lesson__item__toggleOffM {
+      path {
+         fill: #d12d36;
+      }
+      span {
+         color: #d12d36;
+      }
+   }
+
+}
+
+.MuiPaper-rounded {
+   border-radius: 12px !important;
+}
+
+
+.drop__lesson__back {
+   background: rgba(19, 31, 30, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 100vh;
+}

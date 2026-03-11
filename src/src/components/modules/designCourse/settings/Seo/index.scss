@@ -1,0 +1,11 @@
+.seo {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 32px;
+
+   .seoBtn {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+}

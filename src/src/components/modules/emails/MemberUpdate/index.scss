@@ -1,0 +1,230 @@
+.memberUpdate {
+   width: 100%;
+   box-sizing: border-box;
+   padding: 24px 40px 62px 40px;
+   .multiSelect .multiSelect__drop-down .multiSelect__option {
+      padding: 10px 32px 10px 27px;
+  }
+  .loader-spinner {
+   position: relative;
+   width: 100%;
+   height: inherit;
+   .loading__SpinnerContainer {
+      position: absolute;
+      top: -27px;
+      left: 48%;
+   }
+}
+   .memberUpdat__select {
+      display: flex;
+      align-items: flex-end;
+      .SelectElement__drop-down {
+         max-height: 204px;
+         .SelectElement__option {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 10px 32px 10px 63px;
+            &:hover {
+               background-color: rgba(124, 183, 64, 0.05);
+
+               span {
+                  color: #7cb740 !important;
+               }
+               &:before {
+                  content: url(~assets/images/checkbox.png);
+                  position: absolute;
+                  display: block;
+                  left: 32px;
+                  top: 7px;
+               }
+
+            }
+
+         }
+      }
+   }
+   .email_textcontent {
+      display: flex;
+      flex-direction: column;
+      .ck-editor__main {
+         .ck-content{
+            height: 200px;
+         }
+      }
+      span{
+         text-align: end;
+         text-decoration: underline
+      }
+   }
+   .memberUpdate__btn_step1 {
+      button {
+         width: 180px;
+      }
+   }
+   .memberUpdate__btn__send {
+      button {
+         padding-left: 0;
+         padding-right: 0;
+      }
+   }
+   .memberUpdate__btns {
+      display: flex;
+      justify-content: flex-end;
+      @media screen and (max-width: 1023px) {
+         flex-direction: column;
+      }
+      .memberUpdate__btn {
+         width: 100%;
+         button {
+            width: 100%;
+         }
+      //   max-width: 180px;
+         &:first-of-type {
+          //  max-width: 136px;
+           margin-right: 16px;
+         }
+      }
+      .memberUpdate__btn__draft {
+         margin-right: 16px;
+      }
+   }
+   .memberUpdate__btn {
+      margin-top: 24px;
+      text-align: right;
+   }
+
+   .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+      border-color: #cddaf1;
+      background: #fbfdff;
+      border-radius: 0 0 4px 4px;
+      outline: none;
+
+  }
+  .ck.ck-editor__main>.ck-editor__editable.ck-focused {
+      box-shadow: 0 0 0px 1px #7cb740 inset;
+      outline: none;
+      background: #fbfdff;
+      border-radius: 0 0 4px 4px;
+      border-color: #7cb740;
+  }
+
+  .ck.ck-toolbar {
+      border: 1px solid  #cddaf1;
+      background: #f5faff;
+  }
+
+  .ck.ck-button .ck-tooltip, a.ck.ck-button .ck-tooltip {
+     display: none;
+  }
+  .ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar {
+   border-radius: 4px 4px 0px 0px;
+   height: 48px;
+  }
+
+  .ck-file-dialog-button {
+   display: none;
+}
+
+}
+
+.email-review {
+    width: 100%;
+    .memberUpdate__btns {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0px 40px 22px 40px;
+      @media screen and (max-width: 1023px) {
+         flex-direction: column;
+      }
+      .memberUpdate__btn {
+         width: 100%;
+         button {
+            width: 100%;
+         }
+     //    max-width: 180px;
+         &:first-of-type {
+          //  max-width: 136px;
+           margin-right: 16px;
+         }
+      }
+      .memberUpdate__btn__draft {
+         margin-right: 16px;
+      }
+   }
+   .memberUpdate__btn {
+      margin-top: 24px;
+      text-align: right;
+   }
+    .email-review__title {
+       padding: 40px 0px 0px 40px;
+       margin-bottom: 8px;
+    }
+   .email-review__field {
+      display: flex;
+      border-bottom: solid 1px #cddaf1;
+      padding: 16px 16px 16px 40px;
+      width: 100%;
+      box-sizing: border-box;
+      .field__1 {
+         flex: 1;
+      }
+      .field__2 {
+         flex: 4;
+      }
+   }
+   span {
+      word-break: break-word;
+   }
+   .email-review__content{
+      padding: 24px 40px 24px 40px;
+   }
+   .memberUpdate__btn {
+      margin-top: 24px;
+      text-align: right;
+   }
+}
+
+@media screen and (max-width: 1305px) {
+   .memberUpdate {
+      padding: 24px 20px 62px 20px;
+   }
+  /* .memberUpdate__btns {
+      margin-top: 16px;
+      flex-direction: column-reverse;
+      .memberUpdate__btn {
+         max-width: none!important;
+         &:nth-of-type(2) {
+            margin: 16px 0;
+         }
+         button {
+            height: 48px!important;
+         }
+      }
+   }*/
+}
+
+@media screen and (max-width: 720px) {
+   .memberUpdate {
+      padding: 24px 24px 32px 24px;
+      .memberUpdat__select {
+         flex-wrap: wrap;
+         .SelectElement:first-of-type {
+            margin-bottom: 16px;
+         }
+      }
+      // .memberUpdate__btns {
+      //    margin-top: 16px;
+      //    flex-direction: column-reverse;
+      //    .memberUpdate__btn {
+      //       max-width: none!important;
+      //       &:nth-of-type(2) {
+      //          margin: 16px 0;
+      //       }
+      //       button {
+      //          height: 48px!important;
+      //       }
+      //    }
+      // }
+   }
+}

@@ -1,0 +1,106 @@
+.landingPricing {
+   background-color: rgba(255, 255, 255, 0.99);
+   .landingPricing__main {
+      max-width: 1128px;
+      margin: 24px 40px;
+      box-sizing: border-box;
+
+      .landingPricing__plans {
+         display: flex;
+         justify-content: space-between;
+         position: relative;
+         margin-bottom: 24px;
+         >div {
+            flex: 1 1;
+         }
+
+         .SelectedWrapper {
+            background-color: #ffffff;
+         }
+
+         .active {
+            border-color: #006dff;
+            box-shadow: 0 2px 24px 0 rgba(143, 146, 155, 0.2);
+         }
+
+         .planCardButton {
+            button {
+               height: 40px !important;
+            }
+         }
+      }
+      .mob-cardContent{
+         margin-top: 16px;
+         position: relative;
+      }
+   }
+   .asd {
+      position: absolute;
+      background: linear-gradient(to bottom, rgba(210, 228, 255, 0.3), rgba(195, 223, 255, 0.3));
+      background-color: #eff6ff;
+      height: 320px;
+      width: 100%;
+      top: 0;
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .landingPricing {
+      .pricingHeader {
+         padding: 16px;
+         height: initial;
+         // background-image: none;
+         .pricingHeader__bottom {
+            text-align: start;
+            margin-top: 25px;
+            .textBasic_size_extraLarge {
+               font-size: 24px !important;
+            }
+            .pricingHeader__bottom-text {
+               margin: 24px 0;
+               span {
+                  font-size: 16px;
+               }
+            }
+         }
+      }
+      .mob-cardContent {
+         padding: 16px 16px;
+         position: relative;
+         .landingPricing__main {
+            margin: 0;
+            width: initial;
+            max-width: 100%;
+            .landingPricing__plans{
+               flex-direction: column;
+               margin-top: 0;
+            }
+            .mob-margin {
+               margin: 24px 0;
+            }
+            .commonQuestions__list {
+               .commonQuestions__left {
+                  min-width: 100%;;
+                  .commonQuestion {
+                     width: 100%;
+                  }
+               }
+            }
+         }
+      }
+      .landingGetStarted {
+         margin-left: 0;
+         margin-top: 24px;
+         align-items: flex-start;
+         padding: 0 16px;
+         width: initial;
+         > div:nth-of-type(2){
+            padding: 0;
+            text-align: start;
+         }
+         > div:last-of-type{
+           width: 100%;
+         }
+      }
+   }
+}

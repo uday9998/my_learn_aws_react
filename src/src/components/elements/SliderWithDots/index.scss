@@ -1,0 +1,139 @@
+.sliderWithDots {
+
+   &.template7__dots {
+      & > ul > li {
+         display: inline-table;
+      }
+   
+      & > ul > li.slick-active > button::before {
+         width: 24px;
+         border-radius: 15px;
+         transition: .2s all;
+         left: -8px;
+      }
+   }
+
+   .mainSliderNext {
+      &::before {
+         display: none;
+      }
+     right: -56px;
+      z-index: 1;
+
+      &.new_arrow {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         top: -35%;
+         right: 0;
+         background-color: #464646;
+         border-radius: 50%;
+         border: 1px solid #909090;
+         width: 32px;
+         height: 32px;
+
+         svg {
+            width: 6px;
+            height: 11px;
+         }
+
+         @media (max-width: 1460px) {
+            top: -30% !important;
+            left: 93% !important;
+         }
+      }
+   }
+
+
+   .mainSliderPrev {
+      &::before {
+         display: none;
+      }
+      left: -56px;
+      z-index: 1;
+
+      &.new_prev_arrow {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         top: -35%;
+         left: 84%;
+         width: 32px;
+         height: 32px;
+         background-color: #464646;
+         border-radius: 50%;
+         border: 1px solid #909090;
+
+         svg {
+            width: 6px;
+            height: 11px;
+         }
+
+         @media (max-width: 1460px) {
+            top: -30% !important;
+            left: 84% !important;
+         }
+      }
+   }
+
+   .slick-dots li {
+      width: 8px;
+      height: 8px;
+      button {
+         width: 8px;
+         height: 8px;
+      }
+   }
+
+   .slick-dots li button:before {
+      background: #fff;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      content: '';
+   }
+
+   .slick-dots {
+      bottom: -22px;
+   }
+
+
+   .slick-prev, .slick-next {
+      width: 40px;
+      height: 40px;
+   }
+}
+
+.testimonials-content-template1 .slick-list, .testimonials-content-template1 .slick-slider {
+   max-width: 456px;
+   width: 100%;
+}
+
+.testimonials-content-template2 .slick-dots li button:before {
+   background: #006dff;
+}
+
+.testimonials-content-template2 .slick-list, .testimonials-content-template2 .slick-slider {
+   max-width: 560px;
+   width: 100%;
+}
+
+.testimonials-content-template3 .slick-dots li button:before {
+   background: #006dff;
+}
+
+.testimonials-content-template3 .slick-list, .testimonials-content-template3 .slick-slider {
+   max-width: 507px;
+   width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+   .testimonials-content-template1 {
+      .mainSliderNext {
+        right: -32px;
+      }
+      .mainSliderPrev {
+         left: -32px;
+      }
+  }
+}

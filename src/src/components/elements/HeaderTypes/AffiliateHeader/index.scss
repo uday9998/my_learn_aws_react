@@ -1,0 +1,32 @@
+.affiliate__create__header{
+    display: flex;
+    flex-direction: column;
+    &__wrapper{
+        background-color: white;
+        border-bottom: 1px solid #E7E9E9;
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__actions{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            .line{
+                margin-right: 8px;
+                width: 1px;
+                background: #E7E9E9;
+                height: 24px;
+            }
+            &__buttons{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+    }
+    &__line{
+        background-color: #24554E;
+        height: 4px;
+    }
+}

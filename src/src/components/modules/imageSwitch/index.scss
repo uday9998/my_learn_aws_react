@@ -1,0 +1,14 @@
+.image-switch {
+  img {
+    border-radius: 8px;
+    -webkit-box-shadow: 8px 8px 32px 0 rgba(68, 75, 112, 0.17);
+            box-shadow: 8px 8px 32px 0 rgba(68, 75, 112, 0.17);
+    width: 100%;
+  }
+  label {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}

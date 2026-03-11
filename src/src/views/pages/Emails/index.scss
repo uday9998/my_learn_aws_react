@@ -1,0 +1,173 @@
+.general__emails {
+   display: flex;
+   flex-direction: column;
+   min-height: 87vh;
+   gap: 32px;
+   .general__emails__empty {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #E7E9E9;
+      border-radius: 12px;
+      width: 100%;
+      gap: 24px;
+      flex: 1 1;
+      margin-bottom: 100px;
+      svg {
+         margin-bottom: 16px;
+      }
+      >span {
+         max-width: 514px;
+         text-align: center;
+
+      }
+
+      @media screen and (max-width: 1024px) {
+         border: none;
+      }
+   }
+}
+
+// .emails-page {
+//    display: flex;
+//    width: 100%;
+//    .emails-page__memberUpdate {
+//       flex: 2;
+//     //  max-width: 648px;
+//       margin-right: 24px;
+//    }
+//    .emails-page__emailUpdate {
+//       flex: 1 1;
+//     //  max-width: 456px;
+//       img {
+//          max-width: 100%;
+
+//          object-fit: cover;
+//          object-position: center;
+//       }
+//    }
+//    .img__step1 {
+//       img {
+//          height: 269px;
+//         // min-width: 305px;
+//       }
+//    }
+//    .img__step3 {
+//       img {
+//          height: 312px;
+//       }
+//    }
+
+//    .img__step4 {
+//       img {
+//          height: 219px;
+//       }
+//    }
+// }
+
+// // @media screen and (max-width: 1135px) {
+// //    .emails-page {
+// //       display: block;
+// //       .emails-page__memberUpdate {
+// //          margin: 0 0 24px 0;
+// //       }
+// //    }
+// // }
+
+
+// .email-steps {
+//    display: flex;
+//    margin: 10px 0 24px 0;
+//    cursor: pointer;
+//    .email-step {
+//       display: flex;
+//       align-items: center;
+//       margin-right: 34px;
+//       .circle {
+//          display: flex;
+//          width: 24px;
+//          height: 24px;
+//          align-items: center;
+//          justify-content: center;
+//          background-color: rgba(0, 0, 0, 0.27);
+//          border-radius: 12px;
+//          margin-right: 8px;
+//          box-sizing: border-box;
+//          padding-top: 2px;
+//          span {
+//             font-size: 12px;
+//          }
+//       }
+//       .circleblue {
+//          background-color: #006dff;
+//        }
+//    }
+// }
+// .mob-emails {
+//    width: 100%;
+//    box-sizing: border-box;
+// }
+// @media screen and (min-width: 1280px) {
+//    .emailstatus-page{
+//      max-width: calc(100vw - 301px);
+//    }
+// }
+// @media (min-width: 1024px) and (max-width: 1280px) {
+//    .emailstatus-page{
+//      max-width: calc(100vw - 249px);
+//    }
+// }
+// @media screen and (max-width: 1160px) {
+//    .emails-page {
+//       .emails-page__memberUpdate {
+//          width: 60%;
+//      }
+//    }
+// }
+
+// @media screen and (max-width: 1023px) {
+// .mob-emails {
+//    padding: 24px 16px;
+//    min-height: calc(100vh - 146px);
+//    .img__step1, .img__step3, .img__step4 {
+//         display: none;
+//    }
+//    .email-steps {
+//       width: 100%;
+//       overflow-y: scroll;
+//       .email-step {
+//          min-width: max-content;
+//          .circle {
+//             min-width: 24px;
+//          }
+//       }
+//    }
+//    .emails-page {
+//       width: auto;
+//       display: flex;
+//       flex-wrap: wrap;
+//       .emails-page__memberUpdate {
+//          width: 100%;
+//          display: flex;
+//          flex: none;
+//          .selectedWrapper_container {
+//             width: 100%;
+//             .memberUpdate {
+//                width: 100%;
+//                min-width: 100%;
+//                padding: 24px;
+//                .memberUpdat__select{
+//                   margin: 0;
+//                   width: auto;
+//                }
+//             }
+//          }
+//       }
+//       .emails-page__emailUpdate {
+//          margin-top: 16px;
+//       }
+//    }
+// }
+// }

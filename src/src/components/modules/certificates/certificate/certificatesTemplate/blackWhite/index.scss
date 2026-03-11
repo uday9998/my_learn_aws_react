@@ -1,0 +1,110 @@
+.defaultLogoBlackWihte {
+   width: 41px;
+   height: 41px;
+   display: "inline-block";
+   margin-right: 69px;
+   margin-left: 73px;
+}
+
+.certeficateBlackWhite {
+   input {
+      border: none;
+      min-width: 350px;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   textarea {
+      border: none;
+      min-width: 250px;
+      resize: none;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   // .logo {
+   //    display: inline-block;
+   //    margin-right: 25px;
+   //    margin-left: 25px;
+   // }
+   // width: 776px;
+   // height: 548px;
+   // background-repeat: no-repeat;
+   // background-size: cover;
+   // background-position: center center;
+   .blackWhiteTitle {
+      input {
+         // font-size: 16px;
+         font-weight: bold;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: 2px;
+         text-align: center;
+      }
+   }
+   .blackWhiteBelowTitle {
+      textarea {
+         font-size: 14px;
+         font-weight: 600;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: 1px;
+         text-align: center;
+         color: #333333;
+      }
+   }
+   // .blackWhiteUserName{
+   //    // font-size: 36px;
+   //    // font-weight: bold;
+   //    // font-stretch: normal;
+   //    // font-style: normal;
+   //    // line-height: normal;
+   //    // letter-spacing: 4.5px;
+   //  }
+
+   .blackWhiteNotetext {
+      input {
+         font-size: 12px;
+         font-weight: 600;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.33;
+         letter-spacing: normal;
+         text-align: center;
+      }
+   }
+
+   // .blackWhiteCourseName{
+   //    // font-size: 16px;
+   //    // font-weight: bold;
+   //    // font-stretch: normal;
+   //    // font-style: normal;
+   //    // line-height: normal;
+   //    // letter-spacing: normal;
+   //    // padding-top: 12px;
+   // }
+
+   .blackWhiteInstructorsNames{
+      // font-size: 12px;
+      // font-weight: bold;
+      // font-stretch: normal;
+      // font-style: normal;
+      // line-height: normal;
+      // letter-spacing: 0.86px;
+   }
+   .sigCanvas{
+      cursor: crosshair;
+      border: 1px dashed #3BC4FF;
+   }
+
+   // .blackWhiteNameTitle{
+   //    font-size: 12px;
+   //    font-weight: 500;
+   //    font-stretch: normal;
+   //    font-style: normal;
+   //    line-height: 1.19;
+   //    letter-spacing: normal;
+   // }
+}

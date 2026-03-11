@@ -1,0 +1,21 @@
+.net-revenue-status-pink{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    &-0{
+      background: #BD30B7;
+    }
+    &-1{
+        background: #E83DE1;
+    }
+    &-2{
+        background: #e770e2;
+    }
+    &-3{
+        background: #d79dd4;
+    }
+    &-4{
+        background: #D0D2D2;
+    }
+
+}

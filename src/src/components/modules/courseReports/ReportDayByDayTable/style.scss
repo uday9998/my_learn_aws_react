@@ -1,0 +1,18 @@
+.courseReportsDayByDayWrapper {
+  padding: 16px 16px 0;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+#courseReportsDayByDay {
+  tbody tr {
+    &:nth-child(1) {
+      background-color: #f0f0f0;
+      span {
+        color: black !important;
+      }
+    }
+    border-bottom: 2px solid #f0f4f7;
+  }
+}
+

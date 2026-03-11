@@ -1,0 +1,26 @@
+.mob-videosTableCard {
+   box-sizing: border-box;
+   .mob-videosTableCard__title {
+      padding: 0 24px;
+      margin-left: -16px;
+   }
+   .mob-videosTable {
+      position: relative;
+      .mob-videosTableItem {
+         padding: 20px 0 24px 24px;
+         width: calc(100vw - 16px);
+         margin-left: -16px;
+         box-sizing: border-box;
+         display: flex;
+         align-items: flex-start;
+         >div {
+            margin-top: -4px;
+         }
+         border-bottom: solid 2px rgba(198, 203, 212, 0.3);
+      }
+      .mob-viedosTableItem-checked {
+         background-color: rgba(0, 110, 255, 0.1);
+         border-left: 4px solid #006dff;
+      }
+   }
+}

@@ -1,0 +1,114 @@
+.greenWhite {
+   width: 776px;
+   height: 548px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   input {
+      border: none;
+      min-width: 350px;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   textarea {
+      border: none;
+      min-width: 250px;
+      resize: none;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   .greenWhiteTitle {
+      margin-top: 52px;
+      margin-bottom: 65px;
+      input{
+         font-family: Trocchi;
+         font-size: 21px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+      }
+   }
+   .greenWhiteBelowTitle {
+      margin-bottom: 9px;
+      input{
+         font-size: 16px;
+         font-weight: bold;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+      }
+   }
+   .greenWhiteName {
+      font-size: 48px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-bottom: 22px;
+   }
+   .greenWhiteNote {
+      margin-bottom: 16px;
+      input{
+         font-size: 14px;
+         width: 400px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+      }
+   }
+   .greenWhiteCourseName {
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #c9b876;
+      margin-bottom: 47px;
+   }
+   .greenWhiteDate {
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #345130;
+   }
+   .greenWhiteBorderImg{
+      background-color: #345130;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 776px;
+      height: 550px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .greenWhiteBackground{
+      width: 670px;
+      height: 480px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .greenWhiteLogo{
+      margin-right: 21px;
+      margin-left: 51px;
+      display: block;
+      &.defaultLogo {
+         width: 101px;
+         height: 105px;
+      }
+   }
+}

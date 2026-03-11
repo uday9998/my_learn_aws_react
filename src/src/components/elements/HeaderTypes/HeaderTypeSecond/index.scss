@@ -1,0 +1,21 @@
+.header__type__second{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 34px 0px 32px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        &__left{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 16px 0;
+    }
+}

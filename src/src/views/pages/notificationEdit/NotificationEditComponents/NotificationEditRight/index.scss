@@ -1,0 +1,96 @@
+.notification__edit__right {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 48px 0px 20px;
+   gap: 45px;
+   height: 100vh;
+   max-height: 100vh;
+   overflow-y: auto;
+   scrollbar-color: var(--buttonBgcolor) rgb(226, 226, 226);
+   scrollbar-width: 1px;
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px var(--buttonBgcolor);
+      -webkit-box-shadow: inset 0 0 6px var(--buttonBgcolor);
+      background-color: rgb(226, 226, 226);
+   }
+   &__top {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      min-width: 732px;
+      max-width: 732px;
+   }
+   img {
+      max-width: 100%;
+   }
+   .divider {
+      width: 100%;
+      border: 1px solid #e7e9e9;
+   }
+   &__bottom {
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      gap: 40px;
+      width: 536px;
+      max-width: 536px;
+      align-items: center;
+      margin-bottom: 100px;
+   }
+   textarea {
+      resize: none;
+      outline: none;
+      text-align: center;
+      width: 100%;
+      padding: 0px;
+      border: none;
+      font-weight: 500;
+      overflow: visible;
+      &::-webkit-scrollbar {
+         display: none;
+      }
+      & {
+         -ms-overflow-style: none;
+         scrollbar-width: none;
+      }
+      font-size: 28px;
+      line-height: 130%;
+      height: 30px;
+      &:focus {
+         box-shadow: none;
+      }
+   }
+   &__title {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      textarea{
+          height: 40px;
+          border-radius: 12px;
+      }
+    }
+   &__text{
+        max-width: 356px;
+        width: 356px;
+   }
+   .notification__text {
+      font-weight: 400;
+      text-align: start;
+      font-size: 14px;
+      line-height: 168%;
+   }
+}

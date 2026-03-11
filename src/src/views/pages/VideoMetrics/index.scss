@@ -1,0 +1,35 @@
+.video__metric {
+   width: 100%;
+   overflow-x: hidden;
+   background: #f4f7f7;
+   &__view__table {
+      scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+      scrollbar-width: thin;
+      box-sizing: border-box;
+      &::-webkit-scrollbar-track {
+         border-radius: 10px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar {
+         width: 5px;
+         height: 5px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+         border-radius: 3px;
+         box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         background-color: rgb(226, 226, 226);
+      }
+      width: 100%;
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+   }
+
+   @media screen and (max-width: 1024px) {
+      background-color: #FFFFFF;
+   }
+}

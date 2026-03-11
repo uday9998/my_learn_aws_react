@@ -1,0 +1,41 @@
+.main{
+   .siteHeader {
+      .certificateSearch {
+         display: flex;
+         svg {
+            cursor: pointer;
+         }
+      }
+   }
+   .certificateSearchMob {
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 1023px) {
+   .main{
+      .siteHeader {
+         display: block;
+         box-shadow: none;
+         position: relative;
+         top: 47px;
+         .certificateSearch {
+            display: none;
+         }
+         .course__name {
+            display: none;
+         }
+      }
+      .certificateSearchMob {
+         display: flex;
+         position: relative;
+         padding: 40px 32px 0px;
+         justify-content: flex-end;
+      }
+   }
+   .certificatesContainer {
+      .createCertificate{
+         margin-left: 0px
+      }
+   }
+}

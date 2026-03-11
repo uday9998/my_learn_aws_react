@@ -1,0 +1,23 @@
+.membersPage__left {
+   max-width: 32.8%!important;
+   padding-right: 24px;
+   box-sizing: border-box;
+   .lessonMembersList {
+      .lessonMember-margin {
+         margin-bottom: 12px;
+      }
+   }
+}
+
+.membersPage__right {
+   .memberStaticCards {
+      display: flex;
+      >div {
+         flex: 1 1;
+      }
+      svg {
+         width: 32px!important;
+         height: 32px!important;
+      }
+   }
+}

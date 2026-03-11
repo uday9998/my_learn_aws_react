@@ -1,0 +1,30 @@
+.videoStatisticsCard {
+   padding: 24px;
+   .videoStatisticsCard__statistics {
+      display: flex;
+      margin-top: 20px;
+      >div {
+         flex: 1 1;
+         &:first-of-type {
+            max-width: 360px;
+         }
+         &:nth-of-type(2) {
+            max-width: 264px;
+         }
+      }
+   }
+   .videoStatisticsCard__video {
+      display: flex;
+      img {
+         object-fit: cover;
+         width: 100%;
+      }
+   }
+}
+
+.videoMargin {
+   height: 24px;
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; }
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

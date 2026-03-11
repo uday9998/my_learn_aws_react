@@ -1,0 +1,75 @@
+.unsubscribe_member {
+   width: 100%;
+   background-color: #f0f4f7;
+   min-height: 100vh;
+   .unsubscribe_member__loginBtn {
+       display: flex;
+       button {
+           width: 100%;
+       }
+   }
+   .unsubscribe_member_body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 407px);
+      width: initial;
+      padding: 16px 28px;
+      text-align: center;
+   }
+
+   .avatar-container {
+       position: relative;
+   }
+
+   .unsubscribe_member__headerBottom {
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       height: 286px;
+       background-color: rgba(63, 79, 101, 0.65);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       span {
+           color: #ffffff !important;
+           letter-spacing: normal !important;
+           &:first-of-type {
+               font-size: 48px;
+               padding-bottom: 12px;
+           }
+       }
+   }
+}
+
+.unsubscribe_member__logoutPopup {
+    position: absolute;
+    width: 100px;
+    height: 57px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    max-height: 200px;
+    overflow: auto;
+    font-size: 20px;
+    display: flex;
+    top: 72px;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    padding: 2px 1px 8px 10px;
+    a {
+      text-decoration: none;
+    }
+
+}
+
+ @media screen and (max-width: 1023px) {
+    .unsubscribe_member__logoutPopup {
+       right: 16px;
+       top: 57px;
+    }
+ }

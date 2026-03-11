@@ -1,0 +1,74 @@
+trix-toolbar{
+    display: none;
+}
+.trix-content-message{
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    max-height: 5em;
+    overflow-y: auto;
+    width: 100%;
+}
+.message-editor{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    .cropArea{
+        min-width: min-content;
+    }
+    &-file{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .upload__with__media__content{
+        width: 720px;
+    }
+    &-toolbar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 12px;
+        gap: 10px;
+        &-emojis{
+            position: absolute;
+            bottom: 100%;
+            left: 10%;
+        }
+        &-item{
+           display: flex;
+            cursor: pointer;
+        }
+    }
+}
+.trix__add__link{
+    min-width: 514px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__button{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.trix-custom-editor{
+}
+.custom-popover{
+    .MuiPopover-paper{
+        padding: 1px;
+    }   
+}
+.trix-content:empty::before {
+    content: attr(placeholder);
+    color: rgb(114, 121, 120);
+}
+.messenger__text__editor{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+}

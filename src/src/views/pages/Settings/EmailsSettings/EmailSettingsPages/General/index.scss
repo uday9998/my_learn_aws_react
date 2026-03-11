@@ -1,0 +1,72 @@
+.general__email {
+   display: flex;
+   margin-top: 24px;
+   flex-direction: column;
+   gap: 24px;
+   &__inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+   &__support {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      &__trash {
+         margin-top: 30px;
+         cursor: pointer;
+      }
+   }
+   .settings-email-save {
+      margin-top: 8px;
+   }
+   .divider {
+      width: 100%;
+      background-color: #e7e9e9;
+      height: 1px;
+   }
+   &__plus {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+   }
+   &__time {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      &__bottom {
+         display: grid;
+         grid-template-columns: 49% 49%;
+         gap: 16px;
+      }
+   }
+   &__tracking {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+   }
+   &__preview {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 12px;
+      gap: 12px;
+      background: #f8fafa;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+      &__right {
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+         &__item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+         }
+      }
+   }
+   button {
+      max-width: min-content;
+   }
+}

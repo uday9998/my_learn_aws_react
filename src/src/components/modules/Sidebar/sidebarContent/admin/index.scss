@@ -1,0 +1,14 @@
+.upgrade__now {
+    padding: 12px 0;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, #36796F 0%, #7CAE7B 100%);
+    text-align: center;
+    
+    span {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+    }
+}

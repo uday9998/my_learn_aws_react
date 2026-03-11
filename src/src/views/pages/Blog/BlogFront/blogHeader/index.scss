@@ -1,0 +1,13 @@
+.blogFrontHeader {
+   display: flex;
+   flex-direction: column;
+   gap: 32px;
+   &_btns {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+   }
+   &__title {
+
+   }
+}

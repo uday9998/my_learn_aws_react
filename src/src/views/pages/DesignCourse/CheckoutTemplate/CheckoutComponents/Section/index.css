@@ -1,0 +1,46 @@
+.checkoutTheme {
+   /* button have overflow x hidden and actions not visible */
+   .actions__visible {
+      overflow-x: visible;
+   }
+
+   .mark {
+      position:relative;
+      outline: 2px dashed #24554E !important;
+   }
+
+   .mark.paymentSection {
+      border: none !important;
+   }
+
+   .mark:after {
+      content:"";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-color:#7bb7411a;
+   }
+
+   .mark:before {
+      content: "EDIT";
+      font-size:16px;
+      margin-top:-14px;
+      margin-left:-20px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      background: #36796F;
+      padding:5px;
+      color:white;
+      z-index: 99999999;
+      line-height: 1;
+   }
+
+
+   .paymentSection {
+      background-color: #fff;
+   }
+}

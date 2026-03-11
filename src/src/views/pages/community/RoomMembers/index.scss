@@ -1,0 +1,37 @@
+.room__members__view{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__bottom{
+        display: flex;
+        gap: 24px;
+        &__content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 22px; 
+            &__left{
+                display: flex;
+                gap: 32px;
+                flex-direction: column;
+            }
+        }
+        &__filter{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .right{
+                gap: 15px;
+                display: flex;
+                align-content: center;
+            }
+        }
+    }
+}

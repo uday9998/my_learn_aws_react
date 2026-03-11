@@ -1,0 +1,44 @@
+.messenger__right__form{
+    padding: 24px;
+    display: flex;
+    align-items: center;   
+    gap: 10px;
+    position: relative;
+    margin-top: auto;
+    .btnBasic{
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+    &__left{
+        display: flex;
+        gap: 4px;
+    }
+}
+.buttonIcon__active{
+    background: #A6C9C5;
+    border: 1px solid #153833;
+    border-radius: 8px;
+}
+
+.trix-content-message{
+    *{
+        word-break: break-all;
+    }
+}
+
+.messenger__right__form__muted{
+    background-color: #E7E9E9;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    padding: 18px 0px;
+}
+
+.messenger__right__form{
+    .trix-editor{
+        max-height: 44px !important;
+        min-height: 44px !important;
+    }
+}

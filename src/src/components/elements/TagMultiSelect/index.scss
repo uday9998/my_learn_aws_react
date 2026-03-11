@@ -1,0 +1,97 @@
+.tag__select__item {
+   position: relative;
+   .tag__input {
+      cursor: pointer;
+      padding: 10px 16px;
+      gap: 10px;
+      display: flex;
+      background: #ffffff;
+      margin-top: 4px;
+      align-items: flex-end;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+   }
+   .tag__input__left {
+      width: 100%;
+   }
+   input {
+      border: none;
+      outline: none;
+      width: 100%;
+   }
+   .tag__icon {
+      padding: 0px 6px;
+   }
+   .tag__select__value {
+      background: #f0f2f2;
+      padding: 2px 4px 2px 8px;
+      max-width: max-content;
+      border: 1px solid #e7e9e9;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .tag__view__delete {
+         display: flex;
+         align-items: center;
+      }
+   }
+   .tag__select__options,  .tag__select__options__input {
+      display: flex;
+      z-index: 500;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      padding: 4px 0px;
+      background: #ffffff;
+      border: 1px solid rgba(19, 31, 30, 0.1);
+      box-shadow: 0px 4px 10px rgba(19, 31, 30, 0.1),
+         1px 2px 2px rgba(19, 31, 30, 0.04);
+      border-radius: 12px;
+      overflow-y: auto;
+      max-height: 200px;
+      scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+      scrollbar-width: thin;
+      box-sizing: border-box;
+      &::-webkit-scrollbar-track {
+         border-radius: 10px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar {
+         width: 5px;
+         height: 5px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+         border-radius: 3px;
+         box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         background-color: rgb(226, 226, 226);
+      }
+   }
+   .tag__select__flex {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+   }
+   .tag__select__option {
+      padding: 12px 16px;
+      display: flex;
+      gap: 12px;
+      cursor: pointer;
+      align-items: center;
+      svg {
+         width: 13px;
+         height: 13px;
+         path {
+            fill: #131f1e;
+         }
+      }
+   }
+   .tag__search{
+      height: 30px;
+      border-bottom: 1px solid gray;
+   }
+}

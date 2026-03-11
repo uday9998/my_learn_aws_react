@@ -1,0 +1,36 @@
+.landingFooter {
+   width: 100%;
+   padding: 56px 0 51px;
+   background: #fff;
+
+   .landingFooter__content {
+      display: flex;
+      justify-content: center;
+
+      .landingFooter__section {
+         display: flex;
+         flex-direction: column;
+         margin-right: 91px;
+         width: 191px;
+
+         .landingFooter__social {
+            display: flex;
+            align-items: center;
+            margin-top: 26px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .landingFooter {
+      padding: 16px;
+      // margin-bottom: 48px;
+      .landingFooter__content {
+         display: block;
+         .landingFooter__section:not(:first-of-type) {
+            margin-top: 66px;
+         }
+      }
+   }
+}

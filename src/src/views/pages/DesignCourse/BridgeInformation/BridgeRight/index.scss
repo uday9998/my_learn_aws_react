@@ -1,0 +1,41 @@
+.course__bridge__content__right__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    &__items {
+        display: flex;
+        text-transform: capitalize;
+        svg {
+            background: #f3f4f4;
+            border-radius: 4px;
+            width: 24px;
+            padding: 4px;
+            height: 24px;
+        }
+        >div {
+            flex: 1;
+        }
+        >span {
+            flex: 1;
+        }
+    }
+    &__membership {
+        .course__bridge__content__right__footer__items {
+            svg {
+                background: inherit;
+                path {
+                    fill: white;
+                }
+            }
+        } 
+    }
+}
+
+.btnBasic.course__bridge__content__right__join__button {
+    font-size: 18px;
+    height: 48px;
+    text-transform: capitalize;
+    background-color: var(--settingsButtonColor) !important;
+    border-color: var(--settingsButtonColor) !important;
+    color: #fff !important;
+}

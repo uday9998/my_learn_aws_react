@@ -1,0 +1,14 @@
+.address__email {
+   color:  #131F1E;
+   width: 100%;
+   .textInlineEditor-new{
+      font-size: 16px;
+      font-family: 'Inter';
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      >div {
+         min-height: auto;
+      }
+   }
+}

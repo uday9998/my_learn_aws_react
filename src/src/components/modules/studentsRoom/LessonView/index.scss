@@ -1,0 +1,283 @@
+.iframeLessonDesc {
+   margin: 8px 24px;
+}
+
+.Lesson {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   word-break: break-all;
+
+   .LessonView__title__bookmark__btn {
+      white-space: nowrap;
+
+   }
+
+   .LessonView__title__bookmark__btn__filled {
+      svg path {
+         fill: var(--buttonBgcolor);
+      }
+   }
+
+   .LessonView__header {
+      // border-bottom: 1px solid var(--activeColor);
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+   }
+
+   .LessonView__title {
+      // padding: 67px 100px 60px 100px;
+      padding: 20px;
+      display: flex;
+      width: 100%;
+      max-width: 100%;
+      flex-direction: column;
+
+      @media screen and (max-width: 1023px) {
+         padding-left: 16px;
+         padding-right: 16px;
+      }
+
+      &__bookmark {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      &__blocks {
+         margin-top: 12px;
+         display: flex;
+      }
+
+      &__author {
+         display: flex;
+         align-items: center;
+         // margin-top: 20px;
+         // padding: 6px 8px 6px 6px;
+         gap: 8px;
+         // border: 1px solid var(--activeColor);
+         border-radius: 8px;
+         max-width: max-content;
+
+         img {
+            width: 32px;
+            height: 32px !important;
+            border-radius: 8px;
+         }
+      }
+   }
+
+   .blockFrontViews {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      //max-width: 720px;
+      gap: 12px;
+
+      &__title {
+         text-align: center;
+      }
+
+      &__content {
+         display: flex;
+         flex-direction: column;
+         font-size: 16px;
+
+         >div {
+            background-color: inherit;
+            color: var(--textColor);
+         }
+
+         // gap: 40px;
+         .LessonView__iframe {
+            width: 100%;
+            max-width: 100%;
+         }
+
+         >div {
+            padding: 30px 30px !important;
+            display: flex;
+            justify-content: center;
+
+            @media screen and (max-width: 1023px) {
+               padding-left: 16px;
+               padding-right: 16px;
+            }
+
+            >div:not(.LessonVideo) {
+               display: flex;
+               justify-content: center;
+               width: 100%;
+               max-width: 100%;
+               flex-direction: column;
+
+               >div:not(.embed-container) {
+                  width: 100%;
+                  max-width: 100%;
+                  display: flex;
+                  justify-content: center;
+                  box-sizing: content-box;
+                  word-break: break-word;
+
+                  &>div {
+                     font-family: roboto, arial, helvetica, sans-serif !important;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.LessonView {
+   border-radius: 8px;
+   background-color: transparent;
+   padding: 24px 0;
+   box-sizing: content-box;
+
+   audio {
+      &:focus {
+         outline: none;
+      }
+   }
+
+   .LessonView__title {
+      margin-bottom: 24px;
+      padding: 24px 24px 0;
+   }
+
+   .LessonView__content {
+      font-family: 'Avenir Next';
+
+      img {
+         max-width: 100%;
+      }
+   }
+
+   .zoomView__content {
+      font-family: 'Avenir Next';
+
+      img {
+         max-width: 100%;
+      }
+   }
+
+   .LessonView__audio {
+      audio {
+         width: 100%;
+         outline: none;
+      }
+   }
+
+   .LessonView__video {
+      text-align: center;
+
+      video {
+         max-width: 100%;
+      }
+   }
+}
+
+.LessonView__audio {
+   padding: 16px 24px 0;
+
+   audio {
+      width: 100%;
+      outline: none;
+   }
+}
+
+.LessonView__video {
+   text-align: center;
+
+   video {
+      max-width: 100%;
+   }
+}
+
+
+.LessonView__image {
+   text-align: center;
+
+   img {
+      max-width: 100%;
+   }
+}
+
+.LessonText {
+   // padding: 0 50px;
+   //   margin-top: 4px;
+   //   line-height: 1.5;
+   //   padding: 0 24px;
+}
+
+.embed-container {
+   position: relative;
+   padding-bottom: 56.25%;
+   height: 0;
+   overflow: hidden;
+   max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+
+.Lesson_dark a {
+   color: #9E9EFF;
+}
+
+
+.Lesson_dark a:active {
+   color: #FF9E9E;
+}
+
+.Lesson_dark a:visited {
+   color: #D0ADF0;
+}
+
+
+// .Lesson__full {
+//    .LessonView__title {
+//       max-width: 100%;
+//       padding: 0 100px;
+//    }
+//    .blockFrontViews {
+//       &__content {
+//         .LessonView__iframe {
+//           width: 100%;
+//           max-width: 100%;
+//           padding: 0 100px;
+//         }
+
+//         >div {
+//           >div:not(.LessonVideo) {
+//             max-width: 100%;
+//             padding: 0 100px;
+
+//             >div:not(.embed-container) {
+//               max-width: 100%;
+//             }
+//           }
+//         }
+//       }
+//     }
+// }
+
+@media screen and (max-width: 1023px) {
+   .Lesson {
+      >.LessonView__title {
+         display: none;
+      }
+   }
+}

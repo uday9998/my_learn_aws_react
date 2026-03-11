@@ -1,0 +1,57 @@
+.calendar_navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 168%;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #131F1E;
+    button{
+        background: inherit;
+        border: none;
+        cursor: pointer;
+        &:nth-child(1){
+            margin-right: 16px;
+        }
+    }
+     .left{
+        cursor: pointer;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 168%;
+        display: flex;
+        align-items: center;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: #131F1E;
+        svg{
+            margin-left: 11px;
+        }
+    }
+    .left_active{
+        cursor: pointer;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 168%;
+        display: flex;
+        align-items: center;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: #24554E;
+        svg{
+            transform: rotate(90deg);
+        }
+    }
+    .right{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

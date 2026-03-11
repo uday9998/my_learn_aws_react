@@ -1,0 +1,114 @@
+.generator__modal {
+   z-index: 99999999999999999;
+   text-align: left;
+   img {
+      width: auto;
+   }
+   &__close {
+      cursor: pointer;
+      display: flex;
+      width: auto;
+   }
+   &__line {
+      height: 1px;
+      width: 100%;
+      background: #E7E9E9;
+      margin-bottom: 16px;
+   }
+   &__background {
+      background: rgba(19, 31, 30, 0.4);
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      z-index: 9;
+      left: 0;
+   }
+   &__content {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      z-index: 10;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 760px;
+      width: 100%;
+      max-height: 100vh;
+      overflow-y: auto;
+      scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+      scrollbar-width: thin;
+      box-sizing: border-box;
+      &::-webkit-scrollbar-track {
+         border-radius: 10px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar {
+         width: 5px;
+         height: 5px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+         border-radius: 3px;
+         box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         background-color: rgb(226, 226, 226);
+      }
+      >div:first-child {
+         margin-bottom: -2px;
+         display: flex;
+         justify-content: space-between;
+      }
+      &__footer {
+         display: flex;
+         justify-content: flex-end;
+         gap: 16px;
+         width: 100%;
+         margin-top: 16px;
+         button {
+            width: auto;
+         }
+      }
+   }
+   &__generated__content__title {
+         margin-bottom: 16px;
+         margin-top: 16px;
+         display: flex;
+         justify-content: space-between;
+   }
+   .generator__modal_date {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 16px;
+      .inputNew_label   {
+         margin-bottom: 8px;
+      }
+   }
+   .single__title {
+      display: flex;
+      flex-direction: column;
+      button {
+         margin-left: 16px;
+         width: auto;
+      }
+      >div {
+         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+      }
+   }
+   .loading__SpinnerContainer {
+      position: relative !important;
+      height: 150px;
+      top: auto;
+      left: auto;
+      transform: none
+   }
+}

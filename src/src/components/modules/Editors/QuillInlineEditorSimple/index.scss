@@ -1,0 +1,163 @@
+.quillInlineEditorSimple {
+  .ql-bubble .ql-editor a {
+    text-decoration: none;
+  }
+
+  &__isTemplate {
+    min-width: 40px;
+
+    .ql-bubble .ql-picker {
+      height: auto;
+    }
+
+    .ql-bubble .ql-tooltip {
+      line-height: 1;
+  }
+  
+  .ql-toolbar {
+      line-height: 1;
+      height: 48px;
+      display: flex;
+      align-items: center;
+  }
+
+    .ql-tooltip {
+      width: 290px !important;
+    }
+
+    .ql-bubble .ql-picker.ql-font {
+      width: 75px;
+  }
+
+  .ql-bubble .ql-picker-label::before {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 50px;
+    text-overflow: ellipsis;
+    position: relative;
+    top: 2px;
+  }
+  
+  .ql-bubble .ql-toolbar .ql-formats {
+    margin-right: 2px;
+  }
+
+    .ql-bubble .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+      right: -7px;
+    }
+
+    .ql-bubble .ql-tooltip-editor input[type=text] {
+      position: relative;
+    }
+
+    .ql-bubble {
+      font-size: inherit;
+      font-family: inherit;
+      text-align: inherit;
+      line-height: inherit;
+      //  overflow-y: hidden;
+    }
+
+    .ql-editor {
+      font-size: inherit;
+      font-family: inherit;
+      text-align: inherit;
+      line-height: inherit;
+      overflow-y: hidden;
+      padding: 0;
+
+      &:focus-visible {
+        outline: -webkit-focus-ring-color auto 1px;
+      }
+    }
+
+    .ql-bubble .ql-tooltip {
+      z-index: 999;
+    }
+  }
+
+  &__isOtherPage {
+    .ql-bubble {
+      font-size: inherit;
+      font-family: inherit;
+      text-align: inherit;
+      line-height: inherit;
+      overflow-y: hidden;
+    }
+
+    .ql-editor {
+      font-size: inherit;
+      text-align: inherit;
+      font-family: var(--primaryFont);
+      font-weight: 500;
+      line-height: inherit;
+      padding: 0;
+      overflow: hidden;
+
+      &:focus-visible {
+        outline: -webkit-focus-ring-color auto 1px;
+      }
+    }
+
+    .ql-bubble .ql-tooltip {
+      z-index: 999;
+    }
+  }
+
+
+  &__isEmail {
+    border: 1px solid #E7E9E9;
+    min-height: 150px;
+    border-radius: 12px;
+    padding: 8px 16px;
+    outline: none;
+
+    .ql-bubble {
+      font-size: inherit;
+      font-family: inherit;
+      text-align: inherit;
+      line-height: inherit;
+    }
+
+    .ql-editor {
+      font-size: inherit;
+      font-family: inherit;
+      text-align: inherit;
+      line-height: inherit;
+      overflow-y: hidden;
+      padding: 0;
+    }
+
+    .ql-bubble .ql-tooltip {
+      z-index: 999;
+    }
+  }
+
+  &__isEditable {
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    background: #fff;
+    padding: 8px 16px;
+    outline: none;
+
+    .ql-editor {
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  .ql-editor p,
+  .ql-editor ol,
+  .ql-editor ul,
+  .ql-editor pre,
+  .ql-editor blockquote,
+  .ql-editor h1,
+  .ql-editor h2,
+  .ql-editor h3,
+  .ql-editor h4,
+  .ql-editor h5,
+  .ql-editor h6 {
+    margin: 0;
+  }
+}

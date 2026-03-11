@@ -1,0 +1,122 @@
+.d-members {
+   display: flex;
+   width: 100%;
+   box-sizing: border-box;
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   scrollbar-width: thin;
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+   .membersInfo{
+      margin-right: 2px;
+    }
+   .d-members__right{
+      overflow-y: auto;
+   }
+
+   .d-members__left {
+      overflow-y: auto;
+      width: 384px;
+      justify-content: space-between !important;
+      strong {
+         font-family: 'Avenir Next Bold';
+      }
+   }
+
+   .memberStaticCards {
+      display: flex;
+
+      >div {
+         flex: 1 1;
+      }
+
+      svg {
+         width: 32px !important;
+         height: 32px !important;
+      }
+   }
+   .loader_state {
+    height: 72px;
+    border-color: #dfe5eb;
+    background-color: rgb(251, 253, 255);
+    display: flex;
+    border-radius: 8px;
+    border: solid 1px #dfe5eb;
+    align-items: center;
+    justify-content: center;
+   }
+}
+   @media screen and (min-width: 1280px) {
+      .d-members{
+      max-width: calc(100vw - 301px);
+      }
+   }
+   @media (min-width: 1024px) and (max-width: 1280px) {
+      .d-members{
+      max-width: calc(100vw - 249px);
+      }
+   }
+@media screen and (max-width: 1023px) {
+   .d-members {
+      padding: 0 16px;
+      .content_left {
+         width: 100%;
+         min-width: 100%;
+         border: none;
+         .lessonMembersList {
+            margin-right: 0;
+         }
+      }
+      .content_right{
+         .d-addMembers__right {
+            margin-left: 0px;
+         }
+         .membersInfo{
+            margin-left: 0;
+            margin-right: 0;
+          }
+         .memberStaticCards {
+            flex-direction: column;
+            >div:not(:last-child) {
+               margin-right: 0;
+               margin-bottom: 15px;
+             }
+         }
+      }
+   }
+}
+@media screen and (max-width: 1437px) {
+   .d-members {
+      .memberStaticCards {
+         >div:not(:last-child) {
+           margin-right: 1%;
+         }
+      }
+   }
+}
+@media (min-width: 1024px) and (max-width: 1352px) {
+   .d-members {
+      .memberStaticCards {
+         flex-wrap: wrap;
+         >div {
+            min-width: 166px;
+            max-width: 167px;
+            flex: none;
+            margin-top: 1%;
+          }
+      }
+   }
+}

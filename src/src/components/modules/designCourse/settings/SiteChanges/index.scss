@@ -1,0 +1,135 @@
+.siteChanges {
+   display: flex;
+   line-height: 24px;
+   flex-direction: column;
+   padding: 38px 40px 40px;
+
+   .siteChanges__input {
+      display: flex;
+
+      .siteChanges__hint {
+         margin-left: 12px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-end;
+
+         svg {
+            margin-bottom: 16px;
+
+            &:hover {
+               cursor: pointer;
+            }
+         }
+      }
+   }
+
+   .theme_radio {
+      span {
+         margin-left: 8px;
+         line-height: 24px;
+      }
+   }
+
+   .siteChanges__buttons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+   }
+   .switchText{
+      font-family: 'Avenir Next';
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #3f4f65;
+      margin-right: 8px;
+   }
+
+   .chooseThemeText{
+      font-family: 'Avenir Next';
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #3f4f65;
+      margin-top: 24px;
+   }
+   .miestro_theme_preview_img {
+     border-radius: 8px;
+     box-shadow: 8px 8px 32px 0 rgba(68, 75, 112, 0.17);
+     width: 249px;
+     max-width: 100%;
+   }
+   [for="save_draft-miestro_theme_light"], [for="save_draft-miestro_theme_dark"] {
+      justify-content: flex-start;
+   }
+   .dragIten {
+      cursor: ns-resize;
+   }
+   .topped_course_container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+      min-height: 40px;
+      cursor: move;
+      .delete_course_from_topped {
+         display: none;
+         cursor: pointer;
+      }
+      &:hover .delete_course_from_topped {
+         display: block;
+      }
+      .drag-and-drop-icon:hover .delete_course_from_topped {
+         display: none;
+      }
+      .topped_course_item {
+         display: flex;
+         span {
+            margin-left: 8px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .siteChanges {
+      display: flex;
+      flex-direction: column;
+      padding: 24px 32px;
+      .light_mode {
+         margin-right: 5px;
+      }
+      .dark_mode {
+         margin-left: 5px
+      }
+      .siteChanges__buttons {
+         display: flex;
+         align-items: center;
+         flex-direction: column-reverse;
+         justify-content: flex-end;
+         width: 100%;
+
+         .siteChanges_preview_button {
+            width: 100%;
+            margin-top: 16px;
+         }
+
+         .btnBasic {
+
+            &:not(:first-child) {
+               margin: 0;
+            }
+
+            &:not(:last-child) {
+               margin: 0;
+               margin-top: 16px;
+            }
+         }
+      }
+   }
+}

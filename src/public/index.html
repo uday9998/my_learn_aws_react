@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
+   <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+   <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.ico" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="base_url" content="">
+   <meta name="theme-color" content="#000000" />
+   <meta name="google-site-verification" content="KNsxjYhJz5s7bjTHepvDagjdBfY1T88HIKcsLrEDEyc" />
+   <meta property="og:title" content="">
+   <meta property="og:description" content="">
+   <meta property="og:image" content="">
+   <meta property="og:keywords" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   <script>
+      UPLOADCARE_PUBLIC_KEY = '92cf2a9866b7d932bae6';
+   </script>
+   <script src="https://js.stripe.com/v3/"></script>
+   <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+   -->
+   <meta name="title" content="">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <title>...</title>
+   
+   <!-- Apply saved language preference immediately on page load -->
+   <script>
+      (function() {
+         var savedLang = localStorage.getItem('currentLanguage');
+         if (savedLang && savedLang !== 'en') {
+            // Add a class to the HTML element to indicate the preferred language
+            document.documentElement.setAttribute('data-lang', savedLang);
+            // This will help prevent flash of untranslated content
+            document.documentElement.style.opacity = '0';
+            setTimeout(function() {
+               document.documentElement.style.opacity = '1';
+            }, 300);
+         }
+      })();
+   </script>
+
+   <!-- Hotjar Tracking Code for miestro.com  OLD-->
+   <!-- <script src="https://deploy.userpilot.io/29fv16o1.js"></script>
+   <script>
+      (function (h, o, t, j, a, r) {
+         h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+         h._hjSettings = { hjid: 1770622, hjsv: 6 };
+         a = o.getElementsByTagName('head')[0];
+         r = o.createElement('script'); r.async = 1;
+         r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+         a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+   </script> -->
+
+   <!--  Tracking Code for miestro.com  NEW commented for test-->
+   <!-- <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+         c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+         t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+         y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "gr4k5c5nqu");
+   </script> -->
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7X8S862JS"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-X7X8S862JS');
+   </script> -->
+
+   <!-- Facebook Pixel Code -->
+   <!-- <script>
+      !function (f, b, e, v, n, t, s) {
+         if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+               n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+         };
+         if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+         n.queue = []; t = b.createElement(e); t.async = !0;
+         t.src = v; s = b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '3935638153117060');
+      fbq('track', 'PageView');
+   </script>
+   <noscript>
+      <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=3935638153117060&ev=PageView&noscript=1" />
+   </noscript> -->
+   <!-- End Facebook Pixel Code -->
+
+
+   <!-- <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+               new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-PPX4WWB');
+   </script> -->
+
+   
+   <!-- Producktly -->
+   <script>
+      (function (w, d, f) {
+        var a = d.getElementsByTagName('head')[0];
+        var s = d.createElement('script');
+        s.async = 1;
+        s.src = f;
+        s.setAttribute('id', 'produktlyScript');
+        s.dataset.clientToken = "bc5bb643429b83c792be2ead1a7eecb9fe51acb2d70152e0c038046793b7f6aca1fbf9491e49e0baacd6e729d95dc533ada165d2cb2e902f47b4e1b2990f4869694023edf6589b1d39e9e358fa8e9d6f1b4c142521a643e075f7a305da9920fe7937eea4";
+        a.appendChild(s);
+      })(window, document, "https://public.produktly.com/js/main.js");
+    </script>
+
+   <!-- Google Analytics -->
+   <script>
+      (function (i, s, o, g, r, a, m) {
+         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+         }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+   </script>
+   <!-- <script
+      type="text/javascript">!function (e, t, n) { function a() { var e = t.getElementsByTagName("script")[0], n = t.createElement("script"); n.type = "text/javascript", n.async = !0, n.src = "https://beacon-v2.helpscout.net", e.parentNode.insertBefore(n, e) } if (e.Beacon = n = function (t, n, a) { e.Beacon.readyQueue.push({ method: t, options: n, data: a }) }, n.readyQueue = [], "complete" === t.readyState) return a(); e.attachEvent ? e.attachEvent("onload", a) : e.addEventListener("load", a, !1) }(window, document, window.Beacon || function () { });</script>
+   <script type="text/javascript">
+      if (window.location.pathname in ['/admin', '/admin/plans']) {
+         window.Beacon('init', "%REACT_APP_HELPSCUOT_BEACON_ID%");
+      };
+   </script> -->
+   <script defer src="//app.paykickstart.com/cancellation-saver/script"></script>
+   <script>
+      var head = document.head;
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = "https://174135.tracking.hyros.com/v1/lst/universal-script?ph=3a9a3d89fec64d5b347aa552dbc586537698310674018ebe2ce54503964f2b71&tag=!tracking";
+      head.appendChild(script);
+   </script>
+   <script>
+      if (window.location.href.includes('/admin')) {
+         var head = document.head;
+         var script = document.createElement('script');
+         script.type = 'text/javascript';
+         script.src = "data:text/javascript;base64,LyogQWxsaSBBSSB3aWRnZXQgZm9yIG1pZXN0cm8uY29tICovCihmdW5jdGlvbiAodyxkLHMsbyxmLGpzLGZqcykge3dbJ0FsbGlKU1dpZGdldCddPW87d1tvXSA9IHdbb10gfHwgZnVuY3Rpb24gKCkgeyAod1tvXS5xID0gd1tvXS5xIHx8IFtdKS5wdXNoKGFyZ3VtZW50cykgfTtqcyA9IGQuY3JlYXRlRWxlbWVudChzKSwgZmpzID0gZC5nZXRFbGVtZW50c0J5VGFnTmFtZShzKVswXTtqcy5pZCA9IG87IGpzLnNyYyA9IGY7IGpzLmFzeW5jID0gMTsgZmpzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGpzLCBmanMpO30od2luZG93LCBkb2N1bWVudCwgJ3NjcmlwdCcsICdhbGxpJywgJ2h0dHBzOi8vc3RhdGljLmFsbGlhaS5jb20vd2lkZ2V0L3YxLmpzJykpO2FsbGkoJ2luaXQnLCAnc2l0ZV9vQ3N4eTR2ZEt5YjFYZ0UyJyk7YWxsaSgnb3B0aW1pemUnLCAnYWxsJyk7";
+         head.appendChild(script);
+      }
+   </script>
+
+   <!-- Meta Pixel Code -->
+   <script>
+      !function (f, b, e, v, n, t, s) {
+         if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+               n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+         };
+         if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+         n.queue = []; t = b.createElement(e); t.async = !0;
+         t.src = v; s = b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t, s)
+      }(window, document, 'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1425156561594464');
+   </script>
+   <noscript>
+      <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1425156561594464&ev=PageView&noscript=1" />
+   </noscript>
+   <!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+   <noscript>You need to enable JavaScript to run this app.</noscript>
+   <!-- <div id="google_translate_element"></div> -->
+   <div id="root"></div>
+   <div id='toasts_new'></div>
+   <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPX4WWB" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- Start of ProductFlare Code -->
+   <!-- Start of ProductFlare Code -->
+   <!--   <script src="https://eu-us.productflare.com/changelogrunnerfilerr"></script>-->
+   <!--   <link rel="stylesheet" href="https://eu-us.productflare.com/changelogstylefilerr">-->
+   <script>
+      var li_sidebar = {
+         workspace_id: "ddbdc3ae-d80b-4c14-a804-5abf7f55aa89"
+      };
+   </script>
+   <script type="text/javascript" src="https://cdn.loopedin.io/js/sidebar.min.js?v=0.1" defer="defer"></script>
+   <!-- <script>
+      var ps_config = {
+         productId: "8dd2254e-5230-4dc2-9fdf-cbf24e2266b4"
+      };
+   </script>
+   <script type="text/javascript" src="https://app.productstash.io/js/productstash-embed.js" defer="defer"></script> -->
+   <!-- End of ProductFlare Code -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"
+      integrity="sha256-1IKHGl6UjLSIT6CXLqmKgavKBXtr0/jJlaGMEkh+dhw=" crossorigin="anonymous"></script>
+   <script>(function (w) { w.fpr = w.fpr || function () { w.fpr.q = w.fpr.q || []; w.fpr.q[arguments[0] == 'set' ? 'unshift' : 'push'](arguments); }; })(window);
+      fpr("init", { cid: "m9fq8ck2" });
+      fpr("click");
+   </script>
+   <!-- Partnero Universal -->
+   <script>
+      (function (p, t, n, e, r, o) {
+         p['__partnerObject'] = r; function f() {
+            var c = { a: arguments, q: [] }; var r = this.push(c); return "number" != typeof r ? r : f.bind(c.q);
+         }
+         f.q = f.q || []; p[r] = p[r] || f.bind(f.q); p[r].q = p[r].q || f.q; o = t.createElement(n);
+         var _ = t.getElementsByTagName(n)[0]; o.async = 1; o.src = e + '?v' + (~~(new Date().getTime() / 1e6));
+         _.parentNode.insertBefore(o, _);
+      })(window, document, 'script', 'https://app.partnero.com/js/universal.js', 'po');
+      po('settings', 'assets_host', 'https://assets.partnero.com');
+      po('program', 'PUC9JTUJ', 'load');
+   </script>
+   <!-- End Partnero Universal -->
+</body>
+<style>
+   iframe[src*=paykickstart] {
+      z-index: 5 !important;
+      position: absolute;
+      top: 0;
+      height: 0;
+   }
+
+   .tox-notification--warning {
+      display: none !important;
+   }
+
+   #productstashSelector {
+      display: none !important;
+   }
+
+   #loopedinSelector {
+      display: none !important;
+   }
+
+   .loopedin-sidebar-show {
+      display: block !important;
+   }
+
+   .loopedin-sidebar-show>#loopedin-sidebar-body {
+      transform: translateX(0%) !important;
+   }
+</style>
+<script>
+   if (!window.rightClickIsOn) {
+
+      document.addEventListener('keydown', function (event) {
+         if (event.keyCode == 123) {
+            event.preventDefault();
+            return false;
+         }
+         else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+            event.preventDefault();
+            return false;
+         }
+      });
+   }
+</script>
+<!--<script type="text/javascript">-->
+<!--   (function(c,l,a,r,i,t,y){-->
+<!--       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};-->
+<!--       t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;-->
+<!--       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);-->
+<!--   })(window, document, "clarity", "script", "gr4k5c5nqu");-->
+<!--</script>-->
+<script>
+   window.dataLayer = window.dataLayer || [];
+</script>
+
+<!-- ap3 widget (chat box) -->
+<!-- <script>
+   if (window.location.href.includes('/admin')) {
+      window.ap3c = window.ap3c || {};
+      var ap3c = window.ap3c;
+      ap3c.cmd = ap3c.cmd || [];
+      ap3c.cmd.push(function () {
+         ap3c.init('ZKN_fNHdFy71Doh3bWllc3Ryb2luYw', 'https://capture-api.autopilotapp.com/');
+         ap3c.track({v: 0});
+      });
+      ap3c.activity = function (act) {
+         ap3c.act = (ap3c.act || []);
+         ap3c.act.push(act);
+      };
+      var s, t;
+      s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = "https://cdn2l.ink/app.js";
+      t = document.getElementsByTagName('script')[0];
+      t.parentNode.insertBefore(s, t);
+   }
+</script> -->
+<!-- Ortto miestroinc capture code -->
+<!-- <script>
+   if (window.location.href.includes('/admin')) {
+   window.ap3c = window.ap3c || {};
+   var ap3c = window.ap3c;
+   ap3c.cmd = ap3c.cmd || [];
+   ap3c.cmd.push(function() {
+       ap3c.init('ZKN_fNHdFy71Doh3bWllc3Ryb2luYw', 'https://track.miestro.com/');
+       ap3c.track({v: 0});
+   });
+   ap3c.activity = function(act) { ap3c.act = (ap3c.act || []); ap3c.act.push(act); };
+   var s, t; s = document.createElement('script'); s.type = 'text/javascript'; s.src = "https://track.miestro.com/app.js";
+   t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+}
+</script> -->
+
+
+</html>

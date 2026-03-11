@@ -1,0 +1,29 @@
+.subscription-metric-tabs{
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   margin-bottom: 16px;
+   &-item{
+      border-radius: 12px;
+      width: 72px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FFFFFF;
+      cursor: pointer;
+      border: 1px solid #E7E9E9;
+      span{
+         color: #444C4B;
+      }
+   }
+   &-item-active{
+      background: #36796F;
+      span{
+         color: #FFFFFF;
+      }
+   }
+   .purple-color {
+      background: #BD30B7;
+   }
+}

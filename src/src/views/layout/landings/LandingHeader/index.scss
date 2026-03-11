@@ -1,0 +1,124 @@
+.landingHeader {
+   width: 100%;
+   padding: 35px 0px 20px;
+   background: #fbfdff;
+   box-sizing: border-box;
+   border-bottom: solid 1px #cddaf1;
+
+   .content_center {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .landingHeader_leftSide {
+         flex: 1;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         .landingHeader__nav {
+            display: flex;
+            margin-left: 12px;
+         }
+         .mobile-logo {
+            display: none;
+         }
+         .desktop-logo {
+            display: block;
+         }
+      }
+
+      .landingHeader_rightSide {
+         flex: 1;
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+
+         .landingHeader__sign {
+            display: flex;
+            align-items: center;
+         }
+      }
+   }
+}
+@media (min-width: 890px) and (min-width: 800px) {
+
+   .content_center {
+      width: 80% !important;
+      margin: 0 auto !important;
+      display: flex;
+      .landingHeader_leftSide{
+         min-width: 400px;
+         max-width: 600px;
+      }
+   }
+}
+@media  screen and (max-width: 890px) {
+.landingHeader {
+   .content_center{
+      justify-content: space-between !important;
+      .landingHeader_leftSide {
+         flex: none;
+         .landingHeader__logo {
+            .mobile-logo {
+               display: block;
+            }
+            .desktop-logo {
+               display: none;
+            }
+         }
+         .landingHeader__nav{
+            margin-left: 16px;
+            .m-r-m{
+               margin-right: 8px;
+            }
+            .m-l-m{
+               margin-left: 8px;
+            }
+            .m-r-exl{
+               margin-right: 8px;
+            }
+            .m-l-exl{
+               margin-left: 8px;
+            }
+         }
+      }
+      .landingHeader_rightSide{
+         flex: none;
+         .btnBasic_size_large{
+            width: 114px !important;
+         }
+      }
+   }
+}
+}
+@media screen and (max-width: 471px) {
+.landingHeader {
+   .content_center{
+      flex-direction: column;
+      align-items: flex-start !important;
+      .landingHeader_leftSide {
+         justify-content: flex-start !important;
+         .landingHeader__logo {
+            .mobile-logo {
+               display: block;
+            }
+            .desktop-logo {
+               display: none;
+            }
+         }
+         .landingHeader__nav{
+            margin-left: 20px;
+         }
+      }
+      .landingHeader_rightSide{
+         justify-content: flex-start !important;
+         margin-top: 12px;
+         .landingHeader__sign{
+            width: 100%;
+         }
+      }
+   }
+}
+}

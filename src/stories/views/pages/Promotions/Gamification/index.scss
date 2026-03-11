@@ -1,0 +1,36 @@
+.gamification__content {
+   min-height: 1018px !important;
+
+   .firstBadgeCardWrapper {
+      max-width: 456px;
+   }
+
+   .gamification__left {
+      max-width: 42.56% !important;
+      box-sizing: border-box;
+
+      .itemWrapper {
+         margin-bottom: 12px;
+      }
+   }
+
+   .gamification__right {
+      margin-left: 24px;
+      width: 55.32% !important;
+      box-sizing: border-box;
+   }
+}
+
+.congratulationPopup {
+   padding-top: 200px;
+}
+
+.gamificationHeader__btnWrapper {
+   display: flex;
+   width: 136px;
+
+   button {
+      width: 100%;
+      padding: 0;
+   }
+}

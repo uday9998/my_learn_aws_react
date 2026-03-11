@@ -1,0 +1,31 @@
+.code__lesson {
+   width: 720px;
+   min-height: 405px;
+   border-top: 1px solid #E7E9E9;
+   border-right: 1px solid #E7E9E9;
+   border-bottom: 1px solid #E7E9E9;
+   border-radius: 12px;
+   background-color: #fff;
+   display: flex;
+   .custom__textArea {
+      width:100%;
+      height: 100%;
+      border-radius: 12px;
+      padding: 8px 14px;
+   }
+   &__left {
+      background: #F8FAFA;
+      width: 56px;
+      border-left:  1px solid #E7E9E9;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      color: #727978;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 168%;
+      padding: 8px 16px;
+      text-align: end;
+   }
+}

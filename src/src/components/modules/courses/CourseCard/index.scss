@@ -1,0 +1,57 @@
+.courseCard {
+   width: 100%;
+   border-radius: 8px;
+
+   .courseCard__img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      overflow: hidden;
+
+      img {
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   .courseCard__main {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 16px 16px 24px 16px;
+
+      .courseCard__content {
+         height: 74px;
+         overflow: hidden;
+         margin: 8px 0;
+      }
+
+      .courseCard__info {
+         display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+         margin-bottom: 16px;
+         .courseCard__enrolled {
+            display: flex;
+            align-items: flex-start;
+            svg {
+               margin-right: 3px;
+               margin-top: -5px;
+            }
+            span {
+               margin-top: 4px;
+            }
+         }
+      }
+      .courseCard__actionIcons {
+         span:nth-of-type(2) {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         span:hover {
+            cursor: pointer;
+         }
+      }
+   }
+}

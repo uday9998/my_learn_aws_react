@@ -1,0 +1,84 @@
+.uploadModalWrapper {
+   position: relative;
+   max-width: 720px;
+   max-height: 460px;
+   width: 100%;
+   background-color: #fff;
+   padding: 24px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-sizing: border-box;
+   background: #FFFFFF;
+   border: 1px solid #E7E9E9;
+   box-sizing: border-box;
+   border-radius: 12px;
+
+  &.empty {
+    padding: 96px 24px;
+    max-width: 400px;
+  }
+  &.centered {
+    justify-content: center;
+  }
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  .uploadArea {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    &.dragging {
+      border: 1px dashed rgba(63, 79, 101, 0.6);
+
+    }
+  }
+  .cropArea {
+    width: 100%;
+    max-height: 100vh;
+  }
+  .dragInnerFooter {
+    margin-top: 24px;
+    input {
+      display: none;
+    }
+  }
+}
+.dragInnerFooter{
+   text-align: center;
+   margin-top: 16px;
+   button{
+      margin-bottom: 16px;
+   }
+}
+
+.uploadModalClose {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  :hover {
+    cursor: pointer;
+  }
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.originalImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.full-uploadprogress {
+  width: 100%;
+  .uploadCont_wrapper {
+    width: 100%;
+  }
+}

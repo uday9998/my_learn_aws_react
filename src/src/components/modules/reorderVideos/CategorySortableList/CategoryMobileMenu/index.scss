@@ -1,0 +1,84 @@
+.modal__menu__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+
+    .inner__menu__wrapper {
+        background-color: #fff;
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .title__wrapper {
+            padding: 12px 12px 0 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .settings__wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .duplicate__wrapper {
+                padding: 12px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                cursor: pointer;
+            }
+
+            .delete__wrapper {
+                border-top: 1px solid #e7e9e9;
+                padding: 12px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                cursor: pointer;
+
+                span {
+                    color: #D12D36;
+                }
+
+                &.desabled {
+                    background-color: #E7E9E9;
+
+                    span {
+                        color: #727978;
+                    }
+
+                    svg {
+                        path {
+                            fill: #727978;
+                        }
+                    }
+                }
+            }
+
+            .cannot__delete {
+                padding: 12px;
+
+                .warning__inner__wrapper {
+                    border: 1px solid #E7E9E9;
+                    border-radius: 12px;
+                    background-color: #F8FAFA;
+                    padding: 12px;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+.checkoutPage-leftContent {
+    // padding: 24px;
+    // background-color: #f8f9fa;
+    border-radius: 8px;
+    // margin: 20px;
+  
+    .checkout-summary {
+      background-color: white;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+      .membership-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+  
+        .membership-icon {
+          width: 48px;
+          height: 48px;
+          background-color: #374151;
+          color: white;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+          font-weight: 600;
+          margin-right: 16px;
+          flex-shrink: 0;
+        }
+  
+        .membership-details {
+          flex: 1;
+  
+          .membership-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            margin: 0 0 4px 0;
+            line-height: 1.3;
+          }
+  
+          .membership-price {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1f2937;
+            margin: 0;
+          }
+        }
+      }
+  
+      .membership-summary {
+        margin-bottom: 32px;
+        padding-bottom: 24px;
+  
+        .summary-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+  
+          .summary-label {
+            font-size: 16px;
+            color: #374151;
+            font-weight: 500;
+          }
+  
+          .summary-value {
+            font-size: 16px;
+            color: #1f2937;
+            font-weight: 500;
+          }
+        }
+      }
+  
+      .billing-details {
+        margin-bottom: 24px;
+  
+        .billing-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin-bottom: 12px;
+  
+          &:last-of-type {
+            margin-bottom: 4px;
+          }
+  
+          .billing-label {
+            font-size: 16px;
+            color: #6b7280;
+            font-weight: 400;
+          }
+  
+          .billing-value {
+            font-size: 16px;
+            color: #1f2937;
+            font-weight: 500;
+          }
+        }
+  
+        .billing-frequency {
+          font-size: 14px;
+          color: #6b7280;
+          margin-left: 0;
+          margin-top: -8px;
+          display: inline;
+        }
+  
+        .billing-frequency-suffix {
+          font-size: 14px;
+          color: #6b7280;
+          float: right;
+          margin-top: 0;
+        }
+      }
+  
+      .billing-divider {
+        height: 1px;
+        background-color: #e5e7eb;
+        margin: 24px 0;
+      }
+  
+      .due-today {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .due-label {
+          font-size: 18px;
+          color: #1f2937;
+          font-weight: 600;
+        }
+  
+        .due-amount {
+          font-size: 18px;
+          color: #1f2937;
+          font-weight: 700;
+        }
+      }
+    }
+  
+    // Template-specific styles
+    &.template7 {
+      .checkout-summary {
+        border: 1px solid #e5e7eb;
+      }
+    }
+  
+    &.template4,
+    &.template5 {
+      .membership-icon {
+        background-color: #3b82f6;
+      }
+    }
+  
+    // Preview mode adjustments
+    .template7 &,
+    .template4 &,
+    .template5 & {
+      .checkout-summary {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }

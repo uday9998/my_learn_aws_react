@@ -1,0 +1,23 @@
+.products__wrapper {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .products__title {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .products__card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 992px) {
+    .products__card__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

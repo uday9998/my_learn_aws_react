@@ -1,0 +1,120 @@
+// Variables
+:root {
+   --header-main-color: #24554e;
+   --header-dark-color: #1a413b;
+   --header-light-color: #2d6a61;
+   --header-text-color: #ffffff;
+   --header-hover-color: #a7e1d9;
+   --header-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .classHeader {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--header-main-color);
+   border-bottom: 1px solid var(--header-light-color);
+   color: var(--header-text-color);
+   height: 72px;
+   padding: 0 24px;
+   width: 100%;
+   box-sizing: border-box;
+   box-shadow: var(--header-shadow);
+   
+   &__exitButton {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     cursor: pointer;
+     transition: color 0.2s ease;
+     padding: 8px;
+     border-radius: 4px;
+     
+     &:hover {
+       color: var(--header-hover-color);
+       background-color: rgba(255, 255, 255, 0.05);
+     }
+     
+     svg {
+       width: 18px;
+       height: 18px;
+     }
+     
+     span {
+       font-size: 16px;
+       font-weight: 500;
+     }
+   }
+   
+   &__btns {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+     
+     button {
+       padding: 8px 16px;
+       border-radius: 4px;
+       font-size: 14px;
+       font-weight: 500;
+       background-color: #fff !important;
+       border: none;
+       color: var(--header-text-color);
+       cursor: pointer;
+       transition: background-color 0.2s ease;
+       
+       &:hover {
+         background-color: var(--header-light-color);
+       }
+       
+       &:active {
+         transform: translateY(1px);
+       }
+     }
+   }
+   
+   // Tablet and mobile styles
+   @media screen and (max-width: 1024px) {
+     &__exitButton {
+       span {
+         display: none;
+       }
+     }
+   }
+
+   // Responsive styles
+   @media screen and (max-width: 767px) {
+     height: auto;
+     padding: 16px 20px;
+     flex-direction: column;
+     gap: 16px;
+     align-items: flex-start;
+     
+     &__exitButton {
+       span {
+         display: none;
+       }
+     }
+     
+     &__btns {
+       width: 100%;
+       justify-content: flex-end;
+       
+       button {
+         padding: 6px 12px;
+         font-size: 13px;
+       }
+     }
+   }
+   
+   // Extra small screens
+   @media screen and (max-width: 480px) {
+     &__btns {
+       gap: 8px;
+       
+       button {
+         padding: 6px 10px;
+         font-size: 12px;
+       }
+     }
+   }
+ }

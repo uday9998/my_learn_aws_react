@@ -1,0 +1,97 @@
+.d-account {
+   max-width: 1330px;
+   background-color: #ffffff;
+   margin: 0 auto;
+   border: 1px solid #e7e9e9;
+   border-radius: 12px;
+   box-sizing: border-box;
+   &.accountPage {
+      .content_left {
+         @media screen and (min-width: 1024px) {
+            max-width: 360px;
+         }
+      }
+      .content_right {
+         @media screen and (min-width: 1024px) {
+            max-width: calc(100% - 360px);
+         }
+      }
+   }
+   .content_left {
+      min-width: 315px;
+      height: 100%;
+      .mob-account-content {
+         height: 100%;
+      }
+      display: block;
+   }
+   .content_right {
+      position: relative;
+      box-sizing: border-box;
+   }
+   .rightSide {
+      width: 100%;
+   }
+
+   @media screen and (max-width: 1024px) {
+      border: none;
+      border-top: 1px solid #e7e9e9;
+      position: relative;
+      border-radius: 0;
+
+      .content_left {
+         max-width: 250px;
+         min-width: auto;
+         position: absolute;
+         background-color: #FFFFFF;
+         z-index: 2;
+         overflow-y: visible;
+         transition: .3s ease-in;
+
+         &.opened {
+            left: 0;
+
+            .account__side__top__switcher {
+               right: -24px;
+
+            }
+         }
+         &.closed {
+            left: -250px;
+            border: none;
+
+            .account__side__top__switcher {
+               right: -8px;
+
+            }
+         }
+
+         .account__side__top {
+            padding: 0;
+            padding-right: 16px;
+            padding-top: 16px;
+            position: relative;
+
+            .account__side__top__switcher {
+               cursor: pointer;
+               display: flex;
+               position: absolute;
+               width: 24px;
+               height: 48px;
+               justify-content: center;
+               align-items: center;
+               border-radius: 6px;
+               border: 1px solid #e7e9e9;
+               z-index: 3;
+               background-color: #FFFFFF;
+            }
+         }
+      }
+      .content_right {
+         width: 100%;
+      }
+   }
+}
+.account__wrapper {
+   height: 100%;
+}

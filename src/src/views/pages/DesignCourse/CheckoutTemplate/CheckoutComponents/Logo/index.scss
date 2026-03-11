@@ -1,0 +1,9 @@
+.logo {
+   display: flex;
+   overflow-wrap: break-word;
+   word-break: break-word;
+   img {
+      max-height: 30px;
+      display: block;
+   }
+}

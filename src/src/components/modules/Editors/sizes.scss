@@ -1,0 +1,112 @@
+.quill {
+
+   .ql-picker.ql-size .ql-picker-label[data-value="4px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="4px"]::before {
+      content: "4px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="6px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="6px"]::before {
+      content: "6px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="8px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="8px"]::before {
+      content: "8px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="10px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="10px"]::before {
+      content: "10px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="12px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="12px"]::before {
+      content: "12px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="14px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="14px"]::before {
+      content: "14px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="16px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="16px"]::before {
+      content: "16px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="18px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="18px"]::before {
+      content: "18px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="24px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="24px"]::before {
+      content: "24px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="36px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="36px"]::before {
+      content: "36px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="48px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="48px"]::before {
+      content: "48px";
+   }
+
+   .ql-picker.ql-size .ql-picker-label[data-value="54px"]::before,
+   .ql-picker.ql-size .ql-picker-item[data-value="54px"]::before {
+      content: "54px";
+   }
+}
+
+
+
+.ql-size-4px {
+   font-size: 4px;
+}
+
+.ql-size-6px {
+   font-size: 6px;
+}
+
+.ql-size-8px {
+   font-size: 8px;
+}
+
+.ql-size-10px {
+   font-size: 10px;
+}
+
+.ql-size-12px {
+   font-size: 12px;
+}
+
+.ql-size-14px {
+   font-size: 14px;
+}
+
+.ql-size-16px {
+   font-size: 16px;
+}
+
+.ql-size-18px {
+   font-size: 18px;
+}
+
+.ql-size-24px {
+   font-size: 24px;
+}
+
+.ql-size-36px {
+   font-size: 36px;
+}
+
+.ql-size-48px {
+   font-size: 48px;
+}
+
+.ql-size-54px {
+   font-size: 54px;
+}

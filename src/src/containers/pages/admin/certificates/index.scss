@@ -1,0 +1,106 @@
+.certificatesContainer {
+   width: 100%;
+   overflow-y: auto;
+   background-color: #F4F7F7;
+   .header{
+      padding-left: 32px;
+      padding-right: 32px;
+   }
+   .modal__new__content{
+      width: 414px;
+   }
+   .adminContent{
+      padding-left: 32px;
+      padding-right: 32px;
+
+      @media screen and (max-width: 1024px) {
+         padding: 0 16px;
+      }
+   }
+   .main{
+      display: flex;
+      flex-direction: column;
+   }
+   .delete__modal__content{
+      max-width: 414px;
+   }
+   .iconSearch{
+      display: flex;
+      align-items: center;
+      margin-right: 48px;
+      @media(max-width: 1068px) {
+         margin-right: 24px;
+         .search__input {
+            width: 230px;
+         }
+      }
+   }
+   .sortBy{
+      display: flex;
+      align-items: center;
+   }
+   .sortBySelect{
+      width: 124px;
+       height: 46px;
+   }
+
+   .subTitle {
+      font-family: AvenirNext;
+      font-size: 24px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: #3f4f65;
+   }
+   .filtersortByTitle {
+      margin-right: 12px;
+      font-family: Avenir;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.43;
+      letter-spacing: normal;
+      color: #8a8b8b;
+      white-space: nowrap;
+   }
+   .createCertificate{
+      margin-left: 48px;
+      @media(max-width: 1168px) {
+         button {
+            font-size: 14px;
+            padding-left: 16px;
+            padding-right: 16px;
+         }
+      }
+      @media(max-width: 1125px) {
+         margin-left: 8px;
+         button {
+         }
+      }
+   }
+   .noCredit{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 203px;
+   }
+
+   .search__input {
+      position: relative;
+      width: 250px;
+
+      svg {
+         position: absolute;
+         top: 12px;
+         right: 16px;
+      }
+   }
+@media all and (max-width: 1023px) {
+   background-color: #FFFFFF;
+}
+}

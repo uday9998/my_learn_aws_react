@@ -1,0 +1,66 @@
+.quizItem__answerd {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 8px;
+   padding: 0 5px;
+
+   .quizItem_number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #cddaf1;
+      border-radius: 50%;
+      height: 36px;
+      min-width: 36px;
+   }
+
+   .quizItem_form {
+      position: relative;
+      width: 100%;
+      margin: 0 10px;
+
+      .quizItem_checkbox {
+         position: absolute;
+         z-index: 1;
+         display: flex;
+         height: 100%;
+         width: 48px;
+         align-items: center;
+         justify-content: center;
+         border-right: 1px solid #cddaf1;
+
+         .icon_checkbox_selected {
+            path {
+               fill: #7cb740;
+            }
+         }
+
+         .CheckBox {
+            width: 21px;
+            height: 21px;
+         }
+      }
+
+      .quizItem_input input {
+         padding-left: 60px;
+         padding-right: 37px;
+      }
+
+      .quizItem_input {
+         position: relative;
+         .quizItem_delete {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            cursor: pointer;
+         }
+      }
+   }
+
+   .quizItem_bar {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+   }
+}

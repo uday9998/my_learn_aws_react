@@ -1,0 +1,15 @@
+.offer__editor__button{
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 10px 16px;
+    gap: 8px;
+    max-width: max-content;
+    width: 100%;
+    font-family:  var(--primaryFont);
+}

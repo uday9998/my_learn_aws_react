@@ -1,0 +1,112 @@
+.upsell__plan__item{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px 12px 12px;
+    gap: 24px;
+    width: 100%;    
+    background: #F7FCFC;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    border-left: 16px solid #36796F;    
+   
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        img{
+            width: 120px;
+            height: 68px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            .bottom{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                &__line{
+                    background: #E7E9E9;
+                    border-radius: 1px;
+                    width: 1px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+    &__right{
+        display: flex;
+        .status__simple{
+            padding: 5px 8px;
+        }
+        gap: 16px;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+
+        &__left {
+            width: 100%;
+            padding: 12px 12px 8px 12px;
+        }
+
+        &__right {
+            width: 100%;
+            justify-content: flex-end;
+            padding: 8px 12px 12px 12px;
+            border-top: 1px solid #E7E9E9;
+        }
+    }
+}
+
+.upsell__plan__item__wrapper{
+    display: flex;
+    flex-direction: column;
+    &__downsell{
+        display: flex;
+        &__create{
+            width: 100%;
+            margin-top: 24px;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 12px 24px;
+            gap: 12px;
+            box-sizing: border-box;
+            cursor: pointer;
+            .circle{
+                border: 1px solid #D0D2D2;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                path{
+                    fill: #727978;
+                }
+            }
+        }
+    }
+}
+
+.default{
+    width: 120px;
+    height: 68px;
+    background-color: white;
+    border: 1px solid #E7E9E9;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: center;
+}

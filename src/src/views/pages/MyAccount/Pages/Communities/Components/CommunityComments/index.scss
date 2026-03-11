@@ -1,0 +1,16 @@
+.accout__community__comments{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sort__button__new{
+        button{
+            min-height: 44px !important;
+        }
+    }
+}

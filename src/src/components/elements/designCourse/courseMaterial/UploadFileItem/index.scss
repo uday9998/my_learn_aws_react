@@ -1,0 +1,32 @@
+.uploadFileItem {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   padding-top: 28px;
+   min-height: 80px;
+   box-sizing: border-box;
+   border-bottom: 2px solid #c2cedb;
+   .uploadFileItem__left {
+      display: flex;
+      flex: 1 1;
+      align-items: flex-start;
+      >svg {
+         margin-right: 16px;
+      }
+      .uploadedFileItem__upload {
+         flex: 1 1;
+         .uploadedFileItem__progress {
+            width: 100%;
+            max-width: 245px;
+            margin-bottom: 12px;
+            margin-top: 4px;
+         }
+      }
+   }
+   >svg:hover {
+      cursor: pointer;
+   }
+   svg {
+      margin-top: -1px;
+   }
+}

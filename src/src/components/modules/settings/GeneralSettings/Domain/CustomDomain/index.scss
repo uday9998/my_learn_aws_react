@@ -1,0 +1,11 @@
+.custom__domain{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}

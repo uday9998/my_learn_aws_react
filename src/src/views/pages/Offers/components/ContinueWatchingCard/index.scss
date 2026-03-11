@@ -1,0 +1,69 @@
+.continue__card {
+    // border: 2px solid rgb(37, 41, 52);
+    border-radius: 7px;
+    max-width: 314px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    // .video__picture {
+    //     width: 100%;
+    //     height: 173px;
+    //     background-position: center;
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     object-fit: cover;
+    // }
+
+    img {
+        object-position: center;
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+
+        @media (max-width: 1024px) {
+            height: 100%;
+        }
+    }
+
+    .info__section {
+        padding: 10px 0px 10px 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        .info__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4px
+        }
+
+        .progress__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+
+            .progress {
+                max-width: 254px;
+                width: 100%;
+                height: 8px;
+                background-color: #fff;
+                border-radius: 100px;
+                margin-right: 17px;
+                position: relative;
+                overflow: hidden;   
+
+                .progress__fill {
+                    height: 100%;
+                    background-color: #3060BD;
+                    position: absolute;
+                }
+            }
+        }
+    }
+};

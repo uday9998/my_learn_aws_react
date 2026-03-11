@@ -1,0 +1,14 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+export const NotificationGoBackLIcon = ({ onClick }) => {
+   return (
+      <svg width='24' style={ { cursor: 'pointer' } } height='24' role='presentation' onClick={ onClick } viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+         <path fillRule='evenodd' clipRule='evenodd' d='M10.5303 4.46967C10.8232 4.76257 10.8232 5.23744 10.5303 5.53033L4.81067 11.2499H21C21.4142 11.2499 21.75 11.5857 21.75 11.9999C21.75 12.4141 21.4142 12.7499 21 12.7499H4.81066L10.5303 18.4696C10.8232 18.7625 10.8232 19.2374 10.5303 19.5303C10.2374 19.8232 9.76256 19.8232 9.46967 19.5303L2.46967 12.5303C2.32902 12.3896 2.25 12.1988 2.25 11.9999C2.25 11.801 2.32902 11.6102 2.46967 11.4696L9.46967 4.46967C9.76257 4.17678 10.2374 4.17678 10.5303 4.46967Z' fill='#131F1E' />
+      </svg>
+   );
+};
+
+NotificationGoBackLIcon.propTypes = {
+   onClick: PropTypes.func,
+};

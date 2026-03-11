@@ -1,0 +1,14 @@
+.radiomodul {
+   margin: 24px 0;
+   .radiomodul-title {
+      margin-bottom: 4px;
+   }
+   .radiomodul-subtitle {
+      margin-bottom: 16px;
+   }
+   .radiomodul-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+}

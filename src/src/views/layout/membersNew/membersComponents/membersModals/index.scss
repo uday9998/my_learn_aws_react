@@ -1,0 +1,374 @@
+.bulk__import {
+   &__title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 133%;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: #131f1e;
+      margin-bottom: 4px;
+   }
+   &__download {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      .download__back {
+         position: relative;
+         margin-bottom: 20px;
+      }
+      .download__back__absolute {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         max-height: 44px;
+         svg {
+            width: 24px;
+            height: 24px;
+            path {
+               fill: #fff;
+            }
+         }
+         transform: translate(-50%, -50%);
+      }
+   }
+   &__upload {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+}
+
+.add__member__content {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   .inputNew {
+      padding: 8px 16px 8px;
+   }
+   &__top {
+      display: flex;
+      gap: 4px;
+      flex-direction: column;
+   }
+   .upload {
+      .upload__view{
+         height: 226px;
+      }
+      width: 258px;
+   }
+   .image__view {
+      width: 70%;
+   }
+   .SelectItem {
+      width: 100%;
+   }
+   .add__member__inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+   .add__member__link {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      &__top {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+      &__content {
+         display: flex;
+         gap: 10px;
+         padding: 10px 16px;
+         background: #f8fafa;
+         border: 1px solid #e7e9e9;
+         border-radius: 12px;
+         align-items: center;
+         justify-content: space-between;
+         svg {
+            cursor: pointer;
+         }
+      }
+   }
+
+   @media screen and (max-width: 1024px) {
+      .upload {
+         width: 100%;
+      }
+      .image__view {
+         width: 100%;
+      }
+   }
+}
+
+.member__modal__content {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   &__background {
+      top: 0;
+      width: 100%;
+      left: 0;
+      position: absolute;
+      background: linear-gradient(91.13deg, #2a2a36 15.71%, #b0ac9a 100%);
+      border-radius: 0px;
+      height: 120px;
+      width: 100%;
+      z-index: 1;
+   }
+   .modal__line {
+      background: #e7e9e9;
+      width: 100%;
+      height: 1px;
+   }
+   .modal-flex {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      svg {
+         cursor: pointer;
+      }
+      button {
+         width: 100%;
+      }
+   }
+   .member__modal__top {
+      display: flex;
+      z-index: 2;
+      gap: 24px;
+      align-items: flex-end;
+      margin-top: 28px;
+      img {
+         width: 120px;
+         height: 120px;
+         border: 4px solid #ffffff;
+         border-radius: 12px;
+         object-fit: cover;
+      }
+      &__right {
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+      }
+      .modal__status {
+         padding: 0px 4px;
+         border-radius: 8px;
+         span {
+            display: block;
+            white-space: nowrap;
+         }
+      }
+      .modal__status__Active {
+         background: #e8f2f1;
+      }
+      .modal__status__Inactive {
+         background-color: #fff1f1;
+         & > span {
+            color: #a61c23 !important;
+         }
+      }
+   }
+   .view__full__profile {
+      width: 100%;
+      text-align: center;
+      border: 1px solid #3060bd;
+      cursor: pointer;
+      border-radius: 12px;
+      padding: 8px 0px;
+   }
+   .member__edit__buttons {
+      gap: 8px;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      .member__edit__button {
+         cursor: pointer;
+         display: flex;
+         border: 1px solid #24554e;
+         border-radius: 8px;
+         padding: 8px;
+         align-items: center;
+         svg {
+            width: 20px;
+            height: 20px;
+            path {
+               fill: #24554e;
+            }
+         }
+         gap: 4px;
+      }
+      .member__edit__triangle {
+         position: relative;
+         &__button {
+            display: flex;
+            svg {
+               width: 20px;
+               height: 20px;
+               path {
+                  fill: #24554e;
+               }
+            }
+         }
+         &__content {
+            position: absolute;
+            width: 200px;
+            padding: 4px 0px;
+            background: #ffffff;
+            border: 1px solid rgba(19, 31, 30, 0.1);
+            box-shadow: 0px 4px 10px rgba(19, 31, 30, 0.1),
+               1px 2px 2px rgba(19, 31, 30, 0.04);
+            border-radius: 12px;
+            right: 0px;
+            top: 100%;
+            z-index: 3;
+         }
+         &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            cursor: pointer;
+            padding: 12px 16px;
+            gap: 12px;
+            background: #ffffff;
+            svg {
+               width: 20px;
+               height: 20px;
+            }
+            path {
+               fill: #131f1e !important;
+            }
+         }
+         &__item__delete {
+            border-top: 1px solid #e7e9e9;
+            path {
+               fill: #d12d36 !important;
+            }
+         }
+      }
+   }
+   .member__info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      &__flex {
+         display: flex;
+         align-items: center;
+         gap: 8px;
+         span {
+            max-width: 200px;
+            text-overflow: ellipsis;
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+         }
+         svg {
+            cursor: pointer;
+         }
+      }
+      &__column {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+      &__level {
+         background: #fff1f1;
+         border-radius: 8px;
+         padding: 0px 4px;
+         span {
+            display: block;
+            overflow: hidden;
+            text-overflow: hidden;
+            white-space: nowrap;
+            max-width: 100px;
+         }
+      }
+      &__role {
+         background: #f1f6ff;
+         border-radius: 8px;
+         padding: 0px 4px;
+      }
+      svg {
+         path {
+            fill: #444c4b;
+         }
+      }
+   }
+   .member__analytics {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+   .member__bottom__block {
+      padding: 12px 16px 12px 20px;
+      border: 1px solid #e7e9e9;
+      border-radius: 16px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      &__level {
+         padding: 0px 4px;
+         border-radius: 8px;
+         max-width: max-content;
+         background: #fff1f1;
+      }
+      &__role {
+         padding: 0px 4px;
+         max-width: max-content;
+         border-radius: 8px;
+         background: #fdf1ff;
+      }
+   }
+   .member__tags {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+      span {
+         white-space: nowrap;
+      }
+      &__content {
+         min-height: 60px;
+         display: flex;
+         &__title {
+            display: flex;
+            align-items: center;
+            padding-right: 12px;
+            margin-right: 12px;
+            border-right: 1px solid #e7e9e9;
+         }
+      }
+      &__flex {
+         display: grid;
+         grid-template-columns: auto auto auto;
+         row-gap: 12px;
+         gap: 12px;
+      }
+      .member__tag {
+         border: 1px solid #d0d2d2;
+         border-radius: 4px;
+         justify-content: center;
+         padding: 0px 8px;
+         display: inline;
+         gap: 4px;
+         display: flex;
+         max-height: max-content;
+         align-items: center;
+         svg {
+            cursor: pointer;
+         }
+      }
+      &__add {
+         display: flex;
+         align-items: flex-start;
+         div {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+         }
+      }
+   }
+}

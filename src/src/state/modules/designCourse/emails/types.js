@@ -1,0 +1,59 @@
+const prefix = 'designCourses/emails';
+
+export const SET_INPUT = `${ prefix }/setInput`;
+export const RESET_INPUT = `${ prefix }/resetInput`;
+
+export const EMAIL_SEND_START = `${ prefix }/EMAIL_SEND_START`;
+export const EMAIL_SEND_COMPLETED = `${ prefix }/EMAIL_SEND_COMPLETED`;
+export const EMAIL_SEND_FAILED = `${ prefix }/EMAIL_SEND_FAILED`;
+
+export const SET_FILTER_OPTIONS = `${ prefix }/SET_FILTER_OPTIONS`;
+export const ADD_FILTER_OPTION = `${ prefix }/ADD_FILTER_OPTION`;
+export const REMOVE_FILTER_OPTION = `${ prefix }/REMOVE_FILTER_OPTION`;
+
+export const FILTER_EMAILS = `${ prefix }/FILTER_EMAILS`;
+
+
+export const GET_ADMINS_EMAILS = `${ prefix }/GET_ADMINS_EMAILS`;
+export const GET_ALLUSERS_EMAILS = `${ prefix }/GET_ALLUSERS_EMAILS`;
+
+export const SET_TAGFILTER_OPTIONS = `${ prefix }/SET_TAGFILTER_OPTIONS`;
+export const ADD_TAGFILTER_OPTION = `${ prefix }/ADD_TAGFILTER_OPTION`;
+export const REMOVE_TAGFILTER_OPTION = `${ prefix }/REMOVE_TAGFILTER_OPTION`;
+
+
+export const GET_SETTINGSEMAIL_START = `${ prefix }/GET_SETTINGSEMAIL_START`;
+export const GET_SETTINGSEMAIL_COMPLETED = `${ prefix }/GET_SETTINGSEMAIL_COMPLETED`;
+export const GET_SETTINGSEMAIL_FAILED = `${ prefix }/GET_SETTINGSEMAIL_FAILED`;
+
+export const EDIT_EMAILSTATUS_START = `${ prefix }/EDIT_EMAILSTATUS_START`;
+export const EDIT_EMAILSTATUS_COMPLETED = `${ prefix }/EDIT_EMAILSTATUS_COMPLETED`;
+export const EDIT_EMAILSTATUS_FAILED = `${ prefix }/EDIT_EMAILSTATUS_FAILED`;
+
+export const GET_EMAILSTATUSES_START = `${ prefix }/GET_EMAILSTATUSES_START`;
+export const GET_EMAILSTATUSES_COMPLETED = `${ prefix }/GET_EMAILSTATUSES_COMPLETED`;
+export const GET_EMAILSTATUSES_FAILED = `${ prefix }/GET_EMAILSTATUSES_FAILED`;
+
+export const DELETE_EMAILSTATUS_START = `${ prefix }/DELETE_EMAILSTATUS_START`;
+export const DELETE_EMAILSTATUS_COMPLETED = `${ prefix }/DELETE_EMAILSTATUS_COMPLETED`;
+export const DELETE_EMAILSTATUS_FAILED = `${ prefix }/DELETE_EMAILSTATUS_FAILED`;
+
+export const CHANGE_EMAILSTATUSES_START = `${ prefix }/CHANGE_EMAILSTATUSES_START`;
+export const CHANGE_EMAILSTATUSES_COMPLETED = `${ prefix }/CHANGE_EMAILSTATUSES_COMPLETED`;
+export const CHANGE_EMAILSTATUSES_FAILED = `${ prefix }/CHANGE_EMAILSTATUSES_FAILED`;
+
+export const SET_FILTER_OPTIONS_START = `${ prefix }/SET_FILTER_OPTIONS_START`;
+export const GET_ADMINS_EMAILS_START = `${ prefix }/GET_ADMINS_EMAILS_START`;
+export const GET_ALLUSERS_EMAILS_START = `${ prefix }/GET_ALLUSERS_EMAILS_START`;
+
+export const EMAILSTATUSES_UPDATE = `${ prefix }/EMAILSTATUSES_UPDATE`;
+
+export const FILTER_EMAILS_START = `${ prefix }/FILTER_EMAILS_START`;
+export const FILTER_EMAILS_FAILED = `${ prefix }/FILTER_EMAILS_FAILED`;
+export const FILTER_EMAILS_COMPLETED = `${ prefix }/FILTER_EMAILS_COMPLETED`;
+
+export const ACTION_EMAILS_START = `${ prefix }/ACTION_EMAILS_START`;
+export const MULTI_DELETE_EMAILS_COMPLETED = `${ prefix }/MULTI_DELETE_EMAILS_COMPLETED`;
+export const ACTION_EMAILS_FAILED = `${ prefix }/ACTION_EMAILS_FAILED`;
+
+export const DUPLICATE_EMAIL_COMPLETED = `${ prefix }/DUPLICATE_EMAIL_COMPLETED`;

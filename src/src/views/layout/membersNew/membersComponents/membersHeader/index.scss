@@ -1,0 +1,11 @@
+.members__header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (max-width: 1024px) {
+        .page__title > span {
+            font-size: 20px;
+        }
+    }
+};

@@ -1,0 +1,50 @@
+.chooseCoursePaths-modals{
+   .loading__SpinnerContainer{
+      min-width: 600px;
+   }
+   .chooseCourse-wraper{
+      padding-bottom: 26px;
+      min-width: 600px;
+      .chooseCourse-wraper-header{
+         display: flex;
+         justify-content: flex-end;
+
+         .closeIcon{
+            height: 24px;
+            width: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 24px;
+            margin-top: 24px;
+            cursor: pointer;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .chooseCoursePaths-modals{
+      .loading__SpinnerContainer{
+         min-width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+      }
+      .chooseCourse-wraper{
+         overflow: auto;
+         height: 100vh;
+         min-width: 100%;
+         -webkit-overflow-scrolling: touch;
+         .chooseCourse-wraper-header{
+            display: flex;
+            justify-content: flex-end;
+
+            .closeIcon{
+               margin-top: 12px;
+            }
+         }
+      }
+   }
+}

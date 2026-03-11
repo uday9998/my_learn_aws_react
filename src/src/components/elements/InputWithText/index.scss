@@ -1,0 +1,29 @@
+.input__with__text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    &__bottom{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        span{
+            white-space: nowrap;
+        }
+        &__input{
+            position: relative;
+            width: 100%;
+            input{
+                width: 90%;
+                color: #727978;
+            }
+            &__icon{
+                position: absolute;
+                top: 25%;
+                right: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,269 @@
+.signUpCard {
+   .testimonialItem {
+      border-bottom: 1px solid #dfe5eb;
+      .testimonial__delete {
+         cursor: pointer;
+         margin-top: 24px;
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         span {
+            color:rgb(63, 79, 101);
+            padding-right: 8px;
+         }
+      }
+      img {
+         max-width: 100%;
+      }
+      .testimonial__delete_margin {
+         cursor: pointer;
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+         margin-top: 24px;
+         margin-bottom: -24px;
+         span {
+            color:rgb(63, 79, 101);
+            padding-right: 8px;
+         }
+      }
+      .inputsBlock {
+         .comment {
+            color: rgb(63, 79, 101);
+         }
+         .textInput {
+            margin-top: 16px;
+         }
+         .textInput__div {
+            margin-top: 16px;
+         }
+         textarea {
+            letter-spacing: normal;
+             color: #8a94a2;
+         }
+         input {
+            letter-spacing: normal;
+            color: #8a94a2;
+         }
+      }
+      .textArea__div {
+         border: 1px solid #cddaf1;
+         -webkit-box-sizing: border-box;
+                 box-sizing: border-box;
+         border-radius: 4px;
+         font-family: 'Avenir Next';
+         width: 100%;
+         line-height: 1.5;
+         letter-spacing: 0.4px;
+         font-size: 16px;
+         padding: 12px 36px 12px 16px ;
+         background: #fbfdff;
+         font-weight: bold;
+         position: relative;
+         .testimonial__edit {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            cursor: pointer;
+         }
+         span {
+            color: #8a94a2 !important;
+            font-weight: bold;
+         }
+      }
+      .new-testimonial {
+         .btnBasic_theme_grey  {
+            margin-right: 16px;
+         }
+      }
+   }
+   .testimonial-title {
+      @media screen and (max-width: 500px) {
+         text-align: center;
+      }
+   }
+
+   .uploadImg {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      @media screen and (max-width: 500px) {
+         margin: 24px auto 25px;
+      }
+      //justify-content: center;
+     padding: 34px 24px;
+      border-radius: 4px;
+     background-color: #e5edf4;
+      margin-top: 24px;
+      margin-bottom: 25px;
+      max-width: 164px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      .author-image{
+         width: 100%;
+
+      }
+      button {
+         width: 116px;
+         background-color: rgba(194, 206, 219, 0.5);
+         height: 32px!important;
+         color: #3f4f65;
+         font-size: 14px !important;
+         margin-top: 24px;
+         font-weight: normal;
+      }
+   }
+
+   .resource_widget {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      max-width: 164px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+   }
+
+
+   .authorImg {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      //justify-content: center;
+   //   padding: 34px 24px;
+      border-radius: 4px;
+    //  background-color: #e5edf4;
+      margin-bottom: 25px;
+      max-width: 164px;
+      @media screen and (max-width: 500px) {
+         margin: 0px auto 25px;
+      }
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      .author-image{
+         width: 100%;
+         border-radius: 4px;
+      }
+      button {
+         width: 116px;
+         background-color: rgba(194, 206, 219, 0.5);
+         height: 32px!important;
+         color: #3f4f65;
+         font-size: 14px !important;
+         font-weight: normal;
+         position: absolute;
+         top: 50%;
+         -webkit-transform: translate(0, -50%);
+             -ms-transform: translate(0, -50%);
+                 transform: translate(0, -50%);
+      }
+   }
+
+   .inputsBlock {
+      width: 100%;
+
+      input {
+         margin-bottom: 16px;
+      }
+   }
+
+   #testimonial-bluBtn {
+      padding-bottom: 24px;
+   }
+
+
+   .testimonial__btnsBlock {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%;
+
+      button {
+         width: 168px;
+         //flex: 1 1;
+      }
+      &.new-testimonial{
+         -webkit-box-pack: end;
+         -webkit-justify-content: flex-end;
+             -ms-flex-pack: end;
+                 justify-content: flex-end;
+      }
+   }
+}
+
+@media screen and (max-width: 1280px) {
+   .signUpCard {
+      .testimonial__btnsBlock {
+         button {
+            min-width: 115px;
+            width: 30%
+         }
+      }
+   }
+
+}
+
+@media screen and (max-width: 720px) {
+   .testimonial__btnsBlock {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+
+      button {
+         margin: 0 0 16px 0 !important;
+         width: 100% !important;
+
+         &:first-of-type {
+            margin: 0 !important;
+         }
+      }
+   }
+
+   #testimonial-bluBtn {
+      padding-bottom: 16px!important;
+   }
+}
+
+.uploadProg {
+   max-width: 164px;
+}

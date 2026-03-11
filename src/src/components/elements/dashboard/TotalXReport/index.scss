@@ -1,0 +1,33 @@
+.totalSalesReport {
+   padding: 16px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   .totalSalesReport__results {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      .vertical_line {
+         width: 1px;
+         height: 86px;
+         background: #E7E9E9;
+         border-radius: 1px;
+      }
+      .totalSalesReport__result {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         span {
+            &:nth-child(1) {
+               margin-bottom: 8px;
+            }
+            &:nth-child(2) {
+               margin-bottom: 4px;
+            }
+         }
+
+      }
+   }
+
+}

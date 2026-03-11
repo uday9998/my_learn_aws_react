@@ -1,0 +1,140 @@
+.lesson__page {
+   width: 100%;
+   padding: 32px;
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   min-height: 87vh;
+   font-family: "Inter";
+   .bread_left_icon {
+      display: flex;
+      align-items: center;
+   }
+
+   &.template3 {
+      margin-top: 72px;
+   }
+
+   &__container {
+      max-width: 100%;
+      width: 1332px;
+      margin: 0px auto;
+      &__title {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+   .breadcrumb {
+      button {
+         font-size: 20px;
+      }
+   }
+   @media screen and (max-width:1128px) {
+      width: auto;
+      padding: 32px 20px;
+   }
+   &__content {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      word-wrap: break-word;
+      //flex-flow: column-reverse;
+      &__sections {
+         width: calc(100% - 430px);
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+         &__top {
+            padding: 20px;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+         }
+         @media screen and (max-width: 1023px) {
+            width: 100%;
+         }
+         &__lessons {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+         }
+         &__title {
+            font-size: 38px;
+            font-weight: 900;
+            line-height: 170%;
+         }
+         &__desc {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 168%;
+         }
+      }
+      &__right__general {
+         width: 39%;
+         max-width: 430px;
+         display: flex;
+         flex-direction: column;
+         gap: 32px;
+         height: fit-content;
+         .poweredByBridge {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            justify-content: center;
+            cursor: pointer;
+        }
+      }
+      &__right {
+         padding: 20px;
+         border-radius: 24px;
+         display: flex;
+         flex-direction: column;
+         gap: 32px;
+         height: fit-content;
+         &__header {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+         }
+         &__title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 150%;
+         }
+         &__desc {
+            box-sizing: border-box;
+            width: 100%;
+            line-height: 168%;
+            font-size: 16px;
+            font-weight: 400;
+         }   
+
+         @media screen and (max-width: 1023px) {
+            width: 100%;
+         }
+         // @media screen and (max-width: 1200px) {
+         //    min-width: 30%;
+         //    max-width: 30%;
+         // }
+      }
+      @media screen and (max-width: 1023px) {
+         width: 100%;
+         flex-direction: column;
+      }
+      // @media screen and (max-width:1150px) {
+      //    flex-direction: column;
+      //    &__sections{
+      //       float: 2;
+      //       width: 100%;
+      //    }
+      //    &__right{
+      //       min-width: min-content;
+      //       max-width: max-content;
+      //       width: 100%;
+      //    }
+      // }
+   }
+}

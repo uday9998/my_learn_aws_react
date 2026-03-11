@@ -1,0 +1,51 @@
+.unsubscribe__succes__template__top {
+   background: #ffffff;
+   border-radius: 24px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 44px;
+   @media (max-width: 720px) {
+      padding: 10px;
+      svg {
+         max-width: 320px;
+        }
+     }
+   &__text {
+      margin-top: 32px;
+      margin-bottom: 24px;
+      text-align: center;
+
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+
+      max-width: 454px;
+   }
+
+   &__form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &__remember {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+
+      button{
+        margin-top: 20px;
+      }
+   }
+
+   img{
+      max-width: 474px;
+      max-height: 280px;
+      object-fit: cover;
+   }
+}

@@ -1,0 +1,15 @@
+export default {
+   course: {},
+   lessons: [],
+   sections: [],
+   questions: [],
+   author: {},
+   lesson: {},
+   defaultLessonId: 1,
+   defaultQuestionId: 0,
+   getCourseInProgress: true,
+   getLessonInProgress: false,
+   courseComplatePercent: 0,
+   isComplate: false,
+   hasCertificateSelector: false,
+};

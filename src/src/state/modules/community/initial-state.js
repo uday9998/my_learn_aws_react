@@ -1,0 +1,42 @@
+const initialState = {
+   community: {},
+   progress: true,
+   roomProgress: false,
+   eventProgress: false,
+   selectedRoom: { name: 'Welcom', id: 'welcome' },
+   isFetchingRoom: false,
+   initialEventsLength: 0,
+   initialPostsLength: 0,
+   sortingOptions: {
+      date: 'newest',
+      locationTypes: [],
+      eventAccess: [],
+   },
+   selectedEvent: null,
+   eventSettings: {},
+   eventSettingsProgress: false,
+   locationCounts: {
+      local: 0,
+      tbd: 0,
+      virtual: 0,
+   },
+   accessCounts: {
+      open: 0,
+      private: 0,
+      secret: 0,
+   },
+   initialEvents: [],
+   postCreateProgress: false,
+   invitePorgress: false,
+   member: {},
+   memberProgress: true,
+   membersPage: {},
+   membersPageProgress: true,
+   messages: [],
+   initialMessagesCount: 0,
+   loadingMessages: true,
+   messagesHistory: [],
+   search: null,
+};
+
+export default initialState;

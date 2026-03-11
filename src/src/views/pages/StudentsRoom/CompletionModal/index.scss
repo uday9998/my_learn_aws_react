@@ -1,0 +1,89 @@
+.CompletionLeeson-Modal{
+   flex-direction: column;
+   display: flex;
+   position: relative;
+   width: 100%;
+   height: 320px;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+   background-color: var(--mainBgColor);
+   z-index: 1;
+   svg {
+      path {
+         fill: var(--memberTextColor);
+      }
+   }
+   .butttonContent {
+      display: flex;
+      justify-content: center;
+   }
+   .img-content{
+      position: absolute;
+      left:0;
+      top:0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      img{
+         width: 95%;
+         height: 95%;
+         object-position: center;
+         object-fit: contain;
+}
+   }
+   .modal-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 40px;
+      .close{
+         height: 40px;
+         width: 40px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+         z-index: 50;
+         svg{
+            width: 35px;
+            height: 35px;
+            margin-top: 12px;
+            margin-right: 12px;
+         }
+      }
+   }
+   .modal-body{
+      padding: 0 16px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      // width: 100%;
+      padding: 40px 0 40px;
+      z-index:  2;
+      text-align: center;
+      .butttonContent{
+         button{
+            width: 204px;
+         }
+      }
+      .complated-description{
+         padding: 25px;
+         color: #3f4f65;
+         text-align: center;
+         display: block;
+      }
+   }
+}
+@media screen and (max-width: 720px) {
+   .Completion_student{
+      .modalContent_pos_center{
+         width: 90% !important;
+      }
+   }
+}

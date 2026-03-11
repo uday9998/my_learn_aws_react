@@ -1,0 +1,32 @@
+.header {
+   width: 100%;
+   .breadcrumb {
+      margin-bottom: 24px;
+   }
+   &__top {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      &__title {
+         display: flex;
+         align-items: center;
+         .tooltip {
+            margin-top: 2px;
+            margin-left: 12px;
+            cursor: pointer;
+         }
+         &__back {
+            cursor: pointer;
+            margin-top: 2px;
+            margin-right: 15px;
+         }
+      }
+      &__table {
+         margin-top: 24px;
+      }
+   }
+   .navbar__search {
+      margin-top: 20px;
+   }
+}

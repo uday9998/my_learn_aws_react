@@ -1,0 +1,11 @@
+.siteChanges__module {
+   width: 100%;
+   padding: 24px 40px 32px 40px;
+   box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px) {
+   .siteChanges__module {
+      padding: 24px 24px 32px 24px;
+   }
+}

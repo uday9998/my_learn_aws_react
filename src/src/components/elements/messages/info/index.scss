@@ -1,0 +1,28 @@
+.info {
+   background: #f8fafa;
+   border: 1px solid #e7e9e9;
+   padding: 12px;
+   display: flex;
+   border-radius: 12px;
+   justify-content: space-between;
+   .info-left {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      div {
+         display: flex;
+      }
+      &-text{
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+      }
+   }
+   div {
+      &:nth-child(2) {
+         svg {
+            cursor: pointer;
+         }
+      }
+   }
+}

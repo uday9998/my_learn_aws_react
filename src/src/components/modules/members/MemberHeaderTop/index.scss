@@ -1,0 +1,72 @@
+.memberHeaderTop {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+   .hint-block {
+      position: relative;
+      top: 2px;
+   }
+
+   .hint-text {
+      position: absolute;
+      top: -18px;
+      left: 30px;
+      pointer-events:auto;
+      flex: 1;
+      white-space:nowrap;
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1;
+      border: solid 1px #cddaf1;
+      border-radius: 8px;
+      background-color: #fbfdff;
+      padding: 7px 5px 5px 5px;
+      span {
+         font-size: 13px;
+         line-height: 1;
+      }
+
+   }
+    .hint-block:hover  .hint-text {
+            visibility: visible;
+            opacity: 1;
+    }
+
+   .hint-icon{
+      height: 18px;
+      width: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      svg {
+         width: 18px;
+         height: 18px;
+      }
+   }
+   .left-icon{
+      height: 18px;
+      width: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .memberHeaderTop__title {
+      display: flex;
+      align-items: flex-start;
+   }
+   span {
+      line-height: 24px;
+   }
+
+   .memberHeaderTop__buttons {
+      display: flex;
+      .import__btn {
+         margin-right: 8px;
+      }
+      .export__btn {
+         margin-left: 8px;
+      }
+   }
+}

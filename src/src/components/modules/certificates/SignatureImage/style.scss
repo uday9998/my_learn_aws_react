@@ -1,0 +1,22 @@
+.certificateSign {
+    position: absolute;
+    right: 0;
+    &.hide {
+      display: none;
+    }
+    &.signatureImage {
+      max-width: 240px;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &.certificateSign--custom {
+      top: -62px;
+      max-width: 240px;
+      max-height: 70px;
+      min-width: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+}

@@ -1,0 +1,18 @@
+.d-pageBuilder {
+   position: relative;
+   iframe {
+      width: 100%;
+      height: 100%;
+   }
+   &__goBack{
+      position: absolute;
+      top: 24px;
+      cursor: pointer;
+
+      left: 24px;
+   }
+}
+
+.adminContainer {
+   padding: 0px;
+}

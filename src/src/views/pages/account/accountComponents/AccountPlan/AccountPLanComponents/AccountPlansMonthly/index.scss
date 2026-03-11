@@ -1,0 +1,9 @@
+.account__plan__monthly {
+   display: flex;
+   gap: 20px;
+   margin-bottom: 24px;
+   max-width: 100%;
+   @media screen and (max-width: 1400px) {
+      flex-wrap: wrap;
+   }
+}

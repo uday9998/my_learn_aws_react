@@ -1,0 +1,41 @@
+.landingOrder {
+   .landingOrder__title {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 35px;
+      span {
+         line-height: 1.2;
+      }
+   }
+   .landingOrder__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .landingOrder__list {
+         .landingOrder__item {
+            display: flex;
+            align-items: center;
+            max-width: 641px;
+            svg {
+               min-width: 40px;
+            }
+         }
+      }
+      .landingOrder__img {
+         margin-left: 50px;
+         img {
+            width: 100%;
+         }
+      }
+   }
+   .landingOrder__content-reverse {
+      flex-direction: row-reverse;
+      .landingOrder__img {
+         margin-left: 0;
+         margin-right: 50px;
+         img {
+            width: 100%;
+         }
+      }
+   }
+}

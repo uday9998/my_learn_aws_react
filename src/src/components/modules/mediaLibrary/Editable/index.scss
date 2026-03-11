@@ -1,0 +1,23 @@
+.editable___text{
+  border: none;
+  resize: none;
+  display: inline-block;
+  width: inherit;
+}
+.editable___text:focus{
+  outline: none;
+  border: none;
+}
+.editableItem{
+   display: flex;
+   align-items: center;
+   div{
+      &:nth-child(2){
+         margin-left: 20px;
+         margin-right: 5px;
+      }
+      &:nth-child(2),&:nth-child(3){
+         cursor: pointer;
+      }
+   }
+}

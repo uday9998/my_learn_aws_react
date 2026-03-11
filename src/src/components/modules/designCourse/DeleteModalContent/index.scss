@@ -1,0 +1,51 @@
+.deleteModal {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 40px 45px 40px;
+    .memberUpdat__select {
+       display: flex;
+       align-items: flex-end;
+       .SelectElement__drop-down {
+          max-height: 204px;
+          .SelectElement__option {
+             position: relative;
+             display: flex;
+             align-items: center;
+             &:hover {
+                background-color: rgba(124, 183, 64, 0.05);
+              
+                span {
+                   color: #7cb740 !important;
+                }
+                &:before {
+                   content: url(~assets/images/checkbox.png);
+                   position: absolute;
+                   display: block;
+                   left: 32px;
+                   top: 7px;
+                }
+               
+             }
+ 
+          }
+       }
+    }
+    .deleteModal__btns {
+       display: flex;
+       justify-content: flex-end;
+       .cancel__btn {
+          margin-right: 5px;
+       }   
+       .memberUpdate__btn {  
+          max-width: 180px;  
+          button {
+             width: 100%;
+          }    
+       }
+    }
+    .memberUpdate__btn {
+       margin-top: 24px;
+       text-align: right;
+    }
+    
+ }

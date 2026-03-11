@@ -1,0 +1,23 @@
+
+.radioBox {
+   position: relative;
+   .save_draft{
+      opacity: 0;
+      position: absolute;
+   }
+   label{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span{
+         font-size: 14px;
+         font-weight: 500;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.71;
+         letter-spacing: normal;
+         color: #3f4f65;
+         margin-left: 4px;
+      }
+   }
+}

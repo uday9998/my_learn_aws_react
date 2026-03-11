@@ -1,0 +1,37 @@
+.subscription__chart{
+   background: #FFFFFF;
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   padding: 20px 24px;
+   &__header{
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 15px;
+      .SelectItem {
+         top: -6px;
+      }
+      .SelectItem__button {
+         height: 36px;
+         width: 75px;
+         box-sizing: border-box;
+         padding: 0;
+         justify-content: center;
+        }
+
+   }
+   .SelectItem .textBasic_size_medium {
+      font-size: 12px;
+   }
+   .m-t-exs{
+      position: relative;
+   }
+   &__loader{
+      height: 200px;
+      position: relative;
+   }
+
+   @media screen and (max-width: 1024px) {
+      padding: 16px;
+   }
+}

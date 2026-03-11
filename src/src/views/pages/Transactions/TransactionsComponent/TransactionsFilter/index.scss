@@ -1,0 +1,21 @@
+.transactions-filter{
+    background-color: white;
+    &-input{
+        width: 100%;
+        min-width: 257px;
+    }
+    .input_date {
+       .inputNew {
+          height: 44px;
+       }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1300px) {
+      .report-container-filter {
+         flex-wrap: wrap;
+         .transactions-filter-input, .SelectItem  {
+            width: 44%;
+         }
+      }
+   }
+
+}

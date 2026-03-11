@@ -1,0 +1,361 @@
+// Main dashboard styles
+.community-dashboard {
+    padding: 20px;
+    // max-width: 1400px;
+    // margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+    .dashboard-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+  
+      .dashboard-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+  
+        .title-icon {
+          font-size: 24px;
+        }
+  
+        h1 {
+          font-size: 24px;
+          font-weight: 600;
+          margin: 0;
+        }
+      }
+  
+      .create-post-btn {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: #0056D6;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 16px;
+        font-weight: 500;
+        cursor: pointer;
+        
+        .btn-icon {
+          font-size: 14px;
+        }
+  
+        &:hover {
+          background-color: #004BBB;
+        }
+      }
+    }
+  
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 20px;
+  
+      @media (max-width: 992px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    // Common section styles
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 16px 0;
+    }
+  
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+  
+    // Card-based sections
+    .insights-section,
+    .health-section,
+    .discussions-section,
+    .active-members-section,
+    .quick-actions-section,
+    .suggested-actions-section {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 20px;
+    }
+  
+    // Insights section
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+  
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .insight-card {
+      background-color: #F7F9FC;
+      border-radius: 8px;
+      padding: 16px;
+  
+      .insight-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+  
+      .insight-label {
+        color: #4A5568;
+        font-weight: 500;
+      }
+  
+      .chart-icon {
+        color: #718096;
+      }
+  
+      .insight-value {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+  
+      .insight-change {
+        font-size: 14px;
+  
+        &.positive {
+          color: #38A169;
+        }
+  
+        &.negative {
+          color: #E53E3E;
+        }
+      }
+    }
+  
+    // Health section
+    .health-metrics {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .health-metric {
+      display: flex;
+      align-items: center;
+      
+      .metric-icon {
+        margin-right: 12px;
+        font-size: 16px;
+      }
+  
+      .metric-label {
+        flex-grow: 1;
+        color: #4A5568;
+      }
+  
+      .metric-value {
+        font-weight: 600;
+      }
+    }
+  
+    // Trending discussions
+    .view-all-btn {
+      background: none;
+      border: none;
+      color: #3182CE;
+      font-size: 14px;
+      cursor: pointer;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .discussion-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .discussion-item {
+      display: flex;
+      gap: 12px;
+      padding: 16px;
+      background-color: #F7F9FC;
+      border-radius: 8px;
+  
+      .star-icon {
+        font-size: 16px;
+        color: #ECC94B;
+      }
+  
+      .discussion-content {
+        flex-grow: 1;
+  
+        h3 {
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0 0 4px 0;
+          color: #2D3748;
+        }
+  
+        p {
+          color: #718096;
+          font-size: 14px;
+          margin: 0 0 12px 0;
+        }
+  
+        .discussion-meta {
+          display: flex;
+          gap: 16px;
+          color: #718096;
+          font-size: 12px;
+          margin-bottom: 12px;
+        }
+      }
+  
+      .join-discussion-btn {
+        background-color: transparent;
+        border: 1px solid #4299E1;
+        color: #4299E1;
+        border-radius: 4px;
+        padding: 6px 12px;
+        font-size: 12px;
+        cursor: pointer;
+        
+        &:hover {
+          background-color: #EBF8FF;
+        }
+      }
+    }
+  
+    // Active members section
+    .member-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .member-item {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #EDF2F7;
+  
+      &:last-child {
+        border-bottom: none;
+      }
+  
+      .member-avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: #E2E8F0;
+        margin-right: 12px;
+      }
+  
+      .member-info {
+        flex-grow: 1;
+  
+        h3 {
+          font-size: 14px;
+          font-weight: 600;
+          margin: 0 0 2px 0;
+        }
+  
+        p {
+          font-size: 12px;
+          color: #718096;
+          margin: 0;
+        }
+      }
+  
+      .message-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: #718096;
+        
+        &:hover {
+          color: #4299E1;
+        }
+      }
+    }
+  
+    // Quick actions section
+    .action-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .action-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #F7F9FC;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 16px;
+      font-size: 14px;
+      text-align: left;
+      cursor: pointer;
+      
+      &:hover {
+        background-color: #EDF2F7;
+      }
+  
+      .action-icon {
+        font-size: 16px;
+      }
+    }
+  
+    // Suggested actions section
+    .suggestion-icon {
+      margin-right: 8px;
+    }
+  
+    .suggestion-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .suggestion-item {
+      background-color: #F7F9FC;
+      border-radius: 8px;
+      padding: 16px;
+  
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0 0 8px 0;
+      }
+  
+      p {
+        color: #718096;
+        font-size: 14px;
+        margin: 0 0 16px 0;
+      }
+  
+      .generate-btn {
+        background-color: #3182CE;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 16px;
+        font-size: 14px;
+        cursor: pointer;
+        
+        &:hover {
+          background-color: #2B6CB0;
+        }
+      }
+    }
+  }

@@ -1,0 +1,40 @@
+.dashboardCard {
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   min-width: 200px;
+   padding: 16px;
+   gap: 4px;
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   background-color: #ffffff;
+   align-items: flex-start;
+   box-sizing: border-box;
+   button {
+     color: rgba(36, 85, 78, 1);
+     margin-top:auto;
+     padding: 0;
+     padding-top: 17px;
+   }
+   .dashboardCard__content{
+      text-align: left;
+   }
+   .dashboardCard__icon {
+     margin-bottom: 12px
+   }
+}
+
+
+@media screen and (max-width: 1400px) {
+   .dashboardCard {
+     padding: 8px;
+   }
+}
+
+
+@media screen and (max-width: 765px) {
+   .dashboardCard {
+     width: 100%;
+   }
+}
+

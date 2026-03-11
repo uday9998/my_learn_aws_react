@@ -1,0 +1,25 @@
+.bridgeImgVideo {
+    border-radius: 12px;
+    img, video, div {
+        border-radius: 12px;
+    }
+    img, video {
+        width: 100%;
+        max-height: 500px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+.bridgeImgVideoSmall {
+    border-radius: 12px;
+    img, video, div {
+        border-radius: 12px;
+    }
+    img, video {
+        width: 100%;
+        max-height: 300px;
+        height: auto;
+        object-fit: contain;
+    }
+}

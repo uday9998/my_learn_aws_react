@@ -1,0 +1,32 @@
+.blockCreateEdit
+{
+   .blockCreateEditContent{
+      display: flex;
+   }
+   .createEditRectangle{
+      width: 288px;
+      // height: 855px;
+      height: calc(100vh - 150px);
+      margin-right: 24px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+      background-color: #ffffff;
+      padding: 24px;
+      box-sizing: border-box;
+      overflow-y: scroll;
+   }
+   .contentRectangle{
+      flex: 1;
+      background-color: #f0f4f7;
+      margin-bottom: 10px;
+      border:24px solid #ffffff ;
+      border-radius: 8px;
+      box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+      position: relative;
+   }
+   ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+}

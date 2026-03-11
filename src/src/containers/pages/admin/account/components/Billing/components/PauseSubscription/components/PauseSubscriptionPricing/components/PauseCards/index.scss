@@ -1,0 +1,23 @@
+.pause__card__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 12px;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    max-width: 300px;
+    width: 100%;
+    align-items: center;
+
+    .texts__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .prcie__text__wrapper {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+    }
+}

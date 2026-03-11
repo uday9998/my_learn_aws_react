@@ -1,0 +1,172 @@
+.videosTable {
+   width: 100%;
+   border-collapse: collapse;
+   background-color: #ffffff;
+   .videosTable__title {
+      padding: 12px 0;
+   }
+   .videosTable__data {
+      padding: 16px 0 14px 0;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      overflow: hidden;
+    //  white-space: nowrap;
+
+      .elipses {
+         display: block;
+         display: -webkit-box;
+         max-width: 100%;
+         font-size: 14px;
+         line-height: 1;
+         -webkit-line-clamp: 2;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+      }
+      .btnWrapper {
+         max-width: 90px;
+         width: 100%;
+         button {
+            min-width: 90px;
+            width: 100%;
+            cursor: pointer;
+         }
+      }
+      .view-video-details-mob {
+         display: none;
+      }
+      @media screen and (max-width: 500px) {
+         .btnWrapper {
+            display: none;
+         }
+         .view-video-details-mob {
+            display: block;
+            text-align: center;
+         }
+      }
+   }
+   .videosTable__row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      border-bottom: 2px solid rgba(198, 203, 212, 0.3);
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      cursor: pointer;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      td {
+         &:first-of-type {
+            padding-left: 24px;
+            width: 30%;
+            padding-right: 5px;
+            max-width: 200px;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+         }
+         &:nth-of-type(2) {
+            width: 30%;
+            max-width: 200px
+         }
+         &:nth-of-type(3) {
+            width: 15%;
+         }
+         &:last-of-type {
+            width: 15%;
+            padding-right: 2%;
+
+         }
+      }
+      &:hover {
+         background: rgba(0, 110, 255, 0.1);
+         -webkit-box-shadow: 4px 0px 0px 0px #006dff inset;
+                 box-shadow: 4px 0px 0px 0px #006dff inset;
+         -webkit-box-sizing: border-box;
+                 box-sizing: border-box;
+         button {
+            background: rgba(0, 110, 255, 0.1)!important;
+         }
+      }
+   }
+   .videosTable__row-active {
+      background: rgba(0, 110, 255, 0.1);
+      border-left: 4px solid #006dff;
+      button {
+         background: rgba(0, 110, 255, 0.1)!important;
+      }
+   }
+   .videosTable__header {
+      border: none;
+   }
+}
+
+@media screen and (max-width: 1280px) {
+   .videosTableCard__table {
+
+      .videosTable {
+         .videosTable__row {
+            td {
+               &:last-of-type {
+                  padding-right: 5px;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 1280px) {
+   .videosTableCard__table {
+      overflow-x: auto;
+      .videosTable {
+     //  min-width: 600px;
+      }
+   }
+}
+
+@media screen and (max-width: 1145px) {
+   .videosTableCard__table {
+      overflow-x: auto;
+      .videosTable {
+     //  min-width: 600px;
+      }
+   }
+
+   .videosTable {
+      .videosTable__data {
+         img {
+            display: none;
+         }
+      }
+      .videosTable__row {
+
+         td {
+            &:first-of-type {
+               padding-left: 24px;
+               width: 25%;
+               padding-right: 5px;
+            }
+            &:nth-of-type(2) {
+               width: 25%;
+            }
+            &:nth-of-type(3) {
+               width: 15%;
+            }
+            &:last-of-type {
+               width: 20%;
+               padding-right: 2%;
+            }
+         }
+
+   }
+}
+}

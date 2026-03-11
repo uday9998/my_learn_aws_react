@@ -1,0 +1,93 @@
+.certeficateBlackBackground{
+   width: 776px;
+   height: 548px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   .blackBackgroundTitle{
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-top: 24px;
+   }
+   input {
+      border: none;
+      min-width: 350px;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   textarea {
+      border: none;
+      min-width: 250px;
+      resize: none;
+      background-color: inherit;
+      outline: none;
+      text-align: center;
+   }
+   .blackBackgroundBelowTitle{
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-top: 31px;
+   }
+   .blackBackgroundStudentName{
+      font-size: 52px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      margin-top: 17px;
+   }
+   .blackBackgroundNote{
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      padding-top: 17px;
+   }
+   .blackBackgroundCourseName{
+      font-size: 24px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fbfbfb;
+      padding-top: 27px;
+      padding-bottom: 22px;
+   }
+   .blackBackgroundDates{
+      font-size: 11.7px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #fbfbfb;
+   }
+   .blackBackgroundLogo{
+      display: inline-block;
+      margin-right: 40px;
+      margin-left: 41px;
+      &.defaultLogo {
+         width: 73px;
+         height: 107px;
+      }
+   }
+   .blackBackgroundTopLogo{
+      height: 51px;
+      width: 59px;
+      margin-top: 44px;
+      background-repeat: no-repeat;
+   }
+}

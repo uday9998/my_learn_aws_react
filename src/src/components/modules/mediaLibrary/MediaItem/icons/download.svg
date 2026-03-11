@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <path id="prefix__a" d="M14.016 6l-7.032 6.984L0 6h3.984V0h6v6h4.032zM0 15h14.016v2.016H0V15z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(5 3)">
+        <use fill="#C2CEDB" fill-rule="nonzero" xlink:href="#prefix__a"/>
+    </g>
+</svg>

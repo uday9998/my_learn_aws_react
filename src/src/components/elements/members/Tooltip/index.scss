@@ -1,0 +1,80 @@
+.dynamicWrapper__tooltip {
+   margin-right: auto;
+   position: relative;
+   text-align: center;
+   z-index: 1000;
+   span {
+      font-size: 13px;
+      line-height: 1;
+   }
+   svg {
+      cursor: pointer;
+      margin-bottom: -2px;
+   }
+   .hintCard__wrapper {
+      width: 253px;
+      box-sizing: border-box;
+      position: absolute;
+      left: 13px;
+      bottom: 24px;
+      z-index: 999999999;
+      .hintCard {
+         padding: 16px 16px 20px;
+         background: #FFFFFF;
+         /* grey scale/10 */
+
+         border: 1px solid #E7E9E9;
+         border-radius: 12px;
+         .hintCard__emailsettings {
+            div {
+               display: inline;
+            }
+            .hintCard__emailsettings__green {
+               cursor: pointer;
+            }
+         }
+      }
+   }
+   .hintCard__wrapper__left {
+      width: 251px;
+      box-sizing: border-box;
+      position: absolute;
+      right: 13px;
+      bottom: 21px;
+      z-index: 9999999999;
+      .hintCard {
+         padding: 6px 8px;
+      }
+   }
+   .hintComment {
+      width: 200px;
+   }
+}
+
+@media screen and (max-width: 1080px) {
+   .hintCard_media {
+     max-width: 200px;
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .dynamicWrapper__tooltip {
+      span {
+         font-size: 12px;
+      }
+   }
+}
+
+
+
+@media screen and (max-width: 500px) {
+   .dynamicWrapper__tooltip {
+      .hintCard__wrapper {
+         width: 130px;
+      }
+      .hintCard__wrapper__left {
+         width: 130px;
+      }
+   }
+
+}

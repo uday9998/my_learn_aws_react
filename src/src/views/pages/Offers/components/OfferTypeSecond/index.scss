@@ -1,0 +1,123 @@
+$react-rater-link: #ccc !default; // color of star not rated
+$react-rater-hover: #666 !default; // color of star on hover
+$react-rater-active: #000 !default; // colo
+.offer__type__second{
+    display: flex;
+    width: 100%;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    background-color: #fff;
+    overflow: hidden;
+    &__button{
+        background: rgba(19, 31, 30, 0.7);
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__free__button{
+        display: flex;
+        background: var(--buttonBgcolor);
+        border-radius: 8px;
+        padding: 8px;
+        gap: 8px;
+        align-items: center;
+    }
+    &__right{
+        margin-left: 25px;
+        padding: 16px 0px;
+        padding-right: 24px;
+        gap: 12px;
+        width: 100%;
+        display: flex;
+        height: 176px;
+        box-sizing: border-box;
+        .data{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+            &__top{
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+            &__user{
+                border: 1px solid #E7E9E9;
+                border-radius: 8px;
+                box-sizing: border-box;
+                display: flex;
+                max-width: max-content;
+                flex-direction: row;
+                align-items: center;
+                padding: 6px 8px 6px 6px;
+                gap: 8px;
+            }
+        }
+        .purchase{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: flex-end;
+            justify-content: space-between;
+            &__price{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+            &__top{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .offer__editor__button{
+                    height: 44px;
+                    min-width: 146px;
+                    font-family:  var(--primaryFont);
+                }
+            }
+        }
+    }
+    &__left{
+        position: relative;
+        flex-shrink: 0;
+
+        img{
+            width: 320px;
+            height: 180px;
+            object-fit: cover;
+            object-position: left;
+        }
+        &__bottom{
+            position: absolute;
+            bottom: 12px;
+            right: 12px;
+            display: flex;
+        }
+        &__top{
+            position: absolute;
+            top: 14px;
+            width: calc(100% - 24px);
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            left: 12px;
+            .right{
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+            }
+        }
+    }
+}
+
+.react-rater .is-active {
+    color: #FFBE3D !important;
+}
+
+.react-rater-star{
+    font-size: 18px;
+}

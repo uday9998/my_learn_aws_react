@@ -1,0 +1,22 @@
+.community__settings__notifications{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__options{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    &__option{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

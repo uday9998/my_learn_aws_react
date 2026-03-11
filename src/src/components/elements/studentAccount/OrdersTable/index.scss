@@ -1,0 +1,124 @@
+.ordersTable {
+   .membersTable__table {
+      display: flex;
+      flex-direction: column;
+      .oval {
+            width: 7px;
+            height: 7px;
+            background-color: #7cb740;
+            display: inline-block;
+            border-radius: 8px;
+            margin-right: 2px;
+      }
+      .ovalBlack {
+         width: 7px;
+         height: 7px;
+         background-color: #666666;
+         display: inline-block;
+         border-radius: 8px;
+         margin-right: 2px;
+      }
+      .tableBody {
+         .tableRow {
+            border-bottom: 2px solid rgba(198, 203, 212, 0.3);
+            padding-bottom: 16px;
+            padding-top: 16px;
+            height: auto;
+            &:last-child {
+               border-bottom: none;
+            }
+         }
+      }
+      .tableRow {
+         padding: 0;
+         td {
+            span {
+               font-size: 14px !important;
+               font-weight: normal;
+               line-height: 1.71;
+               letter-spacing: normal;
+               color: #333333 !important;
+               font-family: var(--school-font);
+            }
+            &:nth-child(1) {
+               flex: 3;
+               span {
+                  max-width: 200px;
+                  display: inline-block;
+                  font-weight: 700;
+               }
+            }
+
+         }
+     }
+      th {
+         span {
+            color: var(--button-color-text) !important;
+            font-size: 14px !important;
+            line-height: 1.71;
+            font-family: var(--school-font);
+            font-weight: 400;
+         }
+         &:nth-child(1){
+            flex: 3;
+         }
+
+      }
+   }
+}
+
+
+@media screen and (max-width: 720px) {
+   .ordersTable {
+      .membersTable__table {
+         flex-direction: row;
+         height: 100%;
+
+         .tableHeader {
+            flex: 1;
+            min-width: 105px;
+
+            .tableRow {
+               height: 100%;
+               flex-direction: column;
+
+               th {
+                  width: 100%;
+                  flex: 1!important;
+               }
+            }
+         }
+
+         .tableBody {
+            flex: 1;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            .tableRow {
+               height: 100%;
+               flex-direction: column;
+
+               td {
+                  width: 100%;
+                  flex:1!important;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  display: flex;
+                  span {
+                     min-width: 100%;
+                     text-overflow: ellipsis;
+                     overflow: hidden;
+                     white-space: nowrap;
+                     .oval {
+                        max-width: 8px !important;
+                        min-width: 8px !important;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+
+}

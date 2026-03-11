@@ -1,0 +1,28 @@
+.lessonMenuItem {
+   user-select: none;
+
+   .lessonMenuItem__content {
+      display: flex;
+      align-items: center;
+      padding: 8px 33px 8px 24px;
+
+      .lessonMenuItem__svg {
+         margin-right: 12px;
+      }
+   }
+}
+
+.lessonMenuItem__content:hover {
+   user-select: none;
+   border-right: 2px solid #7cb740;
+   background-color: rgba(124, 183, 64, 0.05);
+   cursor: pointer;
+
+   .lessonItem__icon {
+      fill: #7cb740;
+   }
+
+   .textBasic {
+      color: #7cb740 !important;
+   }
+}

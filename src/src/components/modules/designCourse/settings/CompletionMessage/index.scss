@@ -1,0 +1,51 @@
+.completionMessage {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 32px;
+
+   .completionMessage_btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+   }
+   .completionMessage_content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 16px;
+      .completionMessage_radioBox {
+         display: flex;
+         margin-top: 12px;
+      }
+   }
+   .finish_messageEditor {
+      width: initial;
+      margin-top: 12px;
+      .ck-content {
+         height: 120px;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .completionMessage {
+      .completionMessage_btn {
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         justify-content: center;
+         width: 100%;
+
+         .btnBasic {
+
+            &:not(:first-child) {
+               margin: 0;
+            }
+
+            &:not(:last-child) {
+               margin: 0;
+               margin-bottom: 16px;
+            }
+         }
+      }
+   }
+}

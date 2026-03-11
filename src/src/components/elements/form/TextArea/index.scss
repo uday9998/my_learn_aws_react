@@ -1,0 +1,84 @@
+
+.textArea {
+   scrollbar-color: var(--buttonBgcolor) rgb(226, 226, 226);
+   scrollbar-width: 1px;
+   &__helper {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: var(--greyscale_40);
+      text-align: right;
+      font-feature-settings: "tnum" on, "lnum" on;
+      white-space: nowrap;
+   }
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+   &::placeholder {
+      color: #727978;
+   }
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px var(--buttonBgcolor);
+      -webkit-box-shadow: inset 0 0 6px var(--buttonBgcolor);
+      background-color: rgb(226, 226, 226);
+   }
+   ::placeholder {
+      color: rgba(114, 121, 120, 1);
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+   }
+
+   // label {
+   //    width: 100%;
+   // }
+   .textArea__labels{
+      display: flex;
+      justify-content: space-between;
+   }
+
+   textarea {
+      resize: none;
+      height: 120px;
+   }
+   .input__subLabel {
+      margin: 5px 0;
+   }
+
+   .textArea__input {
+      // min-width: 250px;
+      border: 1px solid #f0f2f2;
+      border-color: #f0f2f2 !important;
+      box-sizing: border-box;
+      border-radius: 12px;
+      width: 100%;
+      line-height: 168%;
+      font-size: 14px;
+      padding: 10px 16px;
+      background: var(--inputBg008);
+      min-height: 92px;
+      color: var(--inputMemberTextColor);
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      &:focus {
+         outline: none;
+      }
+   }
+
+   .textArea__input-focus {
+      &:focus {
+         //box-shadow: 0 0 0px 1px var(--buttonBgcolor);
+         border-color: var(--buttonBgcolor) !important;
+      }
+   }
+}

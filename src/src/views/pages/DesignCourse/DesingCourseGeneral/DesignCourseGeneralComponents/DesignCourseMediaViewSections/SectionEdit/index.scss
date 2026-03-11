@@ -1,0 +1,32 @@
+.sectionEdit {
+   position: relative;
+   &__btns {
+      position: absolute;
+      right: 16px;
+      top: 0;
+      display: flex;
+      gap: 8px;
+      top: 8px;
+      right: 8px;
+      button {
+         &:nth-child(2) {
+            padding: 0 1px;
+            svg {
+               g {
+                  fill: #24554E;
+               }
+            }
+         }
+      }
+
+   }
+   &__icon {
+      position: absolute;
+      top: 12px;
+      left: 8px;
+   }
+   .inputNew {
+      padding-left: 32px;
+      padding-right: 68px;
+   }
+}

@@ -1,0 +1,27 @@
+.playlistLists {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+   }
+
+   @media (max-width: 1024px) {
+      width: 100%;
+   }
+}
+
+
+.playlist__header__title__wrapper {
+   display: flex;
+   align-items: baseline;
+   gap: 10px;
+
+   a {
+      cursor: pointer;
+      font-size: 13px;
+      color: #24554E;
+   }
+}

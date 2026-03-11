@@ -1,0 +1,28 @@
+.creditCardForm {
+   margin-bottom: 24px;
+
+   .cardsLightBlock {
+      img {
+         margin-right: 4px;
+      }
+
+      margin-bottom: 16px;
+   }
+
+   .creditCardInput {
+      margin-bottom: 9px;
+   }
+
+   .cursor-pointer {
+      cursor: pointer;
+   }
+
+}
+
+@media screen and (max-width: 720px) {
+   .creditCardForm {
+      .cardsLightBlock {
+         margin-top: 6px;
+      }
+   }
+}

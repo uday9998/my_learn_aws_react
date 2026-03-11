@@ -1,0 +1,79 @@
+.multiSelect {
+   position: relative;
+   width: 100%;
+   height: inherit;
+
+   label {
+  //    width: 100%;
+   }
+
+   .multiSelect-basic {
+      font-family: 'Inter';
+      box-sizing: border-box;
+      width: 100%;
+      line-height: 1.5;
+      letter-spacing: 0.4px;
+      font-size: 14px;
+      cursor: pointer;
+      background: #ffffff;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+      padding: 9px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      >span {
+         font-size: 14px;
+      }
+
+      svg {
+         cursor: pointer;
+      }
+
+   }
+
+   .multiSelect__drop-down {
+      position: absolute;
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 4px;
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+      max-height: 200px;
+      overflow: auto;
+
+      .multiSelect__option {
+         margin: 8px 0;
+         padding: 10px 32px 10px 63px;
+
+         &:hover {
+            cursor: pointer;
+         }
+      }
+
+      .multiSelect__option-checked {
+         border: solid 1px #24554E;
+      }
+
+   }
+}
+
+.selectedValuesList {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 7px;
+
+   .selectedItem {
+      border-radius: 4px;
+      background: rgba(194, 206, 219, 0.24);
+      padding: 3px 8px;
+      box-sizing: border-box;
+      .remove-icon {
+         margin-left: 8px;
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+}

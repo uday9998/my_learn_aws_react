@@ -1,0 +1,62 @@
+.course__information__page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .text_area_new    {
+      padding-right: 45px;
+   }
+    &__tabs{
+
+        span{
+            white-space: nowrap;
+        }
+        .tabs__line{
+            width: 100%;
+            gap: 24px;
+            .tabs__line__tab {
+               @media screen and (max-width: 1023px) {
+                  padding: 0 16px 8px 0;
+                  max-width: 100%;
+                  width: 50%;
+                  display: flex;
+                  justify-content: center;
+              }
+            }
+        }
+    }
+    &__inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        @media screen and (max-width: 1023px) {
+         padding: 0 16px
+     }
+        &__flex{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            textarea{
+                height: 226px;
+            }
+        }
+        &__upload{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            justify-content: center;
+            .title{
+                width: 100%;
+            }
+
+        }
+    }
+    .upload__media__image__view__change{
+        img{
+            max-width: 100%;
+            max-height: 406px;
+            object-fit: contain;
+        }
+    }
+}

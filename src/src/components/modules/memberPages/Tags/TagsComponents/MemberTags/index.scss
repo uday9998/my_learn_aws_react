@@ -1,0 +1,15 @@
+.new__member__more__tag {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   .tag__input {
+      min-height: 26px;
+      .tag__icon__button {
+         display: flex;
+         svg {
+            width: 18px;
+            height: 18px;
+         }
+      }
+   }
+}

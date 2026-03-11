@@ -1,0 +1,68 @@
+.tracking-container{
+   max-width: 716px;
+   background-color:white;
+   padding: 40px 40px;
+   .under-order-tracking{
+     max-width: 570px;
+     width: 100%;
+     padding-top: 12px;
+     padding-bottom: 16px;
+   }
+   .header-code{
+     padding-top: 40px;
+   }
+   .pixel-code{
+      padding-top: 40px;
+   }
+   .under-pixel-code{
+      max-width: 570px;
+      width: 100%;
+      padding-top: 12px;
+      padding-bottom: 16px;
+    }
+   .under-header-code{
+     max-width: 570px;
+     width: 100%;
+     padding-top: 12px;
+     padding-bottom: 16px;
+   }
+   .textarea-container{
+     textarea{
+       height: 150px;
+       max-width: 736px;
+     }
+     .textArea__input{
+       border-radius: 8px;
+     }
+   }
+   .footer-code{
+     padding-top: 40px;
+   }
+   .under-footer-code{
+     max-width: 570px;
+     width: 100%;
+     padding-top: 12px;
+     padding-bottom: 16px;
+   }
+   .footer-btns{
+     padding-top: 24px;
+     display: flex;
+     justify-content: flex-end;
+     .first-btn{
+       padding-right: 16px;
+       .btnBasic{
+         width: 120px;
+         height: 40px;
+         color: rgba(63, 79, 101, 1);
+         background-color: rgba(63, 79, 101, 0.05);;
+       }
+
+     }
+     .second-btn{
+       .btnBasic{
+         width: 150px;
+         height: 40px;
+       }
+     }
+   }
+ }

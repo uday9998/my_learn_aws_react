@@ -1,0 +1,63 @@
+.dashboard_search_popup {
+   border-radius: 8px;
+   background-color: #ffffff;
+   z-index: 20;
+   .popup-content{
+      margin-top: 33px;
+      .item{
+         margin: 0 8px;
+      }
+      .teamImage{
+         width: 64px;
+         height: 64px;
+         min-width: 64px;
+         object-fit: cover;
+         object-position: center;
+      }
+      .cursor-pointer{
+         cursor: pointer;
+      }
+      .support-content {
+         margin-left: 16px;
+         padding-right: 20px;
+
+         button{
+            margin-top: 16px;
+            width: 147px;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.6;
+         }
+      }
+   }
+   .text-top {
+      display: block;
+      margin-top: 8px;
+   }
+   .text-ssSmall{
+      font-size: 12px;
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .dashboard_search_popup{
+      .popup-content{
+         flex-wrap: wrap;
+         .item{
+            width: 50%;
+            flex: none;
+            margin: 16px 0;
+         }
+         .support{
+            margin-top: 16px;
+            .support-content{
+               button{
+                  width: 100%;
+               }
+            }
+
+         }
+      }
+   }
+
+}

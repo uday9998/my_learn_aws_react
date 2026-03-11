@@ -1,0 +1,28 @@
+.CertificatesTemplatesList{
+   .certificateColumn{
+      display: flex-column;
+      width: 264px;
+      height: 770px;
+      overflow: scroll;
+      overflow-x: hidden;
+   }
+   .designContentRectangle{
+      width: 264px;
+      height: 100%;
+      background-color: #ffffff;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+     }
+     ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1320px) {
+   .designContentRectangle.content_left {
+      min-width: unset;
+   }
+}
+

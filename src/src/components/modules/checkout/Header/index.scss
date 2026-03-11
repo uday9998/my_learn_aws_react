@@ -1,0 +1,49 @@
+// .header{
+//    display: flex;
+//    height: 56px;
+//    max-width: 540px;
+//    width: 100%;
+//    background-color: #f0f4f7;
+//    .header-active{
+//      background-color: #ffffff;
+//      border-top-left-radius: 8px;
+//      border-top-right-radius: 8px;
+//      box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1);
+//    }
+//    .template{
+//      min-width: 156px;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      cursor: pointer;
+//      .textBasic{
+//        padding-left: 8px;
+//      }
+//    }
+//    .header-advanced-settings{
+//      min-width: 224px;
+//      display: flex;
+//      justify-content: center;
+//      cursor: pointer;
+//      align-items: center;
+//      .textBasic {
+//        padding-left: 8px;
+//      }
+//    }
+//    .header-tracking{
+//      min-width: 148px;
+//      display: flex;
+//      cursor: pointer;
+//      justify-content: center;
+//      align-items: center;
+//      .textBasic{
+//        padding-left: 8px;
+//      }
+//    }
+//  }
+
+//  @media screen and(max-width: 600px) {
+//    .header{
+//      overflow-x: scroll;
+//    }
+//  }

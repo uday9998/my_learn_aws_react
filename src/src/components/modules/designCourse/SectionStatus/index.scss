@@ -1,0 +1,38 @@
+.section__versions {
+   &__button {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      justify-content: center;
+      cursor: pointer;
+   }
+}
+.section__version__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__item{
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 8px;
+        gap: 4px;
+        margin: 8px 16px;
+    }
+}
+.section-status-popover.custom-popover {
+    .MuiPaper-root{
+        background: #ffffff;
+        border: 1px solid rgba(19, 31, 30, 0.1);
+        box-sizing: border-box;
+        padding: 4px 0px;
+        box-shadow: 0px 4px 10px rgba(19, 31, 30, 0.1),
+           1px 2px 2px rgba(19, 31, 30, 0.04);
+        border-radius: 12px;
+
+    }
+}

@@ -1,0 +1,123 @@
+
+.checkBox {
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   #selected {
+      cursor: pointer;
+   }
+   .checkBox__square {
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      justify-content: center;
+      &__icon{
+         width: 9.5px;
+         height: 1.5px;
+         background-color: #fff;
+      }
+   }
+   .checkBox__label {
+      margin: 0 12px;
+      flex:1;
+   }
+
+   .checkbox_text {
+      margin-bottom: 32px;
+   }
+
+   #selected {
+      color: #24554E;
+   }
+}
+
+.checkBox__left {
+   flex-direction: row-reverse;
+}
+
+.checkBox__isNotChecked {
+   .checkBox__square {
+      border: 1px solid var(--blackscale_40);
+      background-color: var(--inputBg008);
+   }
+   .checkBox__label {
+      color: var(--greyscale_90);
+   }
+   &:hover {
+      .checkBox__square {
+         border-color: var(--greyscale_90);
+      }
+   }
+   &:active {
+      .checkBox__square {
+         box-shadow: 0px 0px 4px var(--primary_40);
+         border-color: var(--primary_80);
+         background-color: var(--primary_5);
+      }
+      .checkBox__label {
+         color: var(--primary_80);
+      }
+   }
+}
+
+.checkBox__isChecked {
+   .checkBox__square {
+      border: 1px solid var(--primary_80);
+      background-color: var(--primary_80);
+   }
+   &:hover {
+      .checkBox__square {
+         border-color: var(--primary_50) !important; 
+         background-color: var(--primary_50) !important;
+      }
+   }
+   &:active {
+      .checkBox__square {
+         box-shadow: 0px 0px 4px var(--primary_40);
+         border: 1px ;
+         background-color: var(--primary_5);
+         svg {
+            path {
+               fill: var(--primary_50);
+            }
+         }
+      }
+   }
+   .checkBox__label {
+      color: var(--greyscale_90);
+   }
+}
+
+
+.checkBox__disabled {
+   cursor: auto;
+   .checkBox__square {
+      border-color: var(--blackscale_20);
+      background-color: var(--blackscale_20);
+   }
+   .checkBox__label {
+      color: var(--greyscale_40);
+   }
+}
+
+.checkBox__isChecked__disabled {
+   cursor: auto;
+   svg {
+      path {
+         fill: var(--base);
+      }
+   }
+   .checkBox__label {
+      color: var(--greyscale_90);
+   }
+}
+
+.checkBox__error {
+   .checkBox__square {
+      border-color: var(--additional_error);
+   }
+}

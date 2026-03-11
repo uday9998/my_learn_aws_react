@@ -1,0 +1,17 @@
+.email__tracking{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 4px;
+    overflow-x: hidden;
+    background: #F4F7F7;
+    width: 100%;
+    .report-container{
+        width: 100%;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+}

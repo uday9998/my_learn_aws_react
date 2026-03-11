@@ -1,0 +1,26 @@
+.menu-item {
+   display: flex;
+   align-items: center;
+   cursor: default;
+   justify-content: space-between;
+   &-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+   }
+}
+
+.add-section {
+   display: flex;
+   margin: 8px;
+   box-sizing: border-box;
+   cursor: pointer;
+   max-width: 100%;
+}
+
+.checkout__sections {
+   display: flex;
+   margin-top: 32px;
+   flex-direction: column;
+   gap: 12px;
+}

@@ -1,0 +1,117 @@
+
+@media screen and (min-width: 1024px) {
+   .plansTableAdmin {
+
+      .plans {
+         display: flex;
+         flex-direction: column;
+      }
+      .mob-plans-tabel {
+         display: none;
+      }
+      .tableHeader .tableRow th {
+         &:nth-child(5) {
+            width: 25px;
+            flex: none;
+         }
+      }
+
+      .tableBody .tableRow {
+         cursor: pointer;
+      }
+
+      .tableBody .tableRow  td {
+         &:nth-child(5) {
+            width: 25px;
+            flex: none;
+         }
+      }
+   }
+}
+
+@media (min-width: 1024px) and (max-width: 1220px) {
+   .plansTableAdmin {
+      overflow-x: auto;
+
+      .tableHeader .tableRow th {
+
+         &:nth-child(1) {
+            min-width: 130px;
+         }
+         &:nth-child(2) {
+           min-width: 70px;
+         }
+
+      }
+
+      .tableBody .tableRow  td {
+         &:nth-child(1) {
+            min-width: 130px;
+         }
+         &:nth-child(2) {
+           min-width: 70px;
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 1023px) {
+   .desctop-tab {
+      display: none;
+      .tableRow {
+         display: none;
+      }
+   }
+      .tableRow {
+         display: none;
+      }
+   .plansTableAdmin {
+      overflow-x: hidden;
+      padding: 0;
+      .mob-plans-tabel {
+         display: flex;
+         flex-direction: column;
+         padding: 24px;
+         border-radius: 8px;
+         border: solid 1px #cddaf1;
+         background-color: #fbfdff;
+         margin: 12px 0;
+         .mob-plans-tabel-row {
+            height: 24px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            font-size: 12px;
+
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: #3f4f65;
+            .header {
+               font-weight: 600;
+               flex: 1 1;
+            }
+            .plans-value {
+               font-weight: 500;
+               flex: 1 1;
+               text-transform: capitalize;
+            }
+         }
+         .mob-plans-tabel-bottom {
+            margin-top: 14px;
+         }
+      }
+   }
+      .add-plan {
+         width: 100%;
+         button {
+            width: 100% !important;
+         }
+      }
+
+}
+
+

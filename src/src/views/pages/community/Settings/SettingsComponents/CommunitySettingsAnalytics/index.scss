@@ -1,0 +1,13 @@
+.communityAnalytics {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media screen and (max-width: 1024px) {
+        .colendar {
+            width: 250px;
+            .days .days__area .area .day {
+                height: 24px;
+            }
+        }
+    }
+}

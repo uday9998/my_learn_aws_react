@@ -1,0 +1,229 @@
+.videoLesson {
+   display: flex;
+   flex-direction: column;
+   padding: 24px 40px;
+
+   .videoLesson__fields {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+   .dynamicWrapper {
+      span {
+         font-family: 'Avenir Next';
+      }
+   }
+   .video_fieldsDescription{
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+      width: 100%;
+
+   }
+   .videoLesson__description {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .videoLesson__buttons {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 34px;
+   }
+
+
+   .uploadcare_widget {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     .uploadcare--widget__button_type_open {
+        &:focus {
+           outline: none;
+        }
+        display: none;
+     }
+     .uploadcare--widget__button_type_cancel {
+
+      display: none;
+     }
+     #uploadcare--widget__text {
+        display: none;
+     }
+     .uploadcare--widget__progress {
+        position: absolute !important;
+         left: 50%;
+         top: 73%;
+      }
+      .uploadcare--progress_type_canvas {
+         color: #7cb740;
+         width: 28px;
+         height: 28px;
+         display: none;
+      }
+  }
+   .videoLesson__Url {
+      background-color: #f3f7fc;
+      border: 1px dashed #bbd1ec;
+
+      .videoLesson_tabs {
+         width: 100%;
+         height: 50px;
+         display: flex;
+
+         .videoLesson_tab {
+            display: flex;
+            align-items: center;
+            padding: 10px 32px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-family: 'Avenir Next';
+            font-size: 16px;
+         }
+         .videoLesson_tab:hover {
+            border-bottom: 2px solid #006dff;
+            color: #006dff;
+            padding: 10px 32px 8px;
+         }
+         .active {
+            padding: 10px 32px 8px;
+            color: #006dff;
+            border-bottom: 2px solid #006dff;
+         }
+      }
+      .videoLesson__insertUrl {
+         padding: 30px;
+         width: 100%;
+         text-align: center;
+         box-sizing: border-box;
+
+         .videoLesson__return {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 24px;
+         }
+      }
+   }
+   .video_embed {
+      position: relative;
+      padding-top: 56.25%;
+   }
+   .video_embed embed {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      bottom: 0;
+      width: 100%;
+   }
+   .video_embed iframe {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      bottom: 0;
+      width: 100%;
+   }
+}
+
+
+@media screen and (max-width: 1450px) {
+   .videoLesson {
+      .videoLesson__buttons {
+         button {
+            min-width: 65px;
+         }
+      }
+   }
+}
+
+
+
+@media screen and (max-width: 1340px) and (min-width: 1024px) {
+   .videoLesson {
+      .videoLesson__buttons {
+         button {
+            height: 35px;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-size: 14px;
+         }
+      }
+
+   //    .uploadcare_widget {
+   //      .uploadcare--widget__progress {
+   //         position: absolute !important;
+   //          left: 50%;
+   //          top: 59%;
+   //       }
+
+   //   }
+   }
+}
+
+
+@media screen and (max-width: 1130px) and (min-width: 1024px) {
+   .videoLesson {
+      .videoLesson__buttons {
+         .m-r-m {
+            margin-right: 1.8%;
+         }
+         button {
+            padding-right: 12px;
+            padding-left: 12px;
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 1023px) {
+   .videoLesson {
+      padding: 0;
+      height: 100%;
+      justify-content: space-between;
+
+      .videoLesson__buttons {
+         display: flex;
+         flex-direction: column-reverse;
+         width: 100%;
+         margin-top: 24px;
+
+
+         div {
+          // width: 100%;
+            button {
+               width: 100%;
+            }
+         }
+         button {
+            width: 100%;
+            margin-bottom: 12px;
+         }
+      }
+   }
+}
+
+
+.video_optimizing {
+   gap: 16px;
+   padding: 20px 0px;
+   display: flex;
+   align-items: center;
+   min-height: 400px;
+   width: 100%;
+
+   .loading__icon__wrapper {
+      display: flex;
+      align-items: center;
+      align-items: flex-start;
+   }
+
+   .CircularProgressbarWithChildren__text {
+      margin-top: 60px;
+   }
+
+   @media (max-width: 1024px) {
+      width: 100%;
+   }
+  }

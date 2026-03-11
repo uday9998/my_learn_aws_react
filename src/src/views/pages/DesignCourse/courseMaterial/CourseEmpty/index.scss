@@ -1,0 +1,52 @@
+@media screen and (max-width: 1023px) {
+   .d-courseEmpty {
+      flex-direction: column;
+      padding-top: 67px;
+      .content_right {
+         flex: none;
+         height: initial;
+         overflow-y: hidden;
+         background-color: #fbfdff;
+         .m-course-add-wrapper {
+            margin: 0;
+            .itemWrapper {
+               border: none;
+               background-color: transparent;
+               box-shadow: none;
+               margin-top: 0;
+               .newSection {
+                  height: calc(100vh - 206px);
+                  .newSection__buttons {
+                     button {
+                        width: 100%;
+                     }
+                  }
+               }
+            }
+         }
+         .empty-wraper {
+            border-radius: 8px;
+            border: solid 1px #cddaf1;
+            background-color: #fbfdff;
+            margin-left: 0;
+            margin-top: 16px;
+         }
+      }
+      .content_left {
+         flex: none;
+         overflow-y: hidden;
+         height: initial;
+         border: none;
+         background-color: #fbfdff;
+      }
+      .d-course-add-wrapper {
+         display: none;
+      }
+      .empty-wraper {
+         .left-section {
+            margin-right: 0px;
+         }
+      }
+   }
+
+}

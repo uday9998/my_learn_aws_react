@@ -1,0 +1,11 @@
+.sales {
+   padding: 32px 50px 32px 42px;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+@media screen and (max-width: 720px) {
+   .sales {
+      padding: 24px;
+   }
+}

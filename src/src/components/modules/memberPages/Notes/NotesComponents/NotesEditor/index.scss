@@ -1,0 +1,23 @@
+.notes__editor {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   background: #ffffff;
+   border: 1px solid #e7e9e9;
+   padding: 24px;
+   width: 37%;
+   border-radius: 12px;
+   button {
+      max-width: max-content;
+      svg {
+         fill: #fff;
+      }
+   }
+   &__buttons {
+      display: flex;
+      gap: 24px;
+   }
+   textarea {
+      height: 150px;
+   }
+}

@@ -1,0 +1,61 @@
+.comments__view{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    
+    .comments___tabs .tabs__line__tab > span {
+        white-space: nowrap;
+    }
+    
+    &__content{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 34px 34px;
+        gap: 24px;
+        background: #FFFFFF;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        width: 100%;
+        @media screen and (max-width:1023px) {
+         border: none;
+         padding: 16px;
+       }
+        &__bottom{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px 24px;
+            gap: 24px;
+            width: 100%;
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            @media screen and (max-width:1350px) {
+              flex-direction: column;
+              gap: 0px;
+            }
+            @media screen and (max-width:1023px) {
+               border: none;
+               padding: 0;
+             }
+        }
+        .inputSearch {
+            width: 100%;
+            .inputNew{
+                min-height: 44px;
+            }
+        }
+    }
+}
+
+.commentContainer {
+   @media screen and (max-width:1023px) {
+      .adminContent:not(.adminContentAlt) {
+         padding: 0px;
+     }
+
+    }
+}

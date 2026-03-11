@@ -1,0 +1,20 @@
+.block__quiz__welcome {
+   display: flex;
+   gap: 16px;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   img {
+      border-radius: 12px;
+   }
+   .passing__grade {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+   .grey__line {
+      height: 1px;
+      background: #E7E9E9;
+      width: 100%;
+   }
+}

@@ -1,0 +1,28 @@
+.settingItem {
+   width: 100%;
+   user-select: none;
+   display: flex;
+   gap: 12px;
+   align-items: center;
+
+   span {
+      display: flex;
+   }
+}
+.settingItem__wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 8px 12px;
+   border-radius: 12px;
+   cursor: pointer;
+}
+.settingItem__wrapper__active {
+   background: #36796f;
+   span {
+      color: #fff;
+   }
+   path {
+      fill: #fff;
+   }
+}

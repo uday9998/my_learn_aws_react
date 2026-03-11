@@ -1,0 +1,36 @@
+.checkbox__circle{
+   display: flex;
+   gap: 12px;
+   align-items: flex-start;
+   &__check{
+      border: 1px solid #24554e;
+      border-radius: 20px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+   }
+   &__check__active{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #24554e;
+      border-radius: 20px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      span {
+         border-radius: 50%;
+         background: #24554e;
+         width: 8px;
+         height: 8px;
+      }
+   }
+   &__right{
+      display: flex;
+      margin-top: -1px;
+      flex-direction: column;
+      .inputNew{
+         margin-top: 8px;
+      }
+   }
+}

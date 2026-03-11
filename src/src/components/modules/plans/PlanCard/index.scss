@@ -1,0 +1,101 @@
+.planCard {
+   padding: 32px 24px 7px 24px;
+   position: relative;
+   width: 100%;
+   box-sizing: border-box;
+
+   .planCard__title {
+      text-align: center;
+   }
+
+   .planCard__planPrice {
+      text-align: center;
+      margin: 18px 0 16px 0;
+
+      .planPriceValue {
+         font-size: 48px;
+         font-style: normal;
+         font-stretch: normal;
+         line-height: normal;
+         letter-spacing: normal;
+      }
+
+      .planPriceDuration {
+         font-family: proxima-nova, sans-serif;
+         font-style: normal;
+         font-weight: normal,
+      }
+
+      .oldPrice {
+         span {
+            color: #8a94a2!important;
+            display: block;
+            &:first-of-type {
+               text-decoration: line-through;
+            }
+         }
+      }
+   }
+
+   .planCard__priceTxt {
+      width: 100%;
+      max-width: 216px;
+      text-align: center;
+      margin: 16px auto 24px auto;
+   }
+
+   .planCardButton {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 216px;
+      button {
+         width: 100%;
+      }
+      margin-bottom: 22px;
+   }
+
+   .planCard__ordersList {
+
+      .planCard__order {
+         display: flex;
+         align-items: flex-start;
+         margin-bottom: 9px;
+
+         svg {
+            margin-right: 8px;
+            margin-top: -4px;
+            min-width: 24px;
+            min-height: 24px;
+         }
+
+         span {
+            letter-spacing: normal;
+         }
+      }
+   }
+
+   .popularLogo {
+      max-width: 104px;
+      max-height: 105px;
+      position: absolute;
+      z-index: 2;
+      top: -2px;
+      right: 0;
+      img {
+         object-fit: cover;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .planCard {
+      padding: 32px 24px;
+      .planCardButton {
+         max-width: 100%;
+         margin-bottom: 16px;
+         button {
+            height: 48px;
+         }
+      }
+   }
+}

@@ -1,0 +1,17 @@
+.plan__create{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 48px;
+    margin-top: 32px;
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+
+    @media screen and (max-width: 1024px) {
+        border: none;
+        padding: 0px 0px 24px 0px;
+    }
+}

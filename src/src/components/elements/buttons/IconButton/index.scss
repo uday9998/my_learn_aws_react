@@ -1,0 +1,74 @@
+.iconButton{
+   background-color: inherit;
+   border: none;
+   padding: 4px;
+   cursor: pointer;
+   box-sizing: border-box;
+   border-radius: 8px;
+  // transition: 0.3s ease-in-out;
+
+   display: flex;
+   align-items: center;
+   &__light{
+      &:hover{
+         background-color: #E8F2F1;
+         path{
+            fill: #24554E;
+         }
+      }
+      &:active{
+         background: #A6C9C5;
+      }
+   }
+   &__white{
+         background-color: #E8F2F1;
+         path{
+            fill: #24554E;
+         }
+   }
+   &__primary{
+      border: 1px solid #24554E;
+   }
+   &__inherit{
+
+   }
+   &__delete{
+      &:hover{
+         background: #FFF1F1;
+      }
+      &:active{
+         background: #F8C5C5;
+      }
+      path{
+         fill: #D12D36;
+      }
+   }
+   &__delete__border{
+      border: 1px solid #D12D36;
+   }
+   &__light__border{
+      border: 1px solid #24554E;
+   }
+   &__disabled{
+      background: rgba(19, 31, 30, 0.1);
+      border: 1px solid rgba(19, 31, 30, 0.4);
+      box-sizing: border-box;
+      path{
+         fill:  rgba(19, 31, 30, 0.4);
+      }
+   }
+}
+.iconButton__tooltip{
+      background-color: white !important;
+      font-weight: 400 !important;
+      position: fixed !important;
+      font-size: 14px !important;
+      line-height: 168% !important;
+      color: #131F1E !important;
+}
+
+@media only screen and (max-width: 1024px) {
+   .button-width-unset {
+      width: unset !important;
+   }
+}

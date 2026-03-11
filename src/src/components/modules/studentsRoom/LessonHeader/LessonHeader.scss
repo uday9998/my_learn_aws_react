@@ -1,0 +1,116 @@
+// LessonHeader.scss
+.lesson-header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 40px; // Reduced padding
+      
+      @media screen and (max-width: 1023px) {
+        padding: 16px;
+      }
+    }
+    
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px; // Reduced gap
+    }
+    
+    &__main {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+    }
+    
+    &__title {
+      font-size: 24px; // Reduced from 32px
+      line-height: 1.2;
+      font-weight: 600;
+      margin: 0;
+      color: #1a1a1a;
+      word-break: break-word;
+    }
+    
+    &__subtitle {
+      color: #4a4a4a;
+      font-size: 14px; // Reduced from 16px
+      line-height: 1.4;
+      margin-top: 0;
+    }
+    
+    &__bookmark {
+      display: flex;
+      align-items: center;
+      padding: 6px 12px; // Reduced padding
+      border-radius: 6px;
+      border: 1px solid #e0e0e0;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      margin-left: auto; // Push to the right
+      
+      @media screen and (max-width: 767px) {
+        margin-left: 0;
+      }
+      
+      &:hover {
+        background-color: #f9f9f9;
+        border-color: #d0d0d0;
+      }
+      
+      &--active {
+        background-color: rgba(var(--buttonBgcolor-rgb, 0, 122, 255), 0.08);
+        border-color: rgba(var(--buttonBgcolor-rgb, 0, 122, 255), 0.3);
+        
+        svg path {
+          fill: var(--buttonBgcolor, #007AFF);
+        }
+      }
+    }
+    
+    &__author {
+      display: flex;
+      align-items: center;
+      gap: 8px; // Reduced gap
+      padding: 6px 12px; // Reduced padding
+      border-radius: 6px;
+      background-color: #f9f9f9;
+      max-width: max-content;
+    }
+    
+    &__author-avatar {
+      img {
+        width: 32px; // Reduced from 40px
+        height: 32px !important; // Reduced from 40px
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #fff; // Reduced border
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); // Reduced shadow
+      }
+    }
+    
+    &__author-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    
+    &__author-label {
+      font-size: 10px; // Reduced from 12px
+      color: #6b6b6b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }

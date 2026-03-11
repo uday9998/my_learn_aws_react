@@ -1,0 +1,33 @@
+.subscription__metric__form{
+   background: #FFFFFF;
+   border-bottom: 1px solid #E7E9E9;
+   width: 100%;
+   .transactions-filters {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      gap: 20px;
+      @media screen and (max-width: 1023px) {
+         flex-direction: column;
+      }
+      > div {
+         flex: 1;
+         .inputNew {
+            height: 44px;
+         }
+         .input_footer {
+            margin: 0
+         }
+         .SelectItem__button__large {
+           box-sizing: border-box;
+           height: 44px;
+         }
+      }
+   }
+   .SelectItem{
+       width: 100%;
+       .textBasic_size_medium {
+           font-size: 14px;
+       }
+   }
+}

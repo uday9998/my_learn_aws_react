@@ -1,0 +1,32 @@
+.langCreateEditCards {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   gap: 20px;
+   row-gap: 20px;
+   width: 100%;
+   margin-top: 20px;
+   @media screen and (max-width: 1350px) {
+      grid-template-columns: 49% 49%;
+   }
+   @media screen and (max-width: 1150px) {
+      grid-template-columns: 99%;
+   }
+   .langCreateEditCard {
+      /* grey scale/10 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 12px 16px;
+      gap: 4px;
+      cursor: pointer;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+   }
+   .langCreateEditCard_checked {
+      background: #f0f2f2;
+   }
+}
+.language-save {
+   margin-top: 24px;
+}

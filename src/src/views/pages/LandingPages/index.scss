@@ -1,0 +1,61 @@
+.landing-pages-wrapper {
+   &-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &-filter{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &-left {
+        display: flex;
+        gap: 16px;
+      }
+    }
+    @media all and (max-width: 701px) {
+      &-filter-left {
+        flex-direction: column;
+      }
+     }
+   }
+    &-items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+   }
+}
+
+.landing-pages-multiselect-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.landing-pages-multiselect-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &-duplicate {
+    border: 1px solid #24554E;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px;
+    grid-gap: 10px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  &-delete {
+    border: 1px solid #d12d36;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px;
+    grid-gap: 10px;
+    gap: 10px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,132 @@
+.empty__comp__wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.reorderPageLink {
+   margin-bottom: 16px;
+   @media(min-width: 1024px) {
+      display: none;
+   }
+}
+.d-designCourse {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   .delete__modal__content{
+      max-width: 414px;
+   }
+   .designCourse__search {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      align-items: flex-start;
+      align-items: center;
+      .inputSearch  {
+         width: 100%;
+      }
+      .search__input {
+         position: relative;
+         width: 100%;
+         svg {
+            position: absolute;
+            top: 12px;
+            right: 16px;
+         }
+      }
+      .search__button {
+         button {
+            height: '48px';
+            width: '168px'
+         }
+      }
+   }
+   .noCourseFound {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 64px;
+      margin-bottom: 100px;
+  }
+
+   .designCourse__courses {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 16px;
+      flex-direction: column;
+      gap: 12px;
+      .course-pagination {
+         width: 100%;
+      }
+   }
+
+   .empty_by_filter_wrapper {
+      margin-top: 100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media (max-width: 1024px) {
+   .designCourse__card {
+      width: 100%;
+   }
+}
+
+// @media screen and (min-width: 1600px) {
+//    .d-designCourse {
+//       .designCourse__card {
+//          width: 268px;
+//       }
+//       .designCourse__addCourse {
+//          width: 268px;
+//       }
+//    }
+// }
+// @media screen and (min-width: 1300px) {
+//    .d-designCourse {
+//       .designCourse__card {
+//          width: 22.6%;
+//       }
+//       .designCourse__addCourse {
+//          width: 22.6%;
+//       }
+//    }
+// }
+// @media (max-width: 1300px) and (min-width: 1024px) {
+//    .d-designCourse {
+//       .designCourse__card {
+//         width: 30%;
+//       }
+//       .designCourse__addCourse {
+//         width: 30%;
+//       }
+//    }
+// }
+// @media screen and (max-width: 1023px) {
+//    .d-designCourse {
+//       padding: 16px 16px 0;
+//       width: auto;
+//       .designCourse__search {
+//          flex-direction: column;
+//          .search__button {
+//             width: 100%;
+//             margin-left: 0;
+//             margin-top: 16px;
+//             button {
+//                width: 100%;
+//             }
+//          }
+//       }
+//       .designCourse__card {
+//         width: 100%;
+//       }
+//       .designCourse__addCourse {
+//         width: 100%;
+//       }
+//    }
+// }

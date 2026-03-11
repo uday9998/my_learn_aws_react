@@ -1,0 +1,12 @@
+.iconsList {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   .icon-element {
+      margin: 24px;
+      svg {
+         max-width: 24px;
+         max-height: 24px;
+      }
+   }
+}

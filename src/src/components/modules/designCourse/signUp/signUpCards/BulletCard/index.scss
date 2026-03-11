@@ -1,0 +1,77 @@
+.signUpCard {
+
+   #bullet-bluBtn {
+      padding-bottom: 16px;
+   }
+
+   .btnsBlock-new {
+      button {
+         &:first-of-type {
+            margin-right: 0;
+         }
+
+      }
+   }
+
+   .inputBlockWithIcon {
+      display: flex;
+      width: 100%;
+      padding-bottom: 16px;
+      align-items: center;
+      .bullet-view-block {
+         display: flex;
+         width: 100%;
+         align-items: center;
+      }
+      .textArea {
+         display: flex;
+         align-items: center;
+         span {
+            color:  rgb(63, 79, 101);
+         }
+      }
+      .textArea__div {
+         border: 1px solid #cddaf1;
+         box-sizing: border-box;
+         border-radius: 4px;
+         font-family: 'Avenir Next';
+         width: 100%;
+         line-height: 1.5;
+         letter-spacing: 0.4px;
+         font-size: 16px;
+         padding: 12px 36px 12px 16px ;
+         background: #fbfdff;
+         font-weight: bold;
+         position: relative;
+         .testimonial__edit {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            cursor: pointer;
+         }
+         span {
+            color: #8a94a2 !important;
+            font-weight: bold;
+         }
+      }
+      svg {
+         margin-left: 12px;
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+   .charecters__line{
+       display: flex;
+       flex-direction: row-reverse;
+       margin-bottom: 3px;
+   }
+
+   .charecters__numbers{
+      font-size: 14px;
+      line-height: 1.43;
+      font-family: 'Avenir Next';
+      color: rgb(63, 79, 101);
+   }
+}

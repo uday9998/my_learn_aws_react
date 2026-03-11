@@ -1,0 +1,60 @@
+.account__payment {
+   margin-top: 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   &__card {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      justify-content: space-between;
+      gap: 32px;
+      &__left {
+         display: flex;
+         gap: 12px;
+         &__image {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            border: 1px solid #e7e9e9;
+            border-radius: 8px;
+         }
+         &__title {
+            display: flex;
+            flex-direction: column;
+         }
+      }
+      &__right {
+         cursor: pointer;
+         display: flex;
+         gap: 8px;
+         align-items: center;
+      }
+   }
+   &__plan {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 24px 0px;
+      background: #ffffff;
+      width: 100%;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+      &__left {
+         display: flex;
+         padding-left: 24px;
+         flex-direction: column;
+         gap: 16px;
+      }
+      &__right {
+         background: #f4f7f7;
+         border-radius: 8px;
+         margin-right: 24px;
+         padding: 5px 8px;
+      }
+   }
+}

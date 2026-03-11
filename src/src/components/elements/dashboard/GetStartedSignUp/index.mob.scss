@@ -1,0 +1,29 @@
+.getStartedSignUp {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 16px 16px 24px;
+   animation : showContent 600ms;
+
+   @keyframes showContent {
+      from {
+         opacity: 0;
+      }
+      to {
+         opacity: 1;
+      }
+   }
+
+   .getStartedSignUp__text {
+      flex: 1;
+   }
+
+   .getStartedSignUp__buttons {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex: 1;
+   }
+}

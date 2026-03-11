@@ -1,0 +1,37 @@
+.emptyPageNew {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   gap: 16px;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 12px;
+   border: 2px solid #e7e9e9;
+
+   .info__wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .icon__wrapper {
+         background: #f7fcfc;
+         padding: 20px;
+         border-radius: 10px;
+      }
+
+      .text__wrapper {
+         display: flex;
+         flex-direction: column;
+         
+      }
+   }
+}
+
+
+// @media(max-width: 1023px) {
+//    width: 100%;
+//    button {
+//       width: 100%;
+//    }
+// }

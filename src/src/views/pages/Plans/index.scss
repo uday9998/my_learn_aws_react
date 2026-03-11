@@ -1,0 +1,97 @@
+.d-plan {
+    width: 100%;
+}
+.d-planCard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    &> div{
+        flex: 1;
+    }
+    &> div:not(:first-child){
+        padding-left: 24px;
+    }
+}
+
+.plans__btns {
+    display: flex;
+    &> div:not(:first-child){
+        padding-left: 16px;
+    }
+}
+
+.updatecard__btns {
+    display: flex;
+    margin-top: 24px;
+    justify-content: flex-end;
+    &> div:not(:first-child){
+        padding-left: 16px;
+    }
+}
+
+.modalContent .modalContent_pos_center {
+    border-radius: 8px;
+}
+
+.d-switch {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1023px) {
+   .d-plan {
+      padding: 24px 16px 0;
+      width: auto;
+      .d-planCard {
+         flex-direction: column;
+         &> div:not(:first-child){
+             padding-left: 0;
+             margin-top: 24px;
+         }
+      }
+      .planItemsList__table {
+         tr {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            td {
+               padding-top: 20px;
+            }
+         }
+      }
+   }
+   .modalContent_pos_center {
+      .createDomain {
+         width: 100%;
+         .plans__btns {
+            width: 100%;
+            flex-direction: column;
+            div{
+               width: 100%;
+               padding: 0;
+               margin-top: 16px;
+               button {
+                  width: 100%;
+               }
+            }
+         }
+      }
+      .updateCard {
+         width: 100%;
+         min-width: 300px;
+         .updatecard__btns {
+            width: 100%;
+            min-width: 300px;
+            flex-direction: column;
+            div{
+               width: 100%;
+               padding: 0;
+               margin-top: 16px;
+               button {
+                  width: 100%;
+               }
+            }
+         }
+      }
+   }
+}

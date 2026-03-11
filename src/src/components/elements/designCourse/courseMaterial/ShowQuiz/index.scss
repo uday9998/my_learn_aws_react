@@ -1,0 +1,50 @@
+.showQuiz {
+   .showQuiz__number {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .showQuiz__actions {
+      cursor: pointer;
+      position: relative;
+
+      .showQuiz__popup {
+         position: absolute;
+         right: 32px;
+         top: 0px;
+         width: 280px;
+         height: 97px;
+         background: white;
+         border-radius: 4px;
+         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+         z-index: 9999;
+         overflow: auto;
+         display: flex;
+         flex-direction: column;
+         padding: 16px 24px;
+         box-sizing: border-box;
+      }
+   }
+
+   .showQuiz__answers {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+
+      .showQuiz__answer {
+         display: flex;
+         align-items: center;
+
+         &:not(:first-of-type) {
+            margin-top: 24px;
+         }
+      }
+
+      .icon_checkbox_selected {
+         path {
+            fill: #7cb740;
+         }
+      }
+   }
+}

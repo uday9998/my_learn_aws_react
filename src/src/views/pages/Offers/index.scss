@@ -1,0 +1,206 @@
+.offers{
+    &__container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 32px 48px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.container-active {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    max-width: 936px;
+    margin: 0 auto;
+}
+
+#root{
+    height: 100%;
+    overflow-x: hidden !important;
+}
+
+.mark{
+    position: relative;
+}
+.offers__editor{
+    min-height: calc(100vh - 73px);
+}
+
+
+// live
+
+.live-stream-caller {
+   display: flex;
+   flex-direction: column;
+   flex-shrink: 0;
+   justify-content: space-between;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-blend-mode: multiply;
+   z-index: 10;
+   width: 320px;
+   height: 330px;
+   border-radius: 12px;
+   background: var(--grey-scale-0, #FFF);
+   overflow: hidden;
+   box-shadow: 0px 5px 12px 0px rgba(75, 85, 84, 0.09), 0px 22px 22px 0px rgba(75, 85, 84, 0.08), 0px 49px 29px 0px rgba(75, 85, 84, 0.05), 0px 86px 35px 0px rgba(75, 85, 84, 0.01), 0px 135px 38px 0px rgba(75, 85, 84, 0.00);
+}
+
+.live-stream-background-image {
+   flex-shrink: 0;
+   width: 100%;
+   height: 210px;
+   background-size: cover;
+   background-position: center;
+}
+
+.live-stream-name-and-connect-button {
+   width: 100%;
+   height: 100%;
+   padding: 12px 16px;
+}
+
+.live-stream-name-connect-button-wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   width: 100%;
+   height: 100%;
+}
+
+.date-and-name {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.name-of-stream {
+   position: static;
+   z-index: 12;
+   color: var(--grey-scale-90, #131F1E);
+   font-variant-numeric: lining-nums tabular-nums;
+   font-family: Inter, serif;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 153%;
+   /* 27.54px */
+}
+
+.connect-button {
+   width: 100%;
+   height: 36px;
+   outline: none;
+   cursor: pointer;
+   transition: 0.4s;
+   transition-timing-function: linear;
+   border-radius: 12px;
+   border: 1px solid var(--grey-scale-90, #131F1E);
+   color: var(--grey-scale-90, #131F1E);
+   font-variant-numeric: lining-nums tabular-nums;
+   font-family: Inter, serif;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   background: unset;
+   line-height: 132%;
+   /* 18.48px */
+   letter-spacing: 0.14px;
+}
+
+.live-stream-member-side-layout {
+   overflow-y: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   position: absolute;
+   bottom: 60px;
+   right: 60px;
+   z-index: 100;
+   box-shadow: 0px 5px 12px 0px rgba(75, 85, 84, 0.09), 0px 22px 22px 0px rgba(75, 85, 84, 0.08), 0px 49px 29px 0px rgba(75, 85, 84, 0.05), 0px 86px 35px 0px rgba(75, 85, 84, 0.01), 0px 135px 38px 0px rgba(75, 85, 84, 0);
+}
+
+@media all and (max-width: 1024px) {
+    .offers{
+        &__container{
+            padding: 16px;
+        }
+    }
+}
+
+.filters__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start !important;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+
+        span {
+            font-size: 24px;
+        }
+    }
+}
+
+.purchased__course__cards__wrapper {
+    padding: 48px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.continue__watching__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .slick-track {
+        display: flex !important;
+        gap: 20px;
+        // padding-left: 20px;
+        // display: flex;
+        // align-items: center;
+        // gap: 20px;
+    }
+}
+
+.continue__cards__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .continue__card {
+        max-width: 100%;
+
+        .precent__wrapper {
+            width: max-content !important;
+        }
+
+        .progress__wrapper {
+            justify-content: flex-start;
+        }
+
+        .video__picture {
+            height: 538px;
+        }
+    }
+}
+
+.precent__wrapper  span {
+    font-size: 12px !important;
+}

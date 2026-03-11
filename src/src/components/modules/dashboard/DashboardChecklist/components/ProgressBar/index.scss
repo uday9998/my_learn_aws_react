@@ -1,0 +1,24 @@
+    .global__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .progress__background__wrapper {
+        position: relative;
+        width: 96px;
+        height: 8px;
+        background: #e8f2f1;
+        border-radius: 80px;
+
+        @media (max-width: 1024px) {
+            width: 225px;
+        }
+    
+        .inner__progress {
+            position: absolute;
+            background-color: #36796F;
+            height: 8px;
+            border-radius: 80px;
+        }
+    }
+}
+

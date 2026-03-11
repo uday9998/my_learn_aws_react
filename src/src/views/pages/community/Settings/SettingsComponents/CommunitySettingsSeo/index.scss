@@ -1,0 +1,39 @@
+.community__settings__seo{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    .text_area {
+        width: 100%;
+        textarea{
+            min-height: 82px;
+        }
+    }
+    &__image{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .upload__media__image__view__button {
+            right: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 5px;
+        }
+    }
+    .cropArea{
+        max-width: 100%;
+    }
+    .upload__with__media__content{
+        width: 100%;
+    }
+    .cropArea{
+        width: 100%;
+        min-width: min-content;
+    }
+    .crop__functions__content{
+        flex-wrap: wrap;
+    }
+}

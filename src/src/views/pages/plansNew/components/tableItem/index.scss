@@ -1,0 +1,12 @@
+.plans__new__table__item{
+    cursor: pointer;
+    .plans__new__table__actions{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+    .drop__triggle__icon{
+        transform: rotate(90deg);
+    }
+}

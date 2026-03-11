@@ -1,0 +1,48 @@
+.pricing_top_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 730px;
+    width: 100%;
+
+    .title_wrapper {
+        margin-bottom: 16px;
+
+        .gradient__text {
+            background: linear-gradient(270deg, #7cae7b 0%, #36796f 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            font-family: 'Lato Bold';
+        }
+
+        @media (max-width: 1024px) {
+            margin-top: 20px;
+            margin-bottom: 4px;
+        }
+    }
+
+    .subtitle_wrapper {
+        margin-bottom: 32px;
+        text-align: center;
+
+        span {
+            line-height: 1.19 !important;
+            font-family: 'Lato ExtraBold';
+
+            @media (max-width: 1024px) {
+                font-family: 'Inter', 'sans-serif';
+            }
+        }
+    }
+
+    .footer_text_wrapper {
+        margin-top: 32px;
+
+        span {
+            font-weight: 400;
+            color: #727978;
+        }
+    }
+}

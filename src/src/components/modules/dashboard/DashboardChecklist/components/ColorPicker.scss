@@ -1,0 +1,82 @@
+.color-picker-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .color-input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .color-preview {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    margin-right: 12px;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-preview:hover {
+    transform: scale(1.05);
+  }
+  
+  .color-input {
+    max-width: 120px;
+  }
+  
+  .color-picker-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 12px;
+    z-index: 10;
+    width: 240px;
+  }
+  
+  .color-palette {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .color-option {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .color-option:hover {
+    transform: scale(1.1);
+  }
+  
+  .custom-color {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .custom-color input[type="color"] {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .custom-color span {
+    font-size: 12px;
+    color: #6b7280;
+  }

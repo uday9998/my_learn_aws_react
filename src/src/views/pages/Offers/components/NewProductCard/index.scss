@@ -1,0 +1,146 @@
+.product__card {
+    width: 367px;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(37, 41, 52);
+
+    &.template2 {
+        width: 360px;
+
+        .product__card__top {
+            // padding: 12px;
+        }
+    }
+
+    &__top__wrapper {
+        height: 190px;
+        flex-shrink: 0;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 10px 0px 10px 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        &__top {
+            display: flex;
+            flex-direction: column;
+        }
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__label {
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 0 6px;
+            border-radius: 8px;
+            // background-color: #F1F6FF;
+            // width: max-content;
+            width: max-content;
+            height: 24px;
+
+            & > span {
+                // color: #3060BD;
+                font-size: 14px;
+            }
+        }
+
+        &__names {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        &__description {
+            margin-top: 4px;
+            line-height: 168%;
+            font-size: 14px;
+        }
+
+        &__divider {
+            width: 100%;
+            height: 0;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .offer__editor__button {
+            width: 100%;
+            max-width: none;
+        }
+    }
+}
+
+.product__card__template3 {
+    width: 100%;
+    height: 219px;
+    display: flex;
+    gap: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    &__left {
+        height: 100%;
+        width: 364px;
+        flex-shrink: 0;
+    }
+    &__right {
+        padding: 16px 24px 16px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+
+        &__top {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            &__description {
+                margin-top: 4px;
+                line-height: 168%;
+            }
+        }
+
+        &__bottom {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            &__buttons {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        &__label {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    @media all and (max-width: 1024px) {
+        max-width: 364px;
+        height: auto;
+        flex-direction: column;
+
+        &__left {
+            height: 196px;
+            flex-shrink: 0;
+        }
+        &__right {
+            padding: 0px 16px 16px;
+        }
+    }
+}

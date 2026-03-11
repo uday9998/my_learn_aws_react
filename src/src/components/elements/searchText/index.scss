@@ -1,0 +1,24 @@
+.search__text{
+    display: flex;
+    align-items: center;
+    &__word{
+        padding: 0px 2px;
+        display: flex;
+        align-items: center;
+        span{
+            white-space: nowrap;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+    }
+}
+
+.search__text__word {
+    @media (max-width: 1024px) {
+        & > span > div {
+            white-space: normal;
+        }
+    }
+}

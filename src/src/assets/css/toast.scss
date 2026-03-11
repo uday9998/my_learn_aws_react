@@ -1,0 +1,112 @@
+// .Toastify {
+//    position: fixed;
+//    top: 0;
+//    width: 100%;
+// }
+
+// .toast-container {
+//    width: 100%
+// }
+
+// .toast {
+//    border-radius: 3px;
+//    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.34);
+// }
+
+// .success_section{
+//    height: 32px;
+//    justify-content: center;
+//    align-items: center;
+//    font-family: 'RobotoMedium' !important;
+//    display: flex;
+// }
+
+// .toast-body-info {
+//    text-align: center
+// }
+
+// // ​.success_section {
+// //    height: 32px;
+// //    justify-content: center;
+// //    align-items: center;
+// //    font-family: 'RobotoMedium' !important;
+// //    display: flex;
+// // }
+// .toast-body {
+//    color: #ffffff;
+//    font-family: Inter;
+//    font-style: normal;
+//    font-weight: normal;
+//    line-height: 24px;
+//    font-size: 16px;
+
+// }
+
+// ​ .success_section svg {
+//    margin-right: 9px;
+// }
+
+// .Toastify__toast-container--top-center {
+//    left: 0 !important;
+//    margin-left: 0 !important;
+//    top: 0 !important;
+// }
+
+// // /* // ​ @keyframes zoomIn {
+// // //    from {
+// // //       transform: translate3d(0, -110%, 0);
+// // //       visibility: visible;
+// // //    }
+
+// // //    ​ to {
+// // //       transform: translate3d(0, 0, 0);
+// // //    }
+// // // } */
+
+// // ​ .zoomIn {
+// //    animation-name: zoomIn;
+// // }
+
+// // ​ .zoomOut {
+// //    opacity: 0;
+// //    transition: visibility 1s 2s, opacity 0.4s linear;
+// // }
+
+// // ​ .animate {
+// //    animation-duration: 300ms;
+// // }
+
+// ​ .toaster-filter {
+//    position: absolute;
+//    top: 0px;
+//    left: 0px;
+//    right: 0;
+//    bottom: 0;
+//    height: 100%;
+//    width: 100%;
+//    z-index: -4;
+//    background: rgba(31, 187, 236, 0.81) !important;
+//    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12) !important;
+//    --webkit-backdrop-filter: blur(10px) !important
+// }
+
+// ​ .error {
+//    background: #DB3B3F !important;
+// }
+
+// .info1 {
+//    background: rgb(102, 187, 106) !important;
+// }
+
+.Toastify__toast {
+   min-height: auto;
+   padding: 15px;
+   border-radius: 4px;
+   font-family: "Avenir Next";
+}
+.Toastify__toast--success {
+   background: #24554e;
+}
+.Toastify__toast--error {
+   background: #cf0101;
+}

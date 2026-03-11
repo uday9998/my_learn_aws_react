@@ -1,0 +1,30 @@
+.box__wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 18px 16px;
+    border-radius: 5px;
+    width: 264px;
+    margin-top: 20px;
+    border: 1px solid #e7e9e9;
+
+    &.active {
+        background-color: #f7fcfc;
+        border: 1px solid #36796f;
+    }
+
+    .text__title__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        svg {
+            width: 17px;
+            height: 15px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+    }
+}

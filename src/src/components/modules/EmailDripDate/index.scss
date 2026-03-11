@@ -1,0 +1,56 @@
+
+.emailDripDate {
+   padding: 40px;
+   width: 560px;
+   &__title {
+      padding-bottom: 4px;
+   }
+   &__subtitle {
+      padding-bottom: 24px;
+   }
+   &__buttons{
+      display: flex;
+      margin-top: 32px;
+      justify-content: flex-end;
+      gap: 16px;
+   }
+}
+
+.email__drip__date{
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+   width: 560px;
+   gap: 24px;
+   &__content{
+      display: flex;
+      flex-direction: column;
+      width: 480px;
+      gap: 24px;
+   }
+   &__custom__select{
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .title{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &__icon{
+               cursor: pointer;
+               margin-bottom: -4px;
+            }
+      }
+   }
+   &__top{
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+   }
+  &__buttons{
+      display: flex;
+      margin-top: 8px;
+      justify-content: flex-end;
+      gap: 16px;
+   }
+}

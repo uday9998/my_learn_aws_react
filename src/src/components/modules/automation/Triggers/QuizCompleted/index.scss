@@ -1,0 +1,25 @@
+.trigger-completed {
+   display: flex;
+   flex-direction: column;
+   box-sizing: border-box;
+   gap: 16px;
+   width: 742px;
+   padding: 4px 4px 12px 4px;
+
+   .trigger-card-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+   }
+
+   .trigger-card-btns {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+   }
+   @media screen and (max-width: 1024px) {
+      width: 75vw;
+   }
+}

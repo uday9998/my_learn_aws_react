@@ -1,0 +1,106 @@
+.affiliate__commissions{
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    padding: 40px 48px;
+    justify-content: space-between;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    &__top{
+        display: flex;
+        flex-direction: column;
+    }
+    &__buttons{
+        width: 100%;
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__data{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        padding: 0;
+        border: none;
+    }
+}
+
+.affiliate__commission{
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    .default {
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    &__top{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        &__left{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img{
+                width: 160px;
+                height: 90px;
+                object-fit: cover;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .pricings{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    flex-wrap: wrap;
+                }
+                .pricing{
+                    background: #E8F2F1;
+                    border-radius: 8px;
+                    padding: 0px 4px;
+                }
+            }
+        }
+        &__right{
+
+        }
+    }
+    &__bottom{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        box-sizing: border-box;
+        padding: 8px 20px;
+        background: #E7E9E9;
+        &__block{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            flex: 1;
+            .price{
+                background: #FFFFFF;
+                padding: 0px 4px;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 701px) {
+        &__top {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}

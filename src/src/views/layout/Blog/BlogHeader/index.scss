@@ -1,0 +1,13 @@
+.blogHeader {
+   &_btns {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+   }
+
+   @media screen and (max-width: 1024px) {
+      & > .header {
+         background-color: #FFFFFF;
+      }
+   }
+}

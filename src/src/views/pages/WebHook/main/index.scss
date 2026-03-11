@@ -1,0 +1,230 @@
+.webHookMain {
+   .webHookMainHeaderTextButton {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 34px;
+      margin-top: 34px;
+   }
+   &__table {
+      background: #ffffff;
+      border: 1px solid #e7e9e9;
+      border-radius: 12px;
+      overflow-x: scroll;
+      scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+      scrollbar-width: thin;
+      box-sizing: border-box;
+      &::-webkit-scrollbar-track {
+         border-radius: 10px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar {
+         width: 5px;
+         height: 5px;
+         background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+         border-radius: 3px;
+         box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+         background-color: rgb(226, 226, 226);
+      }
+      td,
+      th {
+         padding: 12px 20px;
+         span {
+            white-space: nowrap;
+         }
+         text-align: start;
+      }
+   }
+   &__title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      .tooltip {
+         cursor: pointer;
+      }
+   }
+   .webhook_btns {
+      display: flex;
+      > div:nth-child(1) {
+         margin-right: 16px;
+      }
+   }
+   .webHookMainRectangle {
+      border-radius: 8px;
+      box-shadow: 0 2px 14px 0 rgba(63, 79, 101, 0.14);
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+   }
+   .webHookMainUrlHeader {
+      min-width: 250px;
+      flex: 1;
+      opacity: 0.5;
+   }
+
+   .webHookMainEventTriggersHeader {
+      min-width: 150px;
+      opacity: 0.5;
+      flex: 1;
+   }
+   .webHookMainStatusHeader {
+      min-width: 145px;
+      opacity: 0.5;
+      flex: 1;
+   }
+   .webHookMainTriggersHeader {
+      min-width: 100px;
+      opacity: 0.5;
+      flex: 1;
+      text-align: center;
+   }
+   .webHookMainActionsHeader {
+      opacity: 0.5;
+      flex: 1;
+      min-width: 80px;
+      text-align: center;
+   }
+
+   .webHookMainUrl {
+      min-width: 250px;
+      flex: 1;
+   }
+
+   .webHookMainEventTriggers {
+      min-width: 150px;
+      text-align: left;
+      flex: 1;
+   }
+   .webHookMainStatus {
+      min-width: 145px;
+      flex: 1;
+   }
+   .webHookMainTriggers {
+      min-width: 100px;
+      text-align: center;
+      flex: 1;
+      text-align: center;
+   }
+   .webHookMainHr {
+      border-bottom: solid 1px #c6cbd4;
+      opacity: 0.3;
+      height: 2px;
+      width: 100%;
+   }
+   .webHookMainIcons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      min-width: 100px;
+      flex: 1;
+      svg {
+         cursor: pointer;
+         padding: 0 3px;
+      }
+   }
+   .webHookMainStatusButton {
+      min-width: 80px;
+      flex: 1;
+   }
+   @media only screen and (max-width: 1548px) {
+      .webHookMainHeaderTextButton {
+         min-width: 680px;
+      }
+      .webHookMainRectangle {
+         min-width: 635px;
+      }
+
+      .webHookMainUrlHeader {
+         min-width: 170px;
+      }
+      .webHookMainUrl {
+         min-width: 170px;
+      }
+      .webHookMainEventTriggersHeader {
+         min-width: 110px;
+      }
+      .webHookMainEventTriggers {
+         min-width: 110px;
+      }
+   }
+
+   @media only screen and (max-width: 1348px) {
+      .webHookMainHeaderTextButton {
+         min-width: 320px;
+      }
+      .webHookMainRectangle {
+         min-width: 515px;
+      }
+      .webHookMainEventTriggersHeader {
+         min-width: 70px;
+      }
+      .webHookMainEventTriggers {
+         min-width: 70px;
+      }
+      .webHookMainTriggersHeader {
+         min-width: 70px;
+      }
+      .webHookMainTriggers {
+         min-width: 70px;
+      }
+      .webHookMainActionsHeader {
+         min-width: 70px;
+      }
+      .webHookMainIcons {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+         width: 30px;
+         height: 90px;
+      }
+   }
+   @media only screen and (max-width: 1145px) {
+      .webHookMainRectangle__content {
+         overflow: auto;
+      }
+
+      .webHookMainRectangle {
+         min-width: 449px;
+         padding: 24px 10px 24px 10px;
+      }
+      .webHookMainUrlHeader {
+         min-width: 163px;
+      }
+      .webHookMainUrl {
+         min-width: 163px;
+      }
+      .webHookMainEventTriggersHeader {
+         min-width: 60px;
+      }
+      .webHookMainEventTriggers {
+         min-width: 60px;
+      }
+      .webHookMainTriggersHeader {
+         min-width: 77px;
+      }
+      .webHookMainTriggers {
+         min-width: 77px;
+      }
+      .webHookMainStatusHeader {
+         min-width: 72px;
+      }
+      .webHookMainStatus {
+         min-width: 72px;
+      }
+      .btnBasic_size_full {
+         padding-right: 5px;
+         padding-left: 5px;
+         min-width: 68px;
+      }
+      .webHookMainIcons {
+         min-width: 50px;
+      }
+   }
+}

@@ -1,0 +1,14 @@
+.notes {
+   display: flex;
+   gap: 24px;
+   align-items: stretch;
+
+   @media screen and (max-width: 1024px) {
+      flex-direction: column;
+
+      & > div {
+         width: 100%;
+         padding: 16px;
+      }
+   }
+}

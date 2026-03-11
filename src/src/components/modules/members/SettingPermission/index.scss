@@ -1,0 +1,63 @@
+.settingPermission__content {
+   width: 100%;
+   .settingPermission {
+      width: 100%;
+      min-height: 126px;
+      margin-top: 16px;
+      border: 1px solid #cddaf1;
+      border-radius: 8px;
+      padding: 24px 30px 24px 24px;
+      box-sizing: border-box;
+      display: flex;
+      cursor: pointer;
+      .settingPermission__left {
+         padding-right: 24px;
+         .circle {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid #cddaf1;
+            cursor: pointer;
+         }
+         .circle__checked {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 1px solid #7cb740;
+            cursor: pointer;
+            .green__circle {
+               background-color: #7cb740;
+               width: 8px;
+               height: 8px;
+               border-radius: 50%;
+               margin-left: 3px;
+               margin-top: 3px;
+            }
+         }
+      }
+      .settingPermission__right {
+        >div {
+           line-height: 24px;
+         &:nth-child(1) {
+            padding-bottom: 6px;
+         }
+        }
+      }
+   }
+
+   .settingPermission__checked {
+      box-shadow: inset 0 0 0 1px #7cb740;
+      border: 1px solid #7cb740;
+   }
+
+   .settingPermission__btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 24px;
+      button {
+         width: 200px;
+      }
+   }
+
+}
+

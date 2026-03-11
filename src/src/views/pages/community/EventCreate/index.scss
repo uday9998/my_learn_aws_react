@@ -1,0 +1,58 @@
+.event__creation{
+    .input_new_date {
+        font-size: 14px;
+    }
+    .course__createtion__form{
+        &__left{
+            @media screen and (max-width: 1400px) {
+                width: 100%;
+            }
+        }
+        &__right{
+            @media screen and (max-width: 1400px) {
+                width: 100%;
+            }
+            align-items: flex-start;
+        }
+    }
+    .room__types{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        &__tab{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        &__member{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            &__or{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                &__line{
+                    background-color: #E7E9E9;
+                    width: 100%;
+                    height: 1px;
+                }
+                span{
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    .course__createtion__form__left{
+        justify-content: space-between;
+        .cropArea{
+            min-width: auto;
+        }
+    }
+    .upload__with__media__content{
+        width: 100%;
+    }
+    .upload__with__media{
+        width: 100%;
+    }
+}

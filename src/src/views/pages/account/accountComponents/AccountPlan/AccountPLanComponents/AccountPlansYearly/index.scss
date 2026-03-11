@@ -1,0 +1,9 @@
+.account__plan__yearly {
+   display: flex;
+   gap: 20px;
+   max-width: 100%;
+   margin-bottom: 24px;
+   @media screen and (max-width: 1400px) {
+      flex-wrap: wrap;
+   }
+}

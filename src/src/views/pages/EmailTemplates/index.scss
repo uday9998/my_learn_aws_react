@@ -1,0 +1,78 @@
+.emailTemplates-page {
+   width: 100%;
+   display: flex;
+   box-sizing: border-box;
+   .emailTemplates__left {
+      flex: 1 1;
+      max-width: 480px;
+      box-sizing: border-box;
+      border-right: 2px solid #c2cedb;
+      padding-right: 24px;
+   }
+   .save__btn {
+      display: flex;
+      justify-content: flex-end;
+   }
+}
+
+.emailtemplates-empty {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+   .emailTemplates-page{
+     max-width: calc(100vw - 301px);
+   }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+   .emailTemplates-page{
+     max-width: calc(100vw - 249px);
+   }
+}
+@media screen and (min-width: 1024px) {
+   .emailTemplates-page {
+      .emailTemplates__left {
+         max-width: 480px;
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+  .emailTemplates-page {
+   //   flex-wrap: wrap;
+     padding: 24px 16px;
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+     .content_left {
+         display: flex;
+         flex-direction: column;
+         margin-right: 0;
+         padding-right: 0;
+         margin-bottom: 16px;
+         border: none;
+         flex: none;
+         height: initial;
+         overflow-y: hidden;
+         width: 100%;
+         min-width: 100%;
+      }
+      .content_right {
+         display: flex;
+         flex-direction: column;
+         min-width: 100%;
+         width: 100%;
+         margin-left: 0;
+         flex: none;
+         height: initial;
+         overflow-y: hidden;
+         .save__btn {
+            margin-top: 16px;
+         }
+     }
+  }
+}
+

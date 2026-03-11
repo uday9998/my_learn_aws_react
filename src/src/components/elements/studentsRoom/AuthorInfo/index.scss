@@ -1,0 +1,42 @@
+.authorInfo {
+   display: flex;
+   align-items: flex-start;
+
+   img {
+      margin-top: -2px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      object-fit: cover;
+   }
+
+   .authorInfo__content {
+      // margin-left: 12px;
+     // max-width: 448px;
+      span {
+         display: block;
+         letter-spacing: normal;
+      }
+      .author_info {
+         margin-top: 8px;
+         font-size: 14px;
+         font-weight: 500;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.43;
+         letter-spacing: normal;
+         color: #3f4f65;
+         white-space: pre-wrap;
+      }
+      .author_name {
+        font-size: 24px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        color: #3f4f65;
+        text-transform: capitalize;
+      }
+   }
+}

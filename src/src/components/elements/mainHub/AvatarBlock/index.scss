@@ -1,0 +1,32 @@
+.avatar-container {
+    display: flex;
+    align-items: center;
+
+    .triangle-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    img {
+      border-radius: 50%;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    span{
+        padding-left: 8px;
+    }
+}

@@ -1,0 +1,42 @@
+.comments__post__view{
+   display: flex;
+   flex-direction: column;
+   .comments__post__view__top__left{
+      cursor: pointer;
+   }
+   &__top{
+      display: flex;
+      align-items: center;
+      margin-bottom: 13px;
+      justify-content: space-between;
+      &__left{
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         img{
+            border-radius: 8px;
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+         }
+      }
+   }
+   &__bottom{
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+      justify-content: space-between;
+      &__left{
+         display: flex;
+         align-items: center;
+         gap: 16px;
+      }
+   }
+   .reply__comment{
+      margin-top: 16px;
+   }
+
+   &.isReply {
+      margin-left: 20px;
+   }
+}

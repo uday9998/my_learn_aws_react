@@ -1,0 +1,45 @@
+.countdown_section_content {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   .countdown_section_content_title {
+      color: rgb(52, 73, 94);
+   }
+
+   .countdown_section_content_text {
+      font-family: Inter-Regular;
+      color: rgb(52, 73, 94);
+   }
+
+   .countdown-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   .countdown-item {
+      color: #34495e;
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      line-height: 30px;
+      margin: 10px;
+      padding-top: 10px;
+      position: relative;
+      width: 100px;
+      height: 100px;
+   }
+
+   .countdown-item span {
+      color: #34495e;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+   }
+
+}
+

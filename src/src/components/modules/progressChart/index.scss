@@ -1,0 +1,19 @@
+.progress__chart{
+    width: 100%;
+    position: relative;
+    height: 8px;
+    border-radius: 8px;
+    div{
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 8px;
+    }
+    &__progress{
+        background: #E8F2F1;
+        div{
+            background: #36796F;
+        }
+    }
+}

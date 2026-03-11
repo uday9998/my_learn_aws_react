@@ -1,0 +1,89 @@
+.certificate__signature {
+   height: 60px;
+   &__create {
+      position: absolute;
+      top: -20px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 4px 12px;
+      gap: 8px;
+      border: 1px solid #f8fafa;
+      border-radius: 4px;
+      left: 50%;
+      transform: translateX(-50%);
+      div {
+         &:nth-child(2) {
+            height: 20px;
+            background: #e7e9e9;
+            width: 1px;
+         }
+      }
+      .text-with-icon {
+         cursor: pointer;
+         align-items: center;
+         white-space: nowrap;
+      }
+   }
+   &__none {
+      background: #c5eeff;
+      width: 100%;
+      cursor: pointer;
+      height: 100%;
+   }
+   img {
+      width: 100%;
+      cursor: pointer;
+      height: 60px;
+      object-fit: cover;
+   }
+   &__editing {
+      position: relative;
+   }
+   .editing__options {
+      position: absolute;
+      top: -55px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: 1px solid #e7e9e9;
+      box-shadow: 0px 0px 6px rgba(19, 31, 30, 0.1);
+      border-radius: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      &__left {
+         display: flex;
+         flex-direction: row;
+         align-items: flex-start;
+         padding: 4px 8px;
+         &__button {
+            padding: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+         }
+      }
+      &__right {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         gap: 12px;
+         border-left: 1px solid #e7e9e9;
+         padding: 4px 8px;
+         &__button {
+            padding: 6px;
+            cursor: pointer;
+            border: 1px solid #d12d36;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+         }
+      }
+   }
+   .newCanvas {
+      cursor: crosshair;
+      border: 1px dashed #3bc4ff;
+   }
+}

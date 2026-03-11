@@ -1,0 +1,274 @@
+.studentsRoom-sidebar {
+   width: 416px;
+   box-sizing: border-box;
+   height: calc(100vh - 72px);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background: var(--mainBgColorTransparent);
+   border: 1px solid var(--mainBgColorTransparent);
+   border-top: none;
+   border-bottom-right-radius: 8px;
+   position: relative;
+   
+   // Scrollbar styling
+   scrollbar-color: var(--buttonBgcolor);
+   scrollbar-width: thin;
+   
+   &::-webkit-scrollbar-track {
+     border-radius: 8px;
+     background-color: transparent;
+   }
+   
+   &::-webkit-scrollbar {
+     width: 4px;
+     background-color: transparent;
+   }
+   
+   &::-webkit-scrollbar-thumb {
+     border-radius: 4px;
+     box-shadow: inset 0 0 4px rgba(36, 85, 78, 0.2);
+     background-color: rgba(36, 85, 78, 0.2);
+   }
+   
+   // Content area
+   .studentsRoom-sidebar-content {
+     padding: 24px;
+     box-sizing: border-box;
+     overflow-y: auto;
+     overflow-x: hidden;
+     height: calc(100vh - 110px);
+     background-color: #fff;
+   }
+   
+   // Navigation menu at bottom
+   .sidebarBottom {
+     display: flex;
+     align-items: center;
+     box-shadow: 0px -2px 6px rgba(19, 31, 30, 0.05);
+     border-radius: 0;
+     justify-content: space-between;
+     background: var(--mainBgColorTransparent);
+     
+     > div {
+       padding: 12px 8px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex: 1;
+       transition: background-color 0.2s ease;
+       
+       span {
+         white-space: nowrap;
+         margin-left: 6px;
+         font-size: 14px;
+       }
+       
+       svg {
+         width: 16px;
+         height: 16px;
+       }
+       
+       &:not(:first-child) {
+         border-left: 1px solid rgba(36, 85, 78, 0.1);
+       }
+     }
+     
+           // Active menu item
+     .sidebarBottomMenuActive {
+       background: #24554e;
+       position: relative;
+       
+       // Add slight indicator at top of active item
+       &:after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 24px;
+         height: 3px;
+         background-color: var(--primaryColor, #24554e);
+         border-radius: 0 0 3px 3px;
+       }
+       
+       // Remove border when active
+       & + div {
+         border-left: none;
+       }
+     }
+     
+     // No comments variation
+     &.sidebarBottomNoComment {
+       > div {
+         flex: 1;
+       }
+     }
+   }
+   
+   // Course info section
+   .students-sidebar__header-bottom {
+     border-radius: 8px;
+     margin-bottom: 24px;
+     
+     .avatar-content {
+       display: flex;
+       align-items: center;
+       margin-bottom: 20px;
+       
+       img {
+         height: 38px;
+         width: 38px;
+         min-width: 38px;
+         object-fit: cover;
+         object-position: center;
+         margin-right: 12px;
+         border: solid 1.5px #eeeeee;
+         border-radius: 50%;
+       }
+     }
+     
+     .sidebar-goToBck {
+       display: flex;
+       align-items: center;
+       margin-bottom: 12px;
+       cursor: pointer;
+       
+       .left-icon {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+         svg {
+           width: 12px;
+           height: 15px;
+         }
+       }
+       
+       .textBasic_type_normal {
+         font-size: 12px;
+         line-height: 12px !important;
+       }
+     }
+     
+     .progress-bar {
+       margin-top: 8px;
+       
+       .progress-bar__outside {
+         opacity: 1;
+       }
+     }
+     
+     .certificate_btn {
+       margin-top: 150px;
+       margin-bottom: 16px;
+       
+       &_content {
+         display: flex;
+         align-items: center;
+         
+         span {
+           margin-left: 6px;
+         }
+       }
+     }
+   }
+   
+   // Course image and info styling
+   .studentsSidebar {
+     width: 100%;
+     
+     &__top {
+       margin: 16px 0 12px 0;
+       position: relative;
+     }
+     
+     &__img {
+       border-radius: 8px;
+       width: 100%;
+       
+       img {
+         border-radius: 8px;
+         max-height: 100px;
+         object-fit: cover;
+         width: 100%;
+       }
+     }
+     
+           &__abs {
+       position: absolute;
+       width: 100%;
+       border-radius: 8px;
+       background: linear-gradient(0deg, rgba(36, 85, 78, 0.9) 2.78%, rgba(36, 85, 78, 0.32) 60%);
+       height: 100%;
+       top: 0;
+       
+       &__content {
+         bottom: 0;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         gap: 4px;
+         padding: 12px;
+         width: 100%;
+         box-sizing: border-box;
+         margin-top: 100px;
+         
+         &__percent {
+           display: flex;
+           gap: 4px;
+           width: 100%;
+           
+           .textBasic {
+             white-space: nowrap;
+           }
+         }
+       }
+     }
+   }
+ }
+ 
+ // Mobile view
+ @media screen and (max-width: 767px) {
+   .studentsRoom-sidebar {
+     z-index: 999;
+     height: calc(100vh - 90px);
+     width: 100%;
+     border-radius: 0;
+     
+     .studentsRoom-sidebar-content {
+       padding: 16px;
+     }
+     
+     .sidebarBottom {
+       > div {
+         padding: 10px 4px;
+         
+         svg {
+           width: 14px;
+           height: 14px;
+         }
+         
+         span {
+           font-size: 12px;
+           margin-left: 4px;
+         }
+       }
+     }
+     
+     .studentsSidebar {
+       width: 100%;
+     }
+   }
+ }
+ 
+ // Tablets
+ @media screen and (min-width: 768px) and (max-width: 1023px) {
+   .studentsRoom-sidebar {
+     width: 360px;
+     
+     .studentsRoom-sidebar-content {
+       padding: 20px;
+     }
+   }
+ }

@@ -1,0 +1,138 @@
+.billing__card__wrapper {
+    padding: 16px 15px;
+    border-radius: 12px;
+    border: 1px solid #E7E9E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 24px;
+    width: 95%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -12px 92px, 22% 91%;
+    gap: 50px;
+
+    .left__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 28px;
+        margin-right: 10px;
+        width: 300px;
+        
+        .left__subtitle__wrapper {
+            span {
+                line-height: 1.6 !important;
+            }
+        }
+
+        .left__title__wrapper {
+            margin-bottom: 7px;
+
+            span {
+                line-height: 1 !important;
+
+                @media (max-width: 1500px) {
+                    font-size: 35px;
+                }
+            }
+        }
+
+        @media (max-width: 1630px) {
+            width: 240px;
+        }
+    }
+
+    .center__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        .center__title__wrapper {
+            margin-bottom: 10px;
+        }
+
+        .center__small__text__wrapper {
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 46px;
+        }
+
+        .center__subtitle__wrapper {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+    }
+
+    .right__wrapper {
+        background-color: #F4F7F7;
+        padding: 5px 8px 5px 8px;
+        border-radius: 8px;
+
+        @media (max-width: 1630px) {
+            width: 84px;
+        }
+
+        @media (max-width: 1520px) {
+            width: 91px;
+        }
+    }
+
+    .center__button__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .drop__triggle {
+            button {
+                transform: rotate(0deg) !important;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 1250px) {
+            gap: 8px;
+        }
+    }
+
+    @media (max-width: 1500px) {
+        gap: 35px;
+    }
+
+    @media (max-width: 1408px) {
+        gap: 0;
+    }
+
+    @media (max-width: 1250px) {
+        margin: 24px 0px 24px 11px;
+    }
+}
+
+.pricing__card__popover {
+    margin-top: 7px;
+}
+
+.canceled__subscription__wrapper {
+    background-color: #FEE1F2;
+    padding: 5px 8px;
+    border-radius: 8px;
+
+    span {
+        font-size: 15px;
+        font-weight: bold;
+        color: #9B2355;
+    }
+}
+
+.footer__wrapper {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #F8FAFA;
+    border: 1px solid #E7E9E9;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}

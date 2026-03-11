@@ -1,0 +1,39 @@
+.affiliate__overview{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__links{
+        background: #F8FAFA;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 16px;
+        &__info{
+            background: #FFFFFF;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            padding: 12px 24px 12px 12px;
+            gap: 40px;
+        }
+        &__image{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 12px;
+            svg{
+                width: 100%;
+            }
+        }
+    }
+}

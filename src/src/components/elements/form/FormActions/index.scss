@@ -1,0 +1,11 @@
+.formActions {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 24px;
+  .formActions__item {
+    &:not(:first-of-type) {
+      margin-left: 16px;
+    }
+  }
+}

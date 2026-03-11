@@ -1,0 +1,24 @@
+.landing__empty__page{
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    @media screen and (max-width: 1024px) {
+        border: none;
+
+        & > span {
+            text-align: center;
+        }
+
+        & > button {
+            width: 100%;
+        }
+    }
+}

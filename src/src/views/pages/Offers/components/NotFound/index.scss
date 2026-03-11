@@ -1,0 +1,16 @@
+.offer__not__found{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__col{
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.account__personal {
+   padding: 30px 0px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   .upload__view{
+      height: 258px;
+   }
+   .account__email {
+      &__input {
+         margin-bottom: 8px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         svg {
+            margin-top: 3px;
+         }
+         .left {
+            display: flex;
+            gap: 4px;
+            transform: rotate(0deg) !important;
+         }
+      }
+   }
+   &__inputs {
+      display: flex;
+      margin: 0px 24px;
+      flex-direction: column;
+      gap: 24px;
+   }
+   &__top {
+      &__background {
+         background: linear-gradient(91.13deg, #313e3c 15.71%, #e7c8a9 100%);
+         border-radius: 12px 12px 0px 0px;
+         height: 80px;
+      }
+      &__content {
+         padding: 0px 24px;
+         display: flex;
+         overflow: hidden;
+         align-items: center;
+         border-radius: 12px;
+         gap: 16px;
+         margin-top: -32px;
+         .image {
+            position: relative;
+            img {
+               width: 64px;
+               height: 64px;
+               border-radius: 12px;
+               object-fit: cover;
+            }
+         }
+         .image__edit {
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            border-radius: 0px 0px 12px 12px;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
+            width: 100%;
+            background: rgba(19, 31, 30, 0.4);
+         }
+         .image__edit__cancel{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
+            top: 4px;
+            right: 4px;
+            button{
+               width: 16px;
+               border-radius: 4.57143px;
+               background: rgba(19, 31, 30, 0.4);
+               height: 16px;
+               border: 0.571429px solid #FFFFFF;
+               padding: 1px;
+            }
+         }
+      }
+   }
+   .add__suport__button {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: -11px;
+      cursor: pointer;
+   }
+
+   @media screen and (max-width: 1024px) {
+      &__inputs {
+         margin: 0;
+
+         & > button {
+            width: 100%;
+            max-width: none !important;
+         }
+      }
+   }
+}

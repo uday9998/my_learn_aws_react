@@ -1,0 +1,7 @@
+export const UPDATE_CURRENT_START = 'notification/UPDATE_CURRENT_START';
+export const UPDATE_CURRENT_FAILED = 'notification/UPDATE_CURRENT_FAILED';
+export const UPDATE_CURRENT_COMPLETED = 'notification/UPDATE_CURRENT_COMPLETED';
+
+export const SAVE_CURRENT_START = 'notification/SAVE_CURRENT_START';
+export const SAVE_CURRENT_COMPLETED = 'notification/SAVE_CURRENT_COMPLETED';
+export const SAVE_CURRENT_FAILED = 'notification/SAVE_CURRENT_FAILED';

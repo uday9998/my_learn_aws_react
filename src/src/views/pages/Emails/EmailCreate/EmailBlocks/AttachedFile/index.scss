@@ -1,0 +1,10 @@
+.attached_files_email {
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   background-color: inherit;
+   >div {
+      display: flex;
+      gap: 16px;
+   }
+}

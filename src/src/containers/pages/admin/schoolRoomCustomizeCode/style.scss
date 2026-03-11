@@ -1,0 +1,17 @@
+.customize__templates__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+
+    &__text {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}

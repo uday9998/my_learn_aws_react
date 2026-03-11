@@ -1,0 +1,46 @@
+.textInlineEditor-new {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   .email__blocks__code__dict_editor {
+      width: 290px;
+      text-align: right;
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+   }
+   .quillInlineEditor {
+      // border: 1px solid #E7E9E9;
+      // border-radius: 12px;
+      padding: 8px 16px;
+      min-height: 79px;
+      // width: 100%;
+      &::selection {
+       // background: #C5EEFF;
+      // color: #131f1e;
+      }
+      &:focus-visible {
+     // border: 1px solid #E7E9E9;
+        outline: none;
+      }
+   }
+  img {
+     max-width: 100%;
+  }
+
+}
+
+.inlineEditor-title {
+   margin-bottom: 8px;
+}
+
+.textarea__inputNew__icon_generator {
+   width: fit-content;
+   cursor: pointer;
+}
+
+.mce-content-body:not([dir=rtl])[data-mce-placeholder]:not(.mce-visualblocks)::before {
+   left: 50% !important;
+   transform: translateX(-50%);
+}

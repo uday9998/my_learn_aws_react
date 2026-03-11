@@ -1,0 +1,21 @@
+.loginItem {
+   display: flex;
+   justify-content: space-between;
+   padding: 15px 0;
+   align-items: center;
+   .loginItem__left {
+      display: flex;
+      align-items: center;
+      svg {
+         margin-right: 8px;
+      }
+   }
+   .loginItem__right {
+      width: 100%;
+      max-width: 92px;
+      button {
+         width: 100%;
+         height: 32px!important;
+      }
+   }
+}

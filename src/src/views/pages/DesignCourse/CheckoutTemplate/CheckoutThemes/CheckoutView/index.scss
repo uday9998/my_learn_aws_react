@@ -1,0 +1,257 @@
+.checkoutPage {
+   width: 100%;
+   min-height: 100vh;
+   background-color: inherit;
+   position: relative;
+   padding: 0 15px;
+   box-sizing: border-box;
+   .checkoutPage-content {
+      display: flex;
+      justify-content: center;
+      margin-top: 44px;
+      .checkoutPage-left {
+         max-width: 500px;
+         margin-right: 100px;
+         width: 100%;
+         img {
+            max-width: 100%;
+         }
+      }
+
+   }
+
+   &.template4 {
+      padding: 0 34px 24px;
+
+      .checkoutPage-content {
+
+         .checkoutPage-left {
+            background-color: var(--mainBg005);
+            border-radius: 32px;
+            margin-right: 24px;
+            max-width: 550px;
+
+            & > div {
+               height: 100%;
+               
+               .Section {
+                  border-top-left-radius: 16px;
+                  border-bottom-left-radius: 16px;
+                  height: 100%;
+                  padding: 40px 54px;
+               }
+            }
+
+            .bullets-content-template4 {
+               width: 100%;
+               border: 1px solid var(--bulletBorderColor);
+               border-radius: 12px;
+
+               .bullet:not(:last-child) {
+                  border-bottom: 1px solid var(--bulletBorderColor);
+               }
+               
+               .bullet-content {
+                  display: flex;
+                  flex-direction: row-reverse;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 8px 16px;
+               }
+            }
+            
+         }
+
+         .checkoutPage-right {
+            max-width: 550px;
+            .checkoutPage-rightContent {
+               margin: 0;
+               border-radius: 32px;
+               // border-top-right-radius: 32px;
+               // border-bottom-right-radius: 32px;
+
+               .accout_info {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 24px;
+
+                  label {
+                     display: none;
+                  }
+               }
+
+
+               .row {
+                  display: flex;
+                  gap: 16px;
+                  margin-top: 24px;
+                  align-items: flex-start;
+                  
+                  .textInput {
+                     margin-top: 0;
+                  }
+
+                  .SelectItem__button__medium {
+                     height: 42px;
+                  }
+               }
+               
+               .payment_types {
+                  display: flex;
+                  background-color: #F0F2F2;
+                  border-radius: 12px;
+                  width: 100%;
+                  max-width: 300px;
+                  height: 32px;
+                  overflow: hidden;
+                  margin-bottom: 32px;
+
+                  & > div {
+                     // width: 100px;
+                     width: 100%;
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                  }
+
+                  & > div:first-child {
+                     background-color: var(--buttonBgcolor);
+                     border-radius: 12px;
+
+                     & > span {
+                        color: #ffffff;
+                     }
+                  }
+               }
+
+               .promo_code_field {
+                  display: flex;
+                  align-items: center;
+                  gap: 20px;
+
+                  .labelsRectangle {
+                     display: none;
+                  }
+               }
+
+               .input {
+                  .input_header > label {
+                     font-weight: 400;
+                  }
+               }
+
+               .billing_info > .input {
+                  margin-top: 24px;
+               }
+
+               .order_section {
+                  margin: 32px 0;
+                  border: 1px solid #E7E9E9;
+                  border-radius: 12px;
+                  // overflow: hidden;
+
+                  span {
+                     font-weight: 400;
+                  }
+
+                  .row-between {
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: center;
+
+                     .bottom_info_days {
+                        display: flex;
+                        gap: 8px;
+                     }
+                  }
+                  
+                  .order_details {
+                     padding: 24px;
+                     display: flex;
+                     flex-direction: column;
+                     gap: 16px;
+                  }
+
+                  .divider {
+                     width: 100%;
+                     height: 0;
+                     border-top: 1px solid #E7E9E9;
+                  }
+
+                  .order_section_bottom {
+                     padding: 16px 24px;
+                     background-color: #F0F2F2;
+                     border-top: 1px solid #E7E9E9;
+                  }
+               }
+
+               .terms-conditions-text {
+                  display: flex;
+                  gap: 4px;
+                  flex-wrap: wrap;
+               }
+               .footer-button {
+                  .isBuyButton {
+                     width: 100%;
+                     margin-top: 16px;
+   
+                     .button-content {
+                        width: 100%;
+                     }
+                  }
+               }
+            }
+
+         }
+      }
+
+      .template_footer {
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 16px;
+         margin-top: 32px;
+
+         .contact_info {
+            display: flex;
+            gap: 32px;
+
+            & > div {
+               display: flex;
+               gap: 8px;
+               align-items: center;
+            }
+         }
+      }
+   }
+}
+
+
+@media screen and (max-width: 1023px) {
+
+      .template4 {
+         .checkoutPage-left {
+            .Section {
+               border-top-right-radius: 16px;
+               border-bottom-left-radius: 0 !important;
+               padding: 16px !important;
+            }
+         }
+         .checkoutPage-right {
+            max-width: 550px;
+
+            .Section {
+               // border-top-right-radius: 0;
+               border-bottom-left-radius: 16px !important;
+               border-bottom-right-radius: 16px;
+            }
+         }
+
+         .contact_info {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+         }
+      }
+   }

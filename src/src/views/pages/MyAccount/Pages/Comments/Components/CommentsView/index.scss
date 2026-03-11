@@ -1,0 +1,26 @@
+.comments__view{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__checkbox{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    &__data{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        &__empty{
+            text-align: center;
+            padding: 20px 0px;
+        }
+    }
+    &__top{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

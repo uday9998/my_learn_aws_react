@@ -1,0 +1,30 @@
+.media__library__bottom{
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    margin-top: 16px;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        border: none;
+    }
+}
+.media__view__container{
+    display: flex;
+    flex-direction: column;
+    .inputNew  {
+        min-height: 44px;
+    }
+    .media__library__bottom{
+        min-height: 100%;
+        display: flex;
+    }
+    .delete__modal__content{
+        max-width: 414px;
+    }
+}
+
+.media__filter {
+   display: flex;
+   gap: 12px;
+}

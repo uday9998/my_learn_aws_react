@@ -1,0 +1,22 @@
+.webhookItem__row {
+   td {
+      border-top: 1px solid #e7e9e9;
+      width: 100%;
+   }
+   &__verified {
+      span {
+         background: #f1f6ff;
+         border-radius: 8px;
+         padding: 0px 4px;
+         color: #3060bd;
+      }
+   }
+   &__pending {
+      span {
+         border-radius: 8px;
+         padding: 0px 4px;
+         color: #8830bd;
+         background: #fdf1ff;
+      }
+   }
+}

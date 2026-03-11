@@ -1,0 +1,45 @@
+.author__modal{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .btn_input_wrapper {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    &__add{
+        display: flex;
+        align-items: flex-end;
+        gap: 12px;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+
+        &__item{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            & > span {
+                white-space: nowrap;
+            }
+            & > button {
+                width: max-content;
+            }
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,321 @@
+.offers__category {
+   position: relative;
+   max-width: 100%;
+   >div {
+      max-width: 100%;
+   }
+   &__loader {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      position: absolute;
+      z-index: 999;
+      padding: 10px 0;
+   }
+
+   .portal__image {
+      object-position: center;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 16/9;
+   }
+
+   .cardWithVideo {
+      position: relative;
+      width: 100%;
+      cursor: pointer;
+
+      .cardWithVideoTrailer {
+         position: absolute;
+         top: 14px;
+         width: calc(100% - 4px);
+         left: 2px;
+         border-radius: 5px 5px 0 0;
+         overflow: hidden;
+         height: 177px;
+         // background-color: rgba(0, 0, 0, .5);
+
+         div {
+            border-radius: 5px 5px 0 0;
+            height: 100%;
+            width: 100%;
+            position: relative;
+
+            video {
+               border-radius: 5px 5px 0 0;
+               width: 100%;
+               height: 100%;
+            }
+         }
+      }
+   }
+
+   .category__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .offer_card_wrapper {
+      background-color: blue;
+      width: 432px;
+   }
+
+   // padding-bottom: 32px;
+   &__block {
+      max-width: 1128px;
+      min-width: 1128px;
+
+      @media screen and (max-width: 1128px) {
+         min-width: 1000px;
+         max-width: 1000px;
+      }
+
+      @media screen and (max-width: 1024px) {
+         min-width: 100%;
+         max-width: 100%;
+      }
+
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin: 0px auto;
+      padding: 0px 24px;
+   }
+
+   &__slider {
+      display: flex;
+      gap: 24px;
+      padding: 0 24px 24px;
+      justify-content: start;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 428px) {
+         padding: 0 14px;
+      }
+   }
+
+   &__name {
+      display: flex;
+      padding: 0 24px 20px;
+      justify-content: start;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 428px) {
+         padding: 0 14px;
+      }
+   }
+
+   .mainSliderNext {
+      &::before {
+         display: none;
+      }
+
+      right: 0px;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s ease-in-out;
+      background: #eae8f2;
+      border: 1px solid #d3cfe3;
+      border-radius: 57px;
+      z-index: 1;
+
+      path {
+         fill: var(--buttonBgcolor);
+      }
+   }
+
+   &__top {
+      max-width: 1128px;
+      min-width: 1128px;
+      margin: 0px auto;
+
+      @media screen and (max-width: 1128px) {
+         min-width: 1000px;
+         max-width: 1000px;
+      }
+
+      margin-bottom: 24px;
+   }
+
+   .offers__category {
+      position: relative;
+   }
+
+   .mainSliderPrev {
+      &::before {
+         display: none;
+      }
+
+      left: 2px;
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eae8f2;
+      border: 1px solid #d3cfe3;
+      border-radius: 57px;
+      transition: 0.3s ease-in-out;
+      z-index: 1;
+
+      path {
+         fill: var(--buttonBgcolor);
+      }
+   }
+
+   .slick-track {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+   }
+
+   .slick-slide:not(.slick-active) {
+      opacity: 0.5;
+      transition: 0.3s;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+
+      gap: 24px;
+
+      &__top {
+         display: flex;
+         align-items: center;
+         max-width: 1128px;
+         min-width: 12;
+         margin: 0px auto;
+         justify-content: space-between;
+      }
+
+      &__flex {
+         display: flex;
+         // max-width: 936px;
+         flex-direction: column;
+         margin: 0px auto 24px;
+         gap: 20px;
+
+         &.template3 {
+            max-width: 936px;
+         }
+
+         @media screen and (max-width: 1023px) {
+            max-width: max-content;
+            min-width: 100%;
+            // padding: 0px 24px;
+         }
+      }
+
+      &__name {
+         color: var(--offer-card-name-color);
+      }
+
+      // &__list {
+      //    display: flex;
+      //    flex-wrap: wrap;
+      //    gap: 24px;
+      // }
+   }
+
+   .template3 {
+      max-width: 100%;
+      .cardWithVideo {
+         overflow: hidden;
+         width: 432px;
+         max-width: 100%;
+         @media screen and (max-width: 1023px) {
+            width: 100%;
+            max-width: 432px;
+         }
+         >div {
+            max-width: 100%;
+         }
+      }
+
+      .cardWithVideoTrailer {
+         max-height: 200px;
+      }
+   }
+}
+
+// new
+.offer__cards__list {
+   // display: flex;
+   // gap: 24px;
+   // flex-wrap: wrap;
+   margin-bottom: 40px;
+
+   .active_editor {
+      //  width: 367px;
+      justify-content: flex-start;
+      border: none !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+
+   &.template3 {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+.offers__category__item__flex {
+   border-bottom: 2px solid rgb(188 186 186 / 6%);
+}
+
+.offers__category__item__flex:last-child {
+   border-bottom: none;
+}
+
+
+@media screen and (max-width: 1023px) {
+   .offers__top .default__slider > img {
+      height: auto !important;
+   }
+
+   .offers__top .offer__slider__item {
+      height: auto !important;
+       min-height: 273px;
+   }
+
+   .offer__slider__item.banner img {
+      min-height: 273px;;
+   }
+
+   .offer__slider__item.banner .image__with__blur {
+      min-height: 273px;
+   }
+
+   .offer__slider__item__left__name {
+         font-size: 24px !important;
+   }
+   .banner__title  {
+      div p {
+         font-size: 24px !important;
+      }
+   }
+}
+
+.cateogry__cards__wrapper {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   flex-wrap: wrap;
+
+   .cardWithVideo {
+      max-width: 318px;
+      width: 100%;
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .cateogry__cards__wrapper {
+      display: none !important;
+   }
+}

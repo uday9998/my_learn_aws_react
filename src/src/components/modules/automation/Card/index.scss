@@ -1,0 +1,45 @@
+.Card {
+   background: #FFFFFF;
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   padding: 12px;
+   gap: 8px;
+   cursor: pointer;
+   display: flex;
+   flex-direction: column;
+
+   .card__title {
+      display: flex;
+
+      flex-direction: column;
+      gap: 4px;
+   }
+
+   .card__content {}
+
+   &:hover {
+      border: solid 1px #24554E;
+      transition: all 200ms;
+
+      .card__title {
+
+         .waitIcon,
+         .emailIcon,
+         .addTagIcon,
+         .removeTagIcon,
+         .purchasedIcon,
+         .enrolledIcon,
+         .conditionalLogicIcon,
+         .conditionalSplitIcon,
+         .sendWebhookIcon {
+            fill: #24554E;
+            transition: all 200ms;
+         }
+      }
+
+      span {
+         color: #24554E !important;
+         transition: all 200ms;
+      }
+   }
+}

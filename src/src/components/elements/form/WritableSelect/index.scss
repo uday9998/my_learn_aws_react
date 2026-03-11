@@ -1,0 +1,52 @@
+.writableSelect {
+   position: relative;
+   .tooltip-content {
+      display: flex;
+   }
+   label {
+      span {
+         padding-bottom: 2px;
+         display: inline-block;
+      }
+   }
+   .css-u89gnt {
+    background-color: #eee;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    margin: 6px 8px 6px 0;
+    padding: 2px;
+    &:hover {
+      background-color: #6d6d6d;
+      .css-12jo7m5 {
+         color: #eee;
+      }
+      svg {
+         color:#6d6d6d;
+         background: rgba(255, 255, 255, 0.87);
+       }
+    }
+   }
+   .css-1alnv5e {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      color: rgba(255, 255, 255, 0.87);
+      background: #6d6d6d;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+
+    }
+    &:hover {
+      background-color: inherit;
+      color: inherit;
+    }
+   }
+   .css-26l3qy-menu {
+      div>div {
+         cursor: pointer;
+      }
+   }
+}

@@ -1,0 +1,131 @@
+.videoCategory_creation__form {
+   background: #ffffff;
+   box-sizing: border-box;
+   display: flex;
+   align-items: stretch;
+   padding: 40px 48px;
+   gap: 48px;
+   width: 100%;
+   border-radius: 16px;
+   .videoCategory__btn {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+   }
+   @media screen and (max-width: 1023px) {
+     border: none;
+     padding: 0;
+  }
+   &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      flex: 1;
+      @media screen and (max-width: 1023px) {
+        border: none;
+        padding-right: 0;
+     }
+      &__buttons {
+         display: flex;
+         justify-content: space-between;
+         @media screen and (max-width: 1023px) {
+            border: none;
+            padding-right: 0;
+            flex-direction: column;
+            gap: 16px;
+         }
+      }
+      textarea{
+         min-height: 150px;
+      }
+   }
+   &__right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 547px;
+      width: 100%;
+      flex: 0.9;
+      img {
+         width: 100%;
+      }
+      @media screen and (max-width: 1023px) {
+         display: none;
+     }
+   }
+   &__types {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      &__content {
+         display: flex;
+         gap: 16px;
+         flex-wrap: wrap;
+         &__single {
+            display: flex;
+            padding: 16px;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            border-radius: 12px;
+            border: 1px solid #E7E9E9;
+            width: 103px;
+            text-align: center;
+            cursor: pointer;
+            justify-content: center;
+            img {
+               width: 48px;
+               height: 48px;
+            }
+         }
+         &__single__plus {
+            display: flex;
+            padding: 16px;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            border-radius: 12px;
+            border: 1px solid #F7FCFC;
+            width: 103px;
+            text-align: center;
+            background: #F8FAFA;
+            cursor: pointer;
+            width: 100%;
+         }
+      }
+   }
+   .upload__view{
+      min-height: 295px;
+   }
+   @media screen and (max-width: 1400px) {
+      &__left {
+        width: 100%;
+    }
+      &__right {
+         width: 100%;
+      }
+   }
+   @media screen and (max-width: 1180px) {
+    &__left {
+      width: 100%;
+      padding: 0 16px;
+  }
+    &__right {
+       width: 100%;
+    }
+ }
+}
+
+.videoCategory_creation__form__left {
+   @media (max-width: 1024px) {
+      padding: 16px;
+
+      .videoCategory__btn {
+         width: 100%;
+
+         button {
+            width: 100%;
+         }
+      }
+   }
+}

@@ -1,0 +1,182 @@
+.quizResults {
+   display: flex;
+   justify-content: center;
+   gap: 24px;
+   margin: 32px;
+   &__left {
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 56px;
+      width: 777px;
+      &__content {
+         display: flex;
+         flex-direction: column;
+         gap: 24px;
+         margin-top: 24px;
+         &__question {
+            display: flex;
+            gap: 18px;
+            width: 100%;
+         }
+          &__number {
+            display: flex;
+            gap: 18px;
+            >div {
+               &:first-child {
+                  //background-color: green;
+                  border-radius: 6px;
+                  min-width: 20px;
+                  height: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  //padding: 0 6px;
+                  span {
+                     color: #fff;
+                  }
+               }
+         }
+         }
+      }
+      .quizResults__left__content__answers {
+         display: flex;
+         flex-direction: column;
+         gap: 16px;
+         width: 100%;
+         >div {
+            &:first-child {
+               margin-bottom: 4px;
+            }
+         }
+   }
+      .user__quiz__welcome {
+         display: flex;
+         gap: 16px;
+         flex-direction: column;
+         width: 100%;
+         align-items: center;
+         img {
+            border-radius: 12px;
+            max-width: 100%;
+         }
+         .passing__grade {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+         }
+         .grey__line {
+            height: 1px;
+            background: #E7E9E9;
+            width: 100%;
+         }
+      }
+
+   }
+   &__right {
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 20px;
+      width: 331px;
+      height: min-content;
+      &__user {
+         display: flex;
+         gap: 12px;
+         align-items: center;
+         >div {
+            img {
+               width: 56px;
+               height: 56px;
+               object-fit: cover;
+               border-radius: 4px;
+            }
+            &:last-child {
+               display: flex;
+               flex-direction: column;
+              >div {
+                &:first-child {
+                  text-decoration: underline;
+                }
+              }
+
+            }
+         }
+      }
+      &__square {
+         display: flex;
+         gap: 12px;
+         align-items: center;
+         margin-top: 24px;
+         >div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px;
+            gap: 8px;
+            border: 1px solid #E7E9E9;
+            border-radius: 12px;
+            flex: 1;
+         }
+      }
+      .grey_line {
+         background: #E7E9E9;
+        height: 1px;
+        width: 100%;
+        margin: 16px 0;
+
+      }
+      &__answers {
+         display: flex;
+         width: 100%;
+         gap: 16px;
+         align-items: center;
+         .line {
+            background: #E7E9E9;
+            width: 1px;
+            height: 32px;
+         }
+         >div {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+
+         }
+         &__correct {
+            border: 1px solid #24554E;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4.5px 11px;
+            width: min-content;
+         }
+         &__wrong {
+            border: 1px solid rgba(209, 45, 54, 1);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4.5px 11px;
+            width: min-content;
+         }
+         &__completed {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+         }
+      }
+   }
+
+   @media screen and (max-width: 1024px) {
+      flex-direction: column-reverse;
+      margin: 16px;
+      &__right {
+         width: 100%;
+         padding: 0;
+      }
+      &__left {
+         padding: 0;
+         width: 100%;
+      }
+   }
+}

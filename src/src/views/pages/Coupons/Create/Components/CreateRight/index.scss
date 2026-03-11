@@ -1,0 +1,10 @@
+.coupon__plans__list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 3px;
+   .status__simple {
+      span {
+         white-space: break-spaces;
+      }
+   }
+}

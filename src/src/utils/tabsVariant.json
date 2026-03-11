@@ -1,0 +1,8 @@
+[
+    {"value":"general","key":"General Info"},
+    {"value":"classes","key":"Classes"},
+    {"value":"community","key":"Community"},
+    {"value":"tags","key":"Tags"},
+    {"value":"transactions","key":"Transactions"},
+    {"value":"notes","key":"Notes"}
+]

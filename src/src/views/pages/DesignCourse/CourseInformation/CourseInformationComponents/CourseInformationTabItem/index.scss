@@ -1,0 +1,23 @@
+.course__information__tab__item{
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 100%;
+    justify-content: space-between;
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__left__active{
+        path{
+            fill: white;
+        }
+    }
+    &__right{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+}

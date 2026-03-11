@@ -1,0 +1,274 @@
+$positions: (t: top,
+   b: bottom,
+   l: left,
+   r: right,
+);
+
+$sizes: (exs: 8px,
+   s: 12px,
+   m: 16px,
+   l: 18px,
+   exl: 24px,
+);
+
+$spacings: (m: margin,
+   p: padding,
+);
+
+$measurement: (w: width,
+   h: height,
+);
+
+$units: (full: 100%,
+   0: 0,
+   auto: auto,
+   half: 50%
+);
+
+$displays: (block,
+   inline-block,
+   inline,
+   flex,
+   inline-flex,
+   hidden);
+
+$directions: (row,
+   row-reverse,
+   col,
+   col-reverse,
+);
+
+$aligns: (stretch,
+   start,
+   center,
+   end,
+   baseline,
+);
+
+$justify: (start,
+   center,
+   end,
+   between,
+   around,
+);
+
+@mixin display($value) {
+   display: $value;
+}
+
+@mixin flex-direction($value) {
+   @if $value=='col' {
+      flex-direction: column;
+   }
+
+   @else if $value=="col-reverse" {
+      flex-direction: column-reverse;
+   }
+
+   @else {
+      flex-direction: $value;
+   }
+}
+
+@mixin align-items($value) {
+   @if $value==start or $value==end {
+      align-items: flex-#{$value};
+   }
+
+   @else {
+      align-items: $value;
+   }
+}
+
+@mixin justify-content($value) {
+   @if $value==start or $value==end {
+      justify-content: flex-#{$value};
+   }
+
+   @else if $value==between or $value==around {
+      justify-content: space-#{$value};
+   }
+
+   @else {
+      justify-content: $value;
+   }
+}
+
+@for $i from 1 through 25 {
+   .flex-#{$i} {
+      flex: #{$i};
+   }
+}
+
+@each $val in $displays {
+   .#{$val} {
+      @include display($val);
+   }
+}
+
+@each $val in $directions {
+   .flex-#{$val} {
+      @include flex-direction($val);
+   }
+}
+
+@each $val in $aligns {
+   .align-#{$val} {
+      @include align-items($val);
+   }
+}
+
+@each $val in $justify {
+   .justify-#{$val} {
+      @include justify-content($val);
+   }
+}
+
+@each $space,
+$propSpace in $spacings {
+
+   @each $pos,
+   $propPos in $positions {
+
+      @each $size,
+      $propSize in $sizes {
+
+         .#{$space}-#{$pos}-#{$size} {
+            #{$propSpace}-#{$propPos}: #{$propSize}
+         }
+      }
+   }
+}
+
+
+@each $mensure,
+$propMensure in $measurement {
+   @for $i from 1 through 100 {
+      .#{$mensure}-#{$i} {
+         #{$propMensure}: #{$i  + 'px'};
+      }
+   }
+
+
+   @each $unit,
+   $propUnit in $units {
+      .#{$mensure}-#{$unit} {
+         #{$propMensure}: #{$propUnit};
+      }
+   }
+}
+
+.text-center {
+   text-align: center;
+}
+
+.content_left {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+  // flex: 1 1;
+   width: 100%;
+   min-width: 315px;
+   border-right: 1px solid #E7E9E9;
+   // max-width: 40%;
+   // position: fixed;
+   height: 100%;
+   overflow-y: auto;
+   scroll-behavior: smooth;
+}
+
+.content_right {
+   overflow-y: auto;
+   padding-bottom: 32px;
+   flex: 2 1;
+   flex-direction: column;
+   justify-content: flex-start;
+
+}
+
+.content_right, .content_left {
+   &::-webkit-scrollbar{width: 0 !important}
+   overflow: -moz-scrollbars-none;
+   -ms-overflow-style: none;
+}
+
+.dont-break-out {
+
+   /* These are technically the same, but use both */
+   overflow-wrap: break-word;
+   word-wrap: break-word;
+
+   -ms-word-break: break-all;
+   /* This is the dangerous one in WebKit, as it breaks things wherever */
+   word-break: break-all;
+   /* Instead use this non-standard one: */
+   word-break: break-word;
+
+   /* Adds a hyphen where the word breaks, if supported (No Blink) */
+   -ms-hyphens: none;
+   -moz-hyphens: none;
+   -webkit-hyphens: none;
+   hyphens: none;
+ }
+.mobile-content{
+   min-height: calc(100vh - 0px);
+   margin-top: 67px;
+   background-color: #fff;
+}
+
+input, textarea, .textInput .textInput__input {
+   -webkit-user-select: text !important; /* Safari */
+   -ms-user-select: text !important; /* IE 10+ and Edge */
+   user-select: text !important; /* Standard syntax */
+}
+
+img {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+    -khtml-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none
+}
+
+.uploadProgress__content{
+   display: none;
+   margin-top: 15px;
+   width: 100%;
+   .cancel_btn {
+    display: flex;
+    align-items: center;
+    svg {
+       position: relative;
+       left: 6px;
+       cursor: pointer;
+    }
+   }
+
+    .uploadProgress {
+       width: 100%;
+       background-color: #ddd;
+       border-radius: 15px;
+       margin-top: 5px;
+     }
+    .uploadBar {
+       width: 0%;
+       height: 12px;
+       background-color: #7cb740;
+       border-radius: 15px;
+     }
+ }
+
+
+
+@media screen and (max-width: 350px) {
+   .content_left {
+      min-width: 280px;
+   }
+
+}
+
+.float-right {
+   display: flex;
+   justify-content: flex-end;
+}

@@ -1,0 +1,39 @@
+.certificate__settings{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    width: 100%;
+
+    &__view{
+        display: flex;
+        flex-direction: row;
+        padding: 40px 48px;
+        gap: 48px;
+
+        background: #FFFFFF;
+        border: 1px solid #E7E9E9;
+        border-radius: 12px;
+
+        &__line{
+            height: 100%;
+            width: 1px;
+            background-color: #E7E9E9;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__view {
+            flex-direction: column;
+            padding: 0;
+            padding-bottom: 32px;
+            border: none;
+            gap: 16px;
+
+            & > div {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    }
+}

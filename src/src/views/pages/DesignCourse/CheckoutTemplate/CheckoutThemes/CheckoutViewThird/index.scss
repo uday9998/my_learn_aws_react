@@ -1,0 +1,28 @@
+.checkoutPageThird {
+   width: 100%;
+   min-height: 100vh;
+   background-color: inherit;
+   position: relative;
+   padding: 0 15px;
+   box-sizing: border-box;
+   .checkoutPageThird-content {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+      .checkoutPageThird-right {
+         max-width: 507px;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+      }
+      .checkoutPageThird-left {
+         max-width: 716px;
+         width: 100%;
+         background-color: inherit;
+         margin-right: 40px;
+         margin-bottom: 50px;
+      }
+
+   }
+}
+

@@ -1,0 +1,21 @@
+.accountCourses__module {
+   width: 100%;
+   padding: 24px 0px 0px 0px;
+   box-sizing: border-box;
+
+   .title {
+      padding: 0px 24px 16px 0px;
+      span {
+         font-family: var(--school-font);
+         font-weight: 700;
+      }
+   }
+   .total {
+      margin-top: 8px;
+      span {
+         font-family: var(--school-font);
+         font-weight: 400;
+      }
+   }
+}
+

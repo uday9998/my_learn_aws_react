@@ -1,0 +1,85 @@
+.refounds-status{
+   margin-top: 32px;
+   width: 100%;
+   &-loader{
+      min-height: 200px;
+      background: #FFFFFF;
+      position: relative;
+   }
+   &-info{
+       max-width: 100%;
+       display: flex;
+       flex-direction: column;
+       background: #FFFFFF;
+       border: 1px solid #E7E9E9;
+       border-radius: 12px;
+       padding: 20px 24px;
+       margin-top: 16px;
+       min-width: 600px;
+   }
+   &-header{
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+       &-left{
+           display: flex;
+           flex-direction: column;
+           gap: 12px;
+       }
+       &-right{
+         display: flex;
+         gap: 12px;
+         position: relative;
+         top: -6px;
+         .input_date {
+            .inputNew {
+               flex-direction: row-reverse;
+            }
+         }
+         .transactions-filter-input {
+            .inputNew {
+               height: 36px;
+               padding: 10px 13px 10px 0px;
+               svg{
+                  width: 17px;
+                  height: 17px;
+                  path {
+                     fill: #22272F;
+                  }
+               }
+               .inputNew__calendar__icon__active {
+                  svg{
+                     path {
+                        fill: #fff;
+                     }
+                  }
+               }
+            }
+         }
+         .SelectItem__button {
+           height: 36px;
+           box-sizing: border-box;
+           padding: 0;
+           width: 75px;
+           justify-content: center;
+         }
+     }
+   }
+
+   @media screen and (max-width: 1024px) {
+      margin-bottom: 32px;
+      &-info {
+         padding: 16px;
+         min-width: auto;
+      }
+      &-header {
+         gap: 8px;
+
+         &-left {
+            span {
+               white-space: nowrap;
+            }
+         }
+      }
+   }
+}

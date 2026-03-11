@@ -1,0 +1,21 @@
+.onlineCourse__createation{
+    max-width: 1200px;
+    margin: 0px auto;
+    .text_area_new    {
+       padding-right: 45px;
+    }
+    @media screen and (max-width: 1300px) {
+        padding: 0px 64px;
+    }
+    @media screen and (max-width: 1023px) {
+      padding: 24px 16px;
+      width: 100%;
+      background: white;
+  }
+    .uploadImg_medium{
+        width: 100%;
+        .upload__view{
+            max-height: 295px;
+        }
+    }
+}

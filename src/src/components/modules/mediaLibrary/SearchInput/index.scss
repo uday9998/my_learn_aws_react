@@ -1,0 +1,23 @@
+.custom__search__input{
+  border: 1px solid #cddaf1;
+  background-color: #fbfdff;
+  display: flex;
+  padding: 8px 16px;
+  height: min-content;
+  .custom__search__input__input{
+    background: none!important;
+    border:none !important;
+    color: #8a94a2;
+    width: 100%;
+  }
+  .custom__search__input__icon{
+    background: none;
+    border: none;
+    outline: none;
+  }
+  .custom__search__input__input:focus{
+    background: none !important;
+    border:none !important;
+    outline: none;
+  }
+}

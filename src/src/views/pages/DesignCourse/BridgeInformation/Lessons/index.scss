@@ -1,0 +1,27 @@
+.lesson__page__section{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    gap: 8px;
+    padding: 20px;
+    &__top{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        border-radius: 12px;
+        &__right{
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+        }
+    }
+    &__data{
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

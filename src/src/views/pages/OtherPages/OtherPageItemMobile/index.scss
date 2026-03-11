@@ -1,0 +1,47 @@
+.other__page__mob__item {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #F0F2F2;
+    cursor: pointer;
+
+    & > div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > span {
+            font-size: 14px;
+        }
+
+        &:first-child {
+            padding: 12px;
+
+            & > div:first-child {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                & > span {
+                    text-decoration: underline;
+                }
+                img {
+                    width: 88px;
+                    height: 50px;
+                    border-radius: 4px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &:not(:first-child) {
+            padding: 8px 12px;
+            border-top: 1px solid #F0F2F2;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+}

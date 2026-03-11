@@ -1,0 +1,35 @@
+.certificate__create__modal{
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   .grey_line {
+      border-top: 1px solid #e7e9e9;
+   }
+   &__content{
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      &__inputs{
+         display: flex;
+         flex-direction: column;
+         gap: 24px;
+
+         .select__course{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+         }
+      }
+      &__button{
+         display: flex;
+         justify-content: flex-end;
+         gap: 16px;
+      }
+   }
+   &__already{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+   }
+}

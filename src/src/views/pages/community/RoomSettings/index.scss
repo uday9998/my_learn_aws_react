@@ -1,0 +1,33 @@
+.community__room__settings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__tabs{
+        margin-bottom: -1px;
+        .tabs__line__tab{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+    .course__createtion__form__left{
+        justify-content: flex-start;
+    }
+    &__access{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    @media all and (max-width: 1024px) {
+        .course__createtion__form {
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid #E7E9E9;    
+        }
+
+        .tabs__line__tab {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}

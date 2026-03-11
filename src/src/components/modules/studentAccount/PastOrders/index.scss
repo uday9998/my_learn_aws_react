@@ -1,0 +1,77 @@
+.ordersInfo {
+   padding: 24px 24px 6px;
+   width: 100%;
+   box-sizing: border-box;
+   .orders__title{
+      margin-bottom: 24px;
+      span {
+         font-family: var(--school-font);
+         font-weight: 700;
+      }
+   }
+   .accountInfo__avatar {
+      margin-bottom: 24px;
+      >div:first-of-type {
+         margin-top: 24px;
+         margin-bottom: 12px;
+      }
+   }
+   .accountInfo__createBtn {
+      max-width: 150px;
+      margin-bottom: 24px;
+      button {
+         width: 100%;
+         padding-left: 0;
+         padding-right: 0;
+      }
+   }
+   .accountInfo__btns {
+      display: flex;
+      justify-content: flex-end;
+      >div {
+         width: 100%;
+         &:first-of-type {
+            max-width: 120px;
+            margin-right: 16px;
+         }
+         &:last-of-type {
+            max-width: 150px;
+         }
+         button {
+            width: 100%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .accountInfo {
+      padding: 24px 24px 32px 24px;
+      .accountInfo__avatar {
+         margin-bottom: 8px;
+         >div:first-of-type {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+         }
+      }
+      .accountInfo__createBtn {
+         max-width: none;
+         margin-bottom: 16px;
+      }
+      .accountInfo__btns {
+         display: flex;
+         flex-direction: column-reverse;
+         >div {
+            width: 100%;
+            max-width: none!important;
+            &:first-of-type {
+               margin: 16px 0 0 0;
+            }
+            button {
+               width: 100%;
+            }
+         }
+      }
+   }
+}

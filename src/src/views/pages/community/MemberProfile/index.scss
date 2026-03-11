@@ -1,0 +1,15 @@
+.community__member__profile{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__bottom{
+        display: flex;
+        gap: 24px;
+    }
+
+    @media all and (max-width: 1405px) {
+        &__bottom{
+            flex-direction: column-reverse;
+        }   
+    }
+}

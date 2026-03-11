@@ -1,0 +1,13 @@
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11px;
+    padding: 20px 56px;
+    background-color: #fff;
+    border-bottom: 1px solid #e7e9e9;
+
+    svg {
+        cursor: pointer;
+    }
+}

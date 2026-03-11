@@ -1,0 +1,391 @@
+.d-schoolToom-container {
+   .adminContent {
+      padding: 0;
+      overflow: hidden;
+   }
+}
+
+.d-schoolRoom  {
+   display: flex;
+   justify-content: space-between;
+   box-sizing: border-box;
+   position: relative;
+   overflow: hidden;
+   min-height: calc(100vh - 75px);
+}
+
+.schoolRoomTheme {
+   margin-left: 308px;
+   width: calc(100% - 308px );
+   box-sizing: border-box;
+   position: relative;
+   transition: 600ms all ease;
+   overflow: hidden;
+   background-color: var(--main-background-color);
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   scrollbar-width: thin;
+   min-height: calc(100vh - 73px);
+
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+   .schoolRoomTheme-save {
+      padding: 16px;
+      background-color: #f0f4f7;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+   }
+   .schoolRoomTheme-temp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 8px;
+      width: 32px;
+      height: 32px;
+      background-color: #fff;
+      border-radius: 3.6px;
+      cursor: pointer;
+      img {
+         height: 16px;
+         margin: 0 5px;
+      }
+   }
+}
+
+.schoolRoomTheme-close {
+   margin-left: 0px;
+   width: 100%;
+   transition: 600ms all ease;
+}
+
+@media  screen and  (max-width: 1710px) {
+   .schoolRoomPage {
+       .schoolRoomPage-content {
+         .schoolRoomPage-left {
+            margin-right: 30px;
+          }
+          .schoolRoomPage-right {
+            max-width: 500px;
+          }
+       }
+   }
+
+   .schoolRoomPageSecond {
+      .schoolRoomPageSecond-content {
+         .schoolRoomPageSecond-left {
+            max-width: 500px;
+         }
+      }
+   }
+
+   .schoolRoomPageThird {
+      .schoolRoomPageThird-content {
+         .schoolRoomPageThird-left {
+            max-width: 500px;
+         }
+      }
+   }
+}
+
+@media  screen and  (max-width: 1600px) {
+   .schoolRoomPage {
+       .schoolRoomPage-content {
+          flex-direction: column;
+          align-items: center;
+          .schoolRoomPage-left {
+            margin-right: 0px;
+          }
+          .schoolRoomPage-right {
+            max-width: 576px;
+          }
+       }
+   }
+
+   .schoolRoomPageSecond {
+      .schoolRoomPageSecond-content {
+         flex-direction: column-reverse;
+         align-items: center;
+         .schoolRoomPageSecond-left {
+            max-width: 680px;
+         }
+      }
+   }
+
+   .schoolRoomPageThird {
+      .schoolRoomPageThird-content {
+         flex-direction: column-reverse;
+         align-items: center;
+         .schoolRoomPageThird-left {
+            max-width: 680px;
+         }
+      }
+   }
+
+}
+
+
+@media screen and (max-width: 1023px) {
+   .schoolRoomPage {
+      padding: 0 16px;
+      .schoolRoomPage-content {
+         flex-direction: column;
+         align-items: center;
+         .schoolRoomPage-left {
+            max-width: 500px;
+             margin-right: 0;
+         }
+         .schoolRoomPage-right {
+            max-width: 576px;
+         }
+         .schoolRoomPage-rightContent {
+            padding: 16px;
+         }
+      }
+   }
+
+   .schoolRoomPageSecond {
+      .schoolRoomPageSecond-content {
+         flex-direction: column-reverse;
+         align-items: center;
+         .schoolRoomPageSecond-left {
+            max-width: 680px;
+            margin-right: 0;
+            width: 100%;
+         }
+         .schoolRoomPageSecond-right {
+            max-width: 560px;
+            width: 100%;
+         }
+         .schoolRoomPageSecond-leftContent {
+            padding: 12px;
+         }
+      }
+   }
+
+   .schoolRoomPageThird {
+      .schoolRoomPageThird-content {
+         flex-direction: column-reverse;
+         align-items: center;
+         .schoolRoomPageThird-left {
+            max-width: 680px;
+            margin-right: 0;
+            width: 100%;
+         }
+         .schoolRoomPageThird-right {
+            max-width: 560px;
+            width: 100%;
+         }
+         .schoolRoomPageThird-leftContent {
+            padding: 12px;
+         }
+      }
+   }
+}
+
+.image__view{
+   min-height: min-content;
+}
+
+.adminContainer {
+   padding: 0px;
+}
+
+
+.phoneModeOffer {
+   transition: all 0.65s ease 0s;
+   width: 375px;
+   height: 80vh;
+   overflow-y: auto;
+   overflow-x: hidden;
+   margin: 0 auto;
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   scrollbar-width: thin;
+
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+
+   .hero_section_wrpper {
+      flex-direction: column-reverse;
+      padding: 31px 10px 24px 10px;
+      gap: 23px;
+
+        .image__wrapper {
+            max-width: 343px; 
+            width: 100%;
+            height: 213px;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+
+            img {
+                max-width: 343px; 
+                width: 100%;
+                height: 213px;
+                border-radius: 20px;
+            }
+        }
+        
+        .left_wrapper {
+            .button {
+                width: 100%;
+
+                .button-content {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+
+            .title__text {
+                & > div {
+                    font-size: 32px !important;
+                }
+            }
+            
+            .subtitle__text {
+                & > div {
+                    font-size: 14px !important;
+                }
+                
+                margin-top: 16px;
+            }
+        }
+   }
+
+   .offers__container {
+      padding: 32px 16px;
+
+      .filters__wrapper {
+         flex-direction: column;
+      }
+   }  
+}
+
+.tabletModeOffer {
+   transition: all 0.65s ease 0s;
+   width: 600px;
+   height: 720px;
+   margin: 0 auto;
+   overflow-y: auto;
+   overflow-x: hidden;
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   scrollbar-width: thin;
+
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+}
+
+
+.tabletModeOffer, .phoneModeOffer {
+      .offers__footer {
+          padding: 24px 16px;
+      }
+
+      .offers__footer__left {
+          white-space: nowrap;
+      }
+
+      .offers__footer__top {
+          gap: 16px;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+
+      .custom-links.footer-links {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 16px;
+      }
+
+      .offers__top .default__slider > img {
+         height: auto !important;
+      }
+
+      .offers__top .offer__slider__item {
+         height: auto !important;
+          min-height: 273px;
+      }
+
+      .offer__slider__item.banner img {
+         min-height: 273px;
+      }
+
+      .offer__slider__item.banner .image__with__blur {
+         min-height: 273px;
+      }
+
+      .offer__slider__item__left__name {
+         font-size: 24px !important;
+     }
+
+     .banner__title .inlineEditor * {
+         font-size: 24px;
+     }
+
+     .offer__slider__item__wrapper {
+      flex-direction: column-reverse;
+  }
+
+  .offers__top.template3 .offers__header__mobile__content {
+   position: absolute;
+   top:0;
+}
+
+}
+
+
+.phoneModeOffer {
+   .offers__category .template3 .cardWithVideo {
+      max-width: 432px;
+      width: 100%;
+     .offer__item {
+        max-width: 432px;
+        width: 100%;
+     }
+  }
+}
+
+

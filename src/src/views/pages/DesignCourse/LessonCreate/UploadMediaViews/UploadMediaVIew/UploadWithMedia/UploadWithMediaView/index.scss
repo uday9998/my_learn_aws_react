@@ -1,0 +1,116 @@
+.upload__with__media__view {
+   display: flex;
+   width: 100%;
+   min-width: 400px;
+   overflow: auto;
+   &__left {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-right: 1px solid #e7e9e9;
+      width: 40%;
+
+      @media (max-width: 1024px) {
+         width: 31% !important;
+      }
+
+      .folder__item {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         padding: 4px 16px 4px 8px;
+         gap: 12px;
+         border-radius: 12px;
+         &__left {
+            display: flex;
+            align-items: center;
+         }
+         &__right {
+            &__top {
+               cursor: pointer;
+            }
+         }
+
+         @media (max-width: 1024px) {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            padding: 4px 0 4px 8px !important;
+            width: 75px !important;
+         }
+      }
+   }
+   &__right {
+      padding: 24px;
+      display: flex;
+      width: 60%;
+      flex-direction: column;
+      gap: 8px;
+      &__bottom {
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+         .folder__file {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__left {
+               display: flex;
+               align-items: center;
+               gap: 8px;
+            }
+            &__right {
+               background: #ffffff;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               padding: 0px 4px;
+               gap: 4px;
+               border: 1px solid #e7e9e9;
+               border-radius: 4px;
+            }
+
+            @media (max-width: 1024px) {
+               align-items: flex-start;
+            }
+         }
+      }
+   }
+}
+
+
+.insert_video {
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+   margin-bottom: 16px;
+   margin-top: 16px;
+}
+
+
+.folder__file__left {
+   @media (max-width: 1024px) {
+      align-items: flex-start !important;
+
+      svg {
+         width: 40px;
+         margin-top: 4px;
+      }
+
+      span {
+         font-size: 12px;
+      }
+   }
+}
+
+.folder__file__right {
+   @media (max-width: 1024px) {
+      max-width: 35px;
+      width: 100%;
+
+      span {
+         font-size: 12px;
+         
+      }
+   }
+}

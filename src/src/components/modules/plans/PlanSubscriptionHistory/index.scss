@@ -1,0 +1,47 @@
+.planSubscriptionHistory {
+   padding: 24px 40px 20px 40px;
+   width: 100%;
+   box-sizing: border-box;
+   .plantableContainer {
+      width: 100%;
+      overflow: auto;
+   }
+   .planSubscription__header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .planSubscription__headerButton {
+         width: 216px;
+         margin-left: 10px;
+         button {
+            width: 100%;
+         }
+      }
+   }
+   .plansTable__column {
+      &:nth-of-type(3) {
+         max-width: 65px;
+      }
+   }
+}
+
+
+@media screen and (max-width: 1023px) {
+   .planSubscriptionHistory {
+      padding: 20px;
+      .planSubscription__header {
+          flex-direction: column;
+          flex-wrap: wrap;
+          >div {
+            flex-direction: column;
+            flex-wrap: wrap;
+          }
+         .planSubscription__headerButton {
+            margin-left: 0px;
+            margin-top: 10px;
+            width: 100%;
+         }
+      }
+   }
+
+}

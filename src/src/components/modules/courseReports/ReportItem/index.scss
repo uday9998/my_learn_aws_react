@@ -1,0 +1,22 @@
+.reportItemWrapper {
+  min-width: 100px;
+  &.half {
+    width: 50%;
+    @media(min-width: 768px) {
+      min-width: 460px;
+    }
+    @media(max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .reportItem{
+   min-height: 100px;
+
+  }
+  .loadingReportItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+  }
+}

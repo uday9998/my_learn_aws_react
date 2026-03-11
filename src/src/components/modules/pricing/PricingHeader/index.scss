@@ -1,0 +1,70 @@
+.pricingHeader {
+   // height: 500px;
+   padding: 40px 40px 16px 40px;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: linear-gradient(to top, rgba(210, 228, 255, 0.3), rgba(195, 223, 255, 0.3));
+   background-color: #eff6ff;
+
+   .pricingHeader__top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 100%;
+      >svg {
+         min-width: 138px;
+      }
+      .landingHeader{
+         width: 100%;
+         border-bottom: 0;
+         background-color: transparent;
+         .content_center{
+            margin: 0;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+         }
+      }
+      .pricingHeader__navbar {
+         margin-left: 13.3%;
+         margin-top: 3px;
+         >span {
+            &:hover {
+               cursor: pointer;
+            }
+            margin-right: 40px;
+         }
+         .nav__active {
+            span {
+               color: #006dff!important;
+            }
+         }
+      }
+      .pricingHeader__login {
+         margin-top: 3px;
+         margin-right: 5.1%;
+         flex: 1 1;
+         display: flex;
+         justify-content: flex-end;
+         span:hover {
+            cursor: pointer;
+         }
+      }
+   }
+
+   .pricingHeader__bottom {
+      margin-top: 75px;
+      text-align: center;
+      .pricingHeader__bottom-text {
+         max-width: 647px;
+         margin: 24px auto;
+      }
+   }
+
+   .pricingHeader__top, .pricingHeader__bottom {
+      width: 100%;
+      // max-width: 1128px;
+   }
+}

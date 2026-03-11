@@ -1,0 +1,34 @@
+.dynamicWrapper__tooltip_plan {
+   margin-right: auto;
+   margin-left: 8px;
+   position: relative;
+   top: 13px;
+   left: 135px;
+
+   svg {
+      cursor: pointer;
+      width: 18px;
+   }
+
+   .hintCard__wrapper {
+      box-sizing: border-box;
+      position: absolute;
+      left: 14px;
+      top: -36px;
+      z-index: 999;
+      .hintCard {
+         padding: 7px 7px;
+      }
+   }
+}
+
+@media screen and (max-width: 1580px) {
+   .dynamicWrapper__tooltip_plan {
+      .hintCard__wrapper {
+         left: -146px;
+         top: -36px;
+         z-index: 999;
+      }
+   }
+}
+

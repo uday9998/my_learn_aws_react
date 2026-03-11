@@ -1,0 +1,56 @@
+.settingNotes {
+   width: 100%;
+   margin-top: 12px;
+
+   .settingNotes__notes {
+      margin-top: 24px;
+
+      .settingNotes__note:not(:first-child) {
+         margin-top: 16px;
+      }
+
+      .settingNotes__title {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+
+         .settingNotes__actions {
+            display: flex;
+            align-items: center;
+
+            div {
+               cursor: pointer;
+
+               svg {
+                  width: 24px;
+                  height: 24px;
+               }
+            }
+         }
+      }
+
+      .settingNotes__description {
+         margin-top: 10px;
+         span {
+            line-height: 1.71;
+         }
+      }
+      .settingNotes__date {
+         margin-top: 10px;
+      }
+
+   }
+
+   .settingNotes__button {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      button {
+         &:nth-child(1) {
+            margin-right: 16px;
+         }
+      }
+
+   }
+}

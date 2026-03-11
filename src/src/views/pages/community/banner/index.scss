@@ -1,0 +1,77 @@
+.community__bottom__with__banner {
+    width: 100%;
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   scrollbar-width: thin;
+   overflow-y: auto;
+   max-height: calc(100vh - 149px);
+   .upload__view {
+        background: #f0f5f5;
+        border-radius: 0px 0 12px 12px;
+   }
+   .upload {
+     gap: 0;
+   }
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+    .communityBanner {
+        .uploadImg_medium {
+            width: 100%;
+        }
+        .uploadImg_medium_upload .upload__view, .uploadImg_medium_upload .image__view {
+            min-height: 200px;
+            max-height: 274px;
+        }
+        .image__view__change {
+            right: 76px;
+            top: 24px;
+            transform:none;
+            left: auto;
+            min-height: 36px;
+            padding: 0 12px !important;
+           svg {
+              margin-right: 8px;
+           }
+           span {
+            font-size: 12px;
+           }
+        }
+        .image__view__clear {
+            right: 24px;
+            top: 24px;
+            left: auto;
+            background: #D12D36;
+            border-color: #D12D36;
+            border-radius: 8px;
+            width: 36px;
+            height: 36px;
+            max-width: 36px;
+        }
+        .uploadImg_medium_upload .image__view {
+            min-height: 200px;
+            max-height: 274px;
+            margin-top: 0;
+        }
+        img {
+            width: 100%;
+            min-height: 200px;
+            max-height: 274px;
+            object-fit: cover;      
+            // display: block;
+            border-radius: 0;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.checkout-codes {
+   margin: 24px 0px;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   &-header {
+      display: flex;
+      flex-direction: column;
+      .top {
+         display: flex;
+         align-items: center;
+         margin-bottom: 4px;
+         gap: 7px;
+      }
+   }
+   &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+   .code-btn {
+      margin-top: 8px;
+   }
+}

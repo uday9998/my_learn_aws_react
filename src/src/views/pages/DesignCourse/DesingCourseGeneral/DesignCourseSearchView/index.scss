@@ -1,0 +1,47 @@
+.design__course__search__view{
+    width: 100%;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px 24px;
+    gap: 58px;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    gap: 58px;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+        &__data{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+    .search__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__left{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        &__right{
+            &__comments{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px 4px;
+                gap: 4px;
+                background: #FFFFFF;
+                border: 1px solid #E7E9E9;
+                border-radius: 4px;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.design__course__media__lessons {
+   width: 100%;
+   border-left: 1px solid #e7e9e9;
+   padding: 24px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+   @media screen and (max-width: 1023px) {
+      border: none;
+      padding: 0;
+    //  display: none;
+   }
+   &__empty {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+   }
+   .lesson__name {
+      cursor: pointer;
+   }
+   .lesson__dragHandle{
+      span{
+         display: flex;
+         align-items: center;
+         cursor: pointer;
+      }
+      display: none;
+      transition: 0.3s;
+   }
+   &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .text-with-icon {
+         cursor: pointer;
+      }
+   }
+   &__popup {
+      margin-top: 24px;
+   }
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+   }
+   .design__course__media__lesson {
+      @media screen and (max-width: 1023px) {
+         border: 1px solid #E7E9E9;
+         border-radius: 12px;
+         margin-bottom: 16px;
+        }
+      .lesson__settings__icon{
+         display: none;
+         align-items: center;
+         cursor: pointer;
+         justify-content: center;
+      }
+      &:hover{
+         background: #E8F2F1;
+         .lesson__dragHandle{
+            display: block;
+         }
+         .lesson__settings__icon{
+            display: flex;
+         }
+      }
+      .left{
+          display: flex;
+          align-items: center;
+          gap: 12px;
+      }
+      .right{
+         display: flex;
+         align-items: center;
+         gap: 9px;
+          &__comments{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 0px 4px;
+            background: #ffffff;
+            border-radius: 4px;
+            border: 1px solid #E7E9E9;
+          }
+      }
+   }
+}

@@ -1,0 +1,167 @@
+.integration-buttons {
+   align-items: center;
+   position: relative;
+   display: flex;
+   justify-content: flex-end;
+   gap: 16px;
+   a {
+      display: flex;
+   }
+   button {
+      font-weight: 400;
+      font-size: 12px;
+      min-width: min-content;
+      line-height: 132%;
+      width: 95px;
+      height: 38px;
+   }
+}
+.integrationElem {
+   width: 100%;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__left {
+      display: flex;
+      gap: 8px;
+      padding: 20px;
+      width: 27.9%;
+      align-items: center;
+   }
+   &__middle {
+      width: 43.9%;
+      padding: 20px;
+   }
+   .stripe_hint {
+      position: absolute;
+      top: -37px;
+      right: 0;
+      display: flex;
+      border: solid 1px #cddaf1;
+      border-radius: 8px;
+      background-color: #fbfdff;
+      padding: 7px 5px 5px 5px;
+      pointer-events: auto;
+      visibility: hidden;
+   }
+   .stripe_btn:hover .stripe_hint {
+      visibility: visible;
+   }
+   .btnBasic_disable_true {
+      cursor: auto;
+   }
+   .integrationElem__image {
+      display: flex;
+      img {
+         width: 42px;
+      }
+   }
+
+   .integrationElem__subtitle {
+      padding-right: 5px;
+      .textBasic {
+         font-size: 13px;
+      }
+   }
+
+   .integrationElem__icon {
+      width: 24px;
+      height: 25px;
+      position: absolute;
+      right: 24px;
+      transform: translateY(-50%);
+      top: 50%;
+   }
+
+   .integrationElem__button {
+      width: 28%;
+   }
+}
+.integrationElem__content {
+   margin-bottom: 17px;
+   padding: 0px 0px 16px 20px;
+   border-bottom: 1px solid #e7e9e9;
+   .input {
+      padding-top: 16px;
+   }
+   .input_footer {
+      margin: 0;
+   }
+   animation: showContent 600ms;
+   .inputNew {
+      padding: 8px 16px;
+      max-width: 630px;
+   }
+}
+
+@keyframes showContent {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+   .integrationElem {
+      flex-direction: column;
+      align-items: flex-start;
+      .integrationElem__middle{
+         width: 100%;
+         max-width: 100%;
+      }
+      .integration-buttons{
+         justify-content: flex-start;
+         padding: 10px;
+
+      }
+      .integrationElem__left{
+         padding: 10px;
+      }
+      .integrationElem__middle{
+         padding: 10px;
+      }
+      .integrationElem__icon {
+         top: 25%;
+      }
+
+      .integrationElem__button {
+         margin: 0;
+         width: 100%;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .integrationElem {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .integrationElem__icon {
+         top: 25%;
+      }
+
+      .integrationElem__button {
+         margin: 0;
+         width: 100%;
+         margin-top: 16px;
+      }
+   }
+}
+
+.copybtn {
+   position: relative;
+   .copiedText {
+      position: absolute;
+      left: 21px;
+      top: -23px;
+      z-index: 20;
+      color: #fff;
+      background: #000;
+      padding: 5px 5px 6px 5px;
+      border-radius: 5px;
+   }
+}

@@ -1,0 +1,38 @@
+.allPlansCard {
+   padding: 40px;
+
+   .plansListContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6px;
+      flex-wrap: wrap;
+
+      .plansList {
+         flex: 1 1;
+         min-width: 250px;
+
+         .plansList__item {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 18px;
+
+            svg {
+               margin-top: -1px;
+               margin-right: 8px;
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .allPlansCard {
+      padding: 24px 24px 32px 24px;
+      span {
+         font-size: 14px!important;
+      }
+      svg {
+         margin-right: 16px!important;
+      }
+   }
+}

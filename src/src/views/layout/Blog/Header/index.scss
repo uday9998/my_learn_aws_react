@@ -1,0 +1,11 @@
+.header {
+   position: fixed;
+   z-index: 1;
+   height: max-content;
+   display: flex;
+   flex-direction: column;
+   padding-left: 248px;
+   box-sizing: border-box;
+   width: 100%;
+   min-width: 1280px;
+}

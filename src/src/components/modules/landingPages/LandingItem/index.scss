@@ -1,0 +1,39 @@
+.landingsList__item__actions__more {
+    position: relative;
+}
+.showLandingActions__popup {
+    position: absolute;
+    right: 7px;
+    top: 29px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 40px 0 rgba(179, 183, 216, 0.27);
+    z-index: 9999;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+    width: 115px;
+    >div {
+        span {
+            &:hover {
+                 color: #7cb740 !important;
+            }
+        }
+    }
+ }
+
+
+.copybtn__copiedText {
+    position: absolute;
+    left: -40px;
+    top: -26px;
+    font-size: 12px;
+    z-index: 20;
+    color: #fff;
+    background: #000;
+    padding: 5px 5px 6px 5px;
+    border-radius: 5px;
+}
+ 

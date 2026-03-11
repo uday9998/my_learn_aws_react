@@ -1,0 +1,35 @@
+.tableBody {
+
+   .tableRow {
+      display: flex;
+      justify-content: space-between;
+      height: 42px;
+      align-items: center;
+      padding: 0 8px;
+
+      td {
+         flex: 1;
+      }
+   }
+}
+
+
+.tableHeader {
+   .tableRow {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 12px;
+      margin-bottom: 8px;
+
+      th{
+         flex:1;
+         text-align: left;
+      }
+   }
+
+}
+
+.checked {
+   border: solid 2px #7cb740;
+   background-color: #fbfdff;
+}

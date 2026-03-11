@@ -1,0 +1,24 @@
+.paymentContent {
+   .paymentCreditsBlock {
+      margin: 16px 0;
+      display: flex;
+      .paymentCredits {
+         display: flex;
+         align-items: flex-start;
+         >img {
+            margin-right: 4px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .paymentContent {
+      .paymentCreditsBlock {
+         display: block;
+         .paymentCredits:first-of-type {
+            margin-bottom: 16px;
+         }
+      }
+   }
+}

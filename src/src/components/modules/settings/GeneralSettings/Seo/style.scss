@@ -1,0 +1,25 @@
+.seo__info {
+  margin-top: 16px;
+}
+.seoInputs {
+  margin-top: 24px;
+  .seoInputs__description {
+    margin: 8px 0;
+  }
+  .seoInputs__input {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+}
+.seoImage {
+  margin-top: 16px;
+  .drag-and-drop-container{
+    margin-top: 8px;
+    padding: 0;
+    margin-bottom: 40px;
+    .dragImage {
+      width: 95px;
+    }
+  }
+}

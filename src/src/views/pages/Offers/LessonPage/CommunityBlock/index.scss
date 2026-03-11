@@ -1,0 +1,14 @@
+.community__block{
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    .offer__editor__button{
+        width: 100%;
+        max-width: 100% !important;
+        font-family:  var(--primaryFont);
+    }
+}

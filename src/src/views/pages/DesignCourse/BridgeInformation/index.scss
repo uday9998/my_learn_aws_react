@@ -1,0 +1,110 @@
+.course__bridge {
+    width: 100%;
+    @media all and (max-width: 1023px) {
+        .header__type__first {
+            flex-wrap: wrap;
+            max-height: 400px !important;
+            height: auto !important;
+            .playlist__buttons__wrapper {
+                flex-wrap: wrap;
+                margin-top: 16px;
+                >button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__community {
+        overflow-y: auto;
+        height: calc(-167px + 100vh);  
+        @media all and (max-width: 1024px) {
+            height: 100%;
+        }
+    }
+    &__content {
+        display: flex;
+        gap: 4%;
+        margin: 33px 0;
+        @media all and (max-width: 1023px) {
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 12px;
+            padding: 0;
+         }
+        .image__view {
+            margin-top: 0;
+        }
+        &__left {
+            width: calc(100% - 430px);
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            .quillEditor {
+                background-color: #fff;
+                border-radius: 12px;
+            }
+            .quillEditor__withoutBorder .quill .ql-container.ql-snow {
+                min-height: 190px;
+            }
+            @media all and (max-width: 1023px) {
+                width: 100%;
+             }
+            .textArea {
+                margin-top: 8px;
+            }
+            .upload {
+                gap: 0;
+                .upload__view {
+                    height: 419px;
+                }
+            }
+            &__lessons {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                border-radius: 12px;
+                gap: 20px;
+                margin-top: 32px;
+            }
+        }
+        &__right {
+            width: 39%;
+            max-width: 430px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            height: fit-content;
+            @media all and (max-width: 1023px) {
+                width: 100%;
+             }
+            .poweredByBridge {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                justify-content: center;
+                cursor: pointer;
+                margin-bottom: 16px;
+            }
+            &__top {
+                background: #FFFFFF;
+                padding: 20px;
+                border-radius: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                height: fit-content;
+            }
+            &__header {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                .LinkView_oneLine {
+                    overflow: hidden;
+                    .LinkView__top {
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}

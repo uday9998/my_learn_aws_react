@@ -1,0 +1,27 @@
+.members__header__top {
+   gap: 8px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   &__left {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+   }
+   button {
+      gap: 8px;
+   }
+
+   @media screen and (max-width: 1024px) {
+   &__left {
+      .export_csv_btn {
+         padding: 4px;
+         gap: 0;
+         span {
+            display: none;
+         }
+      }
+   }
+   }
+}

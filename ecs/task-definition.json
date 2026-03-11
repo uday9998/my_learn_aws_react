@@ -1,0 +1,53 @@
+{
+  "taskRoleArn": "arn:aws:iam::{{ACCOUNT_ID}}:role/{{TASK_ROLE}}",
+  "containerDefinitions": [
+    {
+      "name": "{{CONTAINER_NAME}}",
+      "image": "{{ACCOUNT_ID}}.dkr.ecr.{{REGION}}.amazonaws.com/{{ECR_REPO}}:{{IMAGE_TAG}}",
+      "cpu": 0,
+      "portMappings": [
+        {
+          "name": "{{CONTAINER_NAME}}-3000-tcp",
+          "containerPort": 3000,
+          "hostPort": 3000,
+          "protocol": "tcp",
+          "appProtocol": "http"
+        }
+      ],
+      "essential": true,
+      "environment": [
+        {
+          "name": "SECRET_ID",
+          "value": "{{SECRET_ID}}"
+        }
+      ],
+      "mountPoints": [],
+      "volumesFrom": [],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/{{CONTAINER_NAME}}",
+          "awslogs-create-group": "true",
+          "awslogs-region": "{{REGION}}",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "systemControls": []
+    }
+  ],
+  "family": "{{TASK_DEF_NAME}}",
+  "executionRoleArn": "arn:aws:iam::{{ACCOUNT_ID}}:role/{{EXEC_ROLE}}",
+  "networkMode": "awsvpc",
+  "volumes": [],
+  "placementConstraints": [],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "1024",
+  "memory": "2048",
+  "runtimePlatform": {
+    "cpuArchitecture": "X86_64",
+    "operatingSystemFamily": "LINUX"
+  },
+  "enableFaultInjection": false
+}

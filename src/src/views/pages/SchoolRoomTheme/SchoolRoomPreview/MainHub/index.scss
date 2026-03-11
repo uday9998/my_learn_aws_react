@@ -1,0 +1,197 @@
+.mainHub {
+   width: 100%;
+   background-color: inherit;
+   main {
+       min-height: 50vh;
+   }
+   .courseCardSlider {
+      margin-top: 40px;
+       &::before {
+           display: none;
+       }
+   }
+   min-height: 100vh;
+   .mainHubHeader__loginBtn {
+       display: flex;
+    //    width: 141px;
+       button {
+           width: 100%;
+       }
+   }
+   .footer-customLinks {
+      width: 80%;
+      display: flex;
+      margin: 0 auto;
+      padding-bottom: 15px;
+    }
+
+
+   .avatar-container {
+       position: relative;
+   }
+
+   .mainHub__headerBottom {
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+       height: 300px;
+       background-color: rgba(63, 79, 101, 0.65);
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+
+       span {
+          // color: #ffffff !important;
+           letter-spacing: normal !important;
+           &:first-of-type {
+               font-size: 48px;
+               padding-bottom: 12px;
+           }
+       }
+   }
+
+   .mainHub__mainBlock {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       .studentsRoomBackButton {
+           background-color: transparent;
+           border: none;
+           transform: rotate(90deg);
+           align-self: flex-start;
+           :hover {
+               cursor: pointer;
+           }
+           svg {
+               width: 36px;
+               height: 36px;
+           }
+           &:focus {
+               outline: none;
+           }
+       }
+       .studentsRoomCards {
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           grid-row-gap: 16px;
+           grid-column-gap: 16px;
+           margin-top: 16px;
+           width: 100%;
+           max-width: 1440px;
+           @media(max-width: 1023px) {
+            grid-template-columns: 1fr 1fr;
+         }
+         @media(max-width: 600px) {
+            grid-template-columns: 1fr;
+         }
+       }
+       .coursesLoadingList {
+           margin-top: 16px;
+       }
+       .noCourseFound {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           margin-top: 64px;
+           margin-bottom: 100px;
+           span {
+               line-height: 1.33;
+           }
+
+           .notFoundImg {
+               margin-top: 15px;
+               width: 381px;
+               height: 363px;
+           }
+       }
+
+       .mainHubCards {
+           display: flex;
+           flex-wrap: wrap;
+           margin-top: 24px;
+           justify-content: center;
+       }
+        .mainHub_filter_loader {
+            width: 300px;
+            height: calc(100vh - 615px);
+            position: relative !important;
+            .loading__SpinnerContainer {
+                position: absolute;
+            }
+        }
+   }
+}
+
+
+ @media screen and (min-width: 1300px) {
+    .mainHub__mainBlock {
+      padding: 28px 28px 0 28px;
+        .formContainer {
+            width: 100%;
+        }
+        .mainHubCards {
+            .mainHubCard {
+                width: 32%;
+                margin-left: 2%;
+                margin-bottom: 2%;
+                &:nth-child(3n+1) {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+ }
+ @media (max-width: 1300px) and (min-width: 1024px) {
+    .mainHub__mainBlock {
+        padding: 28px 28px 0 28px;
+        .formContainer {
+            width: 80%;
+        }
+        .mainHubCards {
+            width: 80%;
+                .mainHubCard {
+                width: 49%;
+                margin-left: 2%;
+                 margin-bottom: 2%;
+                &:nth-child(2n+1) {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+ }
+ @media screen and (max-width: 1023px) {
+    .mainHub__mainBlock {
+        padding: 28px 16px 0 16px;
+        .formContainer {
+            width: 100%;
+            flex-direction: column;
+            .formContainer__left-side {
+                width: 100%;
+                margin-right: 0px;
+            }
+            .formContainer__right-side {
+                width: 100%;
+                margin: 24px 0 0 0;
+            }
+        }
+        .mainHubCards {
+            .mainHubCard {
+                width: 100%;
+                margin-bottom: 37px;
+            }
+        }
+    }
+    .mainHub  {
+      .footer-customLinks {
+         width: 100%;
+       }
+    }
+
+ }
+
+

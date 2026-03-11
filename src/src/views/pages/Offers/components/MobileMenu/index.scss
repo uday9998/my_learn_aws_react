@@ -1,0 +1,43 @@
+.offers__menu__mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: 100%;
+    &__user{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img{
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+    &__logout{
+        margin-top: auto;
+    }
+}
+
+.login__inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        &__bottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 4px;
+        }
+    }
+}

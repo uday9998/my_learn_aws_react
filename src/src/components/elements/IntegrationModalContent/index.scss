@@ -1,0 +1,94 @@
+.integrationModal {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 24px 90px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 740px;
+    position: relative;
+    .closeX {
+       position: absolute;
+       right: 24px;
+       top: 24px;
+       cursor: pointer;
+    }
+    .field__2 {
+      max-width: 400px;
+      text-align: center;
+      margin-top: -32px;
+      line-height: 1.33;
+    }
+    img {
+       max-width: 100%;
+    }
+    .memberUpdat__select {
+       display: flex;
+       align-items: flex-end;
+       .SelectElement__drop-down {
+          max-height: 204px;
+          .SelectElement__option {
+             position: relative;
+             display: flex;
+             align-items: center;
+             &:hover {
+                background-color: rgba(124, 183, 64, 0.05);
+
+                span {
+                   color: #7cb740 !important;
+                }
+                &:before {
+                   content: url(~assets/images/checkbox.png);
+                   position: absolute;
+                   display: block;
+                   left: 32px;
+                   top: 7px;
+                }
+
+             }
+
+          }
+       }
+    }
+    .deleteModal__btns {
+       display: flex;
+       justify-content: flex-end;
+       .cancel__btn {
+          margin-right: 16px;
+       }
+       .memberUpdate__btn {
+          max-width: 180px;
+          button {
+             width: 100%;
+          }
+       }
+    }
+    .memberUpdate__btn {
+       margin-top: 24px;
+       text-align: right;
+    }
+
+ }
+
+
+
+ @media screen and (max-width: 1023px) {
+    .integrationModal {
+       padding: 24px;
+       width: auto;
+       .field__2 {
+         max-width: auto;
+         span {
+            font-size: 20px;
+         }
+       }
+       .deleteModal__btns {
+          flex-direction: column;
+          .memberUpdate__btn {
+             width: 100%;
+             max-width: 100%;
+             margin-right: 0;
+          }
+       }
+    }
+ }

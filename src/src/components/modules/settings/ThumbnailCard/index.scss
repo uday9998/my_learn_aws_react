@@ -1,0 +1,205 @@
+.m-t-40 {
+   margin-top: 40px;
+}
+
+.m-l-40 {
+   margin-left: 40px;
+}
+.thumbnailCard {
+   margin: 16px auto 0;
+   width: 95%;
+   .mainhub__banner {
+      .SelectElement {
+         max-width: 85%;
+      }
+   }
+
+   .school-theme-switch {
+      @media screen and (max-width: 500px) {
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -webkit-flex-direction: column;
+             -ms-flex-direction: column;
+                 flex-direction: column;
+         -webkit-box-align: center;
+         -webkit-align-items: center;
+             -ms-flex-align: center;
+                 align-items: center;
+      }
+   }
+   .course_slider_delete {
+      &:hover {
+         cursor: pointer;
+      }
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+   }
+
+   .bolderLabel {
+      font-weight: 600;
+      font-size: 14px;
+   }
+
+   .colorInput  {
+      .colorInput__input {
+         color: #8a94a2;
+      }
+
+   }
+
+   .thumbnailImg {
+      margin-top: 16px;
+      .uploadImg {
+         img {
+            width: 100%;
+            max-width: 100%;
+         }
+      }
+   }
+
+   .uploadImgs {
+      margin-top: 24px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-right: 72px;
+      justify-content: space-between;
+      width: 100%;
+      .uploadImg__container {
+         &:last-of-type {
+            margin-left: 64px;
+         }
+      }
+   }
+
+   >div:last-of-type {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      .btnWrapper {
+         width: 100%;
+         &:first-of-type {
+            max-width: 156px;
+            margin-right:16px;
+         }
+         &:last-of-type {
+            max-width: 150px;
+         }
+         button {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+         }
+      }
+   }
+   .main_background {
+      width:47%;
+      input {
+         min-width: auto;
+      }
+   }
+
+   .header-colors {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      >div {
+         input {
+            min-width: auto;
+         }
+         &:nth-child(1) {
+            width:47%;
+         }
+         &:nth-child(2) {
+           width:47%;
+         }
+      }
+
+   }
+   .mainhub__line {
+    border-bottom: 2px solid #cddaf157;
+    margin-bottom: 24px;
+    margin-top: 24px;
+   }
+
+   .mainhub__banner {
+      button {
+         width: 43%;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .thumbnailCard {
+      .uploadImgs {
+         margin-top: 24px;
+         display: block;
+         .uploadImg__container {
+            &:last-of-type {
+               div:first-of-type {
+                  margin-bottom: 8px;
+               }
+               margin-left: 0;
+               margin-top: 24px;
+            }
+         }
+      }
+      .thumbnailImg {
+         margin-top: 24px;
+      }
+      >div:last-of-type {
+         display: block;
+         >div {
+            max-width: none!important;
+            &:first-of-type {
+               margin: 0;
+               margin-bottom: 16px;
+            }
+         }
+      }
+
+      .mainhub__banner {
+         button {
+            max-width: inherit;
+            width: 100%;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .thumbnailCard {
+      .main_background {
+         width:100%;
+      }
+   .header-colors {
+      >div {
+         input {
+            min-width: auto;
+         }
+         &:nth-child(1) {
+            width:100%;
+         }
+         &:nth-child(2) {
+           width:100%;
+         }
+      }
+
+   }
+}
+}

@@ -1,0 +1,127 @@
+.sidebarGroup__user{
+   border-radius: 0px;
+   display: flex;
+   justify-content: flex-start;
+   padding: 16px 16px 16px 32px;
+   .textBasic{
+      color: #131F1E ;
+      white-space: nowrap;
+      width: 96px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+   }
+   &:hover{
+      .textBasic{
+         color: #131F1E ;
+      }
+   }
+
+   &-image{
+      border-radius: 4px !important;
+   }
+
+   div{
+      display: flex;
+   }
+}
+.sidebarGroup__user__active{
+   background-color: inherit !important;
+   background: inherit !important;
+   span{
+      color: #24554E !important;
+   }
+}
+.sidebarGroup {
+   user-select: none;
+   position: relative;
+   @media screen and (max-width: 1023px) {
+      margin: 0px 16px;
+   }
+   .smal_sidebarGroup__list {
+      display: none;
+   }
+   .sidebarGroup__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+   }
+   &__active{
+      .textBasic {
+         color: #24554E ;
+      }
+      .sidebarGroup__svg {
+         path{
+            fill: #36796F;
+         }
+      }
+   }
+}
+.sidebarGroup:hover{
+   .smal_sidebarGroup__list {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #FFF;
+      left: 68px;
+      top: 0;
+      width: max-content;
+      .sidebarLink {
+         .sidebarLink__content {
+            padding: 20px;
+         }
+      }
+   }
+}
+
+.sidebar__settings {
+   margin-top: 80px;
+   border-bottom: 1px solid #c2cedb;
+}
+
+.sidebarGroup__content {
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   padding: 8px 16px;
+   justify-content: space-between;
+   >div {
+      display: flex;
+      align-items: center;
+   }
+   .sidebarGroup__svg {
+      margin-right: 8px;
+   }
+
+   .sidebarGroup__user-image {
+      margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+   }
+}
+
+.sidebarGroup__content:hover {
+   background: #E8F2F1;
+   cursor: pointer;
+   .textBasic {
+      color: #36796F ;
+   }
+    .sidebarGroup__svg {
+         path{
+            fill: #36796F;
+         }
+      }
+}
+.small_sidebarGroup__content {
+   padding: 15px 24px 14px 24px;
+
+   .sidebarGroup__svg {
+      margin-right: 0px;
+   }
+
+   .sidebarGroup__user-image {
+      margin-right: 0px;
+   }
+}

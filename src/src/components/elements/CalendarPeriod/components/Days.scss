@@ -1,0 +1,58 @@
+.days{
+    width: 89%;
+    padding: 2px 4px;
+ &__week{
+    display: grid;
+    column-gap: 10px;
+    margin-bottom: 14px;
+    grid-template-columns: repeat(7, 12%);
+     width: 100%;
+     .week__day{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: start;
+         display: flex;
+            align-items: center;
+            justify-content: space-around;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: #A1A5A5;
+
+     }
+ }
+ .days__area{
+    max-width: 100%;
+    .area{
+        max-width: 100%;
+        display: grid;
+        column-gap:10px;
+        grid-template-columns: repeat(7, 12%);
+        .day{
+            width: 100%;
+            cursor: pointer;
+            height: 32px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 168%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: #131F1E;
+            margin-bottom: 4px;
+            &_of{
+                color: #A1A5A5;
+            }
+            &_selected{
+                background: #24554E;
+                border-radius: 1000px;
+                color: #fff;
+            }
+        }
+    }
+ }
+}

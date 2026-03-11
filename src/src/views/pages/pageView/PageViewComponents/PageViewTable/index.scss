@@ -1,0 +1,40 @@
+.page-view-table{
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    margin-top: 32px;
+    background-color: white;
+    max-height: 388px;
+    overflow: auto;
+    &-line{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #E7E9E9;
+    }
+    &-item{
+        padding: 12px 20px;
+        width: 14%;
+        text-align: end;
+    }
+    &-item-large{
+        padding: 12px 20px;
+        width: 43%;
+        text-align: end;
+    }
+    &-item-start{
+        text-align: start;
+    }
+    &-loader{
+        position: relative;
+        min-height: 100px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &-line{
+            & > div {
+                width: 33%;
+                min-width: max-content;
+            }   
+        }
+    }
+}

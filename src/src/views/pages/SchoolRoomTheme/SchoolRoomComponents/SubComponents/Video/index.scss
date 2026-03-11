@@ -1,0 +1,34 @@
+.subvideo {
+   display: flex;
+   width: 100%;
+   &:hover .video-content-edit {
+      position:relative;
+      box-sizing: border-box;
+      &:before {
+         content: 'EDIT';
+         font-size:16px;
+         position:absolute;
+         top:50%;
+         cursor: pointer;
+         left:50%;
+         padding: 8px 12px;
+         color:#131F1E;
+         z-index: 99999999;
+         line-height: 1;
+         transform: translate(-50%,-50%);
+         background: #FFFFFF;
+         border: 1px solid #E7E9E9;
+         border-radius: 12px;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 132%;
+       }
+
+}
+   iframe {
+      max-width: 100%;
+      box-sizing: border-box;
+   }
+}
+
+

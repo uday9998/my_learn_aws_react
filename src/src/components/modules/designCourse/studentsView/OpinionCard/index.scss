@@ -1,0 +1,18 @@
+.opinionBlock {
+   display: flex;
+   margin-top: 16px;
+
+   img {
+      width: 72px;
+      height: 72px;
+      min-width: 72px;
+      object-fit: cover;
+      margin-right: 16px;
+      border-radius: 4.5px;
+   }
+
+   span {
+      display: block;
+      word-break: break-all;
+   }
+}

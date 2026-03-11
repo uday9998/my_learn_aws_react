@@ -1,0 +1,68 @@
+.accordionWrapper {
+   display: flex;
+   flex-direction: column;
+   user-select: none;
+   border: 1px solid;
+}
+
+@keyframes showContent {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.accordionWrapper__title {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer;
+}
+
+.accordionWrapper__title svg {
+   min-width: 24px;
+   width: 24px;
+   height: 25px;
+}
+
+.accordionWrapper__content {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 100%;
+   opacity: 0;
+   pointer-events: none;
+   height: 0;
+}
+
+.accordionWrapper__content.show {
+   opacity: 1;
+   pointer-events: all;
+   height: auto;
+}
+
+.accordionWrapper__tooltip {
+   animation : showContent 600ms;
+}
+
+.triangleSvg_isOpen_true {
+   transform: rotate(90deg);
+   transition: 200ms all ease;
+}
+
+.triangleSvg_isOpen_false {
+   transition: 200ms all ease;
+}
+
+.accordionWrapper__hasShadow {
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 720px) {
+   .accordionWrapper {
+      padding: 24px !important;
+   }
+}

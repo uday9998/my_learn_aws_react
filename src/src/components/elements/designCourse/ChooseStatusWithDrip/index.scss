@@ -1,0 +1,19 @@
+.lesson__status{
+    &__item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 8px;
+        gap: 4px;
+        border-radius: 8px;
+    }
+    &__published{
+        background: #E8F2F1;
+    }
+    &__unpublished{
+        background: rgba(19, 31, 30, 0.1);
+    }
+    &__drip{
+        background: #FEE1F2;
+    }
+}

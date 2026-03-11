@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="124px" viewBox="0 0 124 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>BE904EF4-6851-47A5-8A2A-D95961DC5926</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Progress-Bar">
+            <text id="4/5-Complited" font-family="Avenir-Medium, Avenir" font-size="14" font-weight="400" line-spacing="18" fill="#3F4F65">
+                <tspan x="49.939" y="59">4/5 </tspan>
+                <tspan x="27" y="77">Complited</tspan>
+            </text>
+            <circle id="Oval-17" stroke="#7CB740" stroke-width="12.0000005" opacity="0.2" cx="62.5" cy="62.5" r="54.5"></circle>
+            <path d="M38,111.031936 L38,111.031936 C45.4144001,114.847289 53.8176234,117 62.7215949,117 C92.6987303,117 117,92.5995189 117,62.5 C117,32.4004811 92.6987303,8 62.7215949,8" id="Oval-17" stroke="#7CB740" stroke-width="12.0000005" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

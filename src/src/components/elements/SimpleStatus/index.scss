@@ -1,0 +1,12 @@
+.status__simple{
+    border-radius: 8px;
+    max-width: max-content;
+    padding: 0px 4px;
+    display: flex;
+    gap: 4px;
+    cursor:default;
+    align-items: center;
+    span{
+        white-space: nowrap;
+    }
+}

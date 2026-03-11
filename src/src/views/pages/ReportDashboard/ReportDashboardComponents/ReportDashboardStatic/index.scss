@@ -1,0 +1,26 @@
+.report-dashboard-report{
+    background: #FFFFFF;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    max-width: 100%;
+    padding: 40px 16px 0px;
+    display: flex;
+    align-items: flex-start;;
+    justify-content: space-around;
+    .report-item{
+        position: relative;
+        justify-content: flex-end;
+        .lds-ring{
+            top: 0%;
+        }
+
+        .empty__percent {
+            height: 28px;
+            margin-top: 8px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 16px;
+    }
+}

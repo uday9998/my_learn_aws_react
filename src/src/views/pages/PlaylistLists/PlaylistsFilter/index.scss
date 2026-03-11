@@ -1,0 +1,107 @@
+.playlist__filter {
+   padding-top: 2px;
+   display: flex;
+   flex-direction: column;
+   gap: 34px;
+   margin-bottom: 12px;
+
+
+   @media (max-width: 1024px) {
+      gap: 0;
+   }
+
+   .playlist__filters {
+      display: flex;
+      gap: 12px;
+   }
+   .sort__button__new {
+      button {
+       //  min-width: 220px;
+      }
+   }
+   &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &__left {
+         display: flex;
+         align-items: center;
+         gap: 16px;
+         flex-wrap: wrap;
+      }
+      .switch {
+         position: relative;
+         padding-right: 16px;
+         // &::before {
+         //    position: absolute;
+         //    content: "";
+         //    right: 0px;
+         //    top: 50%;
+         //    transform: translateY(-50%);
+         //    height: 40px;
+         //    background-color: rgba(19, 31, 30, 0.2);
+         //    width: 1px;
+         // }
+      }
+      &__actions {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         position: relative;
+         &::before {
+            position: absolute;
+            content: "";
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 20px;
+            background-color: rgba(19, 31, 30, 0.2);
+            width: 1px;
+         }
+         &__delete {
+            border: 1px solid #d12d36;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 4px;
+            gap: 10px;
+            cursor: pointer;
+
+            &.disabled {
+               opacity: .6;
+            }
+         }
+         &__duplicate {
+            border: 1px solid #24554E;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 4px;
+            gap: 10px;
+            cursor: pointer;
+         }
+      }
+   }
+   &__count {
+      padding-right: 16px;
+      position: relative;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      @media screen and (max-width: 1023px) {
+          gap: 0;
+      }
+      .checkBox {
+         background-color:#fff;
+      }
+
+   }
+   .playlist__filter__count__selected {
+      @media screen and (max-width: 1023px) {
+         gap: 12px;
+      }
+   }
+}

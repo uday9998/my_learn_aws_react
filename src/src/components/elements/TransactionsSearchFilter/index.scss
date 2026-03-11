@@ -1,0 +1,68 @@
+.transaction__searchFilter {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
+
+   .marginRight {
+      margin-right: 22px;
+   }
+
+   .searchFilter__inputs {
+      display: flex;
+    
+      .searchFilter__input {
+         min-width: 240px;
+      }
+   }
+
+   .react-datepicker-wrapper {
+      display: flex;
+
+      input {
+         border: 1px solid #cddaf1;
+         box-sizing: border-box;
+         border-radius: 4px;
+         font-family: 'Avenir Next regular';
+         width: 100%;
+         line-height: 1.5;
+         letter-spacing: 0.4px;
+         font-size: 16px;
+         padding: 7px 16px;
+         background: #fbfdff;
+         font-weight: bold;
+         color: #3f4f65;
+      }
+
+      input:focus {
+         box-shadow: 0 0 0px 2px #7cb740;
+         border: 1px solid #fbfdff;
+         outline: none;
+      }
+   }
+}
+
+@media screen and (max-width: 720px) {
+   .searchFilter {
+      width: 100%;
+
+      .searchFilter__inputs {
+         min-width: 100%;
+         flex-wrap: wrap;
+
+         input {
+            padding: 11px 16px !important;
+         }
+
+         .searchFilter__input {
+            margin: 8px 0 0 !important;
+            min-width: 100%;
+            flex: 0 1;
+         }
+      }
+
+      .searchFilter__button {
+         width: 100%;
+         margin: 8px 0 0;
+      }
+   }
+}

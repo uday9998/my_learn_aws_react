@@ -1,0 +1,47 @@
+.switch__wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #F0F2F2;
+    border-radius: 12px;
+    width: max-content;
+
+    .right__wrapper {
+        padding: 12px 61px;
+        border-radius: 12px;
+        cursor: pointer;
+
+        &.active_monthly {
+            background: linear-gradient(to right, #36796F 0%, #7CAE7B 100%);
+
+            span {
+                color: #fff
+            }
+        }
+
+        @media (max-width: 1024px) {
+            padding: 12px 20px;
+        }
+    }
+
+    .left__wrapper {
+        padding: 12px 61px;
+        border-radius: 12px;
+        cursor: pointer;
+
+        &.active_annual {
+            background: linear-gradient(to right, #36796F 0%, #7CAE7B 100%);
+
+            span {
+                color: #fff
+            }
+        }
+
+        @media (max-width: 1024px) {
+            padding: 12px 35px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}

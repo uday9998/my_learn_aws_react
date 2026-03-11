@@ -1,0 +1,33 @@
+.create__landing__video{
+    &__content{
+        width: 100%;
+        position: relative;
+        display: flex;
+        height: 204px;
+        gap: 32px;
+        align-items: center;
+        &__background{
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            z-index: -1;
+            height: 204px;
+            border-radius: 12px;
+        }
+        &__image{
+            cursor: pointer;
+            display: flex;
+            padding-left: 12px;
+            img{
+                width: 320px;
+                object-fit: cover;
+                height: 180px;
+            }
+        }
+        &__texts{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}

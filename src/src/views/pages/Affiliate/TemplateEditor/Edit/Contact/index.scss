@@ -1,0 +1,11 @@
+.affiliate__edit__contact{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 12px;
+    &__props{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

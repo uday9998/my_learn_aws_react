@@ -1,0 +1,70 @@
+// .general__settings{
+//     display: flex;
+//     flex-direction: column;
+//     gap: 24px;
+//     width: 100%;
+//     .link_line {
+//       background-color: rgba(231, 233, 233, 1);
+//       height: 1px;
+//       width: 100%;
+//       margin: 32px 0;
+//     }
+//     .link_line_small {
+//       background-color: rgba(231, 233, 233, 1);
+//       height: 1px;
+//       width: 100%;
+//       margin: 24px 0;
+//     }
+//     &__top{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 4px;
+//     }
+//     &__upload{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 24px;
+//     }
+//     &__branding{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 4px;
+//         margin-top: 24px;
+//         margin-bottom: 24px;
+//         &__top{
+//             display: flex;
+//             align-items: center;
+//             gap: 12px;
+//         }
+//     }
+//     &__footer{
+//         display: flex;
+//         width: 100%;
+//         flex-direction: column;
+//         gap: 8px;
+//         &__example{
+//             cursor: inherit;
+//             width: 100%;
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-between;
+//             background: #F8FAFA;
+//             border-radius: 8px;
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             padding: 12px 32px;
+//             gap: 24px;
+//             &__left{
+//                 display: flex;
+//                 align-items: center;
+//                 gap: 8px;
+//             }
+//             &__right{
+//                 display: flex;
+//                 align-items: center;
+//                 gap: 5px;
+//             }
+//         }
+//     }
+// }

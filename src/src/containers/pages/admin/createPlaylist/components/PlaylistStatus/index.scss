@@ -1,0 +1,103 @@
+.checklists__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 331px;
+
+    .checklists__inner__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+        @media (max-width: 1024px) {
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+        }
+    }
+
+    .show__button__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #24554E;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+
+    .status__wrapper {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        @media (max-width: 1024px) {
+            height: max-content;
+        }
+    }
+
+    .playlist__access {
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 24px;
+
+        .title__wrapper {
+            margin-bottom: 12px;
+        }
+
+        .playlist__access__content {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;  
+            width: 100%;
+
+            .content__title__wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .checklist__item {
+            align-items: flex-start;
+
+            .checklist__unchecked {
+                width: 22px;
+            }
+        }
+
+        .checklist__checked {
+            width: 22px;
+        }
+
+        @media (max-width: 1024px) {
+            height: max-content;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        max-width: 100%;
+        background-color: #fff;
+        padding: 16px;
+
+        .status__wrapper {
+            background-color: #F8FAFA;
+        }
+
+        .playlist__access {
+            background-color: #F8FAFA;
+        }
+    }
+}

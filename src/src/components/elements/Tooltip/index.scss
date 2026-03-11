@@ -1,0 +1,89 @@
+.tooltip__input__settings {
+   position: relative;
+   >svg {
+      margin-left: 5px;
+      cursor: pointer;
+      width: 18px;
+   }
+   span {
+      font-size: 13px;
+      line-height: 1;
+   }
+
+   .hintCard__wrapper {
+      box-sizing: border-box;
+      position: absolute;
+      left: 13px;
+      bottom: 23px;
+      z-index: 999;
+      width: 345px;
+      white-space: normal;
+      .hintCard {
+         padding: 7px 5px 5px 5px;
+      }
+   }
+}
+
+
+.tooltip__input {
+   position: relative;
+   svg {
+      margin-bottom: 8px !important;
+      cursor: pointer;
+   }
+
+   .hintCard__wrapper {
+      box-sizing: border-box;
+      position: absolute;
+      left: -140px;
+      bottom: 23px;
+      z-index: 999;
+      width: 220px;
+      .hintCard {
+         padding: 7px 7px;
+      }
+   }
+}
+
+@media screen and (max-width: 1425px) {
+   .tooltip__input__settings {
+      .hintCard__wrapper {
+         bottom: 23px;
+         width: 264px;
+         white-space: normal;
+      }
+   }
+}
+
+@media screen and (max-width: 1068px) {
+   .tooltip__input__settings {
+      .hintCard__wrapper {
+         bottom: 23px;
+         width: 195px;
+         white-space: normal;
+      }
+   }
+}
+
+@media screen and (max-width: 1023px) {
+   .tooltip__input__settings {
+      .hintCard__wrapper {
+         bottom: 23px;
+         width: 264px;
+      }
+      span {
+         font-size: 12px;
+      }
+   }
+}
+
+
+@media screen and (max-width: 500px) {
+   .tooltip__input__settings {
+      .hintCard__wrapper {
+         bottom: 25px;
+         left: -155px;
+         width: 272px
+      }
+   }
+}

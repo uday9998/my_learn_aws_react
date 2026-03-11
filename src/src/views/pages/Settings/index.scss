@@ -1,0 +1,88 @@
+.d-settings {
+   background-color: #ffffff;
+   margin: 0 auto;
+   border: 1px solid #E7E9E9;
+   border-radius: 12px;
+   box-sizing: border-box;
+   &.settingsPage {
+      .content_left {
+         @media screen and (min-width: 1024px) {
+            max-width: 360px;
+         }
+         @media screen and (min-width: 1024px) and (max-width: 1350px) {
+            max-width: 250px;
+         }
+      }
+      .content_right {
+         @media screen and (min-width: 1024px) {
+            max-width: calc(100% - 360px);
+         }
+         @media screen and (min-width: 1024px) and (max-width: 1350px) {
+            max-width: calc(100% - 250px);
+         }
+      }
+   }
+   .content_left {
+      min-width: 250px;
+   }
+   .content_right {
+      position: relative;
+      box-sizing: border-box;
+   }
+   .rightSide {
+      width: 100%;
+   }
+
+   @media screen and (max-width: 1024px) {
+      border: none;
+      position: relative;
+      .content_left {
+         position: absolute;
+         z-index: 2;
+         background-color: #ffffff;
+         padding: 16px;
+         width: 100%;
+         max-width: 290px;
+         overflow-y: visible;
+         top: 0;
+         transition: .3s ease-in;
+
+         &.closed {
+            left: -306px;
+         }
+
+         &.opened {
+            left: 0;
+         }
+
+         .settings-content {
+            position: relative;
+
+            &-switcher {
+               cursor: pointer;
+               display: flex;
+               position: absolute;
+               right: -40px;
+               width: 24px;
+               height: 48px;
+               justify-content: center;
+               align-items: center;
+               border-radius: 6px;
+               border: 1px solid #e7e9e9;
+               z-index: 3;
+               background-color: #FFFFFF;
+            }
+         }
+         .settingsMenu {
+            padding: 0;
+         }
+      }
+      .content_right {
+         width: 100%;
+
+         .innerWrapper_container {
+            padding: 16px;
+         }
+      }
+   }
+}

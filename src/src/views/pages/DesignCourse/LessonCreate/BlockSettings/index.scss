@@ -1,0 +1,233 @@
+.block__edit__left {
+   max-width: 277px;
+   min-width: 250px;
+   width: max-content;
+   height: 100%;
+   max-height: 100%;
+   overflow-y: auto;
+   scrollbar-color: rgba(119, 119, 119, 0.3) rgb(226, 226, 226);
+   padding-bottom: 200px;
+   z-index: 2;
+   scrollbar-width: thin;
+   background: #ffffff;
+   border-right: 1px solid #e7e9e9;
+
+   &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar {
+      width: 5px;
+      background-color: transparent;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(119, 119, 119, 0.3);
+      background-color: rgb(226, 226, 226);
+   }
+   
+   .uploadImg_medium_upload .upload__view {
+      max-height: 250px;
+   }
+   
+   @media screen and (max-width: 1023px) {
+      max-width: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 99;
+      top: 0;
+   }
+   
+   .colorInput .colorInput__input {
+      min-width: auto;
+   }
+   
+   .cropArea {
+      min-width: 100%;
+   }
+   
+   .crop__functions__content {
+      flex-wrap: wrap;
+   }
+   
+   .block__upload__media__view {
+      position: relative;
+   }
+   
+   .block__upload__media__view .upload__media__image__view__button {
+      left: 5px;
+   }
+   
+   &__cancel {
+      padding: 20px 0px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      background: #f0f2f2;
+      justify-content: center;
+   }
+   
+   &__settings {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+   }
+   
+   &__background {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+      width: 100%;
+      
+      .block__upload__with__media .tabs__line {
+         gap: 8px;
+
+         .tabs__line__tab {
+            padding: 0;
+         }
+      }
+
+      .upload__with__media__view {
+         min-width: auto;
+
+         & > div {
+            padding: 12px;
+         }
+
+         .upload__with__media__view__right {
+            min-width: auto;
+
+            .folder__file__left > div {
+               flex: 1;
+            }
+
+            .folder__file__right > span {
+               white-space: nowrap;
+            }
+         }
+      }
+   }
+   
+   .uploadImg_medium {
+      width: 100%;
+   }
+   
+   &__codes {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &__flex {
+         display: flex;
+         flex-direction: column;
+         gap: 8px;
+      }
+   }
+   
+   .text_area {
+      width: 100%;
+   }
+   
+   .grey__line {
+      height: 1px;
+      background: #E7E9E9;
+      width: 100%;
+   }
+   
+   .SelectItem__button__medium {
+      width: 231px;
+      span {
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+   }
+   
+   .send_email_checkbox .checkBox .checkBox__square {
+      position: relative;
+      top: -11px;
+   }
+   
+   // New styles for the video settings
+   .settings-options-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 0;
+   }
+   
+   .settings-option {
+      margin-bottom: 4px;
+      
+      .checkBox {
+         margin-bottom: 4px;
+         
+         &__square {
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            // background-color: #fff;
+         }
+         
+         &__label {
+            font-weight: 500;
+            font-size: 14px;
+            color: #1f2937;
+         }
+      }
+   }
+   
+   .settings-description {
+      color: #6b7280;
+      font-size: 12px;
+      margin: 0 0 16px 24px;
+      line-height: 1.4;
+   }
+   
+   .thumbnail-recommendation {
+      color: #6b7280;
+      font-size: 12px;
+      margin: 8px 0 0 0;
+   }
+   
+   // Upload thumbnail styling
+   .uploadImg_medium {
+      .upload__view {
+         border: 1px dashed #d1d5db;
+         border-radius: 8px;
+         background-color: #f9fafb;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         padding: 20px;
+         cursor: pointer;
+         width: 100%;
+         
+         &:hover {
+            background-color: #f3f4f6;
+         }
+      }
+      
+      button {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 8px;
+         background-color: #ffffff;
+         border: 1px solid #d1d5db;
+         border-radius: 6px;
+         padding: 8px 16px;
+         font-weight: 500;
+         color: #111827;
+         
+         &:hover {
+            background-color: #f9fafb;
+         }
+      }
+   }
+}

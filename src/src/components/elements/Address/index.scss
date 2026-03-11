@@ -1,0 +1,10 @@
+.address__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__flex {
+       display: grid;
+       grid-template-columns: 49% 49%;
+       gap: 16px;
+    }
+ }

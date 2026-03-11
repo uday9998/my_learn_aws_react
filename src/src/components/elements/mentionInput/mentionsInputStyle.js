@@ -1,0 +1,71 @@
+export default {
+   control: {
+      backgroundColor: '#fff',
+      fontSize: 14,
+      fontWeight: 400,
+      lineHeight: '168%',
+      width: '100%',
+      height: '120px',
+      outline: 'none',
+      border: '1px solid #e7e9e9',
+      boxSizing: 'border-box',
+      borderRadius: '12px',
+      resize: 'vertical',
+      // fontWeight: 'normal',
+   },
+   '&multiLine': {
+      control: {
+         fontFamily: 'Inter',
+         minHeight: 63,
+      },
+      highlighter: {
+         padding: 9,
+         border: '1px solid transparent',
+      },
+      input: {
+         fontSize: 14,
+         fontWeight: 400,
+         lineHeight: '168%',
+         width: '100%',
+         height: '120px',
+         outline: 'none',
+         border: '1px solid #e7e9e9',
+         boxSizing: 'border-box',
+         borderRadius: '12px',
+         resize: 'none',
+         padding: '12px 16px',
+         maxHeight: '120px',
+         overflow: 'auto',
+         scrollbarWidth: 'thin',
+      },
+   },
+   '&singleLine': {
+      display: 'inline-block',
+      width: 180,
+      highlighter: {
+         padding: 1,
+         border: '2px inset transparent',
+      },
+      input: {
+         padding: 1,
+         border: '2px inset',
+      },
+   },
+   suggestions: {
+      list: {
+         display: 'flex',
+         flexDirection: 'column',
+         alignItems: 'center',
+         padding: '4px 0px',
+         backgroundColor: '#fff',
+         border: '1px solid rgba(19, 31, 30, 0.1)',
+         boxShadow: '0px 4px 10px rgba(19, 31, 30, 0.1), 1px 2px 2px rgba(19, 31, 30, 0.04)',
+         borderRadius: '12px',
+      },
+      item: {
+         padding: '12px 16px',
+         width: '100%',
+         textAlign: 'start',
+      },
+   },
+};

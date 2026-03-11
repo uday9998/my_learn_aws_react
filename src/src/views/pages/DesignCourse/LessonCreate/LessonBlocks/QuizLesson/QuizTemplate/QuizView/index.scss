@@ -1,0 +1,25 @@
+.block__upload__media__view {
+    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    &__change{
+      padding: 20px;
+    }
+    &__button{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .upload__media__image__view__button {
+      // top: 20px;
+      // left: 155px;
+      max-width: 200px;
+      height: 36px;;
+      position: absolute;
+      z-index: 2;
+   }
+}
+

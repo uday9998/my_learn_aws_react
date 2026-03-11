@@ -1,0 +1,87 @@
+// .inlineEditor-new__withBorder {
+//    >div {
+//       border: 1px solid #E7E9E9;
+//       border-radius: 12px;
+//       padding: 8px 16px;
+//       min-height: 79px;
+//       // &::selection {
+//       //       background: #C5EEFF;
+//       //       color: #131f1e;
+//       // }
+//       // &:focus-visible {
+//       //    border: 1px solid #E7E9E9;
+//       //    outline: none;
+//       // }
+//    }
+// }
+
+// .inlineEditor-new {
+//    .ql-editor {
+//       font-size: 16px;
+//     }
+//     .quill {
+//       position: relative;
+//    }
+   
+//     .ql-toolbar {
+//       background: rgba(255,255,255,1);
+//     }
+    
+// .inlineEditor-title {
+//    margin-bottom: 8px;
+// }
+
+// .ql-container.ql-snow {
+//    border: none;
+//  }
+//    &__centered {
+//       .ql-editor {
+//          text-align: center;
+//       }
+//    }
+//    &__isAbsolute {
+//       .ql-toolbar {
+//          width: fit-content;
+//          margin: 0 auto;
+//          position: absolute;
+//          top: -52px;
+//          z-index: 99999999;
+//          left: 0;
+//          right: 0;
+//        }  
+//    }
+//    &__isTemplate {
+//       .ql_container {
+//          font-size: inherit;
+//       }
+//       .ql-editor {
+//          font-size: inherit;
+//        }
+//    }
+//   img {
+//      max-width: 100%;
+//   }
+// }
+
+
+
+//  .inlineEditor-new.isNotVisibleEditor {
+//    .ql-toolbar {
+//       opacity: 0;
+//     //  transition: all 500ms;
+//      }
+//  }
+
+
+
+
+//  .inlineEditor-new.isVisibleEditor {
+//    .ql-toolbar {
+//       opacity: 1;
+//       transition: all 500ms;
+//      }
+//  }
+
+.ql-editor {
+   font-size: 16px;
+ }

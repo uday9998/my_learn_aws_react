@@ -1,0 +1,16 @@
+.upsell__view__text__flex{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.upsell__view__text__editor{
+    border: none;
+    resize: none;
+    width: 100%;
+    border:  1px solid #E7E9E9;
+    border-radius: 12px;
+    background-color: inherit !important;
+    height: min-content !important;
+    max-height: min-content !important;
+}

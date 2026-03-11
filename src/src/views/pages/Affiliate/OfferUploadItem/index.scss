@@ -1,0 +1,123 @@
+.offer__upload__item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        img{
+            border-radius: 12px;
+            width: 80px;
+            height: 45px;
+            object-fit: cover;
+        }
+        &__left{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .image_wrapper {
+                border: 1px solid #E7E9E9;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+
+            .content{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    }
+    &__bottom{
+        // padding: 24px 192px;
+        width: 100%;
+        border-top: 1px solid #E7E9E9;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        &__promotions{
+            display: flex;
+            margin-bottom: 24px;
+            flex-direction: column;
+            gap: 24px;
+            .top{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                &__files{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 16px;
+                    grid-area: 12px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 701px) {
+        &__top {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        &__bottom {
+            padding: 0;
+        }
+    }
+}
+
+.affiliate__promotion__file{
+    background: #FFFFFF;
+/* grey scale/10 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    transition: 0.3s;
+    border: 1px solid #E7E9E9;
+    border-radius: 12px;
+    cursor: pointer;
+    justify-content: space-between;
+    min-width: 212px;    
+    min-height: 46px;
+    .left{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        img{
+            width: 36px;
+            height: 36px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .img{
+            background: #F8FAFA;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+        }
+    }
+    &:hover{
+        background: #E8F2F1;
+        border: 1px solid #A6C9C5;
+    }
+    .link__left{
+        display: flex;
+        flex-direction: column;
+    }
+    .link__right{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+}
