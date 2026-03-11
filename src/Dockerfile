@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm cache clean --force && npm install --legacy-peer-deps
+RUN npm install --legacy-peer-deps
 
 # Copy source code
 COPY . .
@@ -26,9 +26,6 @@ RUN npm install -g serve
 
 # Copy the built assets from the builder stage
 COPY --from=builder /app/served ./served
-
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
 
 # Expose port 3000
 EXPOSE 3000
