@@ -6,6 +6,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
+ENV SKIP_PREFLIGHT_CHECK=true
+
 # Install dependencies
 RUN npm install --legacy-peer-deps
 
