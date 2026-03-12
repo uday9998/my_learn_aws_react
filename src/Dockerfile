@@ -3,6 +3,9 @@ FROM node:18-alpine AS builder
 
 WORKDIR /app
 
+
+ENV SKIP_PREFLIGHT_CHECK=true
+
 # Copy package files
 COPY package*.json ./
 
